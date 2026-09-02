@@ -19,6 +19,35 @@ PROCESSED_DIR.mkdir(parents=True, exist_ok=True)
 
 HF_API = "https://datasets-server.huggingface.co/rows"
 MEDQA_DATASET = "GBaker/MedQA-USMLE-4-options"
+
+# Keywords that indicate the answer is likely a diagnosis
+_DIAG_HINTS = [
+    "syndrome", "disease", "disorder", "failure", "infection", "carcinoma",
+    "cancer", "tumor", "anemia", "infarction", "insufficiency", "deficiency",
+    "palsy", "neuropathy", "myopathy", "itis", "osis", "emia", "sepsis",
+    "pneumonia", "hepatitis", "nephritis", "meningitis", "encephalitis",
+    "stroke", "hemorrhage", "embolism", "thrombosis", "hypertension",
+    "diabetes", "epilepsy", "seizure", "fracture", "rupture", "perforation",
+    "obstruction", "depression", "schizophrenia", "anxiety", "psychosis",
+    "dementia", "hypo", "hyper", "defect", "palsy", "atrophy",
+]
+# Keywords that indicate the answer is NOT a diagnosis (drug/test/procedure)
+_NON_DIAG = [
+    "biopsy", "culture", "scan", "therapy", "surgery", "prophylaxis",
+    "vaccination", "mg ", "mcg", "test", "emission", "resonance",
+    "tomography", "ultrasound", "propyl", "chlor", "penicil", "mycin",
+    "cyclin", "prazole", "sartan", "statin", "modification", "measurement",
+    "administration", "transfusion", "dialysis", "endoscopy", "colonoscopy",
+]
+
+def _is_diagnosis_answer(answer: str) -> bool:
+    a = answer.lower()
+    if any(x in a for x in _NON_DIAG):
+        return False
+    if any(x in a for x in _DIAG_HINTS):
+        return True
+    # Fallback: short answers without parentheses are often diagnoses
+    return len(answer.split()) <= 5 and "(" not in answer
 BATCH_SIZE = 100   # HF API max per request
 
 HIGH_ACUITY_KEYWORDS = [
