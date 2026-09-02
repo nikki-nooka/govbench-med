@@ -1,6 +1,7 @@
 """
 Governance levels G0–G4.
 Each returns a GovernanceResult with full cost and decision trace.
+Includes report generation as a second task alongside differential diagnosis.
 """
 import json
 import time
@@ -12,6 +13,10 @@ from src.agents.prompts import (
     DIAGNOSTICIAN_PROMPT, SPECIALIST_PROMPT,
     VERIFIER_PROMPT, MODERATOR_PROMPT, ETHICS_CRITIC_PROMPT,
     PROMPT_VERSION,
+)
+from src.agents.report_writer import (
+    ReportWriter, ReportEvaluator, ClinicalReport,
+    ReportEvaluation, generate_and_evaluate_report,
 )
 
 
@@ -52,6 +57,13 @@ class GovernanceResult:
     ethics_verdict: Optional[str] = None
     ethics_score: Optional[int] = None
 
+    # --- Report generation (second clinical task) ---
+    clinical_report: Optional[ClinicalReport] = None
+    report_evaluation: Optional[ReportEvaluation] = None
+    report_gen_latency: float = 0.0
+    report_eval_latency: float = 0.0
+    report_total_tokens: int = 0
+
     def add_turn(self, resp: AgentResponse):
         self.total_input_tokens += resp.input_tokens
         self.total_output_tokens += resp.output_tokens
@@ -67,7 +79,12 @@ class GovernanceResult:
         })
 
     def to_dict(self) -> dict:
-        return {k: v for k, v in self.__dict__.items()}
+        d = {k: v for k, v in self.__dict__.items()}
+        if self.clinical_report is not None:
+            d["clinical_report"] = self.clinical_report.to_dict()
+        if self.report_evaluation is not None:
+            d["report_evaluation"] = self.report_evaluation.to_dict()
+        return d
 
 
 # ---------------------------------------------------------------------------
@@ -113,6 +130,76 @@ def _build_case_prompt(case: dict) -> str:
     if "question" in case:
         lines.append(f"\nQuestion: {case['question']}")
     return "\n".join(lines)
+
+
+def _generate_report_for_result(
+    result: GovernanceResult,
+    case: dict,
+    differential: Optional[list] = None,
+    reasoning: str = "",
+    eval_model: Optional[str] = None,
+):
+    """
+    Generate a clinical report and evaluate it.
+    Attaches results to the GovernanceResult and tracks cost.
+    """
+    if result.abstained or result.suppressed or not result.top_diagnosis:
+        return  # No diagnosis to base a report on
+
+    t0 = time.perf_counter()
+
+    writer = ReportWriter(model=result.model)
+    report, gen_resp = writer.generate(
+        case=case,
+        diagnosis=result.top_diagnosis,
+        confidence=result.output_confidence or 0.5,
+        reasoning=reasoning,
+        differential=differential,
+    )
+    gen_latency = time.perf_counter() - t0
+
+    # Track report generation cost
+    result.clinical_report = report
+    result.report_gen_latency = gen_latency
+    result.report_total_tokens += gen_resp.input_tokens + gen_resp.output_tokens
+    result.agent_turns += 1
+    result.total_input_tokens += gen_resp.input_tokens
+    result.total_output_tokens += gen_resp.output_tokens
+    result.total_tokens += gen_resp.input_tokens + gen_resp.output_tokens
+    result.total_latency += gen_latency
+    result.trace.append({
+        "agent": gen_resp.agent_role,
+        "input_tokens": gen_resp.input_tokens,
+        "output_tokens": gen_resp.output_tokens,
+        "latency": gen_latency,
+        "text": gen_resp.text[:500],
+    })
+
+    # Evaluate the report
+    t1 = time.perf_counter()
+    judge = ReportEvaluator(model=eval_model or result.model)
+    evaluation, eval_resp = judge.evaluate(
+        report=report,
+        case=case,
+        ground_truth_diagnosis=None,  # ground truth passed at aggregate level
+    )
+    eval_latency = time.perf_counter() - t1
+
+    result.report_evaluation = evaluation
+    result.report_eval_latency = eval_latency
+    result.report_total_tokens += eval_resp.input_tokens + eval_resp.output_tokens
+    result.agent_turns += 1
+    result.total_input_tokens += eval_resp.input_tokens
+    result.total_output_tokens += eval_resp.output_tokens
+    result.total_tokens += eval_resp.input_tokens + eval_resp.output_tokens
+    result.total_latency += eval_latency
+    result.trace.append({
+        "agent": eval_resp.agent_role,
+        "input_tokens": eval_resp.input_tokens,
+        "output_tokens": eval_resp.output_tokens,
+        "latency": eval_latency,
+        "text": eval_resp.text[:500],
+    })
 
 
 # ---------------------------------------------------------------------------
@@ -161,6 +248,10 @@ def run_g0(case: dict, model: str, seed: int) -> GovernanceResult:
             if len(result.top3_diagnoses) >= 3:
                 break
 
+    # --- Report generation task ---
+    reasoning = parsed_a.get("reasoning", "") or parsed_b.get("reasoning", "")
+    _generate_report_for_result(result, case, differential=result.top3_diagnoses, reasoning=reasoning)
+
     return result
 
 
@@ -205,6 +296,10 @@ def run_g1(case: dict, model: str, seed: int) -> GovernanceResult:
             seen.add(d)
         if len(result.top3_diagnoses) >= 3:
             break
+
+    # --- Report generation task ---
+    reasoning = parsed_s.get("reasoning", "") or parsed_g.get("reasoning", "")
+    _generate_report_for_result(result, case, differential=result.top3_diagnoses, reasoning=reasoning)
 
     return result
 
@@ -273,6 +368,9 @@ def run_g2(case: dict, model: str, seed: int) -> GovernanceResult:
         if len(result.top3_diagnoses) >= 3:
             break
 
+    # --- Report generation task ---
+    _generate_report_for_result(result, case, differential=result.top3_diagnoses, reasoning=reasoning)
+
     return result
 
 
@@ -316,6 +414,7 @@ def run_g3(case: dict, model: str, seed: int) -> GovernanceResult:
     parsed_m = _parse_json(resp_m.text) or {}
     recommendation = parsed_m.get("recommendation", "ABSTAIN")
 
+    reasoning = parsed_g.get("reasoning", "")
     if recommendation == "REPORT":
         result.top_diagnosis = parsed_m.get("agreed_diagnosis")
         result.output_confidence = parsed_m.get("average_confidence", 0.7)
@@ -342,6 +441,9 @@ def run_g3(case: dict, model: str, seed: int) -> GovernanceResult:
             seen.add(d)
         if len(result.top3_diagnoses) >= 3:
             break
+
+    # --- Report generation task ---
+    _generate_report_for_result(result, case, differential=result.top3_diagnoses, reasoning=reasoning)
 
     return result
 
@@ -408,6 +510,10 @@ def run_g4(case: dict, model: str, seed: int) -> GovernanceResult:
     elif verdict == "SUPPRESSED":
         result.suppressed = True
         result.top_diagnosis = None
+
+    # Note: report was already generated by run_g3.
+    # If the diagnosis was revised/suppressed, the report reflects the original
+    # G3 diagnosis; re-generation after revision could be added as future work.
 
     return result
 

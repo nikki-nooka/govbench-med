@@ -1,0 +1,76 @@
+{
+  "case_id": "medqa_0035",
+  "governance_level": "G1",
+  "model": "llama3.1:8b",
+  "seed": 42,
+  "prompt_version": "v1.1",
+  "top_diagnosis": "Pneumonia",
+  "top3_diagnoses": [
+    "Pneumonia",
+    "Alternative 1",
+    "Alternative 2"
+  ],
+  "output_confidence": 0.76,
+  "abstained": false,
+  "suppressed": false,
+  "hallucination_detected": false,
+  "hallucination_impactful": false,
+  "total_input_tokens": 1570,
+  "total_output_tokens": 148,
+  "total_tokens": 1718,
+  "total_latency": 2.9135739333318393,
+  "agent_turns": 4,
+  "trace": [
+    {
+      "agent": "generalist",
+      "input_tokens": 231,
+      "output_tokens": 37,
+      "latency": 1.4566666666666668,
+      "text": "{\"top_diagnosis\": \"Pneumonia\", \"confidence\": 0.76, \"reasoning\": \"Matched primary symptoms.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pneumonia\", \"confidence\": 0.76}, {\"rank\": 2, \"diagnosis\": \"Alternative 1\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Alternative 2\", \"confidence\": 0.05}]}"
+    },
+    {
+      "agent": "specialist",
+      "input_tokens": 211,
+      "output_tokens": 37,
+      "latency": 1.4566666666666668,
+      "text": "{\"top_diagnosis\": \"Pneumonia\", \"confidence\": 0.85, \"reasoning\": \"Matched primary symptoms.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pneumonia\", \"confidence\": 0.85}, {\"rank\": 2, \"diagnosis\": \"Alternative 1\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Alternative 2\", \"confidence\": 0.05}]}"
+    },
+    {
+      "agent": "report_writer",
+      "input_tokens": 408,
+      "output_tokens": 37,
+      "latency": 0.00012079999942216091,
+      "text": "{\"top_diagnosis\": \"Pneumonia\", \"confidence\": 0.85, \"reasoning\": \"Matched primary symptoms.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pneumonia\", \"confidence\": 0.85}, {\"rank\": 2, \"diagnosis\": \"Alternative 1\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Alternative 2\", \"confidence\": 0.05}]}"
+    },
+    {
+      "agent": "report_judge",
+      "input_tokens": 720,
+      "output_tokens": 37,
+      "latency": 0.00011979999908362515,
+      "text": "{\"top_diagnosis\": \"Pneumonia\", \"confidence\": 0.85, \"reasoning\": \"Matched primary symptoms.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pneumonia\", \"confidence\": 0.85}, {\"rank\": 2, \"diagnosis\": \"Alternative 1\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Alternative 2\", \"confidence\": 0.05}]}"
+    }
+  ],
+  "ethics_verdict": null,
+  "ethics_score": null,
+  "clinical_report": {
+    "chief_complaint": "",
+    "clinical_assessment": "",
+    "differential_diagnosis": [],
+    "recommended_investigations": [],
+    "management_plan": [],
+    "safety_flags": [],
+    "case_id": "medqa_0035",
+    "diagnosis_used": "Pneumonia"
+  },
+  "report_evaluation": {
+    "scores": [],
+    "total_score": 0,
+    "max_possible": 40,
+    "pct_score": 0.0,
+    "overall_grade": "",
+    "judge_reasoning": "Matched primary symptoms."
+  },
+  "report_gen_latency": 0.00012079999942216091,
+  "report_eval_latency": 0.00011979999908362515,
+  "report_total_tokens": 1202
+}

@@ -12,7 +12,9 @@ import time
 from dataclasses import dataclass, field
 from typing import Optional
 
-from src.agents.base import BaseAgent, AgentResponse, OLLAMA_URL, OLLAMA_TIMEOUT
+from src.agents.base import BaseAgent, AgentResponse
+OLLAMA_URL = "http://localhost:11434/api/generate"
+OLLAMA_TIMEOUT = 600
 
 
 # ---------------------------------------------------------------------------

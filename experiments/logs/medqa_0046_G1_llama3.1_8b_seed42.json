@@ -1,0 +1,76 @@
+{
+  "case_id": "medqa_0046",
+  "governance_level": "G1",
+  "model": "llama3.1:8b",
+  "seed": 42,
+  "prompt_version": "v1.1",
+  "top_diagnosis": "Acute Coronary Syndrome",
+  "top3_diagnoses": [
+    "Acute Coronary Syndrome",
+    "Alternative 1",
+    "Alternative 2"
+  ],
+  "output_confidence": 0.84,
+  "abstained": false,
+  "suppressed": false,
+  "hallucination_detected": false,
+  "hallucination_impactful": false,
+  "total_input_tokens": 1755,
+  "total_output_tokens": 168,
+  "total_tokens": 1923,
+  "total_latency": 3.260182699997822,
+  "agent_turns": 4,
+  "trace": [
+    {
+      "agent": "generalist",
+      "input_tokens": 284,
+      "output_tokens": 42,
+      "latency": 1.63,
+      "text": "{\"top_diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.84, \"reasoning\": \"Matched primary symptoms.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.84}, {\"rank\": 2, \"diagnosis\": \"Alternative 1\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Alternative 2\", \"confidence\": 0.05}]}"
+    },
+    {
+      "agent": "specialist",
+      "input_tokens": 265,
+      "output_tokens": 42,
+      "latency": 1.63,
+      "text": "{\"top_diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.85, \"reasoning\": \"Matched primary symptoms.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.85}, {\"rank\": 2, \"diagnosis\": \"Alternative 1\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Alternative 2\", \"confidence\": 0.05}]}"
+    },
+    {
+      "agent": "report_writer",
+      "input_tokens": 447,
+      "output_tokens": 42,
+      "latency": 8.130000060191378e-05,
+      "text": "{\"top_diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.85, \"reasoning\": \"Matched primary symptoms.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.85}, {\"rank\": 2, \"diagnosis\": \"Alternative 1\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Alternative 2\", \"confidence\": 0.05}]}"
+    },
+    {
+      "agent": "report_judge",
+      "input_tokens": 759,
+      "output_tokens": 42,
+      "latency": 0.00010139999722014181,
+      "text": "{\"top_diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.85, \"reasoning\": \"Matched primary symptoms.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.85}, {\"rank\": 2, \"diagnosis\": \"Alternative 1\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Alternative 2\", \"confidence\": 0.05}]}"
+    }
+  ],
+  "ethics_verdict": null,
+  "ethics_score": null,
+  "clinical_report": {
+    "chief_complaint": "",
+    "clinical_assessment": "",
+    "differential_diagnosis": [],
+    "recommended_investigations": [],
+    "management_plan": [],
+    "safety_flags": [],
+    "case_id": "medqa_0046",
+    "diagnosis_used": "Acute Coronary Syndrome"
+  },
+  "report_evaluation": {
+    "scores": [],
+    "total_score": 0,
+    "max_possible": 40,
+    "pct_score": 0.0,
+    "overall_grade": "",
+    "judge_reasoning": "Matched primary symptoms."
+  },
+  "report_gen_latency": 8.130000060191378e-05,
+  "report_eval_latency": 0.00010139999722014181,
+  "report_total_tokens": 1290
+}

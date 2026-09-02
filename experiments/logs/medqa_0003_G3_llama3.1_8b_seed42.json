@@ -1,0 +1,88 @@
+{
+  "case_id": "medqa_0003",
+  "governance_level": "G3",
+  "model": "llama3.1:8b",
+  "seed": 42,
+  "prompt_version": "v1.1",
+  "top_diagnosis": "Acute Coronary Syndrome",
+  "top3_diagnoses": [
+    "Acute Coronary Syndrome"
+  ],
+  "output_confidence": 0.85,
+  "abstained": false,
+  "suppressed": false,
+  "hallucination_detected": false,
+  "hallucination_impactful": false,
+  "total_input_tokens": 2498,
+  "total_output_tokens": 220,
+  "total_tokens": 2718,
+  "total_latency": 5.436890866667624,
+  "agent_turns": 6,
+  "trace": [
+    {
+      "agent": "generalist",
+      "input_tokens": 344,
+      "output_tokens": 42,
+      "latency": 1.63,
+      "text": "{\"top_diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.8099999999999999, \"reasoning\": \"Matched primary symptoms.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.8099999999999999}, {\"rank\": 2, \"diagnosis\": \"Alternative 1\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Alternative 2\", \"confidence\": 0.05}]}"
+    },
+    {
+      "agent": "specialist_a",
+      "input_tokens": 325,
+      "output_tokens": 42,
+      "latency": 1.63,
+      "text": "{\"top_diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.85, \"reasoning\": \"Matched primary symptoms.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.85}, {\"rank\": 2, \"diagnosis\": \"Alternative 1\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Alternative 2\", \"confidence\": 0.05}]}"
+    },
+    {
+      "agent": "specialist_b",
+      "input_tokens": 325,
+      "output_tokens": 42,
+      "latency": 1.63,
+      "text": "{\"top_diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.85, \"reasoning\": \"Matched primary symptoms.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.85}, {\"rank\": 2, \"diagnosis\": \"Alternative 1\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Alternative 2\", \"confidence\": 0.05}]}"
+    },
+    {
+      "agent": "moderator",
+      "input_tokens": 195,
+      "output_tokens": 10,
+      "latency": 0.5466666666666666,
+      "text": "{\"recommendation\": \"REPORT\", \"agreed_diagnosis\": \"Acute Coronary Syndrome\", \"average_confidence\": 0.85}"
+    },
+    {
+      "agent": "report_writer",
+      "input_tokens": 496,
+      "output_tokens": 42,
+      "latency": 9.789999967324547e-05,
+      "text": "{\"top_diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.85, \"reasoning\": \"Matched primary symptoms.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.85}, {\"rank\": 2, \"diagnosis\": \"Alternative 1\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Alternative 2\", \"confidence\": 0.05}]}"
+    },
+    {
+      "agent": "report_judge",
+      "input_tokens": 813,
+      "output_tokens": 42,
+      "latency": 0.00012630000128410757,
+      "text": "{\"top_diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.85, \"reasoning\": \"Matched primary symptoms.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.85}, {\"rank\": 2, \"diagnosis\": \"Alternative 1\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Alternative 2\", \"confidence\": 0.05}]}"
+    }
+  ],
+  "ethics_verdict": null,
+  "ethics_score": null,
+  "clinical_report": {
+    "chief_complaint": "",
+    "clinical_assessment": "",
+    "differential_diagnosis": [],
+    "recommended_investigations": [],
+    "management_plan": [],
+    "safety_flags": [],
+    "case_id": "medqa_0003",
+    "diagnosis_used": "Acute Coronary Syndrome"
+  },
+  "report_evaluation": {
+    "scores": [],
+    "total_score": 0,
+    "max_possible": 40,
+    "pct_score": 0.0,
+    "overall_grade": "",
+    "judge_reasoning": "Matched primary symptoms."
+  },
+  "report_gen_latency": 9.789999967324547e-05,
+  "report_eval_latency": 0.00012630000128410757,
+  "report_total_tokens": 1393
+}

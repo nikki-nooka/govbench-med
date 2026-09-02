@@ -1,0 +1,58 @@
+{
+  "case_id": "medqa_0031",
+  "governance_level": "G3",
+  "model": "llama3.1:8b",
+  "seed": 42,
+  "prompt_version": "v1.1",
+  "top_diagnosis": null,
+  "top3_diagnoses": [
+    "Subarachnoid Hemorrhage"
+  ],
+  "output_confidence": null,
+  "abstained": true,
+  "suppressed": false,
+  "hallucination_detected": false,
+  "hallucination_impactful": false,
+  "total_input_tokens": 1167,
+  "total_output_tokens": 126,
+  "total_tokens": 1293,
+  "total_latency": 5.046666666666668,
+  "agent_turns": 4,
+  "trace": [
+    {
+      "agent": "generalist",
+      "input_tokens": 338,
+      "output_tokens": 40,
+      "latency": 1.5433333333333334,
+      "text": "{\"top_diagnosis\": \"Subarachnoid Hemorrhage\", \"confidence\": 0.86, \"reasoning\": \"Matched primary symptoms.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Subarachnoid Hemorrhage\", \"confidence\": 0.86}, {\"rank\": 2, \"diagnosis\": \"Alternative 1\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Alternative 2\", \"confidence\": 0.05}]}"
+    },
+    {
+      "agent": "specialist_a",
+      "input_tokens": 318,
+      "output_tokens": 40,
+      "latency": 1.5433333333333334,
+      "text": "{\"top_diagnosis\": \"Subarachnoid Hemorrhage\", \"confidence\": 0.85, \"reasoning\": \"Matched primary symptoms.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Subarachnoid Hemorrhage\", \"confidence\": 0.85}, {\"rank\": 2, \"diagnosis\": \"Alternative 1\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Alternative 2\", \"confidence\": 0.05}]}"
+    },
+    {
+      "agent": "specialist_b",
+      "input_tokens": 318,
+      "output_tokens": 40,
+      "latency": 1.5433333333333334,
+      "text": "{\"top_diagnosis\": \"Subarachnoid Hemorrhage\", \"confidence\": 0.85, \"reasoning\": \"Matched primary symptoms.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Subarachnoid Hemorrhage\", \"confidence\": 0.85}, {\"rank\": 2, \"diagnosis\": \"Alternative 1\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Alternative 2\", \"confidence\": 0.05}]}"
+    },
+    {
+      "agent": "moderator",
+      "input_tokens": 193,
+      "output_tokens": 6,
+      "latency": 0.4166666666666667,
+      "text": "{\"recommendation\": \"ABSTAIN\", \"reasoning\": \"No consensus\"}"
+    }
+  ],
+  "ethics_verdict": null,
+  "ethics_score": null,
+  "clinical_report": null,
+  "report_evaluation": null,
+  "report_gen_latency": 0.0,
+  "report_eval_latency": 0.0,
+  "report_total_tokens": 0
+}

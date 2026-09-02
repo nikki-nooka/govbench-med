@@ -1,0 +1,58 @@
+{
+  "case_id": "medqa_0013",
+  "governance_level": "G4",
+  "model": "llama3.1:8b",
+  "seed": 42,
+  "prompt_version": "v1.1",
+  "top_diagnosis": null,
+  "top3_diagnoses": [
+    "Acute Coronary Syndrome"
+  ],
+  "output_confidence": null,
+  "abstained": true,
+  "suppressed": false,
+  "hallucination_detected": false,
+  "hallucination_impactful": false,
+  "total_input_tokens": 1208,
+  "total_output_tokens": 132,
+  "total_tokens": 1340,
+  "total_latency": 5.306666666666667,
+  "agent_turns": 4,
+  "trace": [
+    {
+      "agent": "generalist",
+      "input_tokens": 351,
+      "output_tokens": 42,
+      "latency": 1.63,
+      "text": "{\"top_diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.8899999999999999, \"reasoning\": \"Matched primary symptoms.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.8899999999999999}, {\"rank\": 2, \"diagnosis\": \"Alternative 1\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Alternative 2\", \"confidence\": 0.05}]}"
+    },
+    {
+      "agent": "specialist_a",
+      "input_tokens": 331,
+      "output_tokens": 42,
+      "latency": 1.63,
+      "text": "{\"top_diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.85, \"reasoning\": \"Matched primary symptoms.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.85}, {\"rank\": 2, \"diagnosis\": \"Alternative 1\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Alternative 2\", \"confidence\": 0.05}]}"
+    },
+    {
+      "agent": "specialist_b",
+      "input_tokens": 331,
+      "output_tokens": 42,
+      "latency": 1.63,
+      "text": "{\"top_diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.85, \"reasoning\": \"Matched primary symptoms.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.85}, {\"rank\": 2, \"diagnosis\": \"Alternative 1\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Alternative 2\", \"confidence\": 0.05}]}"
+    },
+    {
+      "agent": "moderator",
+      "input_tokens": 195,
+      "output_tokens": 6,
+      "latency": 0.4166666666666667,
+      "text": "{\"recommendation\": \"ABSTAIN\", \"reasoning\": \"No consensus\"}"
+    }
+  ],
+  "ethics_verdict": null,
+  "ethics_score": null,
+  "clinical_report": null,
+  "report_evaluation": null,
+  "report_gen_latency": 0.0,
+  "report_eval_latency": 0.0,
+  "report_total_tokens": 0
+}
