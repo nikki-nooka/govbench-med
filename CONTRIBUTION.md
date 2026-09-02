@@ -1,26 +1,86 @@
 # Research Contribution Statement
 
 ## One-Line Claim
-We introduce GovBench-Med, the first benchmark that quantifies the safety-per-cost
-Pareto frontier of governance mechanisms in multi-agent LLM clinical diagnosis systems.
+We introduce GovBench-Med, the first open-source benchmark that quantifies the
+marginal cost-benefit of each governance layer in multi-agent clinical diagnosis
+pipelines, enabling healthcare organizations to calibrate safety infrastructure
+to their actual risk tolerance.
 
 ---
 
-## The Problem Nobody Has Measured
-Every paper in multi-agent medical AI either:
-- Maximizes accuracy and ignores what safety overhead costs, OR
-- Adds safety mechanisms and reports accuracy gains, but never maps the cost curve
+## The Problem This Paper Solves
+Healthcare organizations deploying multi-agent clinical AI face a governance
+dilemma:
 
-Nobody has asked: *"If I add one more governance layer, exactly how much safety do I
-gain, and what do I pay for it?"*
+- **Over-provision safety**: waste compute, slow time-critical workflows,
+  increase cost per diagnosis
+- **Under-provision safety**: risk hallucinated findings, unsafe recommendations,
+  missed critical diagnoses
+
+There is no empirical benchmark that tells you: "For THIS clinical risk level,
+THIS governance configuration costs THIS much and delivers THIS much safety."
 
 That is precisely what this paper measures.
 
 ---
 
-## Three Novel Claims (what reviewers will evaluate you on)
+## What the Abstract Promises (and How We Deliver It)
 
-### Claim 1: Governance-as-a-dial
+### Promise 1: Multi-agent pipeline variants with progressively increasing oversight
+**Deliverable**: Governance levels G0–G4 (cumulative) + ablation variants
+(BASE, +VER, +HITL, +COMB) that isolate each component.
+
+| Level | What It Adds | Mechanism |
+|-------|-------------|-----------|
+| G0 (BASE) | Ungoverned baseline | 2 diagnostic agents, majority vote |
+| G1 | Structured roles + guardrails | Role specialization + output validation |
+| G2 (+VER) | Automated verifier agent | Cross-checks findings against case notes |
+| G3 (+HITL) | Simulated HITL approval gate | Confidence-gated consensus + abstention |
+| G4 (+COMB) | Combined governance layers | Ethics critic + audit trail + suppression |
+
+### Promise 2: Research agent + report-writing agent baseline
+**Deliverable**: G0 baseline with a diagnostician agent + report writer agent
+that produces structured clinical reports.
+
+### Promise 3: Rubric-based and LLM-as-judge scoring
+**Deliverable**: 8-dimension clinical rubric evaluated by LLM judge:
+- Completeness, Clinical Accuracy, Appropriate Uncertainty,
+  Evidence Grounding, Safety, Structured Format, No Hallucination,
+  Actionability (each scored 0–5)
+
+### Promise 4: Symptom-based differential diagnosis task
+**Deliverable**: Evaluated on MedQA-USMLE (200 cases) + DDXPlus (100 cases).
+
+### Promise 5: Structured report generation task
+**Deliverable**: ReportWriter agent produces structured clinical reports;
+rubric-based evaluation scores each report on 8 dimensions.
+
+### Promise 6: Ablation study isolating marginal contribution of each layer
+**Deliverable**: 4 configurations tested independently:
+- BASE (no governance)
+- BASE + Verifier only
+- BASE + HITL only
+- Combined (full stack)
+
+This isolates each component's ΔCSS and ΔCost separately.
+
+### Promise 7: Marginal cost-benefit curves for each oversight mechanism
+**Deliverable**: GE = ΔCSS/ΔCCS computed per component and per cumulative level.
+Pareto frontier plotted as CSS vs CCS.
+
+### Promise 8: Open-source measurement harness
+**Deliverable**: Full GitHub repo + Colab notebook. Reproducible on free T4 GPU.
+No proprietary APIs required.
+
+### Promise 9: Regulatory framework discussion
+**Deliverable**: Section discussing risk-proportional governance, quantified
+compliance evidence, cost of over-governance, and 5 recommendations for regulators.
+
+---
+
+## Three Novel Contributions (what reviewers will evaluate)
+
+### Contribution 1: Governance-as-a-dial
 We operationalize AI governance as a 5-level taxonomy (G0–G4) that is:
 - Mechanically distinct at each level (not just "more prompting")
 - Applicable to any multi-agent LLM framework
@@ -29,26 +89,21 @@ We operationalize AI governance as a 5-level taxonomy (G0–G4) that is:
 **Why this is new**: Prior work treats governance as binary (guardrails on/off).
 We treat it as a continuous spectrum with measurable granularity.
 
-### Claim 2: Safety is not accuracy
+### Contribution 2: Safety is not accuracy
 We introduce a *Clinical Safety Score (CSS)* that separates:
 - Critical Miss Rate (CMR): missing a life-threatening diagnosis
 - Hallucination Impact Rate (HIR): fabricated findings that change the output
 - Unsafe Reassurance Rate (URR): overconfident wrong diagnoses
 
-This is distinct from accuracy. A model can be 85% accurate and still have
-a 30% critical miss rate on the 15% of cases that matter most.
-
 **Why this is new**: All cost-tradeoff papers use accuracy as the quality axis.
 We use harm-weighted safety — a much more clinically meaningful signal.
 
-### Claim 3: Governance Efficiency (GE) as a deployment metric
+### Contribution 3: Governance Efficiency (GE) as a deployment metric
 We define:
-    GE = ΔCSS / ΔCost
+    GE = ΔCSS / ΔCCS
 
-where Cost = normalized(tokens + latency).
-
-GE tells a hospital exactly: "for every $1 of extra compute you spend on governance,
-you gain X% in clinical safety." This is a deployable decision metric.
+GE tells a hospital exactly: "for every unit of extra compute you spend on
+governance, you gain X% in clinical safety."
 
 **Why this is new**: No existing paper provides a single metric for governance ROI.
 
@@ -58,35 +113,17 @@ you gain X% in clinical safety." This is a deployable decision metric.
 
 | Paper | What they do | Our difference |
 |-------|-------------|----------------|
-| TeamMedAgents (2025) | Pareto frontier of accuracy vs. token cost | We use *safety* (not accuracy) as the Y-axis, and *governance level* as the X variable |
+| TeamMedAgents (2025) | Pareto frontier of accuracy vs. token cost | We use *safety* (not accuracy) as Y-axis, *governance level* as X variable |
 | ConfAgents (2025) | Adaptive cost-accuracy tradeoff | They adapt based on case difficulty; we vary governance mechanisms systematically |
 | MedSafe-Dx (2026) | Safety benchmark for single-agent LLMs | Single-agent only; no multi-agent governance, no cost measurement |
-
----
-
-## Abstract (Draft v1)
-
-Multi-agent LLM systems are increasingly proposed for clinical diagnosis, yet the cost
-of making them safe remains unquantified. We introduce GovBench-Med, a reproducible
-benchmark that evaluates five governance levels — from bare multi-agent inference to
-full consensus-with-verification — across three open-source language models on 300
-clinical cases drawn from MedQA-USMLE and DDXPlus. For each configuration, we measure
-Clinical Safety Score (CSS), token cost, and latency, then chart the governance–cost
-Pareto frontier. We find that governance follows a law of diminishing returns: moving
-from G0 to G2 yields 73% of attainable safety gains at 31% of G4's cost, while G3→G4
-buys marginal safety at 2× overhead. We introduce Governance Efficiency (GE = ΔCSS/ΔCost)
-as a deployment metric and show that it varies significantly across model families,
-with open-source models achieving competitive GE to proprietary systems at zero licensing
-cost. GovBench-Med provides the first systematic, reproducible characterization of the
-governance–cost tradeoff, offering concrete guidance for safe and cost-effective
-deployment of multi-agent clinical AI.
-
-*[Note: numbers above are placeholders — replace with actual experimental results]*
+| ETHOS (2026) | Ethics framework for clinical MAS | Conceptual framework; we provide empirical cost measurements |
+| npj Digital Medicine (2026) | Benchmarking agent systems for clinical tasks | Measures agent overhead; we isolate governance layers specifically |
 
 ---
 
 ## IEEE Access Framing
 - **Scope**: Biomedical informatics + AI systems evaluation
-- **Contribution type**: Benchmark + empirical study
+- **Contribution type**: Benchmark + empirical study + open-source harness
 - **Reproducibility**: Full open-source, no proprietary APIs required
 - **Impact statement**: Provides deployment guidance for healthcare AI governance
+- **Regulatory relevance**: Connects empirical findings to FDA/EU AI Act/NIST frameworks
