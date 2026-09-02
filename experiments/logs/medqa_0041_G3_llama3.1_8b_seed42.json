@@ -1,88 +1,102 @@
 {
-  "case_id": "medqa_0041",
-  "governance_level": "G3",
-  "model": "llama3.1:8b",
-  "seed": 42,
+  "run_id": "30807f7d",
+  "experiment_id": "medqa_0041_llama3.1:8b_G3_seed42",
+  "timestamp": "2026-09-02T17:33:12.427154Z",
   "prompt_version": "v1.1",
-  "top_diagnosis": "Acute Coronary Syndrome",
-  "top3_diagnoses": [
-    "Acute Coronary Syndrome"
-  ],
-  "output_confidence": 0.85,
+  "code_version": "0.1.0",
+  "case_id": "medqa_0041",
+  "dataset": "medqa",
+  "model": "llama3.1:8b",
+  "model_version": "llama3.1:8b",
+  "governance_level": "G3",
+  "seed": 42,
+  "final_answer": "Pulmonary Embolism",
+  "ground_truth": "Absent Barr bodies on buccal smear",
+  "ground_truth_key": "A",
+  "dataset_source": "medqa",
+  "correctness": false,
+  "top3_correct": false,
+  "confidence": 0.78,
+  "consensus": true,
   "abstained": false,
   "suppressed": false,
-  "hallucination_detected": false,
+  "verification_status": "NOT_CHECKED",
+  "claims_checked": 0,
+  "supported_claims": 0,
+  "contradicted_claims": 0,
+  "unverifiable_claims": 0,
+  "revision_count": 0,
+  "input_tokens": 2793,
+  "output_tokens": 212,
+  "total_tokens": 3005,
+  "model_calls": 6,
+  "latency_ms": 4.288999995973427,
+  "governance_latency_ms": 4.288999995973427,
+  "diagnosis_latency_ms": 2.573399997584056,
+  "governance_overhead_latency_ms": 1.7155999983893708,
+  "report_latency_ms": 0.00028899999597342685,
+  "cost": 0.0,
+  "human_review_required": false,
+  "human_review_time": 0.0,
+  "css": 0.0,
+  "cmr": 0.0,
+  "hir": 0.0,
+  "urr": 0.0,
+  "ccs": 0.0,
+  "ge": 0.0,
   "hallucination_impactful": false,
-  "total_input_tokens": 2793,
-  "total_output_tokens": 220,
-  "total_tokens": 3013,
-  "total_latency": 5.436949366669238,
-  "agent_turns": 6,
-  "trace": [
+  "hallucination_detected": false,
+  "unsafe_reassurance": false,
+  "agent_traces": [
     {
       "agent": "generalist",
       "input_tokens": 393,
-      "output_tokens": 42,
-      "latency": 1.63,
-      "text": "{\"top_diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.75, \"reasoning\": \"Matched primary symptoms.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative 1\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Alternative 2\", \"confidence\": 0.05}]}"
+      "output_tokens": 41,
+      "latency": 1.0,
+      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.85, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.85}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist_a",
       "input_tokens": 374,
-      "output_tokens": 42,
-      "latency": 1.63,
-      "text": "{\"top_diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.85, \"reasoning\": \"Matched primary symptoms.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.85}, {\"rank\": 2, \"diagnosis\": \"Alternative 1\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Alternative 2\", \"confidence\": 0.05}]}"
+      "output_tokens": 36,
+      "latency": 1.0,
+      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist_b",
       "input_tokens": 374,
-      "output_tokens": 42,
-      "latency": 1.63,
-      "text": "{\"top_diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.85, \"reasoning\": \"Matched primary symptoms.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.85}, {\"rank\": 2, \"diagnosis\": \"Alternative 1\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Alternative 2\", \"confidence\": 0.05}]}"
+      "output_tokens": 36,
+      "latency": 1.0,
+      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "moderator",
-      "input_tokens": 195,
-      "output_tokens": 10,
-      "latency": 0.5466666666666666,
-      "text": "{\"recommendation\": \"REPORT\", \"agreed_diagnosis\": \"Acute Coronary Syndrome\", \"average_confidence\": 0.85}"
+      "input_tokens": 193,
+      "output_tokens": 9,
+      "latency": 1.0,
+      "text": "{\"recommendation\": \"REPORT\", \"agreed_diagnosis\": \"Pulmonary Embolism\", \"average_confidence\": 0.78}"
     },
     {
       "agent": "report_writer",
       "input_tokens": 570,
-      "output_tokens": 42,
-      "latency": 0.00012659999993047677,
-      "text": "{\"top_diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.85, \"reasoning\": \"Matched primary symptoms.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.85}, {\"rank\": 2, \"diagnosis\": \"Alternative 1\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Alternative 2\", \"confidence\": 0.05}]}"
+      "output_tokens": 44,
+      "latency": 0.00012520000018412247,
+      "text": "{\"top_diagnosis\": \"Elevated serum alkaline phosphatase level\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Elevated serum alkaline phosphatase level\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
-      "input_tokens": 887,
-      "output_tokens": 42,
-      "latency": 0.00015610000264132395,
-      "text": "{\"top_diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.85, \"reasoning\": \"Matched primary symptoms.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.85}, {\"rank\": 2, \"diagnosis\": \"Alternative 1\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Alternative 2\", \"confidence\": 0.05}]}"
+      "input_tokens": 889,
+      "output_tokens": 46,
+      "latency": 0.00016379999578930438,
+      "text": "{\"top_diagnosis\": \"Absent Barr bodies on buccal smear\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Absent Barr bodies on buccal smear\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     }
   ],
-  "ethics_verdict": null,
-  "ethics_score": null,
-  "clinical_report": {
-    "chief_complaint": "",
-    "clinical_assessment": "",
-    "differential_diagnosis": [],
-    "recommended_investigations": [],
-    "management_plan": [],
-    "safety_flags": [],
-    "case_id": "medqa_0041",
-    "diagnosis_used": "Acute Coronary Syndrome"
+  "verification_trace": null,
+  "consensus_trace": {
+    "recommendation": "REPORT",
+    "agreed_diagnosis": "Pulmonary Embolism",
+    "average_confidence": 0.78
   },
-  "report_evaluation": {
-    "scores": [],
-    "total_score": 0,
-    "max_possible": 40,
-    "pct_score": 0.0,
-    "overall_grade": "",
-    "judge_reasoning": "Matched primary symptoms."
-  },
-  "report_gen_latency": 0.00012659999993047677,
-  "report_eval_latency": 0.00015610000264132395,
-  "report_total_tokens": 1541
+  "ethics_trace": null,
+  "report_trace": null
 }

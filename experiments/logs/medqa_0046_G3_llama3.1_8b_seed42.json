@@ -1,88 +1,87 @@
 {
-  "case_id": "medqa_0046",
-  "governance_level": "G3",
-  "model": "llama3.1:8b",
-  "seed": 42,
+  "run_id": "853d0c49",
+  "experiment_id": "medqa_0046_llama3.1:8b_G3_seed42",
+  "timestamp": "2026-09-02T17:33:12.473868Z",
   "prompt_version": "v1.1",
-  "top_diagnosis": "Acute Coronary Syndrome",
-  "top3_diagnoses": [
-    "Acute Coronary Syndrome"
-  ],
-  "output_confidence": 0.85,
-  "abstained": false,
+  "code_version": "0.1.0",
+  "case_id": "medqa_0046",
+  "dataset": "medqa",
+  "model": "llama3.1:8b",
+  "model_version": "llama3.1:8b",
+  "governance_level": "G3",
+  "seed": 42,
+  "final_answer": "",
+  "ground_truth": "Staphylococcus aureus",
+  "ground_truth_key": "C",
+  "dataset_source": "medqa",
+  "correctness": false,
+  "top3_correct": false,
+  "confidence": 0.0,
+  "consensus": false,
+  "abstained": true,
   "suppressed": false,
-  "hallucination_detected": false,
+  "verification_status": "NOT_CHECKED",
+  "claims_checked": 0,
+  "supported_claims": 0,
+  "contradicted_claims": 0,
+  "unverifiable_claims": 0,
+  "revision_count": 0,
+  "input_tokens": 1007,
+  "output_tokens": 119,
+  "total_tokens": 1126,
+  "model_calls": 4,
+  "latency_ms": 4.0,
+  "governance_latency_ms": 4.0,
+  "diagnosis_latency_ms": 2.4,
+  "governance_overhead_latency_ms": 1.6,
+  "report_latency_ms": 0.0,
+  "cost": 0.0,
+  "human_review_required": true,
+  "human_review_time": 0.0,
+  "css": 0.0,
+  "cmr": 0.0,
+  "hir": 0.0,
+  "urr": 0.0,
+  "ccs": 0.0,
+  "ge": 0.0,
   "hallucination_impactful": false,
-  "total_input_tokens": 2210,
-  "total_output_tokens": 220,
-  "total_tokens": 2430,
-  "total_latency": 5.436852066666858,
-  "agent_turns": 6,
-  "trace": [
+  "hallucination_detected": false,
+  "unsafe_reassurance": false,
+  "agent_traces": [
     {
       "agent": "generalist",
       "input_tokens": 284,
-      "output_tokens": 42,
-      "latency": 1.63,
-      "text": "{\"top_diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.84, \"reasoning\": \"Matched primary symptoms.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.84}, {\"rank\": 2, \"diagnosis\": \"Alternative 1\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Alternative 2\", \"confidence\": 0.05}]}"
+      "output_tokens": 41,
+      "latency": 1.0,
+      "text": "{\"top_diagnosis\": \"Abdominal Pain\", \"confidence\": 0.79, \"reasoning\": \"Clinical presentation suggests Abdominal Pain.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Abdominal Pain\", \"confidence\": 0.79}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist_a",
       "input_tokens": 265,
-      "output_tokens": 42,
-      "latency": 1.63,
-      "text": "{\"top_diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.85, \"reasoning\": \"Matched primary symptoms.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.85}, {\"rank\": 2, \"diagnosis\": \"Alternative 1\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Alternative 2\", \"confidence\": 0.05}]}"
+      "output_tokens": 36,
+      "latency": 1.0,
+      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist_b",
       "input_tokens": 265,
-      "output_tokens": 42,
-      "latency": 1.63,
-      "text": "{\"top_diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.85, \"reasoning\": \"Matched primary symptoms.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.85}, {\"rank\": 2, \"diagnosis\": \"Alternative 1\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Alternative 2\", \"confidence\": 0.05}]}"
+      "output_tokens": 36,
+      "latency": 1.0,
+      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "moderator",
-      "input_tokens": 195,
-      "output_tokens": 10,
-      "latency": 0.5466666666666666,
-      "text": "{\"recommendation\": \"REPORT\", \"agreed_diagnosis\": \"Acute Coronary Syndrome\", \"average_confidence\": 0.85}"
-    },
-    {
-      "agent": "report_writer",
-      "input_tokens": 442,
-      "output_tokens": 42,
-      "latency": 8.290000187116675e-05,
-      "text": "{\"top_diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.85, \"reasoning\": \"Matched primary symptoms.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.85}, {\"rank\": 2, \"diagnosis\": \"Alternative 1\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Alternative 2\", \"confidence\": 0.05}]}"
-    },
-    {
-      "agent": "report_judge",
-      "input_tokens": 759,
-      "output_tokens": 42,
-      "latency": 0.0001024999983201269,
-      "text": "{\"top_diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.85, \"reasoning\": \"Matched primary symptoms.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.85}, {\"rank\": 2, \"diagnosis\": \"Alternative 1\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Alternative 2\", \"confidence\": 0.05}]}"
+      "input_tokens": 193,
+      "output_tokens": 6,
+      "latency": 1.0,
+      "text": "{\"recommendation\": \"ABSTAIN\", \"reasoning\": \"Insufficient consensus.\"}"
     }
   ],
-  "ethics_verdict": null,
-  "ethics_score": null,
-  "clinical_report": {
-    "chief_complaint": "",
-    "clinical_assessment": "",
-    "differential_diagnosis": [],
-    "recommended_investigations": [],
-    "management_plan": [],
-    "safety_flags": [],
-    "case_id": "medqa_0046",
-    "diagnosis_used": "Acute Coronary Syndrome"
+  "verification_trace": null,
+  "consensus_trace": {
+    "recommendation": "ABSTAIN",
+    "reasoning": "Insufficient consensus."
   },
-  "report_evaluation": {
-    "scores": [],
-    "total_score": 0,
-    "max_possible": 40,
-    "pct_score": 0.0,
-    "overall_grade": "",
-    "judge_reasoning": "Matched primary symptoms."
-  },
-  "report_gen_latency": 8.290000187116675e-05,
-  "report_eval_latency": 0.0001024999983201269,
-  "report_total_tokens": 1285
+  "ethics_trace": null,
+  "report_trace": null
 }

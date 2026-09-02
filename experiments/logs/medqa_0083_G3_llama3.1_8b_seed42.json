@@ -1,0 +1,102 @@
+{
+  "run_id": "e11e3543",
+  "experiment_id": "medqa_0083_llama3.1:8b_G3_seed42",
+  "timestamp": "2026-09-02T17:33:12.935601Z",
+  "prompt_version": "v1.1",
+  "code_version": "0.1.0",
+  "case_id": "medqa_0083",
+  "dataset": "medqa",
+  "model": "llama3.1:8b",
+  "model_version": "llama3.1:8b",
+  "governance_level": "G3",
+  "seed": 42,
+  "final_answer": "Pulmonary Embolism",
+  "ground_truth": "Increased gene expression of GLUT-4",
+  "ground_truth_key": "C",
+  "dataset_source": "medqa",
+  "correctness": false,
+  "top3_correct": false,
+  "confidence": 0.78,
+  "consensus": true,
+  "abstained": false,
+  "suppressed": false,
+  "verification_status": "NOT_CHECKED",
+  "claims_checked": 0,
+  "supported_claims": 0,
+  "contradicted_claims": 0,
+  "unverifiable_claims": 0,
+  "revision_count": 0,
+  "input_tokens": 2469,
+  "output_tokens": 217,
+  "total_tokens": 2686,
+  "model_calls": 6,
+  "latency_ms": 4.409799999033567,
+  "governance_latency_ms": 4.409799999033567,
+  "diagnosis_latency_ms": 2.64587999942014,
+  "governance_overhead_latency_ms": 1.7639199996134267,
+  "report_latency_ms": 0.00040979999903356656,
+  "cost": 0.0,
+  "human_review_required": false,
+  "human_review_time": 0.0,
+  "css": 0.0,
+  "cmr": 0.0,
+  "hir": 0.0,
+  "urr": 0.0,
+  "ccs": 0.0,
+  "ge": 0.0,
+  "hallucination_impactful": false,
+  "hallucination_detected": false,
+  "unsafe_reassurance": false,
+  "agent_traces": [
+    {
+      "agent": "generalist",
+      "input_tokens": 325,
+      "output_tokens": 45,
+      "latency": 1.0,
+      "text": "{\"top_diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.89, \"reasoning\": \"Clinical presentation suggests Acute Coronary Syndrome.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.89}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+    },
+    {
+      "agent": "specialist_a",
+      "input_tokens": 305,
+      "output_tokens": 39,
+      "latency": 1.0,
+      "text": "{\"top_diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+    },
+    {
+      "agent": "specialist_b",
+      "input_tokens": 305,
+      "output_tokens": 39,
+      "latency": 1.0,
+      "text": "{\"top_diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+    },
+    {
+      "agent": "moderator",
+      "input_tokens": 195,
+      "output_tokens": 9,
+      "latency": 1.0,
+      "text": "{\"recommendation\": \"REPORT\", \"agreed_diagnosis\": \"Pulmonary Embolism\", \"average_confidence\": 0.78}"
+    },
+    {
+      "agent": "report_writer",
+      "input_tokens": 514,
+      "output_tokens": 41,
+      "latency": 0.00018730000010691583,
+      "text": "{\"top_diagnosis\": \"Glucagon-like peptide-1 receptor agonist\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Glucagon-like peptide-1 receptor agonist\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+    },
+    {
+      "agent": "report_judge",
+      "input_tokens": 825,
+      "output_tokens": 44,
+      "latency": 0.00022249999892665073,
+      "text": "{\"top_diagnosis\": \"Increased gene expression of GLUT-4\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Increased gene expression of GLUT-4\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+    }
+  ],
+  "verification_trace": null,
+  "consensus_trace": {
+    "recommendation": "REPORT",
+    "agreed_diagnosis": "Pulmonary Embolism",
+    "average_confidence": 0.78
+  },
+  "ethics_trace": null,
+  "report_trace": null
+}

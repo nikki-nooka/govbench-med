@@ -1,0 +1,102 @@
+{
+  "run_id": "a21b4d1a",
+  "experiment_id": "medqa_0056_llama3.1:8b_G3_seed42",
+  "timestamp": "2026-09-02T17:33:12.587070Z",
+  "prompt_version": "v1.1",
+  "code_version": "0.1.0",
+  "case_id": "medqa_0056",
+  "dataset": "medqa",
+  "model": "llama3.1:8b",
+  "model_version": "llama3.1:8b",
+  "governance_level": "G3",
+  "seed": 42,
+  "final_answer": "Pulmonary Embolism",
+  "ground_truth": "Previous suicide attempt",
+  "ground_truth_key": "A",
+  "dataset_source": "medqa",
+  "correctness": false,
+  "top3_correct": false,
+  "confidence": 0.78,
+  "consensus": true,
+  "abstained": false,
+  "suppressed": false,
+  "verification_status": "NOT_CHECKED",
+  "claims_checked": 0,
+  "supported_claims": 0,
+  "contradicted_claims": 0,
+  "unverifiable_claims": 0,
+  "revision_count": 0,
+  "input_tokens": 2420,
+  "output_tokens": 195,
+  "total_tokens": 2615,
+  "model_calls": 6,
+  "latency_ms": 4.48850000166567,
+  "governance_latency_ms": 4.48850000166567,
+  "diagnosis_latency_ms": 2.693100000999402,
+  "governance_overhead_latency_ms": 1.7954000006662683,
+  "report_latency_ms": 0.0004885000016656704,
+  "cost": 0.0,
+  "human_review_required": false,
+  "human_review_time": 0.0,
+  "css": 0.0,
+  "cmr": 0.0,
+  "hir": 0.0,
+  "urr": 0.0,
+  "ccs": 0.0,
+  "ge": 0.0,
+  "hallucination_impactful": false,
+  "hallucination_detected": false,
+  "unsafe_reassurance": false,
+  "agent_traces": [
+    {
+      "agent": "generalist",
+      "input_tokens": 326,
+      "output_tokens": 45,
+      "latency": 1.0,
+      "text": "{\"top_diagnosis\": \"Clinical Evaluation Required\", \"confidence\": 0.8200000000000001, \"reasoning\": \"Clinical presentation suggests Clinical Evaluation Required.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Clinical Evaluation Required\", \"confidence\": 0.8200000000000001}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+    },
+    {
+      "agent": "specialist_a",
+      "input_tokens": 306,
+      "output_tokens": 36,
+      "latency": 1.0,
+      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+    },
+    {
+      "agent": "specialist_b",
+      "input_tokens": 306,
+      "output_tokens": 36,
+      "latency": 1.0,
+      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+    },
+    {
+      "agent": "moderator",
+      "input_tokens": 195,
+      "output_tokens": 9,
+      "latency": 1.0,
+      "text": "{\"recommendation\": \"REPORT\", \"agreed_diagnosis\": \"Pulmonary Embolism\", \"average_confidence\": 0.78}"
+    },
+    {
+      "agent": "report_writer",
+      "input_tokens": 491,
+      "output_tokens": 36,
+      "latency": 0.00014120000560069457,
+      "text": "{\"top_diagnosis\": \"Sleeping disorder\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Sleeping disorder\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+    },
+    {
+      "agent": "report_judge",
+      "input_tokens": 796,
+      "output_tokens": 33,
+      "latency": 0.00034729999606497586,
+      "text": "{\"top_diagnosis\": \"Age\\\\n\\\\\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Age\\\\n\\\\\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+    }
+  ],
+  "verification_trace": null,
+  "consensus_trace": {
+    "recommendation": "REPORT",
+    "agreed_diagnosis": "Pulmonary Embolism",
+    "average_confidence": 0.78
+  },
+  "ethics_trace": null,
+  "report_trace": null
+}

@@ -1,0 +1,126 @@
+{
+  "comparison": [
+    {
+      "governance_level": "G0",
+      "n": 100,
+      "accuracy": 0.0,
+      "top3_accuracy": 0.0,
+      "cmr": 0.0,
+      "hir": 0.0,
+      "urr": 0.0,
+      "abstention_rate": 0.0,
+      "mean_tokens": 2038.54,
+      "mean_latency_ms": 2.384682999938377,
+      "css": 1.0,
+      "tc_norm": 1.0,
+      "lat_norm": 1.0,
+      "ccs": 1.0
+    },
+    {
+      "governance_level": "G1",
+      "n": 100,
+      "accuracy": 0.0,
+      "top3_accuracy": 0.0,
+      "cmr": 0.0,
+      "hir": 0.0,
+      "urr": 0.0,
+      "abstention_rate": 0.0,
+      "mean_tokens": 2009.61,
+      "mean_latency_ms": 2.3868400002102135,
+      "css": 1.0,
+      "tc_norm": 0.9858084707682949,
+      "lat_norm": 1.0009045228535165,
+      "ccs": 0.9918468916023836
+    },
+    {
+      "governance_level": "G2",
+      "n": 100,
+      "accuracy": 0.0,
+      "top3_accuracy": 0.0,
+      "cmr": 0.0,
+      "hir": 0.0,
+      "urr": 0.0,
+      "abstention_rate": 0.0,
+      "mean_tokens": 2376.22,
+      "mean_latency_ms": 3.401731000529253,
+      "css": 1.0,
+      "tc_norm": 1.1656479637387542,
+      "lat_norm": 1.4264919071495696,
+      "ccs": 1.2699855411030803
+    },
+    {
+      "governance_level": "G3",
+      "n": 100,
+      "accuracy": 0.0,
+      "top3_accuracy": 0.0,
+      "cmr": 0.0,
+      "hir": 0.0,
+      "urr": 0.0,
+      "abstention_rate": 0.1,
+      "mean_tokens": 2408.21,
+      "mean_latency_ms": 4.34349000066868,
+      "css": 1.0,
+      "tc_norm": 1.1813405672687316,
+      "lat_norm": 1.8214119028738498,
+      "ccs": 1.4373691015107788
+    },
+    {
+      "governance_level": "G4",
+      "n": 100,
+      "accuracy": 0.0,
+      "top3_accuracy": 0.0,
+      "cmr": 0.0,
+      "hir": 0.0,
+      "urr": 0.0,
+      "abstention_rate": 0.1,
+      "mean_tokens": 2760.57,
+      "mean_latency_ms": 5.236005000135629,
+      "css": 1.0,
+      "tc_norm": 1.3541897632619424,
+      "lat_norm": 2.1956817741691173,
+      "ccs": 1.6907865676248124
+    }
+  ],
+  "marginal": [
+    {
+      "transition": "G0 -> G1",
+      "delta_css": 0.0,
+      "delta_accuracy": 0.0,
+      "delta_tokens": -28.9,
+      "delta_latency_ms": 0.0,
+      "delta_ccs": -0.0082,
+      "ge": -0.0,
+      "knee_of_curve": false
+    },
+    {
+      "transition": "G1 -> G2",
+      "delta_css": 0.0,
+      "delta_accuracy": 0.0,
+      "delta_tokens": 366.6,
+      "delta_latency_ms": 1.0,
+      "delta_ccs": 0.2781,
+      "ge": 0.0,
+      "knee_of_curve": false
+    },
+    {
+      "transition": "G2 -> G3",
+      "delta_css": 0.0,
+      "delta_accuracy": 0.0,
+      "delta_tokens": 32.0,
+      "delta_latency_ms": 0.9,
+      "delta_ccs": 0.1674,
+      "ge": 0.0,
+      "knee_of_curve": false
+    },
+    {
+      "transition": "G3 -> G4",
+      "delta_css": 0.0,
+      "delta_accuracy": 0.0,
+      "delta_tokens": 352.4,
+      "delta_latency_ms": 0.9,
+      "delta_ccs": 0.2534,
+      "ge": 0.0,
+      "knee_of_curve": false
+    }
+  ]
+}

@@ -1,88 +1,102 @@
 {
-  "case_id": "medqa_0049",
-  "governance_level": "G3",
-  "model": "llama3.1:8b",
-  "seed": 42,
+  "run_id": "bc82bb9b",
+  "experiment_id": "medqa_0049_llama3.1:8b_G3_seed42",
+  "timestamp": "2026-09-02T17:33:12.504563Z",
   "prompt_version": "v1.1",
-  "top_diagnosis": "Acute Coronary Syndrome",
-  "top3_diagnoses": [
-    "Acute Coronary Syndrome"
-  ],
-  "output_confidence": 0.85,
+  "code_version": "0.1.0",
+  "case_id": "medqa_0049",
+  "dataset": "medqa",
+  "model": "llama3.1:8b",
+  "model_version": "llama3.1:8b",
+  "governance_level": "G3",
+  "seed": 42,
+  "final_answer": "Pulmonary Embolism",
+  "ground_truth": "KOH examination of lesion scrapings",
+  "ground_truth_key": "A",
+  "dataset_source": "medqa",
+  "correctness": false,
+  "top3_correct": false,
+  "confidence": 0.78,
+  "consensus": true,
   "abstained": false,
   "suppressed": false,
-  "hallucination_detected": false,
+  "verification_status": "NOT_CHECKED",
+  "claims_checked": 0,
+  "supported_claims": 0,
+  "contradicted_claims": 0,
+  "unverifiable_claims": 0,
+  "revision_count": 0,
+  "input_tokens": 2287,
+  "output_tokens": 210,
+  "total_tokens": 2497,
+  "model_calls": 6,
+  "latency_ms": 4.457900001492817,
+  "governance_latency_ms": 4.457900001492817,
+  "diagnosis_latency_ms": 2.67474000089569,
+  "governance_overhead_latency_ms": 1.7831600005971269,
+  "report_latency_ms": 0.00045790000149281695,
+  "cost": 0.0,
+  "human_review_required": false,
+  "human_review_time": 0.0,
+  "css": 0.0,
+  "cmr": 0.0,
+  "hir": 0.0,
+  "urr": 0.0,
+  "ccs": 0.0,
+  "ge": 0.0,
   "hallucination_impactful": false,
-  "total_input_tokens": 2288,
-  "total_output_tokens": 220,
-  "total_tokens": 2508,
-  "total_latency": 5.436902366667879,
-  "agent_turns": 6,
-  "trace": [
+  "hallucination_detected": false,
+  "unsafe_reassurance": false,
+  "agent_traces": [
     {
       "agent": "generalist",
       "input_tokens": 292,
-      "output_tokens": 42,
-      "latency": 1.63,
-      "text": "{\"top_diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.86, \"reasoning\": \"Matched primary symptoms.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.86}, {\"rank\": 2, \"diagnosis\": \"Alternative 1\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Alternative 2\", \"confidence\": 0.05}]}"
+      "output_tokens": 41,
+      "latency": 1.0,
+      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.87, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.87}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist_a",
       "input_tokens": 273,
-      "output_tokens": 42,
-      "latency": 1.63,
-      "text": "{\"top_diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.85, \"reasoning\": \"Matched primary symptoms.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.85}, {\"rank\": 2, \"diagnosis\": \"Alternative 1\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Alternative 2\", \"confidence\": 0.05}]}"
+      "output_tokens": 36,
+      "latency": 1.0,
+      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist_b",
       "input_tokens": 273,
-      "output_tokens": 42,
-      "latency": 1.63,
-      "text": "{\"top_diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.85, \"reasoning\": \"Matched primary symptoms.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.85}, {\"rank\": 2, \"diagnosis\": \"Alternative 1\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Alternative 2\", \"confidence\": 0.05}]}"
+      "output_tokens": 36,
+      "latency": 1.0,
+      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "moderator",
-      "input_tokens": 195,
-      "output_tokens": 10,
-      "latency": 0.5466666666666666,
-      "text": "{\"recommendation\": \"REPORT\", \"agreed_diagnosis\": \"Acute Coronary Syndrome\", \"average_confidence\": 0.85}"
+      "input_tokens": 193,
+      "output_tokens": 9,
+      "latency": 1.0,
+      "text": "{\"recommendation\": \"REPORT\", \"agreed_diagnosis\": \"Pulmonary Embolism\", \"average_confidence\": 0.78}"
     },
     {
       "agent": "report_writer",
       "input_tokens": 469,
-      "output_tokens": 42,
-      "latency": 0.00010269999984302558,
-      "text": "{\"top_diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.85, \"reasoning\": \"Matched primary symptoms.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.85}, {\"rank\": 2, \"diagnosis\": \"Alternative 1\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Alternative 2\", \"confidence\": 0.05}]}"
+      "output_tokens": 44,
+      "latency": 0.00015379999967990443,
+      "text": "{\"top_diagnosis\": \"KOH examination of lesion scrapings\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"KOH examination of lesion scrapings\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
-      "input_tokens": 786,
-      "output_tokens": 42,
-      "latency": 0.00013300000136950985,
-      "text": "{\"top_diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.85, \"reasoning\": \"Matched primary symptoms.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.85}, {\"rank\": 2, \"diagnosis\": \"Alternative 1\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Alternative 2\", \"confidence\": 0.05}]}"
+      "input_tokens": 787,
+      "output_tokens": 44,
+      "latency": 0.0003041000018129125,
+      "text": "{\"top_diagnosis\": \"Gram stain of skin scrapings\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Gram stain of skin scrapings\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     }
   ],
-  "ethics_verdict": null,
-  "ethics_score": null,
-  "clinical_report": {
-    "chief_complaint": "",
-    "clinical_assessment": "",
-    "differential_diagnosis": [],
-    "recommended_investigations": [],
-    "management_plan": [],
-    "safety_flags": [],
-    "case_id": "medqa_0049",
-    "diagnosis_used": "Acute Coronary Syndrome"
+  "verification_trace": null,
+  "consensus_trace": {
+    "recommendation": "REPORT",
+    "agreed_diagnosis": "Pulmonary Embolism",
+    "average_confidence": 0.78
   },
-  "report_evaluation": {
-    "scores": [],
-    "total_score": 0,
-    "max_possible": 40,
-    "pct_score": 0.0,
-    "overall_grade": "",
-    "judge_reasoning": "Matched primary symptoms."
-  },
-  "report_gen_latency": 0.00010269999984302558,
-  "report_eval_latency": 0.00013300000136950985,
-  "report_total_tokens": 1339
+  "ethics_trace": null,
+  "report_trace": null
 }

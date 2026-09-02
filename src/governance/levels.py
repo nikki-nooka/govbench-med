@@ -68,13 +68,13 @@ class GovernanceResult:
         self.total_input_tokens += resp.input_tokens
         self.total_output_tokens += resp.output_tokens
         self.total_tokens += resp.input_tokens + resp.output_tokens
-        self.total_latency += resp.latency
+        self.total_latency += resp.latency_ms / 1000.0  # Convert ms to seconds
         self.agent_turns += 1
         self.trace.append({
             "agent": resp.agent_role,
             "input_tokens": resp.input_tokens,
             "output_tokens": resp.output_tokens,
-            "latency": resp.latency,
+            "latency": resp.latency_ms,  # Store as ms
             "text": resp.text[:500],   # truncated for log size
         })
 
