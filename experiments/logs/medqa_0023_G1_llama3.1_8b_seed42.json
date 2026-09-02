@@ -1,7 +1,7 @@
 {
-  "run_id": "92161077",
+  "run_id": "b596f551",
   "experiment_id": "medqa_0023_llama3.1:8b_G1_seed42",
-  "timestamp": "2026-09-02T17:33:12.126453Z",
+  "timestamp": "2026-09-02T17:37:02.094254Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0023",
@@ -16,7 +16,7 @@
   "dataset_source": "medqa",
   "correctness": false,
   "top3_correct": false,
-  "confidence": 0.88,
+  "confidence": 0.87,
   "consensus": true,
   "abstained": false,
   "suppressed": false,
@@ -30,11 +30,11 @@
   "output_tokens": 147,
   "total_tokens": 1767,
   "model_calls": 4,
-  "latency_ms": 2.286200003756676,
-  "governance_latency_ms": 2.286200003756676,
-  "diagnosis_latency_ms": 1.3717200022540055,
-  "governance_overhead_latency_ms": 0.9144800015026704,
-  "report_latency_ms": 0.00028620000375667587,
+  "latency_ms": 2.8702000050107017,
+  "governance_latency_ms": 2.8702000050107017,
+  "diagnosis_latency_ms": 1.722120003006421,
+  "governance_overhead_latency_ms": 1.1480800020042807,
+  "report_latency_ms": 0.0008702000050107017,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -53,7 +53,7 @@
       "input_tokens": 257,
       "output_tokens": 45,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Clinical Evaluation Required\", \"confidence\": 0.88, \"reasoning\": \"Clinical presentation suggests Clinical Evaluation Required.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Clinical Evaluation Required\", \"confidence\": 0.88}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Clinical Evaluation Required\", \"confidence\": 0.87, \"reasoning\": \"Clinical presentation suggests Clinical Evaluation Required.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Clinical Evaluation Required\", \"confidence\": 0.87}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist",
@@ -66,14 +66,14 @@
       "agent": "report_writer",
       "input_tokens": 410,
       "output_tokens": 33,
-      "latency": 0.0001190999973914586,
-      "text": "{\"top_diagnosis\": \"Furosemide\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Furosemide\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "latency": 0.0004917000042041764,
+      "text": "{\"top_diagnosis\": \"Clonidine\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Clonidine\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
       "input_tokens": 716,
       "output_tokens": 33,
-      "latency": 0.00016710000636521727,
+      "latency": 0.00037850000080652535,
       "text": "{\"top_diagnosis\": \"Clonidine\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Clonidine\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     }
   ],

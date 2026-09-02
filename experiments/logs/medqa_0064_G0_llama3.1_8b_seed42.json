@@ -1,7 +1,7 @@
 {
-  "run_id": "f9b57e9f",
+  "run_id": "f711183a",
   "experiment_id": "medqa_0064_llama3.1:8b_G0_seed42",
-  "timestamp": "2026-09-02T17:33:12.668471Z",
+  "timestamp": "2026-09-02T17:37:02.490323Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0064",
@@ -16,7 +16,7 @@
   "dataset_source": "medqa",
   "correctness": false,
   "top3_correct": false,
-  "confidence": 0.89,
+  "confidence": 0.8,
   "consensus": true,
   "abstained": false,
   "suppressed": false,
@@ -30,11 +30,11 @@
   "output_tokens": 154,
   "total_tokens": 2427,
   "model_calls": 4,
-  "latency_ms": 2.5715000006603077,
-  "governance_latency_ms": 2.5715000006603077,
-  "diagnosis_latency_ms": 1.5429000003961846,
-  "governance_overhead_latency_ms": 1.0286000002641231,
-  "report_latency_ms": 0.0005715000006603077,
+  "latency_ms": 2.478499998280313,
+  "governance_latency_ms": 2.478499998280313,
+  "diagnosis_latency_ms": 1.4870999989681877,
+  "governance_overhead_latency_ms": 0.9913999993121252,
+  "report_latency_ms": 0.00047849999828031287,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -53,28 +53,28 @@
       "input_tokens": 423,
       "output_tokens": 41,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.89, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.89}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.8, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.8}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "diagnostician_b",
       "input_tokens": 423,
       "output_tokens": 41,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.89, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.89}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.8, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.8}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_writer",
       "input_tokens": 560,
       "output_tokens": 36,
-      "latency": 0.00033180000173160806,
+      "latency": 0.00021269999706419185,
       "text": "{\"top_diagnosis\": \"Epstein-Barr virus\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Epstein-Barr virus\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
       "input_tokens": 867,
       "output_tokens": 36,
-      "latency": 0.00023969999892869964,
-      "text": "{\"top_diagnosis\": \"Epstein-Barr virus\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Epstein-Barr virus\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "latency": 0.000265800001216121,
+      "text": "{\"top_diagnosis\": \"Dengue fever\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Dengue fever\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     }
   ],
   "verification_trace": null,

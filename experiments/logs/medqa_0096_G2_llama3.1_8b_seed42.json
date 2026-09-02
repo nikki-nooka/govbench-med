@@ -1,7 +1,7 @@
 {
-  "run_id": "3eb68d20",
+  "run_id": "8b79fd24",
   "experiment_id": "medqa_0096_llama3.1:8b_G2_seed42",
-  "timestamp": "2026-09-02T17:33:13.070921Z",
+  "timestamp": "2026-09-02T17:37:02.874848Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0096",
@@ -26,15 +26,15 @@
   "contradicted_claims": 0,
   "unverifiable_claims": 0,
   "revision_count": 0,
-  "input_tokens": 2097,
-  "output_tokens": 232,
-  "total_tokens": 2329,
+  "input_tokens": 2087,
+  "output_tokens": 216,
+  "total_tokens": 2303,
   "model_calls": 5,
-  "latency_ms": 3.280899999779649,
-  "governance_latency_ms": 3.280899999779649,
-  "diagnosis_latency_ms": 1.9685399998677895,
-  "governance_overhead_latency_ms": 1.3123599999118596,
-  "report_latency_ms": 0.0002808999997796491,
+  "latency_ms": 3.3415000028326176,
+  "governance_latency_ms": 3.3415000028326176,
+  "diagnosis_latency_ms": 2.0049000016995704,
+  "governance_overhead_latency_ms": 1.336600001133047,
+  "report_latency_ms": 0.0003415000028326176,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -53,7 +53,7 @@
       "input_tokens": 252,
       "output_tokens": 41,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.78, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.78}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.8200000000000001, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.8200000000000001}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist",
@@ -72,16 +72,16 @@
     {
       "agent": "report_writer",
       "input_tokens": 484,
-      "output_tokens": 70,
-      "latency": 0.00012199999764561653,
-      "text": "{\"top_diagnosis\": \"Normal hemoglobin in patients with tetralogy of Fallot does not rule out iron deficiency anemia.\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Normal hemoglobin in patients with tetralogy of Fallot does not rule out iron deficiency anemia.\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "output_tokens": 59,
+      "latency": 0.00017980000120587647,
+      "text": "{\"top_diagnosis\": \"Refractory heart failure is a common complication of tetralogy of Fallot.\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Refractory heart failure is a common complication of tetralogy of Fallot.\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
-      "input_tokens": 829,
-      "output_tokens": 75,
-      "latency": 0.00015890000213403255,
-      "text": "{\"top_diagnosis\": \"The tricuspid valve is the most common valve affected by bacterial endocarditis in uncorrected tetralogy of Fallot.\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"The tricuspid valve is the most common valve affected by bacterial endocarditis in uncorrected tetralogy of Fallot.\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "input_tokens": 819,
+      "output_tokens": 70,
+      "latency": 0.00016170000162674114,
+      "text": "{\"top_diagnosis\": \"Normal hemoglobin in patients with tetralogy of Fallot does not rule out iron deficiency anemia.\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Normal hemoglobin in patients with tetralogy of Fallot does not rule out iron deficiency anemia.\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     }
   ],
   "verification_trace": {

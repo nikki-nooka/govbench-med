@@ -1,7 +1,7 @@
 {
-  "run_id": "9a3c5a1a",
+  "run_id": "eb7757a9",
   "experiment_id": "medqa_0010_llama3.1:8b_G2_seed42",
-  "timestamp": "2026-09-02T17:33:11.997840Z",
+  "timestamp": "2026-09-02T17:37:01.985258Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0010",
@@ -27,14 +27,14 @@
   "unverifiable_claims": 0,
   "revision_count": 0,
   "input_tokens": 2616,
-  "output_tokens": 176,
-  "total_tokens": 2792,
+  "output_tokens": 187,
+  "total_tokens": 2803,
   "model_calls": 5,
-  "latency_ms": 3.5890000029467046,
-  "governance_latency_ms": 3.5890000029467046,
-  "diagnosis_latency_ms": 2.1534000017680226,
-  "governance_overhead_latency_ms": 1.4356000011786818,
-  "report_latency_ms": 0.0005890000029467046,
+  "latency_ms": 3.459000002592802,
+  "governance_latency_ms": 3.459000002592802,
+  "diagnosis_latency_ms": 2.075400001555681,
+  "governance_overhead_latency_ms": 1.3836000010371208,
+  "report_latency_ms": 0.00045900000259280205,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -53,7 +53,7 @@
       "input_tokens": 384,
       "output_tokens": 45,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.83, \"reasoning\": \"Clinical presentation suggests Acute Coronary Syndrome.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.83}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.8, \"reasoning\": \"Clinical presentation suggests Acute Coronary Syndrome.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.8}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist",
@@ -73,15 +73,15 @@
       "agent": "report_writer",
       "input_tokens": 561,
       "output_tokens": 41,
-      "latency": 0.00029350000113481656,
+      "latency": 0.00019700000120792538,
       "text": "{\"top_diagnosis\": \"Intubate with mechanical ventilation\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Intubate with mechanical ventilation\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
       "input_tokens": 874,
-      "output_tokens": 41,
-      "latency": 0.00029550000181188807,
-      "text": "{\"top_diagnosis\": \"Intubate with mechanical ventilation\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Intubate with mechanical ventilation\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "output_tokens": 52,
+      "latency": 0.00026200000138487667,
+      "text": "{\"top_diagnosis\": \"Perform needle thoracostomy at the 2nd intercostal space\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Perform needle thoracostomy at the 2nd intercostal space\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     }
   ],
   "verification_trace": {

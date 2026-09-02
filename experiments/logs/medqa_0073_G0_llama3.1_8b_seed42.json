@@ -1,7 +1,7 @@
 {
-  "run_id": "3b92b890",
+  "run_id": "3b26dcda",
   "experiment_id": "medqa_0073_llama3.1:8b_G0_seed42",
-  "timestamp": "2026-09-02T17:33:12.792364Z",
+  "timestamp": "2026-09-02T17:37:02.601251Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0073",
@@ -16,7 +16,7 @@
   "dataset_source": "medqa",
   "correctness": false,
   "top3_correct": false,
-  "confidence": 0.89,
+  "confidence": 0.86,
   "consensus": true,
   "abstained": false,
   "suppressed": false,
@@ -27,14 +27,14 @@
   "unverifiable_claims": 0,
   "revision_count": 0,
   "input_tokens": 2151,
-  "output_tokens": 156,
-  "total_tokens": 2307,
+  "output_tokens": 154,
+  "total_tokens": 2305,
   "model_calls": 4,
-  "latency_ms": 2.28040000324836,
-  "governance_latency_ms": 2.28040000324836,
-  "diagnosis_latency_ms": 1.368240001949016,
-  "governance_overhead_latency_ms": 0.912160001299344,
-  "report_latency_ms": 0.00028040000324836,
+  "latency_ms": 2.3081999966525473,
+  "governance_latency_ms": 2.3081999966525473,
+  "diagnosis_latency_ms": 1.3849199979915283,
+  "governance_overhead_latency_ms": 0.923279998661019,
+  "report_latency_ms": 0.00030819999665254727,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -53,28 +53,28 @@
       "input_tokens": 383,
       "output_tokens": 41,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.89, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.89}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.86, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.86}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "diagnostician_b",
       "input_tokens": 383,
       "output_tokens": 41,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.89, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.89}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.86, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.86}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_writer",
       "input_tokens": 540,
       "output_tokens": 33,
-      "latency": 0.00012199999764561653,
+      "latency": 0.00013339999713934958,
       "text": "{\"top_diagnosis\": \"Urinalysis\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Urinalysis\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
       "input_tokens": 845,
-      "output_tokens": 41,
-      "latency": 0.00015840000560274348,
-      "text": "{\"top_diagnosis\": \"Oral glucose tolerance test\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Oral glucose tolerance test\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "output_tokens": 39,
+      "latency": 0.0001747999995131977,
+      "text": "{\"top_diagnosis\": \"No tests required\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"No tests required\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     }
   ],
   "verification_trace": null,

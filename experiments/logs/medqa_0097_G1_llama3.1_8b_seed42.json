@@ -1,7 +1,7 @@
 {
-  "run_id": "f60c50cb",
+  "run_id": "9f0a7ffd",
   "experiment_id": "medqa_0097_llama3.1:8b_G1_seed42",
-  "timestamp": "2026-09-02T17:33:13.079906Z",
+  "timestamp": "2026-09-02T17:37:02.886725Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0097",
@@ -16,7 +16,7 @@
   "dataset_source": "medqa",
   "correctness": false,
   "top3_correct": false,
-  "confidence": 0.76,
+  "confidence": 0.88,
   "consensus": true,
   "abstained": false,
   "suppressed": false,
@@ -26,15 +26,15 @@
   "contradicted_claims": 0,
   "unverifiable_claims": 0,
   "revision_count": 0,
-  "input_tokens": 2304,
-  "output_tokens": 169,
-  "total_tokens": 2473,
+  "input_tokens": 2302,
+  "output_tokens": 165,
+  "total_tokens": 2467,
   "model_calls": 4,
-  "latency_ms": 2.496799999382347,
-  "governance_latency_ms": 2.496799999382347,
-  "diagnosis_latency_ms": 1.498079999629408,
-  "governance_overhead_latency_ms": 0.9987199997529388,
-  "report_latency_ms": 0.0004967999993823469,
+  "latency_ms": 2.5560999998124316,
+  "governance_latency_ms": 2.5560999998124316,
+  "diagnosis_latency_ms": 1.533659999887459,
+  "governance_overhead_latency_ms": 1.0224399999249727,
+  "report_latency_ms": 0.0005560999998124316,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -53,7 +53,7 @@
       "input_tokens": 410,
       "output_tokens": 41,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.76, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.76}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.88, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.88}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist",
@@ -65,16 +65,16 @@
     {
       "agent": "report_writer",
       "input_tokens": 591,
-      "output_tokens": 46,
-      "latency": 0.00014460000238614157,
-      "text": "{\"top_diagnosis\": \"Crypt abscesses in the large intestine\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Crypt abscesses in the large intestine\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "output_tokens": 44,
+      "latency": 0.00023520000104326755,
+      "text": "{\"top_diagnosis\": \"Mucosal defect in the stomach\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Mucosal defect in the stomach\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
-      "input_tokens": 912,
-      "output_tokens": 46,
-      "latency": 0.0003521999969962053,
-      "text": "{\"top_diagnosis\": \"PAS-positive material in the small intestine\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"PAS-positive material in the small intestine\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "input_tokens": 910,
+      "output_tokens": 44,
+      "latency": 0.0003208999987691641,
+      "text": "{\"top_diagnosis\": \"Mucosal defect in the stomach\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Mucosal defect in the stomach\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     }
   ],
   "verification_trace": null,

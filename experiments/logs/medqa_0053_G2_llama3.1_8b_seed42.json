@@ -1,7 +1,7 @@
 {
-  "run_id": "688f838e",
+  "run_id": "d23bbc8a",
   "experiment_id": "medqa_0053_llama3.1:8b_G2_seed42",
-  "timestamp": "2026-09-02T17:33:12.551874Z",
+  "timestamp": "2026-09-02T17:37:02.367195Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0053",
@@ -26,15 +26,15 @@
   "contradicted_claims": 0,
   "unverifiable_claims": 0,
   "revision_count": 0,
-  "input_tokens": 1886,
-  "output_tokens": 153,
-  "total_tokens": 2039,
+  "input_tokens": 1889,
+  "output_tokens": 156,
+  "total_tokens": 2045,
   "model_calls": 5,
-  "latency_ms": 3.8068999959505163,
-  "governance_latency_ms": 3.8068999959505163,
-  "diagnosis_latency_ms": 2.2841399975703096,
-  "governance_overhead_latency_ms": 1.5227599983802065,
-  "report_latency_ms": 0.0008068999959505163,
+  "latency_ms": 3.294899997243192,
+  "governance_latency_ms": 3.294899997243192,
+  "diagnosis_latency_ms": 1.9769399983459153,
+  "governance_overhead_latency_ms": 1.3179599988972768,
+  "report_latency_ms": 0.00029489999724319205,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -53,7 +53,7 @@
       "input_tokens": 249,
       "output_tokens": 41,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.77, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.77}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.78, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.78}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist",
@@ -72,15 +72,15 @@
     {
       "agent": "report_writer",
       "input_tokens": 401,
-      "output_tokens": 33,
-      "latency": 0.00036689999978989363,
-      "text": "{\"top_diagnosis\": \"Catalase-negative\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Catalase-negative\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "output_tokens": 36,
+      "latency": 0.00012569999671541154,
+      "text": "{\"top_diagnosis\": \"Tennis-racket shaped\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Tennis-racket shaped\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
-      "input_tokens": 709,
+      "input_tokens": 712,
       "output_tokens": 33,
-      "latency": 0.0004399999961606227,
+      "latency": 0.0001692000005277805,
       "text": "{\"top_diagnosis\": \"Thermophiles\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Thermophiles\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     }
   ],

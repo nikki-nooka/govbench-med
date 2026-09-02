@@ -1,7 +1,7 @@
 {
-  "run_id": "4b81bbb5",
+  "run_id": "705abe7d",
   "experiment_id": "medqa_0092_llama3.1:8b_G2_seed42",
-  "timestamp": "2026-09-02T17:33:13.024080Z",
+  "timestamp": "2026-09-02T17:37:02.834618Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0092",
@@ -26,15 +26,15 @@
   "contradicted_claims": 0,
   "unverifiable_claims": 0,
   "revision_count": 0,
-  "input_tokens": 1998,
-  "output_tokens": 162,
-  "total_tokens": 2160,
+  "input_tokens": 1995,
+  "output_tokens": 159,
+  "total_tokens": 2154,
   "model_calls": 5,
-  "latency_ms": 3.271700002485886,
-  "governance_latency_ms": 3.271700002485886,
-  "diagnosis_latency_ms": 1.9630200014915318,
-  "governance_overhead_latency_ms": 1.3086800009943544,
-  "report_latency_ms": 0.0002717000024858862,
+  "latency_ms": 3.306400004774332,
+  "governance_latency_ms": 3.306400004774332,
+  "diagnosis_latency_ms": 1.9838400028645993,
+  "governance_overhead_latency_ms": 1.3225600019097328,
+  "report_latency_ms": 0.00030640000477433205,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -53,7 +53,7 @@
       "input_tokens": 267,
       "output_tokens": 41,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.84, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.84}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.8, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.8}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist",
@@ -72,15 +72,15 @@
     {
       "agent": "report_writer",
       "input_tokens": 427,
-      "output_tokens": 39,
-      "latency": 0.00011210000229766592,
-      "text": "{\"top_diagnosis\": \"Squamous cell carcinoma\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Squamous cell carcinoma\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "output_tokens": 36,
+      "latency": 0.0001475000026402995,
+      "text": "{\"top_diagnosis\": \"Aphthous stomatitis\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Aphthous stomatitis\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
-      "input_tokens": 741,
+      "input_tokens": 738,
       "output_tokens": 36,
-      "latency": 0.0001596000001882203,
+      "latency": 0.00015890000213403255,
       "text": "{\"top_diagnosis\": \"Traumatic ulcer\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Traumatic ulcer\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     }
   ],

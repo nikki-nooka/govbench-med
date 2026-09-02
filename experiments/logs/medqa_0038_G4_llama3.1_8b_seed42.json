@@ -1,7 +1,7 @@
 {
-  "run_id": "e59e584e",
+  "run_id": "00d5016d",
   "experiment_id": "medqa_0038_llama3.1:8b_G4_seed42",
-  "timestamp": "2026-09-02T17:33:12.398871Z",
+  "timestamp": "2026-09-02T17:37:02.235787Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0038",
@@ -26,15 +26,15 @@
   "contradicted_claims": 0,
   "unverifiable_claims": 0,
   "revision_count": 0,
-  "input_tokens": 2308,
-  "output_tokens": 204,
-  "total_tokens": 2512,
+  "input_tokens": 2316,
+  "output_tokens": 219,
+  "total_tokens": 2535,
   "model_calls": 7,
-  "latency_ms": 5.391299996408634,
-  "governance_latency_ms": 5.391299996408634,
-  "diagnosis_latency_ms": 3.2347799978451803,
-  "governance_overhead_latency_ms": 2.1565199985634536,
-  "report_latency_ms": 0.0003912999964086339,
+  "latency_ms": 5.244200004090089,
+  "governance_latency_ms": 5.244200004090089,
+  "diagnosis_latency_ms": 3.1465200024540536,
+  "governance_overhead_latency_ms": 2.0976800016360357,
+  "report_latency_ms": 0.00024420000409008935,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -53,7 +53,7 @@
       "input_tokens": 239,
       "output_tokens": 41,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.78, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.78}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist_a",
@@ -79,16 +79,16 @@
     {
       "agent": "report_writer",
       "input_tokens": 406,
-      "output_tokens": 39,
-      "latency": 0.0001908999984152615,
-      "text": "{\"top_diagnosis\": \"Myosin head cocking\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Myosin head cocking\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "output_tokens": 46,
+      "latency": 0.00010340000153519213,
+      "text": "{\"top_diagnosis\": \"Exposure of myosin-binding sites on actin\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Exposure of myosin-binding sites on actin\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
-      "input_tokens": 720,
-      "output_tokens": 36,
-      "latency": 0.00020039999799337238,
-      "text": "{\"top_diagnosis\": \"Power stroke\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Power stroke\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "input_tokens": 728,
+      "output_tokens": 44,
+      "latency": 0.00014080000255489722,
+      "text": "{\"top_diagnosis\": \"Myosin head binding to actin\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Myosin head binding to actin\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "ethics_critic",

@@ -1,7 +1,7 @@
 {
-  "run_id": "12fb2433",
+  "run_id": "3cdf6fba",
   "experiment_id": "medqa_0031_llama3.1:8b_G4_seed42",
-  "timestamp": "2026-09-02T17:33:12.320842Z",
+  "timestamp": "2026-09-02T17:37:02.177510Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0031",
@@ -26,15 +26,15 @@
   "contradicted_claims": 0,
   "unverifiable_claims": 0,
   "revision_count": 0,
-  "input_tokens": 2875,
-  "output_tokens": 201,
+  "input_tokens": 2872,
+  "output_tokens": 204,
   "total_tokens": 3076,
   "model_calls": 7,
-  "latency_ms": 5.386800005799159,
-  "governance_latency_ms": 5.386800005799159,
-  "diagnosis_latency_ms": 3.2320800034794956,
-  "governance_overhead_latency_ms": 2.1547200023196638,
-  "report_latency_ms": 0.0003868000057991594,
+  "latency_ms": 5.410100001317915,
+  "governance_latency_ms": 5.410100001317915,
+  "diagnosis_latency_ms": 3.2460600007907487,
+  "governance_overhead_latency_ms": 2.164040000527166,
+  "report_latency_ms": 0.0004101000013179146,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -79,16 +79,16 @@
     {
       "agent": "report_writer",
       "input_tokens": 492,
-      "output_tokens": 39,
-      "latency": 0.00016360000154236332,
-      "text": "{\"top_diagnosis\": \"Clot retraction study\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Clot retraction study\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "output_tokens": 36,
+      "latency": 0.00018460000137565657,
+      "text": "{\"top_diagnosis\": \"Mixing study\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Mixing study\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
-      "input_tokens": 806,
-      "output_tokens": 33,
-      "latency": 0.0002232000042567961,
-      "text": "{\"top_diagnosis\": \"INR\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"INR\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "input_tokens": 803,
+      "output_tokens": 39,
+      "latency": 0.000225499999942258,
+      "text": "{\"top_diagnosis\": \"Clot retraction study\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Clot retraction study\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "ethics_critic",

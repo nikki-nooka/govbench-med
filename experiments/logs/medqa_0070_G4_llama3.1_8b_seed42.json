@@ -1,7 +1,7 @@
 {
-  "run_id": "1131c140",
+  "run_id": "8512ddf6",
   "experiment_id": "medqa_0070_llama3.1:8b_G4_seed42",
-  "timestamp": "2026-09-02T17:33:12.765068Z",
+  "timestamp": "2026-09-02T17:37:02.578514Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0070",
@@ -30,11 +30,11 @@
   "output_tokens": 201,
   "total_tokens": 3286,
   "model_calls": 7,
-  "latency_ms": 5.701800003298558,
-  "governance_latency_ms": 5.701800003298558,
-  "diagnosis_latency_ms": 3.421080001979135,
-  "governance_overhead_latency_ms": 2.2807200013194233,
-  "report_latency_ms": 0.0007018000032985583,
+  "latency_ms": 6.155599995399825,
+  "governance_latency_ms": 6.155599995399825,
+  "diagnosis_latency_ms": 3.693359997239895,
+  "governance_overhead_latency_ms": 2.46223999815993,
+  "report_latency_ms": 0.0011555999953998253,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -53,7 +53,7 @@
       "input_tokens": 373,
       "output_tokens": 41,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.78, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.78}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist_a",
@@ -80,15 +80,15 @@
       "agent": "report_writer",
       "input_tokens": 529,
       "output_tokens": 36,
-      "latency": 0.00033989999792538583,
+      "latency": 0.00040269999590236694,
       "text": "{\"top_diagnosis\": \"Meconium ileus\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Meconium ileus\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
       "input_tokens": 839,
       "output_tokens": 36,
-      "latency": 0.00036190000537317246,
-      "text": "{\"top_diagnosis\": \"Meconium ileus\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Meconium ileus\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "latency": 0.0007528999994974583,
+      "text": "{\"top_diagnosis\": \"Duodenal atresia\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Duodenal atresia\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "ethics_critic",

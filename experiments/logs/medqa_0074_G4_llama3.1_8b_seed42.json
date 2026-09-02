@@ -1,7 +1,7 @@
 {
-  "run_id": "f6dbf305",
+  "run_id": "4930c304",
   "experiment_id": "medqa_0074_llama3.1:8b_G4_seed42",
-  "timestamp": "2026-09-02T17:33:12.816480Z",
+  "timestamp": "2026-09-02T17:37:02.618931Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0074",
@@ -10,15 +10,15 @@
   "model_version": "llama3.1:8b",
   "governance_level": "G4",
   "seed": 42,
-  "final_answer": "",
+  "final_answer": "Pulmonary Embolism",
   "ground_truth": "Amphotericin B",
   "ground_truth_key": "C",
   "dataset_source": "medqa",
   "correctness": false,
   "top3_correct": false,
-  "confidence": 0.0,
-  "consensus": false,
-  "abstained": true,
+  "confidence": 0.78,
+  "consensus": true,
+  "abstained": false,
   "suppressed": false,
   "verification_status": "NOT_CHECKED",
   "claims_checked": 0,
@@ -26,17 +26,17 @@
   "contradicted_claims": 0,
   "unverifiable_claims": 0,
   "revision_count": 0,
-  "input_tokens": 908,
-  "output_tokens": 115,
-  "total_tokens": 1023,
-  "model_calls": 4,
-  "latency_ms": 4.0,
-  "governance_latency_ms": 4.0,
-  "diagnosis_latency_ms": 2.4,
-  "governance_overhead_latency_ms": 1.6,
-  "report_latency_ms": 0.0,
+  "input_tokens": 2332,
+  "output_tokens": 191,
+  "total_tokens": 2523,
+  "model_calls": 7,
+  "latency_ms": 5.287399998342153,
+  "governance_latency_ms": 5.287399998342153,
+  "diagnosis_latency_ms": 3.1724399990052916,
+  "governance_overhead_latency_ms": 2.114959999336861,
+  "report_latency_ms": 0.0002873999983421527,
   "cost": 0.0,
-  "human_review_required": true,
+  "human_review_required": false,
   "human_review_time": 0.0,
   "css": 0.0,
   "cmr": 0.0,
@@ -53,7 +53,7 @@
       "input_tokens": 252,
       "output_tokens": 37,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Migraine\", \"confidence\": 0.85, \"reasoning\": \"Clinical presentation suggests Migraine.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Migraine\", \"confidence\": 0.85}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Migraine\", \"confidence\": 0.87, \"reasoning\": \"Clinical presentation suggests Migraine.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Migraine\", \"confidence\": 0.87}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist_a",
@@ -72,16 +72,42 @@
     {
       "agent": "moderator",
       "input_tokens": 192,
-      "output_tokens": 6,
+      "output_tokens": 9,
       "latency": 1.0,
-      "text": "{\"recommendation\": \"ABSTAIN\", \"reasoning\": \"Insufficient consensus.\"}"
+      "text": "{\"recommendation\": \"REPORT\", \"agreed_diagnosis\": \"Pulmonary Embolism\", \"average_confidence\": 0.78}"
+    },
+    {
+      "agent": "report_writer",
+      "input_tokens": 395,
+      "output_tokens": 33,
+      "latency": 0.00014789999841013923,
+      "text": "{\"top_diagnosis\": \"Trimethoprim-sulfamethoxazole\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Trimethoprim-sulfamethoxazole\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+    },
+    {
+      "agent": "report_judge",
+      "input_tokens": 703,
+      "output_tokens": 33,
+      "latency": 0.00013949999993201345,
+      "text": "{\"top_diagnosis\": \"Eplerenone\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Eplerenone\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+    },
+    {
+      "agent": "ethics_critic",
+      "input_tokens": 326,
+      "output_tokens": 7,
+      "latency": 1.0,
+      "text": "{\"verdict\": \"APPROVED\", \"total_score\": 18, \"issues\": []}"
     }
   ],
   "verification_trace": null,
   "consensus_trace": {
-    "recommendation": "ABSTAIN",
-    "reasoning": "Insufficient consensus."
+    "recommendation": "REPORT",
+    "agreed_diagnosis": "Pulmonary Embolism",
+    "average_confidence": 0.78
   },
-  "ethics_trace": null,
+  "ethics_trace": {
+    "verdict": "APPROVED",
+    "total_score": 18,
+    "issues": []
+  },
   "report_trace": null
 }

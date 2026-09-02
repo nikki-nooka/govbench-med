@@ -1,7 +1,7 @@
 {
-  "run_id": "03b85ee9",
+  "run_id": "5eee71ec",
   "experiment_id": "medqa_0001_llama3.1:8b_G1_seed42",
-  "timestamp": "2026-09-02T17:33:11.910309Z",
+  "timestamp": "2026-09-02T17:37:01.904724Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0001",
@@ -16,7 +16,7 @@
   "dataset_source": "medqa",
   "correctness": false,
   "top3_correct": false,
-  "confidence": 0.81,
+  "confidence": 0.83,
   "consensus": true,
   "abstained": false,
   "suppressed": false,
@@ -30,11 +30,11 @@
   "output_tokens": 156,
   "total_tokens": 2045,
   "model_calls": 4,
-  "latency_ms": 2.270500000624452,
-  "governance_latency_ms": 2.270500000624452,
-  "diagnosis_latency_ms": 1.362300000374671,
-  "governance_overhead_latency_ms": 0.9082000002497808,
-  "report_latency_ms": 0.0002705000006244518,
+  "latency_ms": 2.2728000035858713,
+  "governance_latency_ms": 2.2728000035858713,
+  "diagnosis_latency_ms": 1.3636800021515227,
+  "governance_overhead_latency_ms": 0.9091200014343486,
+  "report_latency_ms": 0.0002728000035858713,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -53,7 +53,7 @@
       "input_tokens": 319,
       "output_tokens": 45,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.81, \"reasoning\": \"Clinical presentation suggests Acute Coronary Syndrome.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.81}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.83, \"reasoning\": \"Clinical presentation suggests Acute Coronary Syndrome.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.83}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist",
@@ -66,15 +66,15 @@
       "agent": "report_writer",
       "input_tokens": 481,
       "output_tokens": 36,
-      "latency": 0.00011600000289035961,
+      "latency": 0.00012650000280700624,
       "text": "{\"top_diagnosis\": \"CT scan\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"CT scan\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
       "input_tokens": 789,
       "output_tokens": 36,
-      "latency": 0.00015449999773409218,
-      "text": "{\"top_diagnosis\": \"Skin biopsy\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Skin biopsy\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "latency": 0.00014630000077886507,
+      "text": "{\"top_diagnosis\": \"Muscle biopsy\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Muscle biopsy\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     }
   ],
   "verification_trace": null,

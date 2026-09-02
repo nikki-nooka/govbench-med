@@ -1,7 +1,7 @@
 {
-  "run_id": "41d96e94",
+  "run_id": "906e5697",
   "experiment_id": "medqa_0076_llama3.1:8b_G2_seed42",
-  "timestamp": "2026-09-02T17:33:12.834968Z",
+  "timestamp": "2026-09-02T17:37:02.635281Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0076",
@@ -30,11 +30,11 @@
   "output_tokens": 191,
   "total_tokens": 1989,
   "model_calls": 5,
-  "latency_ms": 3.2781000002869405,
-  "governance_latency_ms": 3.2781000002869405,
-  "diagnosis_latency_ms": 1.9668600001721643,
-  "governance_overhead_latency_ms": 1.3112400001147761,
-  "report_latency_ms": 0.0002781000002869405,
+  "latency_ms": 3.6179999982123263,
+  "governance_latency_ms": 3.6179999982123263,
+  "diagnosis_latency_ms": 2.1707999989273956,
+  "governance_overhead_latency_ms": 1.4471999992849305,
+  "report_latency_ms": 0.0006179999982123263,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -53,7 +53,7 @@
       "input_tokens": 210,
       "output_tokens": 41,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.76, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.76}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.77, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.77}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist",
@@ -73,15 +73,15 @@
       "agent": "report_writer",
       "input_tokens": 406,
       "output_tokens": 52,
-      "latency": 0.00011649999942164868,
-      "text": "{\"top_diagnosis\": \"Increased PTH, decreased calcium, increased phosphate, decreased calcitriol\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Increased PTH, decreased calcium, increased phosphate, decreased calcitriol\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "latency": 0.00025430000096093863,
+      "text": "{\"top_diagnosis\": \"Normal PTH, normal calcium, normal phosphate, normal calcitriol\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Normal PTH, normal calcium, normal phosphate, normal calcitriol\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
       "input_tokens": 733,
       "output_tokens": 52,
-      "latency": 0.0001616000008652918,
-      "text": "{\"top_diagnosis\": \"Decreased PTH, increased calcium, increased phosphate, increased calcitriol\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Decreased PTH, increased calcium, increased phosphate, increased calcitriol\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "latency": 0.0003636999972513877,
+      "text": "{\"top_diagnosis\": \"Increased PTH, decreased calcium, increased phosphate, decreased calcitriol\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Increased PTH, decreased calcium, increased phosphate, decreased calcitriol\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     }
   ],
   "verification_trace": {

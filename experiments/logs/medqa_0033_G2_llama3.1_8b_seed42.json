@@ -1,7 +1,7 @@
 {
-  "run_id": "463d7a20",
+  "run_id": "a37a9fae",
   "experiment_id": "medqa_0033_llama3.1:8b_G2_seed42",
-  "timestamp": "2026-09-02T17:33:12.342545Z",
+  "timestamp": "2026-09-02T17:37:02.189703Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0033",
@@ -26,15 +26,15 @@
   "contradicted_claims": 0,
   "unverifiable_claims": 0,
   "revision_count": 0,
-  "input_tokens": 2476,
-  "output_tokens": 165,
-  "total_tokens": 2641,
+  "input_tokens": 2484,
+  "output_tokens": 177,
+  "total_tokens": 2661,
   "model_calls": 5,
-  "latency_ms": 3.68230000033509,
-  "governance_latency_ms": 3.68230000033509,
-  "diagnosis_latency_ms": 2.2093800002010537,
-  "governance_overhead_latency_ms": 1.472920000134036,
-  "report_latency_ms": 0.0006823000003350899,
+  "latency_ms": 3.27889999182662,
+  "governance_latency_ms": 3.27889999182662,
+  "diagnosis_latency_ms": 1.967339995095972,
+  "governance_overhead_latency_ms": 1.311559996730648,
+  "report_latency_ms": 0.00027889999182661995,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -53,7 +53,7 @@
       "input_tokens": 365,
       "output_tokens": 41,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.79, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.79}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.85, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.85}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist",
@@ -72,16 +72,16 @@
     {
       "agent": "report_writer",
       "input_tokens": 520,
-      "output_tokens": 39,
-      "latency": 0.0002863000045181252,
-      "text": "{\"top_diagnosis\": \"IV fluids only\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"IV fluids only\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "output_tokens": 46,
+      "latency": 0.00012069999502273276,
+      "text": "{\"top_diagnosis\": \"Insulin, potassium, IV fluids, and glucose\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Insulin, potassium, IV fluids, and glucose\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
-      "input_tokens": 833,
-      "output_tokens": 39,
-      "latency": 0.00039599999581696466,
-      "text": "{\"top_diagnosis\": \"IV fluids only\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"IV fluids only\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "input_tokens": 841,
+      "output_tokens": 44,
+      "latency": 0.0001581999968038872,
+      "text": "{\"top_diagnosis\": \"Supportive therapy and close monitoring\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Supportive therapy and close monitoring\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     }
   ],
   "verification_trace": {

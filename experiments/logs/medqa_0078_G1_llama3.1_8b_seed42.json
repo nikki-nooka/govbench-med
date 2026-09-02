@@ -1,7 +1,7 @@
 {
-  "run_id": "3e39a183",
+  "run_id": "280ba0ee",
   "experiment_id": "medqa_0078_llama3.1:8b_G1_seed42",
-  "timestamp": "2026-09-02T17:33:12.859045Z",
+  "timestamp": "2026-09-02T17:37:02.665678Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0078",
@@ -16,7 +16,7 @@
   "dataset_source": "medqa",
   "correctness": false,
   "top3_correct": false,
-  "confidence": 0.86,
+  "confidence": 0.8200000000000001,
   "consensus": true,
   "abstained": false,
   "suppressed": false,
@@ -30,11 +30,11 @@
   "output_tokens": 161,
   "total_tokens": 2047,
   "model_calls": 4,
-  "latency_ms": 2.3622000076575205,
-  "governance_latency_ms": 2.3622000076575205,
-  "diagnosis_latency_ms": 1.4173200045945122,
-  "governance_overhead_latency_ms": 0.9448800030630082,
-  "report_latency_ms": 0.0003622000076575205,
+  "latency_ms": 2.342100000125356,
+  "governance_latency_ms": 2.342100000125356,
+  "diagnosis_latency_ms": 1.4052600000752136,
+  "governance_overhead_latency_ms": 0.9368400000501425,
+  "report_latency_ms": 0.000342100000125356,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -53,7 +53,7 @@
       "input_tokens": 318,
       "output_tokens": 45,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.86, \"reasoning\": \"Clinical presentation suggests Acute Coronary Syndrome.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.86}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.8200000000000001, \"reasoning\": \"Clinical presentation suggests Acute Coronary Syndrome.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.8200000000000001}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist",
@@ -66,14 +66,14 @@
       "agent": "report_writer",
       "input_tokens": 478,
       "output_tokens": 41,
-      "latency": 0.0001562000034027733,
+      "latency": 0.00013559999933931977,
       "text": "{\"top_diagnosis\": \"Transforming growth factor beta\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Transforming growth factor beta\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
       "input_tokens": 791,
       "output_tokens": 36,
-      "latency": 0.00020600000425474718,
+      "latency": 0.00020650000078603625,
       "text": "{\"top_diagnosis\": \"Inorganic phosphate\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Inorganic phosphate\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     }
   ],

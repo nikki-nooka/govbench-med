@@ -1,7 +1,7 @@
 {
-  "run_id": "01db924c",
+  "run_id": "89e3c7b5",
   "experiment_id": "medqa_0076_llama3.1:8b_G1_seed42",
-  "timestamp": "2026-09-02T17:33:12.833107Z",
+  "timestamp": "2026-09-02T17:37:02.632070Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0076",
@@ -16,7 +16,7 @@
   "dataset_source": "medqa",
   "correctness": false,
   "top3_correct": false,
-  "confidence": 0.76,
+  "confidence": 0.77,
   "consensus": true,
   "abstained": false,
   "suppressed": false,
@@ -30,11 +30,11 @@
   "output_tokens": 181,
   "total_tokens": 1721,
   "model_calls": 4,
-  "latency_ms": 2.4779000009875745,
-  "governance_latency_ms": 2.4779000009875745,
-  "diagnosis_latency_ms": 1.4867400005925446,
-  "governance_overhead_latency_ms": 0.9911600003950298,
-  "report_latency_ms": 0.00047790000098757446,
+  "latency_ms": 2.597300000663381,
+  "governance_latency_ms": 2.597300000663381,
+  "diagnosis_latency_ms": 1.5583800003980286,
+  "governance_overhead_latency_ms": 1.0389200002653525,
+  "report_latency_ms": 0.0005973000006633811,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -53,7 +53,7 @@
       "input_tokens": 210,
       "output_tokens": 41,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.76, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.76}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.77, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.77}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist",
@@ -66,15 +66,15 @@
       "agent": "report_writer",
       "input_tokens": 406,
       "output_tokens": 52,
-      "latency": 0.00018139999883715063,
-      "text": "{\"top_diagnosis\": \"Increased PTH, decreased calcium, increased phosphate, decreased calcitriol\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Increased PTH, decreased calcium, increased phosphate, decreased calcitriol\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "latency": 0.000250599994615186,
+      "text": "{\"top_diagnosis\": \"Normal PTH, normal calcium, normal phosphate, normal calcitriol\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Normal PTH, normal calcium, normal phosphate, normal calcitriol\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
       "input_tokens": 733,
       "output_tokens": 52,
-      "latency": 0.0002965000021504238,
-      "text": "{\"top_diagnosis\": \"Decreased PTH, increased calcium, increased phosphate, increased calcitriol\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Decreased PTH, increased calcium, increased phosphate, increased calcitriol\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "latency": 0.00034670000604819506,
+      "text": "{\"top_diagnosis\": \"Increased PTH, decreased calcium, increased phosphate, decreased calcitriol\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Increased PTH, decreased calcium, increased phosphate, decreased calcitriol\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     }
   ],
   "verification_trace": null,

@@ -1,7 +1,7 @@
 {
-  "run_id": "d422899d",
+  "run_id": "a41325ab",
   "experiment_id": "medqa_0065_llama3.1:8b_G3_seed42",
-  "timestamp": "2026-09-02T17:33:12.690494Z",
+  "timestamp": "2026-09-02T17:37:02.508660Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0065",
@@ -30,11 +30,11 @@
   "output_tokens": 197,
   "total_tokens": 2525,
   "model_calls": 6,
-  "latency_ms": 4.4083999956492335,
-  "governance_latency_ms": 4.4083999956492335,
-  "diagnosis_latency_ms": 2.64503999738954,
-  "governance_overhead_latency_ms": 1.7633599982596935,
-  "report_latency_ms": 0.00040839999564923346,
+  "latency_ms": 4.3653000021586195,
+  "governance_latency_ms": 4.3653000021586195,
+  "diagnosis_latency_ms": 2.6191800012951716,
+  "governance_overhead_latency_ms": 1.7461200008634479,
+  "report_latency_ms": 0.00036530000215861946,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -53,7 +53,7 @@
       "input_tokens": 308,
       "output_tokens": 41,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.8, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.8}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.8200000000000001, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.8200000000000001}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist_a",
@@ -80,14 +80,14 @@
       "agent": "report_writer",
       "input_tokens": 469,
       "output_tokens": 39,
-      "latency": 0.00016959999629762024,
-      "text": "{\"top_diagnosis\": \"Dilation and curettage\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Dilation and curettage\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "latency": 0.00016060000052675605,
+      "text": "{\"top_diagnosis\": \"Complete bed rest\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Complete bed rest\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
       "input_tokens": 782,
       "output_tokens": 36,
-      "latency": 0.00023879999935161322,
+      "latency": 0.00020470000163186342,
       "text": "{\"top_diagnosis\": \"Methotrexate therapy\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Methotrexate therapy\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     }
   ],

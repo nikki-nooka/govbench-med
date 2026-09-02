@@ -1,7 +1,7 @@
 {
-  "run_id": "9a127f92",
+  "run_id": "ff1f3364",
   "experiment_id": "medqa_0090_llama3.1:8b_G2_seed42",
-  "timestamp": "2026-09-02T17:33:13.005346Z",
+  "timestamp": "2026-09-02T17:37:02.809890Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0090",
@@ -16,25 +16,31 @@
   "dataset_source": "medqa",
   "correctness": false,
   "top3_correct": false,
-  "confidence": 0.75,
+  "confidence": 0.86,
   "consensus": true,
   "abstained": false,
   "suppressed": false,
-  "verification_status": "VERIFIED",
-  "claims_checked": [],
+  "verification_status": "FLAGGED",
+  "claims_checked": [
+    {
+      "claim": "unsupported",
+      "status": "FABRICATED",
+      "case_evidence": null
+    }
+  ],
   "supported_claims": 0,
   "contradicted_claims": 0,
-  "unverifiable_claims": 0,
+  "unverifiable_claims": 1,
   "revision_count": 0,
   "input_tokens": 2262,
-  "output_tokens": 149,
-  "total_tokens": 2411,
+  "output_tokens": 158,
+  "total_tokens": 2420,
   "model_calls": 5,
-  "latency_ms": 3.3821999998763204,
-  "governance_latency_ms": 3.3821999998763204,
-  "diagnosis_latency_ms": 2.029319999925792,
-  "governance_overhead_latency_ms": 1.352879999950528,
-  "report_latency_ms": 0.00038219999987632036,
+  "latency_ms": 3.781700000516139,
+  "governance_latency_ms": 3.781700000516139,
+  "diagnosis_latency_ms": 2.269020000309683,
+  "governance_overhead_latency_ms": 1.5126800002064555,
+  "report_latency_ms": 0.000781700000516139,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -45,7 +51,7 @@
   "ccs": 0.0,
   "ge": 0.0,
   "hallucination_impactful": false,
-  "hallucination_detected": false,
+  "hallucination_detected": true,
   "unsafe_reassurance": false,
   "agent_traces": [
     {
@@ -65,30 +71,36 @@
     {
       "agent": "verifier",
       "input_tokens": 373,
-      "output_tokens": 10,
+      "output_tokens": 19,
       "latency": 1.0,
-      "text": "{\"verdict\": \"VERIFIED\", \"claims\": [], \"fabricated_count\": 0, \"summary\": \"Verified.\"}"
+      "text": "{\"verdict\": \"FLAGGED\", \"claims\": [{\"claim\": \"unsupported\", \"status\": \"FABRICATED\", \"case_evidence\": null}], \"fabricated_count\": 1, \"summary\": \"Unsupported claim detected.\"}"
     },
     {
       "agent": "report_writer",
       "input_tokens": 474,
       "output_tokens": 33,
-      "latency": 0.00016879999748198316,
-      "text": "{\"top_diagnosis\": \"Osteoarthritis\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Osteoarthritis\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "latency": 0.00028250000468688086,
+      "text": "{\"top_diagnosis\": \"Fibromyalgia\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Fibromyalgia\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
       "input_tokens": 785,
       "output_tokens": 33,
-      "latency": 0.0002134000023943372,
+      "latency": 0.0004991999958292581,
       "text": "{\"top_diagnosis\": \"Fibromyalgia\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Fibromyalgia\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     }
   ],
   "verification_trace": {
-    "verdict": "VERIFIED",
-    "claims": [],
-    "fabricated_count": 0,
-    "summary": "Verified."
+    "verdict": "FLAGGED",
+    "claims": [
+      {
+        "claim": "unsupported",
+        "status": "FABRICATED",
+        "case_evidence": null
+      }
+    ],
+    "fabricated_count": 1,
+    "summary": "Unsupported claim detected."
   },
   "consensus_trace": null,
   "ethics_trace": null,

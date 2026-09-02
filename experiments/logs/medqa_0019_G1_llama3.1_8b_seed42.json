@@ -1,7 +1,7 @@
 {
-  "run_id": "cf06927c",
+  "run_id": "0b8a734c",
   "experiment_id": "medqa_0019_llama3.1:8b_G1_seed42",
-  "timestamp": "2026-09-02T17:33:12.081797Z",
+  "timestamp": "2026-09-02T17:37:02.060751Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0019",
@@ -16,7 +16,7 @@
   "dataset_source": "medqa",
   "correctness": false,
   "top3_correct": false,
-  "confidence": 0.87,
+  "confidence": 0.78,
   "consensus": true,
   "abstained": false,
   "suppressed": false,
@@ -30,11 +30,11 @@
   "output_tokens": 159,
   "total_tokens": 1844,
   "model_calls": 4,
-  "latency_ms": 2.877999991644174,
-  "governance_latency_ms": 2.877999991644174,
-  "diagnosis_latency_ms": 1.7267999949865043,
-  "governance_overhead_latency_ms": 1.1511999966576696,
-  "report_latency_ms": 0.0008779999916441739,
+  "latency_ms": 2.4792000036104582,
+  "governance_latency_ms": 2.4792000036104582,
+  "diagnosis_latency_ms": 1.487520002166275,
+  "governance_overhead_latency_ms": 0.9916800014441833,
+  "report_latency_ms": 0.0004792000036104582,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -53,7 +53,7 @@
       "input_tokens": 262,
       "output_tokens": 41,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.87, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.87}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.78, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.78}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist",
@@ -66,14 +66,14 @@
       "agent": "report_writer",
       "input_tokens": 432,
       "output_tokens": 41,
-      "latency": 0.0005181999949854799,
-      "text": "{\"top_diagnosis\": \"Increase in serum cortisol\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Increase in serum cortisol\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "latency": 0.00018909999926108867,
+      "text": "{\"top_diagnosis\": \"Decrease in serum 11-deoxycortisol\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Decrease in serum 11-deoxycortisol\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
       "input_tokens": 748,
       "output_tokens": 41,
-      "latency": 0.000359799996658694,
+      "latency": 0.00029010000434936956,
       "text": "{\"top_diagnosis\": \"Increase in serum cortisol\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Increase in serum cortisol\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     }
   ],

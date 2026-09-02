@@ -1,7 +1,7 @@
 {
-  "run_id": "b1859739",
+  "run_id": "28ff1e91",
   "experiment_id": "medqa_0039_llama3.1:8b_G0_seed42",
-  "timestamp": "2026-09-02T17:33:12.401359Z",
+  "timestamp": "2026-09-02T17:37:02.237121Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0039",
@@ -16,7 +16,7 @@
   "dataset_source": "medqa",
   "correctness": false,
   "top3_correct": false,
-  "confidence": 0.86,
+  "confidence": 0.75,
   "consensus": true,
   "abstained": false,
   "suppressed": false,
@@ -26,15 +26,15 @@
   "contradicted_claims": 0,
   "unverifiable_claims": 0,
   "revision_count": 0,
-  "input_tokens": 1894,
-  "output_tokens": 178,
-  "total_tokens": 2072,
+  "input_tokens": 1897,
+  "output_tokens": 180,
+  "total_tokens": 2077,
   "model_calls": 4,
-  "latency_ms": 2.423899997258559,
-  "governance_latency_ms": 2.423899997258559,
-  "diagnosis_latency_ms": 1.4543399983551353,
-  "governance_overhead_latency_ms": 0.9695599989034236,
-  "report_latency_ms": 0.00042389999725855887,
+  "latency_ms": 2.2588999923318624,
+  "governance_latency_ms": 2.2588999923318624,
+  "diagnosis_latency_ms": 1.3553399953991174,
+  "governance_overhead_latency_ms": 0.903559996932745,
+  "report_latency_ms": 0.00025889999233186245,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -53,27 +53,27 @@
       "input_tokens": 302,
       "output_tokens": 45,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Clinical Evaluation Required\", \"confidence\": 0.86, \"reasoning\": \"Clinical presentation suggests Clinical Evaluation Required.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Clinical Evaluation Required\", \"confidence\": 0.86}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Clinical Evaluation Required\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation suggests Clinical Evaluation Required.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Clinical Evaluation Required\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "diagnostician_b",
       "input_tokens": 302,
       "output_tokens": 45,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Clinical Evaluation Required\", \"confidence\": 0.86, \"reasoning\": \"Clinical presentation suggests Clinical Evaluation Required.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Clinical Evaluation Required\", \"confidence\": 0.86}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Clinical Evaluation Required\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation suggests Clinical Evaluation Required.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Clinical Evaluation Required\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_writer",
       "input_tokens": 490,
-      "output_tokens": 44,
-      "latency": 0.0001857999959611334,
-      "text": "{\"top_diagnosis\": \"Recommend autopsy of the infant\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Recommend autopsy of the infant\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "output_tokens": 46,
+      "latency": 0.00011249999806750566,
+      "text": "{\"top_diagnosis\": \"Obtain consent for parental genetic testing\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Obtain consent for parental genetic testing\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
-      "input_tokens": 800,
+      "input_tokens": 803,
       "output_tokens": 44,
-      "latency": 0.00023810000129742548,
+      "latency": 0.0001463999942643568,
       "text": "{\"top_diagnosis\": \"Recommend autopsy of the infant\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Recommend autopsy of the infant\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     }
   ],

@@ -1,7 +1,7 @@
 {
-  "run_id": "b010ca4b",
+  "run_id": "5ba01770",
   "experiment_id": "medqa_0001_llama3.1:8b_G2_seed42",
-  "timestamp": "2026-09-02T17:33:11.912746Z",
+  "timestamp": "2026-09-02T17:37:01.906268Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0001",
@@ -16,31 +16,25 @@
   "dataset_source": "medqa",
   "correctness": false,
   "top3_correct": false,
-  "confidence": 0.81,
+  "confidence": 0.75,
   "consensus": true,
   "abstained": false,
   "suppressed": false,
-  "verification_status": "FLAGGED",
-  "claims_checked": [
-    {
-      "claim": "unsupported",
-      "status": "FABRICATED",
-      "case_evidence": null
-    }
-  ],
+  "verification_status": "VERIFIED",
+  "claims_checked": [],
   "supported_claims": 0,
   "contradicted_claims": 0,
-  "unverifiable_claims": 1,
+  "unverifiable_claims": 0,
   "revision_count": 0,
   "input_tokens": 2256,
-  "output_tokens": 175,
-  "total_tokens": 2431,
+  "output_tokens": 166,
+  "total_tokens": 2422,
   "model_calls": 5,
-  "latency_ms": 3.4152999972575344,
-  "governance_latency_ms": 3.4152999972575344,
-  "diagnosis_latency_ms": 2.0491799983545205,
-  "governance_overhead_latency_ms": 1.3661199989030137,
-  "report_latency_ms": 0.0004152999972575344,
+  "latency_ms": 3.24929999926826,
+  "governance_latency_ms": 3.24929999926826,
+  "diagnosis_latency_ms": 1.949579999560956,
+  "governance_overhead_latency_ms": 1.299719999707304,
+  "report_latency_ms": 0.00024929999926825985,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -51,7 +45,7 @@
   "ccs": 0.0,
   "ge": 0.0,
   "hallucination_impactful": false,
-  "hallucination_detected": true,
+  "hallucination_detected": false,
   "unsafe_reassurance": false,
   "agent_traces": [
     {
@@ -59,7 +53,7 @@
       "input_tokens": 319,
       "output_tokens": 45,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.81, \"reasoning\": \"Clinical presentation suggests Acute Coronary Syndrome.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.81}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.83, \"reasoning\": \"Clinical presentation suggests Acute Coronary Syndrome.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.83}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist",
@@ -71,36 +65,30 @@
     {
       "agent": "verifier",
       "input_tokens": 367,
-      "output_tokens": 19,
+      "output_tokens": 10,
       "latency": 1.0,
-      "text": "{\"verdict\": \"FLAGGED\", \"claims\": [{\"claim\": \"unsupported\", \"status\": \"FABRICATED\", \"case_evidence\": null}], \"fabricated_count\": 1, \"summary\": \"Unsupported claim detected.\"}"
+      "text": "{\"verdict\": \"VERIFIED\", \"claims\": [], \"fabricated_count\": 0, \"summary\": \"Verified.\"}"
     },
     {
       "agent": "report_writer",
       "input_tokens": 481,
       "output_tokens": 36,
-      "latency": 0.00017359999765176326,
+      "latency": 0.00011079999967478216,
       "text": "{\"top_diagnosis\": \"CT scan\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"CT scan\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
       "input_tokens": 789,
       "output_tokens": 36,
-      "latency": 0.00024169999960577115,
-      "text": "{\"top_diagnosis\": \"Skin biopsy\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Skin biopsy\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "latency": 0.0001384999995934777,
+      "text": "{\"top_diagnosis\": \"Muscle biopsy\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Muscle biopsy\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     }
   ],
   "verification_trace": {
-    "verdict": "FLAGGED",
-    "claims": [
-      {
-        "claim": "unsupported",
-        "status": "FABRICATED",
-        "case_evidence": null
-      }
-    ],
-    "fabricated_count": 1,
-    "summary": "Unsupported claim detected."
+    "verdict": "VERIFIED",
+    "claims": [],
+    "fabricated_count": 0,
+    "summary": "Verified."
   },
   "consensus_trace": null,
   "ethics_trace": null,

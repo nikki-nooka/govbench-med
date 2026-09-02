@@ -1,7 +1,7 @@
 {
-  "run_id": "3fc97628",
+  "run_id": "1e697264",
   "experiment_id": "medqa_0052_llama3.1:8b_G3_seed42",
-  "timestamp": "2026-09-02T17:33:12.538125Z",
+  "timestamp": "2026-09-02T17:37:02.357850Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0052",
@@ -27,14 +27,14 @@
   "unverifiable_claims": 0,
   "revision_count": 0,
   "input_tokens": 2290,
-  "output_tokens": 214,
-  "total_tokens": 2504,
+  "output_tokens": 207,
+  "total_tokens": 2497,
   "model_calls": 6,
-  "latency_ms": 4.4130000015720725,
-  "governance_latency_ms": 4.4130000015720725,
-  "diagnosis_latency_ms": 2.6478000009432434,
-  "governance_overhead_latency_ms": 1.765200000628829,
-  "report_latency_ms": 0.0004130000015720725,
+  "latency_ms": 4.385799998184666,
+  "governance_latency_ms": 4.385799998184666,
+  "diagnosis_latency_ms": 2.6314799989107995,
+  "governance_overhead_latency_ms": 1.7543199992738665,
+  "report_latency_ms": 0.00038579999818466604,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -53,7 +53,7 @@
       "input_tokens": 296,
       "output_tokens": 41,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.79, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.79}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.86, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.86}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist_a",
@@ -80,15 +80,15 @@
       "agent": "report_writer",
       "input_tokens": 464,
       "output_tokens": 46,
-      "latency": 0.00017720000323606655,
+      "latency": 0.00016630000027362257,
       "text": "{\"top_diagnosis\": \"Thumbprint sign on the lateral image\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Thumbprint sign on the lateral image\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
       "input_tokens": 785,
-      "output_tokens": 46,
-      "latency": 0.00023579999833600596,
-      "text": "{\"top_diagnosis\": \"Thumbprint sign on the lateral image\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Thumbprint sign on the lateral image\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "output_tokens": 39,
+      "latency": 0.00021949999791104347,
+      "text": "{\"top_diagnosis\": \"Increased interstitial markings\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Increased interstitial markings\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     }
   ],
   "verification_trace": null,

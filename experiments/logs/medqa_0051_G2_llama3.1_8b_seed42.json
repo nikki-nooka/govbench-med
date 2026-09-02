@@ -1,7 +1,7 @@
 {
-  "run_id": "4dae9f3c",
+  "run_id": "82736ae5",
   "experiment_id": "medqa_0051_llama3.1:8b_G2_seed42",
-  "timestamp": "2026-09-02T17:33:12.523884Z",
+  "timestamp": "2026-09-02T17:37:02.346033Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0051",
@@ -27,14 +27,14 @@
   "unverifiable_claims": 0,
   "revision_count": 0,
   "input_tokens": 1973,
-  "output_tokens": 169,
-  "total_tokens": 2142,
+  "output_tokens": 171,
+  "total_tokens": 2144,
   "model_calls": 5,
-  "latency_ms": 3.4252000071574003,
-  "governance_latency_ms": 3.4252000071574003,
-  "diagnosis_latency_ms": 2.05512000429444,
-  "governance_overhead_latency_ms": 1.37008000286296,
-  "report_latency_ms": 0.00042520000715740025,
+  "latency_ms": 3.4792000036104582,
+  "governance_latency_ms": 3.4792000036104582,
+  "diagnosis_latency_ms": 2.0875200021662748,
+  "governance_overhead_latency_ms": 1.3916800014441832,
+  "report_latency_ms": 0.0004792000036104582,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -73,15 +73,15 @@
       "agent": "report_writer",
       "input_tokens": 427,
       "output_tokens": 39,
-      "latency": 0.0001486000037402846,
+      "latency": 0.00020960000256309286,
       "text": "{\"top_diagnosis\": \"Gram-positive, optochin-sensitive diplococci\\\\n\\\\\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Gram-positive, optochin-sensitive diplococci\\\\n\\\\\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
       "input_tokens": 738,
-      "output_tokens": 39,
-      "latency": 0.00027660000341711566,
-      "text": "{\"top_diagnosis\": \"Gram-positive, optochin-sensitive diplococci\\\\n\\\\\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Gram-positive, optochin-sensitive diplococci\\\\n\\\\\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "output_tokens": 41,
+      "latency": 0.00026960000104736537,
+      "text": "{\"top_diagnosis\": \"Gram-negative, non-maltose fermenting diplococci\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Gram-negative, non-maltose fermenting diplococci\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     }
   ],
   "verification_trace": {

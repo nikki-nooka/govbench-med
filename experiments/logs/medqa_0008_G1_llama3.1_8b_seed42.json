@@ -1,7 +1,7 @@
 {
-  "run_id": "f8dc0ced",
+  "run_id": "d4fe9b29",
   "experiment_id": "medqa_0008_llama3.1:8b_G1_seed42",
-  "timestamp": "2026-09-02T17:33:11.976368Z",
+  "timestamp": "2026-09-02T17:37:01.966249Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0008",
@@ -16,7 +16,7 @@
   "dataset_source": "medqa",
   "correctness": false,
   "top3_correct": false,
-  "confidence": 0.79,
+  "confidence": 0.8,
   "consensus": true,
   "abstained": false,
   "suppressed": false,
@@ -26,15 +26,15 @@
   "contradicted_claims": 0,
   "unverifiable_claims": 0,
   "revision_count": 0,
-  "input_tokens": 1766,
-  "output_tokens": 146,
-  "total_tokens": 1912,
+  "input_tokens": 1764,
+  "output_tokens": 143,
+  "total_tokens": 1907,
   "model_calls": 4,
-  "latency_ms": 2.2873999983421527,
-  "governance_latency_ms": 2.2873999983421527,
-  "diagnosis_latency_ms": 1.3724399990052916,
-  "governance_overhead_latency_ms": 0.9149599993368611,
-  "report_latency_ms": 0.0002873999983421527,
+  "latency_ms": 2.2621999956318177,
+  "governance_latency_ms": 2.2621999956318177,
+  "diagnosis_latency_ms": 1.3573199973790906,
+  "governance_overhead_latency_ms": 0.9048799982527271,
+  "report_latency_ms": 0.00026219999563181773,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -53,7 +53,7 @@
       "input_tokens": 291,
       "output_tokens": 41,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.79, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.79}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.8, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.8}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist",
@@ -65,15 +65,15 @@
     {
       "agent": "report_writer",
       "input_tokens": 447,
-      "output_tokens": 36,
-      "latency": 0.00014409999857889488,
-      "text": "{\"top_diagnosis\": \"Benzodiazepine intoxication\\\\n\\\\\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Benzodiazepine intoxication\\\\n\\\\\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "output_tokens": 33,
+      "latency": 0.00011919999815290794,
+      "text": "{\"top_diagnosis\": \"Hypoglycemia\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Hypoglycemia\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
-      "input_tokens": 757,
+      "input_tokens": 755,
       "output_tokens": 33,
-      "latency": 0.0001432999997632578,
+      "latency": 0.0001429999974789098,
       "text": "{\"top_diagnosis\": \"Hypoglycemia\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Hypoglycemia\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     }
   ],

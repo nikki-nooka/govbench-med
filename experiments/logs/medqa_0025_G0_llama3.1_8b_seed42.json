@@ -1,7 +1,7 @@
 {
-  "run_id": "2f8277c7",
+  "run_id": "47081243",
   "experiment_id": "medqa_0025_llama3.1:8b_G0_seed42",
-  "timestamp": "2026-09-02T17:33:12.145201Z",
+  "timestamp": "2026-09-02T17:37:02.114129Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0025",
@@ -16,7 +16,7 @@
   "dataset_source": "medqa",
   "correctness": false,
   "top3_correct": false,
-  "confidence": 0.79,
+  "confidence": 0.84,
   "consensus": true,
   "abstained": false,
   "suppressed": false,
@@ -30,11 +30,11 @@
   "output_tokens": 154,
   "total_tokens": 2021,
   "model_calls": 4,
-  "latency_ms": 2.378099997760728,
-  "governance_latency_ms": 2.378099997760728,
-  "diagnosis_latency_ms": 1.4268599986564368,
-  "governance_overhead_latency_ms": 0.9512399991042912,
-  "report_latency_ms": 0.000378099997760728,
+  "latency_ms": 2.411199995141942,
+  "governance_latency_ms": 2.411199995141942,
+  "diagnosis_latency_ms": 1.4467199970851652,
+  "governance_overhead_latency_ms": 0.9644799980567769,
+  "report_latency_ms": 0.00041119999514194205,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -53,28 +53,28 @@
       "input_tokens": 310,
       "output_tokens": 41,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.79, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.79}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.84, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.84}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "diagnostician_b",
       "input_tokens": 310,
       "output_tokens": 41,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.79, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.79}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.84, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.84}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_writer",
       "input_tokens": 470,
       "output_tokens": 36,
-      "latency": 0.00016650000179652125,
+      "latency": 0.00018219999765278772,
       "text": "{\"top_diagnosis\": \"Spinal stenosis\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Spinal stenosis\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
       "input_tokens": 777,
       "output_tokens": 36,
-      "latency": 0.00021159999596420676,
-      "text": "{\"top_diagnosis\": \"Aortoiliac atherosclerosis\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Aortoiliac atherosclerosis\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "latency": 0.00022899999748915434,
+      "text": "{\"top_diagnosis\": \"Vascular claudication\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Vascular claudication\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     }
   ],
   "verification_trace": null,

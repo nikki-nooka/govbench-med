@@ -1,7 +1,7 @@
 {
-  "run_id": "05258850",
+  "run_id": "c78b989a",
   "experiment_id": "medqa_0098_llama3.1:8b_G2_seed42",
-  "timestamp": "2026-09-02T17:33:13.094984Z",
+  "timestamp": "2026-09-02T17:37:02.899342Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0098",
@@ -26,15 +26,15 @@
   "contradicted_claims": 0,
   "unverifiable_claims": 0,
   "revision_count": 0,
-  "input_tokens": 2483,
-  "output_tokens": 165,
-  "total_tokens": 2648,
+  "input_tokens": 2480,
+  "output_tokens": 162,
+  "total_tokens": 2642,
   "model_calls": 5,
-  "latency_ms": 3.3059000009670854,
-  "governance_latency_ms": 3.3059000009670854,
-  "diagnosis_latency_ms": 1.9835400005802513,
-  "governance_overhead_latency_ms": 1.322360000386834,
-  "report_latency_ms": 0.00030590000096708536,
+  "latency_ms": 3.3128000025753863,
+  "governance_latency_ms": 3.3128000025753863,
+  "diagnosis_latency_ms": 1.9876800015452318,
+  "governance_overhead_latency_ms": 1.3251200010301545,
+  "report_latency_ms": 0.0003128000025753863,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -53,7 +53,7 @@
       "input_tokens": 364,
       "output_tokens": 41,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.87, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.87}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.83, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.83}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist",
@@ -72,15 +72,15 @@
     {
       "agent": "report_writer",
       "input_tokens": 525,
-      "output_tokens": 39,
-      "latency": 0.00013410000246949494,
-      "text": "{\"top_diagnosis\": \"Traumatic bronchial rupture\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Traumatic bronchial rupture\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "output_tokens": 36,
+      "latency": 0.0001545999984955415,
+      "text": "{\"top_diagnosis\": \"Diaphragmatic rupture\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Diaphragmatic rupture\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
-      "input_tokens": 838,
+      "input_tokens": 835,
       "output_tokens": 39,
-      "latency": 0.00017179999849759042,
+      "latency": 0.0001582000040798448,
       "text": "{\"top_diagnosis\": \"Traumatic bronchial rupture\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Traumatic bronchial rupture\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     }
   ],

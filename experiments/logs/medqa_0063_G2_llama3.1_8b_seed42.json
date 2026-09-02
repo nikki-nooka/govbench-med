@@ -1,7 +1,7 @@
 {
-  "run_id": "a4c05a7b",
+  "run_id": "900fd9ef",
   "experiment_id": "medqa_0063_llama3.1:8b_G2_seed42",
-  "timestamp": "2026-09-02T17:33:12.660650Z",
+  "timestamp": "2026-09-02T17:37:02.482797Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0063",
@@ -26,15 +26,15 @@
   "contradicted_claims": 0,
   "unverifiable_claims": 0,
   "revision_count": 0,
-  "input_tokens": 2068,
-  "output_tokens": 159,
-  "total_tokens": 2227,
+  "input_tokens": 2065,
+  "output_tokens": 156,
+  "total_tokens": 2221,
   "model_calls": 5,
-  "latency_ms": 3.3542999911587685,
-  "governance_latency_ms": 3.3542999911587685,
-  "diagnosis_latency_ms": 2.012579994695261,
-  "governance_overhead_latency_ms": 1.3417199964635074,
-  "report_latency_ms": 0.00035429999115876853,
+  "latency_ms": 3.5363000091165304,
+  "governance_latency_ms": 3.5363000091165304,
+  "diagnosis_latency_ms": 2.121780005469918,
+  "governance_overhead_latency_ms": 1.4145200036466121,
+  "report_latency_ms": 0.0005363000091165304,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -53,7 +53,7 @@
       "input_tokens": 283,
       "output_tokens": 41,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.8200000000000001, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.8200000000000001}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.78, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.78}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist",
@@ -72,16 +72,16 @@
     {
       "agent": "report_writer",
       "input_tokens": 440,
-      "output_tokens": 36,
-      "latency": 0.00015029999485705048,
-      "text": "{\"top_diagnosis\": \"Seborrheic keratosis\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Seborrheic keratosis\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "output_tokens": 33,
+      "latency": 0.00023360000341199338,
+      "text": "{\"top_diagnosis\": \"Psoriasis\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Psoriasis\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
-      "input_tokens": 751,
+      "input_tokens": 748,
       "output_tokens": 36,
-      "latency": 0.00020399999630171806,
-      "text": "{\"top_diagnosis\": \"Actinic keratosis\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Actinic keratosis\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "latency": 0.00030270000570453703,
+      "text": "{\"top_diagnosis\": \"Seborrheic keratosis\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Seborrheic keratosis\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     }
   ],
   "verification_trace": {

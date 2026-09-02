@@ -1,7 +1,7 @@
 {
-  "run_id": "c5fe4953",
+  "run_id": "2e4d898e",
   "experiment_id": "medqa_0029_llama3.1:8b_G2_seed42",
-  "timestamp": "2026-09-02T17:33:12.202800Z",
+  "timestamp": "2026-09-02T17:37:02.153326Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0029",
@@ -26,15 +26,15 @@
   "contradicted_claims": 0,
   "unverifiable_claims": 0,
   "revision_count": 0,
-  "input_tokens": 2001,
+  "input_tokens": 1993,
   "output_tokens": 168,
-  "total_tokens": 2169,
+  "total_tokens": 2161,
   "model_calls": 5,
-  "latency_ms": 3.569199997698888,
-  "governance_latency_ms": 3.569199997698888,
-  "diagnosis_latency_ms": 2.1415199986193327,
-  "governance_overhead_latency_ms": 1.4276799990795552,
-  "report_latency_ms": 0.0005691999976988882,
+  "latency_ms": 3.2451999971526675,
+  "governance_latency_ms": 3.2451999971526675,
+  "diagnosis_latency_ms": 1.9471199982916005,
+  "governance_overhead_latency_ms": 1.298079998861067,
+  "report_latency_ms": 0.0002451999971526675,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -53,7 +53,7 @@
       "input_tokens": 267,
       "output_tokens": 45,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.77, \"reasoning\": \"Clinical presentation suggests Acute Coronary Syndrome.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.77}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.78, \"reasoning\": \"Clinical presentation suggests Acute Coronary Syndrome.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.78}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist",
@@ -72,16 +72,16 @@
     {
       "agent": "report_writer",
       "input_tokens": 429,
-      "output_tokens": 41,
-      "latency": 0.00026249999791616574,
-      "text": "{\"top_diagnosis\": \"Reassurance and continuous monitoring\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Reassurance and continuous monitoring\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "output_tokens": 33,
+      "latency": 0.00010239999392069876,
+      "text": "{\"top_diagnosis\": \"Labetalol\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Labetalol\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
-      "input_tokens": 742,
-      "output_tokens": 33,
-      "latency": 0.00030669999978272244,
-      "text": "{\"top_diagnosis\": \"Diltiazem\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Diltiazem\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "input_tokens": 734,
+      "output_tokens": 41,
+      "latency": 0.00014280000323196873,
+      "text": "{\"top_diagnosis\": \"Reassurance and continuous monitoring\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Reassurance and continuous monitoring\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     }
   ],
   "verification_trace": {

@@ -1,7 +1,7 @@
 {
-  "run_id": "8c37ba7c",
+  "run_id": "46c3729e",
   "experiment_id": "medqa_0090_llama3.1:8b_G0_seed42",
-  "timestamp": "2026-09-02T17:33:13.000992Z",
+  "timestamp": "2026-09-02T17:37:02.801912Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0090",
@@ -30,11 +30,11 @@
   "output_tokens": 143,
   "total_tokens": 2055,
   "model_calls": 4,
-  "latency_ms": 2.395400005800184,
-  "governance_latency_ms": 2.395400005800184,
-  "diagnosis_latency_ms": 1.4372400034801103,
-  "governance_overhead_latency_ms": 0.9581600023200736,
-  "report_latency_ms": 0.00039540000580018386,
+  "latency_ms": 2.5712000056519173,
+  "governance_latency_ms": 2.5712000056519173,
+  "diagnosis_latency_ms": 1.5427200033911503,
+  "governance_overhead_latency_ms": 1.028480002260767,
+  "report_latency_ms": 0.0005712000056519173,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -66,14 +66,14 @@
       "agent": "report_writer",
       "input_tokens": 477,
       "output_tokens": 33,
-      "latency": 0.00017090000619646162,
+      "latency": 0.00024870000197552145,
       "text": "{\"top_diagnosis\": \"Gout\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Gout\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
       "input_tokens": 785,
       "output_tokens": 36,
-      "latency": 0.00022449999960372224,
+      "latency": 0.00032250000367639586,
       "text": "{\"top_diagnosis\": \"Ankylosing spondylitis\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Ankylosing spondylitis\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     }
   ],

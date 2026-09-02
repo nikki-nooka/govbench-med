@@ -1,7 +1,7 @@
 {
-  "run_id": "d8ebb71d",
+  "run_id": "93d7b7a1",
   "experiment_id": "medqa_0034_llama3.1:8b_G3_seed42",
-  "timestamp": "2026-09-02T17:33:12.356752Z",
+  "timestamp": "2026-09-02T17:37:02.201009Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0034",
@@ -30,11 +30,11 @@
   "output_tokens": 194,
   "total_tokens": 2414,
   "model_calls": 6,
-  "latency_ms": 4.273500008916017,
-  "governance_latency_ms": 4.273500008916017,
-  "diagnosis_latency_ms": 2.56410000534961,
-  "governance_overhead_latency_ms": 1.7094000035664068,
-  "report_latency_ms": 0.00027350000891601667,
+  "latency_ms": 4.298800005111843,
+  "governance_latency_ms": 4.298800005111843,
+  "diagnosis_latency_ms": 2.579280003067106,
+  "governance_overhead_latency_ms": 1.7195200020447374,
+  "report_latency_ms": 0.00029880000511184335,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -53,7 +53,7 @@
       "input_tokens": 288,
       "output_tokens": 41,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.89, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.89}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.78, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.78}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist_a",
@@ -80,15 +80,15 @@
       "agent": "report_writer",
       "input_tokens": 445,
       "output_tokens": 36,
-      "latency": 0.00012190000416012481,
+      "latency": 0.00014840000221738592,
       "text": "{\"top_diagnosis\": \"Escherichia coli\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Escherichia coli\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
       "input_tokens": 756,
       "output_tokens": 36,
-      "latency": 0.00015160000475589186,
-      "text": "{\"top_diagnosis\": \"Pseudomonas aeruginosa\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pseudomonas aeruginosa\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "latency": 0.00015040000289445743,
+      "text": "{\"top_diagnosis\": \"Escherichia coli\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Escherichia coli\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     }
   ],
   "verification_trace": null,

@@ -1,7 +1,7 @@
 {
-  "run_id": "ebb90c33",
+  "run_id": "694fce9c",
   "experiment_id": "medqa_0040_llama3.1:8b_G1_seed42",
-  "timestamp": "2026-09-02T17:33:12.412184Z",
+  "timestamp": "2026-09-02T17:37:02.247565Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0040",
@@ -16,7 +16,7 @@
   "dataset_source": "medqa",
   "correctness": false,
   "top3_correct": false,
-  "confidence": 0.79,
+  "confidence": 0.88,
   "consensus": true,
   "abstained": false,
   "suppressed": false,
@@ -26,15 +26,15 @@
   "contradicted_claims": 0,
   "unverifiable_claims": 0,
   "revision_count": 0,
-  "input_tokens": 2086,
-  "output_tokens": 160,
-  "total_tokens": 2246,
+  "input_tokens": 2099,
+  "output_tokens": 178,
+  "total_tokens": 2277,
   "model_calls": 4,
-  "latency_ms": 2.2765000026556663,
-  "governance_latency_ms": 2.2765000026556663,
-  "diagnosis_latency_ms": 1.3659000015933997,
-  "governance_overhead_latency_ms": 0.9106000010622666,
-  "report_latency_ms": 0.0002765000026556663,
+  "latency_ms": 2.5958000037935562,
+  "governance_latency_ms": 2.5958000037935562,
+  "diagnosis_latency_ms": 1.5574800022761337,
+  "governance_overhead_latency_ms": 1.0383200015174225,
+  "report_latency_ms": 0.0005958000037935562,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -53,7 +53,7 @@
       "input_tokens": 353,
       "output_tokens": 41,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.79, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.79}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.88, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.88}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist",
@@ -65,16 +65,16 @@
     {
       "agent": "report_writer",
       "input_tokens": 540,
-      "output_tokens": 44,
-      "latency": 0.00011939999967580661,
-      "text": "{\"top_diagnosis\": \"Twisting of the spermatic cord\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Twisting of the spermatic cord\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "output_tokens": 57,
+      "latency": 0.00026030000299215317,
+      "text": "{\"top_diagnosis\": \"Imbalance of fluid secretion and resorption by the tunica vaginalis\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Imbalance of fluid secretion and resorption by the tunica vaginalis\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
-      "input_tokens": 859,
-      "output_tokens": 39,
-      "latency": 0.0001571000029798597,
-      "text": "{\"top_diagnosis\": \"Patent processus vaginalis\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Patent processus vaginalis\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "input_tokens": 872,
+      "output_tokens": 44,
+      "latency": 0.0003355000008014031,
+      "text": "{\"top_diagnosis\": \"Dilation of the pampiniform plexus\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Dilation of the pampiniform plexus\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     }
   ],
   "verification_trace": null,

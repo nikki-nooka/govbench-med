@@ -1,7 +1,7 @@
 {
-  "run_id": "a548b605",
+  "run_id": "f1a39084",
   "experiment_id": "medqa_0012_llama3.1:8b_G1_seed42",
-  "timestamp": "2026-09-02T17:33:12.016295Z",
+  "timestamp": "2026-09-02T17:37:02.000666Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0012",
@@ -16,7 +16,7 @@
   "dataset_source": "medqa",
   "correctness": false,
   "top3_correct": false,
-  "confidence": 0.76,
+  "confidence": 0.88,
   "consensus": true,
   "abstained": false,
   "suppressed": false,
@@ -30,11 +30,11 @@
   "output_tokens": 149,
   "total_tokens": 2037,
   "model_calls": 4,
-  "latency_ms": 2.3940000024158508,
-  "governance_latency_ms": 2.3940000024158508,
-  "diagnosis_latency_ms": 1.4364000014495104,
-  "governance_overhead_latency_ms": 0.9576000009663403,
-  "report_latency_ms": 0.00039400000241585076,
+  "latency_ms": 2.2810000005410984,
+  "governance_latency_ms": 2.2810000005410984,
+  "diagnosis_latency_ms": 1.368600000324659,
+  "governance_overhead_latency_ms": 0.9124000002164394,
+  "report_latency_ms": 0.0002810000005410984,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -53,7 +53,7 @@
       "input_tokens": 326,
       "output_tokens": 41,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.76, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.76}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.88, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.88}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist",
@@ -66,15 +66,15 @@
       "agent": "report_writer",
       "input_tokens": 473,
       "output_tokens": 36,
-      "latency": 0.000185500000952743,
-      "text": "{\"top_diagnosis\": \"Myxedema coma\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Myxedema coma\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "latency": 0.00012309999874560162,
+      "text": "{\"top_diagnosis\": \"Tertiary hyperparathyroidism\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Tertiary hyperparathyroidism\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
       "input_tokens": 783,
       "output_tokens": 36,
-      "latency": 0.00020850000146310776,
-      "text": "{\"top_diagnosis\": \"Pheochromocytoma crisis\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pheochromocytoma crisis\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "latency": 0.0001579000017954968,
+      "text": "{\"top_diagnosis\": \"Myxedema coma\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Myxedema coma\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     }
   ],
   "verification_trace": null,

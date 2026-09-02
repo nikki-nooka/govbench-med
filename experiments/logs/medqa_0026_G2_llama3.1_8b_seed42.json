@@ -1,7 +1,7 @@
 {
-  "run_id": "ff8ea845",
+  "run_id": "87be4dcd",
   "experiment_id": "medqa_0026_llama3.1:8b_G2_seed42",
-  "timestamp": "2026-09-02T17:33:12.165774Z",
+  "timestamp": "2026-09-02T17:37:02.129880Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0026",
@@ -26,15 +26,15 @@
   "contradicted_claims": 0,
   "unverifiable_claims": 0,
   "revision_count": 0,
-  "input_tokens": 2338,
-  "output_tokens": 201,
-  "total_tokens": 2539,
+  "input_tokens": 2323,
+  "output_tokens": 185,
+  "total_tokens": 2508,
   "model_calls": 5,
-  "latency_ms": 3.5761000065831468,
-  "governance_latency_ms": 3.5761000065831468,
-  "diagnosis_latency_ms": 2.145660003949888,
-  "governance_overhead_latency_ms": 1.4304400026332587,
-  "report_latency_ms": 0.0005761000065831468,
+  "latency_ms": 3.4229999976814725,
+  "governance_latency_ms": 3.4229999976814725,
+  "diagnosis_latency_ms": 2.0537999986088833,
+  "governance_overhead_latency_ms": 1.369199999072589,
+  "report_latency_ms": 0.00042299999768147245,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -53,7 +53,7 @@
       "input_tokens": 321,
       "output_tokens": 41,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.8200000000000001, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.8200000000000001}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.81, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.81}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist",
@@ -72,15 +72,15 @@
     {
       "agent": "report_writer",
       "input_tokens": 508,
-      "output_tokens": 57,
-      "latency": 0.00022880000324221328,
-      "text": "{\"top_diagnosis\": \"Repeat blood cultures 24 hours after initial cultures were drawn\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Repeat blood cultures 24 hours after initial cultures were drawn\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "output_tokens": 41,
+      "latency": 0.0001801999969757162,
+      "text": "{\"top_diagnosis\": \"Repeat blood cultures now\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Repeat blood cultures now\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
-      "input_tokens": 839,
+      "input_tokens": 824,
       "output_tokens": 57,
-      "latency": 0.00034730000334093347,
+      "latency": 0.00024280000070575625,
       "text": "{\"top_diagnosis\": \"Repeat blood cultures 48 hours after initial cultures were drawn\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Repeat blood cultures 48 hours after initial cultures were drawn\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     }
   ],

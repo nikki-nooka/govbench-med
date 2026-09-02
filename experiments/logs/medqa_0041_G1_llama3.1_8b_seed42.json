@@ -1,7 +1,7 @@
 {
-  "run_id": "3c2599d9",
+  "run_id": "f7376ff6",
   "experiment_id": "medqa_0041_llama3.1:8b_G1_seed42",
-  "timestamp": "2026-09-02T17:33:12.423618Z",
+  "timestamp": "2026-09-02T17:37:02.257762Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0041",
@@ -16,7 +16,7 @@
   "dataset_source": "medqa",
   "correctness": false,
   "top3_correct": false,
-  "confidence": 0.85,
+  "confidence": 0.76,
   "consensus": true,
   "abstained": false,
   "suppressed": false,
@@ -27,14 +27,14 @@
   "unverifiable_claims": 0,
   "revision_count": 0,
   "input_tokens": 2226,
-  "output_tokens": 167,
-  "total_tokens": 2393,
+  "output_tokens": 165,
+  "total_tokens": 2391,
   "model_calls": 4,
-  "latency_ms": 2.373900002159644,
-  "governance_latency_ms": 2.373900002159644,
-  "diagnosis_latency_ms": 1.4243400012957863,
-  "governance_overhead_latency_ms": 0.9495600008638576,
-  "report_latency_ms": 0.0003739000021596439,
+  "latency_ms": 2.292799995804671,
+  "governance_latency_ms": 2.292799995804671,
+  "diagnosis_latency_ms": 1.3756799974828027,
+  "governance_overhead_latency_ms": 0.9171199983218685,
+  "report_latency_ms": 0.0002927999958046712,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -53,7 +53,7 @@
       "input_tokens": 393,
       "output_tokens": 41,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.85, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.85}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.76, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.76}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist",
@@ -66,15 +66,15 @@
       "agent": "report_writer",
       "input_tokens": 570,
       "output_tokens": 44,
-      "latency": 0.0001666999960434623,
-      "text": "{\"top_diagnosis\": \"Elevated serum alkaline phosphatase level\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Elevated serum alkaline phosphatase level\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "latency": 0.00012959999730810523,
+      "text": "{\"top_diagnosis\": \"Mass in the sella turcica\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Mass in the sella turcica\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
       "input_tokens": 889,
-      "output_tokens": 46,
-      "latency": 0.0002072000061161816,
-      "text": "{\"top_diagnosis\": \"Absent Barr bodies on buccal smear\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Absent Barr bodies on buccal smear\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "output_tokens": 44,
+      "latency": 0.00016319999849656597,
+      "text": "{\"top_diagnosis\": \"Elevated serum alkaline phosphatase level\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Elevated serum alkaline phosphatase level\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     }
   ],
   "verification_trace": null,

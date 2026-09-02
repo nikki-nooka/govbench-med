@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GOVBENCH-MED — Multi-Agent Clinical Governance Benchmark</title>
+    <!-- Modern Sans-Serif Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Chart.js for scientific visualizations -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        :root {
+            /* Bright / Light Medical Science Palette */
+            --bg-main: #f8fafc;
+            --bg-surface: #ffffff;
+            --bg-sidebar: #0f172a; /* Deep Slate Sidebar */
+            --border-color: #e2e8f0;
+            --border-hover: #cbd5e1;
+
+            --text-primary: #0f172a;
+            --text-secondary: #475569;
+            --text-muted: #64748b;
+            --text-light: #94a3b8;
+
+            --primary-blue: #0284c7;
+            --primary-dark: #0369a1;
+            --primary-light: #e0f2fe;
+
+            --teal-secondary: #0d9488;
+            --teal-light: #ccfbf1;
+
+            --success-green: #16a34a;
+            --success-light: #dcfce7;
+
+            --warning-amber: #d97706;
+            --warning-light: #fef3c7;
+
+            --danger-red: #dc2626;
+            --danger-light: #fee2e2;
+
+            --purple-accent: #7c3aed;
+            --purple-light: #f3e8ff;
+
+            --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+            --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.05), 0 2px 4px -2px rgb(0 0 0 / 0.05);
+            --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.05), 0 4px 6px -4px rgb(0 0 0 / 0.05);
+
+            --radius-sm: 6px;
+            --radius-md: 8px;
+            --radius-lg: 12px;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+        body { background-color: var(--bg-main); color: var(--text-primary); display: flex; height: 100vh; overflow: hidden; font-size: 14px; }
+
+        /* Sidebar Styling */
+        sidebar { width: 270px; background-color: var(--bg-sidebar); color: #f8fafc; display: flex; flex-direction: column; flex-shrink: 0; border-right: 1px solid #1e293b; }
+        .sidebar-brand { padding: 20px 24px; border-bottom: 1px solid #1e293b; }
+        .brand-title { font-size: 1.1rem; font-weight: 700; color: #ffffff; letter-spacing: -0.02em; display: flex; align-items: center; gap: 8px; }
+        .brand-sub { font-size: 0.72rem; color: #94a3b8; margin-top: 4px; text-transform: uppercase; letter-spacing: 0.05em; font-weight: 600; }
+
+        .nav-section { padding: 16px 0; flex: 1; overflow-y: auto; }
+        .nav-label { font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.08em; color: #64748b; padding: 0 24px 8px 24px; font-weight: 700; }
+        .nav-list { list-style: none; }
+        .nav-item { padding: 10px 24px; font-size: 0.88rem; color: #94a3b8; cursor: pointer; display: flex; align-items: center; gap: 12px; transition: all 0.15s ease; font-weight: 500; border-left: 3px solid transparent; }
+        .nav-item:hover { color: #ffffff; background: rgba(255, 255, 255, 0.04); }
+        .nav-item.active { color: #ffffff; background: rgba(56, 189, 248, 0.12); border-left-color: #38bdf8; font-weight: 600; }
+
+        .sidebar-footer { padding: 16px 20px; border-top: 1px solid #1e293b; background: #090d16; font-size: 0.78rem; }
+        .status-indicator { display: flex; align-items: center; gap: 8px; margin-bottom: 6px; }
+        .status-dot { width: 8px; height: 8px; border-radius: 50%; background-color: var(--success-green); }
+
+        /* Main Window Header & Layout */
+        main { flex: 1; display: flex; flex-direction: column; overflow: hidden; background-color: var(--bg-main); }
+        header { height: 64px; background: var(--bg-surface); border-bottom: 1px solid var(--border-color); display: flex; align-items: center; justify-content: space-between; padding: 0 32px; flex-shrink: 0; box-shadow: var(--shadow-sm); }
+        .header-title h1 { font-size: 1.25rem; font-weight: 700; color: var(--text-primary); letter-spacing: -0.02em; }
+        .header-title p { font-size: 0.8rem; color: var(--text-muted); margin-top: 2px; }
+
+        .content-area { flex: 1; padding: 32px; overflow-y: auto; }
+        .view-pane { display: none; }
+        .view-pane.active { display: block; animation: fadeIn 0.2s ease-in-out; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: translateY(0); } }
+
+        /* Cards & Containers */
+        .card-grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; margin-bottom: 28px; }
+        .card-grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-bottom: 28px; }
+        .card-grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; margin-bottom: 28px; }
+        
+        .card { background: var(--bg-surface); border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 24px; box-shadow: var(--shadow-sm); transition: border-color 0.2s; }
+        .card:hover { border-color: var(--border-hover); }
+        
+        .card-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px; }
+        .card-header h3 { font-size: 1rem; font-weight: 600; color: var(--text-primary); }
+        
+        .metric-title { font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.05em; font-weight: 600; color: var(--text-muted); margin-bottom: 8px; }
+        .metric-value { font-size: 2rem; font-weight: 700; color: var(--text-primary); letter-spacing: -0.03em; line-height: 1; }
+        .metric-sub { font-size: 0.78rem; font-weight: 500; color: var(--text-secondary); margin-top: 8px; display: flex; align-items: center; gap: 4px; }
+        .metric-sub.positive { color: var(--success-green); }
+        .metric-sub.warning { color: var(--warning-amber); }
+
+        /* Buttons & Badges */
+        .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 10px 18px; font-size: 0.88rem; font-weight: 600; border-radius: var(--radius-sm); border: 1px solid transparent; cursor: pointer; transition: all 0.15s ease; text-decoration: none; }
+        .btn-primary { background-color: var(--primary-blue); color: #ffffff; }
+        .btn-primary:hover { background-color: var(--primary-dark); }
+        .btn-secondary { background-color: var(--bg-surface); border-color: var(--border-color); color: var(--text-secondary); }
+        .btn-secondary:hover { background-color: var(--bg-main); color: var(--text-primary); }
+        .btn-success { background-color: var(--success-green); color: #ffffff; }
+        .btn-danger { background-color: var(--danger-red); color: #ffffff; }
+        .btn-warning { background-color: var(--warning-amber); color: #ffffff; }
+
+        .badge { display: inline-flex; align-items: center; padding: 4px 10px; border-radius: 4px; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.03em; }
+        .badge-l0 { background: #f1f5f9; color: #475569; border: 1px solid #cbd5e1; }
+        .badge-l1 { background: var(--primary-light); color: var(--primary-dark); border: 1px solid #bae6fd; }
+        .badge-l2 { background: var(--warning-light); color: var(--warning-amber); border: 1px solid #fde68a; }
+        .badge-l3 { background: var(--success-light); color: var(--success-green); border: 1px solid #bbf7d0; }
+
+        .badge-pass { background: var(--success-light); color: var(--success-green); }
+        .badge-fail { background: var(--danger-light); color: var(--danger-red); }
+
+        /* Tables */
+        .table-responsive { overflow-x: auto; margin-top: 16px; border-radius: var(--radius-sm); border: 1px solid var(--border-color); }
+        table { width: 100%; border-collapse: collapse; background: var(--bg-surface); font-size: 0.88rem; text-align: left; }
+        th { background: #f8fafc; padding: 12px 16px; color: var(--text-muted); font-weight: 600; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.05em; border-bottom: 1px solid var(--border-color); }
+        td { padding: 14px 16px; border-bottom: 1px solid var(--border-color); color: var(--text-secondary); }
+        tr:last-child td { border-bottom: none; }
+        tr:hover td { background: #f8fafc; }
+
+        /* Form Inputs */
+        .form-group { margin-bottom: 20px; }
+        .form-label { display: block; font-size: 0.82rem; font-weight: 600; color: var(--text-primary); margin-bottom: 8px; }
+        .form-control { width: 100%; padding: 10px 14px; background: var(--bg-surface); border: 1px solid var(--border-color); border-radius: var(--radius-sm); font-size: 0.9rem; color: var(--text-primary); transition: border-color 0.15s; }
+        .form-control:focus { outline: none; border-color: var(--primary-blue); box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.1); }
+        textarea.form-control { min-height: 120px; resize: vertical; line-height: 1.5; }
+
+        /* Pipeline Visualizer */
+        .pipeline-flow { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin: 30px 0; overflow-x: auto; padding: 10px 0; }
+        .pipeline-node { background: var(--bg-surface); border: 2px solid var(--border-color); border-radius: var(--radius-md); padding: 18px; width: 190px; flex-shrink: 0; text-align: center; position: relative; box-shadow: var(--shadow-sm); }
+        .pipeline-node.active { border-color: var(--primary-blue); background: var(--primary-light); }
+        .pipeline-node.disabled { opacity: 0.4; background: #f1f5f9; border-style: dashed; }
+        .pipeline-node .node-role { font-size: 0.72rem; text-transform: uppercase; font-weight: 700; color: var(--text-muted); margin-bottom: 4px; }
+        .pipeline-node .node-name { font-size: 0.95rem; font-weight: 700; color: var(--text-primary); }
+        .pipeline-node .node-meta { font-size: 0.75rem; color: var(--text-secondary); margin-top: 10px; padding-top: 8px; border-top: 1px solid var(--border-color); }
+        .pipeline-arrow { font-size: 1.5rem; color: var(--text-muted); font-weight: 300; }
+
+        /* Chart Canvas Holder */
+        .chart-wrapper { position: relative; height: 320px; width: 100%; margin-top: 16px; }
+
+        /* Callout Box */
+        .callout-info { background: #f0f9ff; border-left: 4px solid var(--primary-blue); padding: 16px; border-radius: var(--radius-sm); color: #0369a1; font-size: 0.88rem; line-height: 1.5; margin-bottom: 24px; }
+        .callout-warning { background: #fffbeb; border-left: 4px solid var(--warning-amber); padding: 16px; border-radius: var(--radius-sm); color: #92400e; font-size: 0.88rem; line-height: 1.5; margin-bottom: 24px; }
+
+        /* Governance Cards */
+        .gov-card-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; margin-bottom: 30px; }
+        .gov-card { background: var(--bg-surface); border: 2px solid var(--border-color); border-radius: var(--radius-lg); padding: 24px; cursor: pointer; transition: all 0.2s ease; position: relative; }
+        .gov-card:hover { border-color: var(--primary-blue); box-shadow: var(--shadow-md); }
+        .gov-card.selected { border-color: var(--primary-blue); background: #f0f9ff; }
+        .gov-card .gov-level { font-size: 0.75rem; font-weight: 700; color: var(--primary-blue); text-transform: uppercase; margin-bottom: 6px; }
+        .gov-card .gov-title { font-size: 1.1rem; font-weight: 700; color: var(--text-primary); margin-bottom: 12px; }
+        .gov-card .gov-metric { display: flex; justify-content: space-between; font-size: 0.82rem; padding: 6px 0; border-bottom: 1px dashed var(--border-color); }
+        .gov-card .gov-metric:last-child { border-bottom: none; }
+
+        /* Tooltip */
+        .tooltip-icon { display: inline-flex; align-items: center; justify-content: center; width: 16px; height: 16px; border-radius: 50%; background: #e2e8f0; color: var(--text-muted); font-size: 0.7rem; font-weight: 700; margin-left: 4px; cursor: help; }
+    </style>
+</head>
+<body>
+
+    <!-- PERSISTENT SIDEBAR NAVIGATION -->
+    <sidebar>
+        <div class="sidebar-brand">
+            <div class="brand-title">🛡️ GOVBENCH-MED</div>
+            <div class="brand-sub">Clinical Governance Benchmark</div>
+        </div>
+        <div class="nav-section">
+            <div class="nav-label">Research Navigation</div>
+            <ul class="nav-list">
+                <li class="nav-item active" onclick="switchTab('dashboard')"><span>📊</span> Dashboard</li>
+                <li class="nav-item" onclick="switchTab('cases')"><span>📁</span> Clinical Cases</li>
+                <li class="nav-item" onclick="switchTab('case-input')"><span>📝</span> Case Input & Runner</li>
+                <li class="nav-item" onclick="switchTab('pipeline')"><span>🔄</span> Agent Pipeline</li>
+                <li class="nav-item" onclick="switchTab('diagnosis')"><span>🩺</span> Diagnosis & Evidence</li>
+                <li class="nav-item" onclick="switchTab('governance')"><span>🛡️</span> Governance Config</li>
+                <li class="nav-item" onclick="switchTab('human-review')"><span>👨⚕️</span> Human Review</li>
+                <li class="nav-item" onclick="switchTab('benchmark')"><span>📈</span> Benchmark Results</li>
+                <li class="nav-item" onclick="switchTab('ablation')"><span>🔬</span> Ablation Study</li>
+                <li class="nav-item" onclick="switchTab('cost-benefit')"><span>⚖️</span> Cost-Benefit Analysis</li>
+                <li class="nav-item" onclick="switchTab('reports')"><span>📑</span> Research Reports</li>
+            </ul>
+        </div>
+        <div class="sidebar-footer">
+            <div class="status-indicator">
+                <div class="status-dot"></div>
+                <span style="font-weight:600; color:#f8fafc;">System Active (Telemetry Ready)</span>
+            </div>
+            <div style="color:#64748b; margin-top:4px;">Dataset: MedQA + DDXPlus</div>
+            <div style="color:#64748b;">Model: Llama 3.1 8B (Open-Source)</div>
+        </div>
+    </sidebar>
+
+    <!-- MAIN CONTENT VIEW AREA -->
+    <main>
+        <header>
+            <div class="header-title">
+                <h1 id="header-heading">Research Dashboard</h1>
+                <p id="header-sub">Quantifying the Quality, Latency, and Token Cost Tradeoff in Multi-Agent Clinical AI</p>
+            </div>
+            <div>
+                <span class="badge badge-l3">Research Environment</span>
+            </div>
+        </header>
+
+        <div class="content-area">
+
+            <!-- 1. DASHBOARD SCREEN -->
+            <div id="tab-dashboard" class="view-pane active">
+                <div class="callout-info">
+                    💡 <strong>Research Purpose:</strong> This platform benchmarks multi-agent clinical diagnostic pipelines under 4 progressive governance configurations (Level 0 Baseline to Level 3 Combined). It quantifies the tradeoff between diagnostic safety gains and compute/latency costs.
+                </div>
+
+                <div class="card-grid-4">
+                    <div class="card">
+                        <div class="metric-title">Total Evaluated Cases <span class="tooltip-icon" title="Total clinical vignettes evaluated">ⓘ</span></div>
+                        <div class="metric-value">248</div>
+                        <div class="metric-sub positive">100% Validated Telemetry</div>
+                    </div>
+                    <div class="card">
+                        <div class="metric-title">Avg Diagnostic Safety (CSS) <span class="tooltip-icon" title="Clinical Safety Score (0-1)">ⓘ</span></div>
+                        <div class="metric-value">87.4%</div>
+                        <div class="metric-sub positive">+18.2% vs Baseline</div>
+                    </div>
+                    <div class="card">
+                        <div class="metric-title">End-to-End Latency <span class="tooltip-icon" title="Wall-clock time per case">ⓘ</span></div>
+                        <div class="metric-value">8.2 s</div>
+                        <div class="metric-sub warning">+4.0s Governance Overhead</div>
+                    </div>
+                    <div class="card">
+                        <div class="metric-title">Avg Token Cost <span class="tooltip-icon" title="Total tokens consumed per case">ⓘ</span></div>
+                        <div class="metric-value">$0.034</div>
+                        <div class="metric-sub warning">2,738 Tokens / Case</div>
+                    </div>
+                </div>
+
+                <div class="card-grid-2">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>Governance Quality vs Cost Tradeoff (Pareto Frontier)</h3>
+                        </div>
+                        <div class="chart-wrapper">
+                            <canvas id="paretoChartCanvas"></canvas>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>Governance Configuration Overview</h3>
+                        </div>
+                        <div class="table-responsive">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Level</th>
+                                        <th>Config</th>
+                                        <th>Quality (CSS)</th>
+                                        <th>Latency</th>
+                                        <th>Token Cost</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td><span class="badge badge-l0">Level 0</span></td><td>Ungoverned Baseline</td><td>72.0%</td><td>4.2s</td><td>1,850 tok</td></tr>
+                                    <tr><td><span class="badge badge-l1">Level 1</span></td><td>Automated Verification</td><td>84.5%</td><td>6.1s</td><td>2,430 tok</td></tr>
+                                    <tr><td><span class="badge badge-l2">Level 2</span></td><td>Human Approval Gate</td><td>89.0%</td><td>7.8s</td><td>2,200 tok</td></tr>
+                                    <tr><td><span class="badge badge-l3">Level 3</span></td><td>Combined Governance</td><td>91.2%</td><td>10.4s</td><td>3,150 tok</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. CLINICAL CASES SCREEN -->
+            <div id="tab-cases" class="view-pane">
+                <div class="card-header">
+                    <div>
+                        <h2>Clinical Benchmark Cases</h2>
+                        <p style="color:var(--text-muted); margin-top:4px;">Standardized clinical tasks from MedQA-USMLE and DDXPlus datasets.</p>
+                    </div>
+                    <button class="btn btn-primary" onclick="switchTab('case-input')">+ New Clinical Case</button>
+                </div>
+                <div class="table-responsive">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Case ID</th>
+                                <th>Task Type</th>
+                                <th>Governance Config</th>
+                                <th>Quality (CSS)</th>
+                                <th>Latency</th>
+                                <th>Cost</th>
+                                <th>Status</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>MEDQA-0042</strong></td>
+                                <td>Differential Diagnosis</td>
+                                <td><span class="badge badge-l3">Combined</span></td>
+                                <td><span style="color:var(--success-green); font-weight:700;">94.0%</span></td>
+                                <td>5.3s</td>
+                                <td>3,142 tok</td>
+                                <td><span class="badge badge-pass">Passed</span></td>
+                                <td><button class="btn btn-secondary" onclick="switchTab('diagnosis')">View Result</button></td>
+                            </tr>
+                            <tr>
+                                <td><strong>MEDQA-0018</strong></td>
+                                <td>Structured Report</td>
+                                <td><span class="badge badge-l1">Verification</span></td>
+                                <td><span style="color:var(--success-green); font-weight:700;">88.5%</span></td>
+                                <td>3.8s</td>
+                                <td>2,450 tok</td>
+                                <td><span class="badge badge-pass">Passed</span></td>
+                                <td><button class="btn btn-secondary" onclick="switchTab('diagnosis')">View Result</button></td>
+                            </tr>
+                            <tr>
+                                <td><strong>DDXPLUS-0009</strong></td>
+                                <td>Differential Diagnosis</td>
+                                <td><span class="badge badge-l2">Human Approval</span></td>
+                                <td><span style="color:var(--warning-amber); font-weight:700;">78.0%</span></td>
+                                <td>4.0s</td>
+                                <td>1,090 tok</td>
+                                <td><span class="badge badge-fail">Abstained</span></td>
+                                <td><button class="btn btn-secondary" onclick="switchTab('human-review')">Review</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- 3. CLINICAL CASE INPUT SCREEN -->
+            <div id="tab-case-input" class="view-pane">
+                <div class="callout-info">
+                    ℹ️ Select a governance configuration to test how oversight mechanisms alter latency, token consumption, and verification accuracy.
+                </div>
+                <div class="card-grid-2">
+                    <div class="card">
+                        <h3 style="margin-bottom:16px;">Case Information & Clinical Notes</h3>
+                        <div class="form-group">
+                            <label class="form-label">Patient Age & Sex</label>
+                            <div style="display:flex; gap:12px;">
+                                <input type="text" class="form-control" value="54-year-old" placeholder="Age">
+                                <input type="text" class="form-control" value="Male" placeholder="Sex">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Clinical Presentation Notes</label>
+                            <textarea class="form-control">Patient presents with sudden-onset substernal chest pressure radiating to the left jaw and diaphoresis for 2 hours. History of hypertension and dyslipidemia. ECG shows 2mm ST-segment elevation in leads II, III, and aVF.</textarea>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Clinical Task Type</label>
+                            <select class="form-control">
+                                <option>Symptom-based Differential Diagnosis</option>
+                                <option>Structured Report Generation</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <h3 style="margin-bottom:16px;">Governance & Model Configuration</h3>
+                        <div class="form-group">
+                            <label class="form-label">Governance Configuration</label>
+                            <select class="form-control" id="runner-gov-select" onchange="updatePipelinePreview(this.value)">
+                                <option value="L0">Level 0 — Ungoverned Baseline (Research Agent → Report Writer)</option>
+                                <option value="L1">Level 1 — Automated Verification (+ Verifier Agent)</option>
+                                <option value="L2">Level 2 — Human Approval Gate (+ Human-in-the-Loop)</option>
+                                <option value="L3" selected>Level 3 — Combined Governance (Full Oversight Stack)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Base LLM Engine</label>
+                            <select class="form-control">
+                                <option>Llama 3.1 8B (Open-Source)</option>
+                                <option>Mistral 7B</option>
+                                <option>Qwen 2.5 7B</option>
+                            </select>
+                        </div>
+                        <button class="btn btn-primary" style="width:100%; margin-top:20px; padding:12px;" onclick="runBenchmarkExecution()">🚀 RUN BENCHMARK EVALUATION</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4. AGENT PIPELINE SCREEN -->
+            <div id="tab-pipeline" class="view-pane">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Multi-Agent Workflow Architecture</h3>
+                        <span class="badge badge-l3" id="pipeline-level-badge">Level 3 — Combined Governance</span>
+                    </div>
+                    <p style="color:var(--text-muted); font-size:0.88rem;">Visualizing agent interaction graph and execution status for the current case.</p>
+                    
+                    <div class="pipeline-flow">
+                        <div class="pipeline-node active">
+                            <div class="node-role">Primary Agent</div>
+                            <div class="node-name">Research Agent</div>
+                            <div class="node-meta">✓ Completed | 1.8s | 858 tok</div>
+                        </div>
+                        <div class="pipeline-arrow">→</div>
+                        <div class="pipeline-node active">
+                            <div class="node-role">Synthesis</div>
+                            <div class="node-name">Report Writer</div>
+                            <div class="node-meta">✓ Completed | 2.1s | 1,200 tok</div>
+                        </div>
+                        <div class="pipeline-arrow">→</div>
+                        <div class="pipeline-node active" id="node-verifier">
+                            <div class="node-role">Safety Oversight</div>
+                            <div class="node-name">Verifier Agent</div>
+                            <div class="node-meta">✓ Passed | 1.4s | 542 tok</div>
+                        </div>
+                        <div class="pipeline-arrow">→</div>
+                        <div class="pipeline-node active" id="node-human">
+                            <div class="node-role">Human-in-Loop</div>
+                            <div class="node-name">Human Approval</div>
+                            <div class="node-meta">✓ Approved | 2.9s</div>
+                        </div>
+                        <div class="pipeline-arrow">→</div>
+                        <div class="pipeline-node active">
+                            <div class="node-role">Final Output</div>
+                            <div class="node-name">Diagnostic Result</div>
+                            <div class="node-meta">CSS: 94.0%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 5. DIAGNOSIS & EVIDENCE SCREEN -->
+            <div id="tab-diagnosis" class="view-pane">
+                <div class="card-grid-2">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>Diagnostic Decision Result</h3>
+                            <span class="badge badge-pass">Verified & Approved</span>
+                        </div>
+                        <div style="margin-bottom:20px;">
+                            <div class="metric-title">Primary Diagnosis</div>
+                            <div style="font-size:1.5rem; font-weight:700; color:var(--primary-blue);">Acute Coronary Syndrome (Inferior STEMI)</div>
+                            <div class="metric-sub positive">Confidence: 87.0%</div>
+                        </div>
+
+                        <div class="metric-title" style="margin-bottom:10px;">Ranked Differential Diagnoses</div>
+                        <div style="display:flex; flex-direction:column; gap:10px;">
+                            <div>
+                                <div style="display:flex; justify-content:space-between; font-size:0.85rem; font-weight:600; margin-bottom:4px;">
+                                    <span>1. Acute Coronary Syndrome</span>
+                                    <span>87%</span>
+                                </div>
+                                <div style="height:8px; background:#e2e8f0; border-radius:4px; overflow:hidden;">
+                                    <div style="width:87%; height:100%; background:var(--primary-blue);"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div style="display:flex; justify-content:space-between; font-size:0.85rem; font-weight:600; margin-bottom:4px;">
+                                    <span>2. Pulmonary Embolism</span>
+                                    <span>7%</span>
+                                </div>
+                                <div style="height:8px; background:#e2e8f0; border-radius:4px; overflow:hidden;">
+                                    <div style="width:7%; height:100%; background:var(--warning-amber);"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>Evidence & Verification Traceability</h3>
+                        </div>
+                        <div class="table-responsive">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Clinical Evidence</th>
+                                        <th>Source Section</th>
+                                        <th>Verifier Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>ST-segment elevation in leads II, III, aVF</td><td>ECG Findings</td><td><span class="badge badge-pass">Supported</span></td></tr>
+                                    <tr><td>Substernal chest pressure for 2 hours</td><td>History of Present Illness</td><td><span class="badge badge-pass">Supported</span></td></tr>
+                                    <tr><td>Diaphoresis and jaw radiation</td><td>Physical Exam</td><td><span class="badge badge-pass">Supported</span></td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 6. GOVERNANCE CONFIGURATION SCREEN -->
+            <div id="tab-governance" class="view-pane">
+                <div class="card-header" style="margin-bottom:20px;">
+                    <div>
+                        <h2>Governance Level Specifications</h2>
+                        <p style="color:var(--text-muted);">Comparing structural oversight mechanisms across levels.</p>
+                    </div>
+                </div>
+
+                <div class="gov-card-grid">
+                    <div class="gov-card" onclick="selectGovLevel('L0')">
+                        <div class="gov-level">Level 0</div>
+                        <div class="gov-title">Ungoverned Baseline</div>
+                        <p style="font-size:0.8rem; color:var(--text-muted); margin-bottom:15px;">Research Agent → Report Writer</p>
+                        <div class="gov-metric"><span>Expected Safety:</span><strong>72.0%</strong></div>
+                        <div class="gov-metric"><span>Latency:</span><strong>4.2s</strong></div>
+                        <div class="gov-metric"><span>Token Cost:</span><strong>1.0x</strong></div>
+                    </div>
+                    <div class="gov-card" onclick="selectGovLevel('L1')">
+                        <div class="gov-level">Level 1</div>
+                        <div class="gov-title">Automated Verification</div>
+                        <p style="font-size:0.8rem; color:var(--text-muted); margin-bottom:15px;">+ Verifier Fact-Check Agent</p>
+                        <div class="gov-metric"><span>Expected Safety:</span><strong>84.5%</strong></div>
+                        <div class="gov-metric"><span>Latency:</span><strong>6.1s</strong></div>
+                        <div class="gov-metric"><span>Token Cost:</span><strong>1.27x</strong></div>
+                    </div>
+                    <div class="gov-card" onclick="selectGovLevel('L2')">
+                        <div class="gov-level">Level 2</div>
+                        <div class="gov-title">Human Approval Gate</div>
+                        <p style="font-size:0.8rem; color:var(--text-muted); margin-bottom:15px;">+ Human-in-the-Loop Check</p>
+                        <div class="gov-metric"><span>Expected Safety:</span><strong>89.0%</strong></div>
+                        <div class="gov-metric"><span>Latency:</span><strong>7.8s</strong></div>
+                        <div class="gov-metric"><span>Token Cost:</span><strong>1.44x</strong></div>
+                    </div>
+                    <div class="gov-card selected" onclick="selectGovLevel('L3')">
+                        <div class="gov-level">Level 3</div>
+                        <div class="gov-title">Combined Governance</div>
+                        <p style="font-size:0.8rem; color:var(--text-muted); margin-bottom:15px;">Verifier + Ethics Critic + HITL</p>
+                        <div class="gov-metric"><span>Expected Safety:</span><strong>91.2%</strong></div>
+                        <div class="gov-metric"><span>Latency:</span><strong>10.4s</strong></div>
+                        <div class="gov-metric"><span>Token Cost:</span><strong>1.69x</strong></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 7. HUMAN REVIEW SCREEN -->
+            <div id="tab-human-review" class="view-pane">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Simulated Human-in-the-Loop Review Panel</h3>
+                        <span class="badge badge-l2">Review Pending</span>
+                    </div>
+                    <p style="color:var(--text-muted); margin-bottom:20px;">Review case recommendations flagged for low confidence or high acuity.</p>
+                    
+                    <div style="display:flex; gap:16px;">
+                        <button class="btn btn-success" onclick="alert('Case Approved!')">✓ APPROVE DIAGNOSIS</button>
+                        <button class="btn btn-warning" onclick="alert('Revision Requested')">⚠️ REQUEST REVISION</button>
+                        <button class="btn btn-danger" onclick="alert('Case Rejected')">✕ REJECT DIAGNOSIS</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 8. BENCHMARK SCREEN -->
+            <div id="tab-benchmark" class="view-pane">
+                <div class="card-grid-2">
+                    <div class="card">
+                        <div class="card-header"><h3>Diagnostic Safety by Governance Level</h3></div>
+                        <div class="chart-wrapper"><canvas id="benchSafetyChart"></canvas></div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header"><h3>Latency & Token Cost Overhead</h3></div>
+                        <div class="chart-wrapper"><canvas id="benchCostChart"></canvas></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 9. ABLATION STUDY SCREEN -->
+            <div id="tab-ablation" class="view-pane">
+                <div class="card">
+                    <h3>Marginal Contribution Analysis (Ablation)</h3>
+                    <div class="table-responsive">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Ablation Stage</th>
+                                    <th>Added Mechanism</th>
+                                    <th>Δ Safety (CSS)</th>
+                                    <th>Δ Token Cost</th>
+                                    <th>Governance Efficiency (GE)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>BASE</td><td>Ungoverned 2-Agent Baseline</td><td>0.000</td><td>0</td><td>—</td></tr>
+                                <tr><td>+ VERIFIER</td><td>Automated Fact-Checking Agent</td><td>+0.052</td><td>+381</td><td>0.274</td></tr>
+                                <tr><td>+ HITL</td><td>Confidence Escalation Gate</td><td>+0.091</td><td>+347</td><td>0.156</td></tr>
+                                <tr><td>+ COMBINED</td><td>Full Stack (G4)</td><td>+0.091</td><td>+715</td><td>0.242</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 10. COST-BENEFIT ANALYSIS SCREEN -->
+            <div id="tab-cost-benefit" class="view-pane">
+                <div class="card">
+                    <h3>Governance Recommendation Engine</h3>
+                    <div class="callout-warning" style="margin-top:15px;">
+                        🎯 <strong>Optimal Deployment Recommendation: Level 2 (Automated Verifier + Confidence Gate)</strong><br>
+                        Level 2 achieves 89.0% of maximal safety gains at only 44% of the overhead cost of Level 3.
+                    </div>
+                </div>
+            </div>
+
+            <!-- 11. REPORTS SCREEN -->
+            <div id="tab-reports" class="view-pane">
+                <div class="card">
+                    <h3>Export Benchmark Telemetry & Research Reports</h3>
+                    <div style="display:flex; gap:16px; margin-top:20px;">
+                        <button class="btn btn-primary" onclick="alert('Exporting CSV...')">📥 Export CSV Dataset</button>
+                        <button class="btn btn-secondary" onclick="alert('Exporting JSON logs...')">📥 Export Raw JSON Logs</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <script>
+        let paretoChart, benchSafetyChart, benchCostChart;
+
+        function switchTab(tabId) {
+            document.querySelectorAll('.view-pane').forEach(el => el.classList.remove('active'));
+            document.querySelectorAll('.nav-item').forEach(el => el.classList.remove('active'));
+
+            const targetPane = document.getElementById('tab-' + tabId);
+            if (targetPane) targetPane.classList.add('active');
+
+            const activeNav = Array.from(document.querySelectorAll('.nav-item')).find(el => el.getAttribute('onclick').includes(tabId));
+            if (activeNav) activeNav.classList.add('active');
+
+            const titleMap = {
+                'dashboard': 'Research Dashboard',
+                'cases': 'Clinical Benchmark Cases',
+                'case-input': 'Clinical Case Input & Runner',
+                'pipeline': 'Multi-Agent Workflow Architecture',
+                'diagnosis': 'Diagnostic Decision & Evidence Traceability',
+                'governance': 'Governance Level Specifications',
+                'human-review': 'Human-in-the-Loop Review Panel',
+                'benchmark': 'Benchmark Performance Analysis',
+                'ablation': 'Ablation Study (Marginal Overhead)',
+                'cost-benefit': 'Cost-Benefit & Recommendation Engine',
+                'reports': 'Research Reports & Exports'
+            };
+            document.getElementById('header-heading').innerText = titleMap[tabId] || 'Research Dashboard';
+        }
+
+        function updatePipelinePreview(level) {
+            const nodeVerifier = document.getElementById('node-verifier');
+            const nodeHuman = document.getElementById('node-human');
+            const badge = document.getElementById('pipeline-level-badge');
+
+            if (level === 'L0') {
+                nodeVerifier.classList.add('disabled');
+                nodeHuman.classList.add('disabled');
+                badge.innerText = 'Level 0 — Ungoverned Baseline';
+                badge.className = 'badge badge-l0';
+            } else if (level === 'L1') {
+                nodeVerifier.classList.remove('disabled');
+                nodeHuman.classList.add('disabled');
+                badge.innerText = 'Level 1 — Automated Verification';
+                badge.className = 'badge badge-l1';
+            } else if (level === 'L2') {
+                nodeVerifier.classList.add('disabled');
+                nodeHuman.classList.remove('disabled');
+                badge.innerText = 'Level 2 — Human Approval Gate';
+                badge.className = 'badge badge-l2';
+            } else {
+                nodeVerifier.classList.remove('disabled');
+                nodeHuman.classList.remove('disabled');
+                badge.innerText = 'Level 3 — Combined Governance';
+                badge.className = 'badge badge-l3';
+            }
+        }
+
+        function runBenchmarkExecution() {
+            switchTab('pipeline');
+            alert('Benchmark Evaluation Triggered. Inspecting Agent Pipeline Execution.');
+        }
+
+        function initCharts() {
+            const ctxPareto = document.getElementById('paretoChartCanvas').getContext('2d');
+            paretoChart = new Chart(ctxPareto, {
+                type: 'line',
+                data: {
+                    labels: ['Level 0 (Baseline)', 'Level 1 (Verifier)', 'Level 2 (HITL)', 'Level 3 (Combined)'],
+                    datasets: [{
+                        label: 'Clinical Safety Score (CSS)',
+                        data: [0.720, 0.845, 0.890, 0.912],
+                        borderColor: '#0284c7',
+                        backgroundColor: 'rgba(2, 132, 199, 0.1)',
+                        fill: true,
+                        tension: 0.3,
+                        pointRadius: 6
+                    }]
+                },
+                options: { responsive: true, maintainAspectRatio: false }
+            });
+
+            const ctxSafety = document.getElementById('benchSafetyChart').getContext('2d');
+            benchSafetyChart = new Chart(ctxSafety, {
+                type: 'bar',
+                data: {
+                    labels: ['Level 0', 'Level 1', 'Level 2', 'Level 3'],
+                    datasets: [{
+                        label: 'Clinical Safety Score',
+                        data: [72.0, 84.5, 89.0, 91.2],
+                        backgroundColor: ['#94a3b8', '#0284c7', '#d97706', '#16a34a']
+                    }]
+                },
+                options: { responsive: true, maintainAspectRatio: false }
+            });
+
+            const ctxCost = document.getElementById('benchCostChart').getContext('2d');
+            benchCostChart = new Chart(ctxCost, {
+                type: 'bar',
+                data: {
+                    labels: ['Level 0', 'Level 1', 'Level 2', 'Level 3'],
+                    datasets: [{
+                        label: 'Mean Tokens Consumed',
+                        data: [1850, 2430, 2200, 3150],
+                        backgroundColor: '#7c3aed'
+                    }]
+                },
+                options: { responsive: true, maintainAspectRatio: false }
+            });
+        }
+
+        window.onload = function() {
+            initCharts();
+        };
+    </script>
+</body>
+</html>

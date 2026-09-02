@@ -1,7 +1,7 @@
 {
-  "run_id": "6d029f77",
+  "run_id": "81056086",
   "experiment_id": "medqa_0033_llama3.1:8b_G3_seed42",
-  "timestamp": "2026-09-02T17:33:12.346339Z",
+  "timestamp": "2026-09-02T17:37:02.191495Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0033",
@@ -26,15 +26,15 @@
   "contradicted_claims": 0,
   "unverifiable_claims": 0,
   "revision_count": 0,
-  "input_tokens": 2609,
-  "output_tokens": 212,
-  "total_tokens": 2821,
+  "input_tokens": 2601,
+  "output_tokens": 207,
+  "total_tokens": 2808,
   "model_calls": 6,
-  "latency_ms": 4.6126999942352995,
-  "governance_latency_ms": 4.6126999942352995,
-  "diagnosis_latency_ms": 2.7676199965411796,
-  "governance_overhead_latency_ms": 1.84507999769412,
-  "report_latency_ms": 0.0006126999942352995,
+  "latency_ms": 4.395900002331473,
+  "governance_latency_ms": 4.395900002331473,
+  "diagnosis_latency_ms": 2.6375400013988837,
+  "governance_overhead_latency_ms": 1.7583600009325893,
+  "report_latency_ms": 0.00039590000233147293,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -53,7 +53,7 @@
       "input_tokens": 365,
       "output_tokens": 41,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.79, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.79}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.85, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.85}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist_a",
@@ -79,16 +79,16 @@
     {
       "agent": "report_writer",
       "input_tokens": 520,
-      "output_tokens": 46,
-      "latency": 0.0002778999987640418,
-      "text": "{\"top_diagnosis\": \"Insulin, potassium, IV fluids, and glucose\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Insulin, potassium, IV fluids, and glucose\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "output_tokens": 39,
+      "latency": 0.00023689999943599105,
+      "text": "{\"top_diagnosis\": \"IV fluids only\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"IV fluids only\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
-      "input_tokens": 841,
-      "output_tokens": 44,
-      "latency": 0.0003347999954712577,
-      "text": "{\"top_diagnosis\": \"Supportive therapy and close monitoring\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Supportive therapy and close monitoring\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "input_tokens": 833,
+      "output_tokens": 46,
+      "latency": 0.00015900000289548188,
+      "text": "{\"top_diagnosis\": \"Insulin, potassium, IV fluids, and glucose\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Insulin, potassium, IV fluids, and glucose\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     }
   ],
   "verification_trace": null,

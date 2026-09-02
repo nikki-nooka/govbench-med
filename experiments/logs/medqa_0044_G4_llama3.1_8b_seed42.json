@@ -1,7 +1,7 @@
 {
-  "run_id": "c0756316",
+  "run_id": "6bd3c149",
   "experiment_id": "medqa_0044_llama3.1:8b_G4_seed42",
-  "timestamp": "2026-09-02T17:33:12.458777Z",
+  "timestamp": "2026-09-02T17:37:02.290930Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0044",
@@ -26,15 +26,15 @@
   "contradicted_claims": 0,
   "unverifiable_claims": 0,
   "revision_count": 0,
-  "input_tokens": 3052,
-  "output_tokens": 195,
-  "total_tokens": 3247,
+  "input_tokens": 3055,
+  "output_tokens": 198,
+  "total_tokens": 3253,
   "model_calls": 7,
-  "latency_ms": 5.294299999950454,
-  "governance_latency_ms": 5.294299999950454,
-  "diagnosis_latency_ms": 3.176579999970272,
-  "governance_overhead_latency_ms": 2.1177199999801815,
-  "report_latency_ms": 0.00029429999995045364,
+  "latency_ms": 5.2777999980025925,
+  "governance_latency_ms": 5.2777999980025925,
+  "diagnosis_latency_ms": 3.1666799988015555,
+  "governance_overhead_latency_ms": 2.111119999201037,
+  "report_latency_ms": 0.0002777999980025925,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -53,7 +53,7 @@
       "input_tokens": 369,
       "output_tokens": 41,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.8, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.8}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.76, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.76}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist_a",
@@ -79,16 +79,16 @@
     {
       "agent": "report_writer",
       "input_tokens": 521,
-      "output_tokens": 33,
-      "latency": 0.00012209999840706587,
-      "text": "{\"top_diagnosis\": \"Incus\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Incus\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "output_tokens": 36,
+      "latency": 0.00012599999899975955,
+      "text": "{\"top_diagnosis\": \"Tympanic membrane\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Tympanic membrane\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
-      "input_tokens": 829,
+      "input_tokens": 832,
       "output_tokens": 33,
-      "latency": 0.00017220000154338777,
-      "text": "{\"top_diagnosis\": \"Malleus\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Malleus\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "latency": 0.00015179999900283292,
+      "text": "{\"top_diagnosis\": \"Cochlea\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Cochlea\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "ethics_critic",

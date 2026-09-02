@@ -1,7 +1,7 @@
 {
-  "run_id": "bc82bb9b",
+  "run_id": "fc94e3c3",
   "experiment_id": "medqa_0049_llama3.1:8b_G3_seed42",
-  "timestamp": "2026-09-02T17:33:12.504563Z",
+  "timestamp": "2026-09-02T17:37:02.331813Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0049",
@@ -10,15 +10,15 @@
   "model_version": "llama3.1:8b",
   "governance_level": "G3",
   "seed": 42,
-  "final_answer": "Pulmonary Embolism",
+  "final_answer": "",
   "ground_truth": "KOH examination of lesion scrapings",
   "ground_truth_key": "A",
   "dataset_source": "medqa",
   "correctness": false,
   "top3_correct": false,
-  "confidence": 0.78,
-  "consensus": true,
-  "abstained": false,
+  "confidence": 0.0,
+  "consensus": false,
+  "abstained": true,
   "suppressed": false,
   "verification_status": "NOT_CHECKED",
   "claims_checked": 0,
@@ -26,17 +26,17 @@
   "contradicted_claims": 0,
   "unverifiable_claims": 0,
   "revision_count": 0,
-  "input_tokens": 2287,
-  "output_tokens": 210,
-  "total_tokens": 2497,
-  "model_calls": 6,
-  "latency_ms": 4.457900001492817,
-  "governance_latency_ms": 4.457900001492817,
-  "diagnosis_latency_ms": 2.67474000089569,
-  "governance_overhead_latency_ms": 1.7831600005971269,
-  "report_latency_ms": 0.00045790000149281695,
+  "input_tokens": 1031,
+  "output_tokens": 119,
+  "total_tokens": 1150,
+  "model_calls": 4,
+  "latency_ms": 4.0,
+  "governance_latency_ms": 4.0,
+  "diagnosis_latency_ms": 2.4,
+  "governance_overhead_latency_ms": 1.6,
+  "report_latency_ms": 0.0,
   "cost": 0.0,
-  "human_review_required": false,
+  "human_review_required": true,
   "human_review_time": 0.0,
   "css": 0.0,
   "cmr": 0.0,
@@ -53,7 +53,7 @@
       "input_tokens": 292,
       "output_tokens": 41,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.87, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.87}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.79, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.79}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist_a",
@@ -72,30 +72,15 @@
     {
       "agent": "moderator",
       "input_tokens": 193,
-      "output_tokens": 9,
+      "output_tokens": 6,
       "latency": 1.0,
-      "text": "{\"recommendation\": \"REPORT\", \"agreed_diagnosis\": \"Pulmonary Embolism\", \"average_confidence\": 0.78}"
-    },
-    {
-      "agent": "report_writer",
-      "input_tokens": 469,
-      "output_tokens": 44,
-      "latency": 0.00015379999967990443,
-      "text": "{\"top_diagnosis\": \"KOH examination of lesion scrapings\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"KOH examination of lesion scrapings\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
-    },
-    {
-      "agent": "report_judge",
-      "input_tokens": 787,
-      "output_tokens": 44,
-      "latency": 0.0003041000018129125,
-      "text": "{\"top_diagnosis\": \"Gram stain of skin scrapings\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Gram stain of skin scrapings\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"recommendation\": \"ABSTAIN\", \"reasoning\": \"Insufficient consensus.\"}"
     }
   ],
   "verification_trace": null,
   "consensus_trace": {
-    "recommendation": "REPORT",
-    "agreed_diagnosis": "Pulmonary Embolism",
-    "average_confidence": 0.78
+    "recommendation": "ABSTAIN",
+    "reasoning": "Insufficient consensus."
   },
   "ethics_trace": null,
   "report_trace": null

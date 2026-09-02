@@ -1,7 +1,7 @@
 {
-  "run_id": "106730ec",
+  "run_id": "fc20ae7f",
   "experiment_id": "medqa_0003_llama3.1:8b_G3_seed42",
-  "timestamp": "2026-09-02T17:33:11.935426Z",
+  "timestamp": "2026-09-02T17:37:01.924285Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0003",
@@ -26,15 +26,15 @@
   "contradicted_claims": 0,
   "unverifiable_claims": 0,
   "revision_count": 0,
-  "input_tokens": 2487,
-  "output_tokens": 188,
-  "total_tokens": 2675,
+  "input_tokens": 2490,
+  "output_tokens": 191,
+  "total_tokens": 2681,
   "model_calls": 6,
-  "latency_ms": 4.380499994207639,
-  "governance_latency_ms": 4.380499994207639,
-  "diagnosis_latency_ms": 2.6282999965245835,
-  "governance_overhead_latency_ms": 1.7521999976830558,
-  "report_latency_ms": 0.00038049999420763925,
+  "latency_ms": 4.3696000057971105,
+  "governance_latency_ms": 4.3696000057971105,
+  "diagnosis_latency_ms": 2.621760003478266,
+  "governance_overhead_latency_ms": 1.7478400023188443,
+  "report_latency_ms": 0.0003696000057971105,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -53,7 +53,7 @@
       "input_tokens": 344,
       "output_tokens": 41,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.89, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.89}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.81, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.81}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist_a",
@@ -79,16 +79,16 @@
     {
       "agent": "report_writer",
       "input_tokens": 496,
-      "output_tokens": 33,
-      "latency": 0.00016229999891947955,
-      "text": "{\"top_diagnosis\": \"Methimazole\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Methimazole\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "output_tokens": 36,
+      "latency": 0.00016280000272672623,
+      "text": "{\"top_diagnosis\": \"Radioiodine therapy\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Radioiodine therapy\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
-      "input_tokens": 804,
+      "input_tokens": 807,
       "output_tokens": 33,
-      "latency": 0.0002181999952881597,
-      "text": "{\"top_diagnosis\": \"Methimazole\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Methimazole\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "latency": 0.00020680000307038426,
+      "text": "{\"top_diagnosis\": \"Thyroidectomy\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Thyroidectomy\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     }
   ],
   "verification_trace": null,

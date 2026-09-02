@@ -1,7 +1,7 @@
 {
-  "run_id": "6596b2de",
+  "run_id": "2d3b485e",
   "experiment_id": "medqa_0035_llama3.1:8b_G4_seed42",
-  "timestamp": "2026-09-02T17:33:12.369744Z",
+  "timestamp": "2026-09-02T17:37:02.211204Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0035",
@@ -30,11 +30,11 @@
   "output_tokens": 221,
   "total_tokens": 2516,
   "model_calls": 7,
-  "latency_ms": 5.2568999989307486,
-  "governance_latency_ms": 5.2568999989307486,
-  "diagnosis_latency_ms": 3.154139999358449,
-  "governance_overhead_latency_ms": 2.1027599995722994,
-  "report_latency_ms": 0.00025689999893074855,
+  "latency_ms": 5.451699997938704,
+  "governance_latency_ms": 5.451699997938704,
+  "diagnosis_latency_ms": 3.2710199987632222,
+  "governance_overhead_latency_ms": 2.1806799991754815,
+  "report_latency_ms": 0.00045169999793870375,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -53,7 +53,7 @@
       "input_tokens": 231,
       "output_tokens": 45,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Clinical Evaluation Required\", \"confidence\": 0.77, \"reasoning\": \"Clinical presentation suggests Clinical Evaluation Required.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Clinical Evaluation Required\", \"confidence\": 0.77}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Clinical Evaluation Required\", \"confidence\": 0.86, \"reasoning\": \"Clinical presentation suggests Clinical Evaluation Required.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Clinical Evaluation Required\", \"confidence\": 0.86}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist_a",
@@ -80,14 +80,14 @@
       "agent": "report_writer",
       "input_tokens": 413,
       "output_tokens": 44,
-      "latency": 0.00010710000060498714,
-      "text": "{\"top_diagnosis\": \"Non-enveloped with linear, single-stranded RNA\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Non-enveloped with linear, single-stranded RNA\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "latency": 0.0002007000002777204,
+      "text": "{\"top_diagnosis\": \"Enveloped with linear, single-stranded RNA\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Enveloped with linear, single-stranded RNA\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
       "input_tokens": 726,
       "output_tokens": 44,
-      "latency": 0.0001497999983257614,
+      "latency": 0.00025099999766098335,
       "text": "{\"top_diagnosis\": \"Enveloped with linear, single-stranded RNA\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Enveloped with linear, single-stranded RNA\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {

@@ -1,7 +1,7 @@
 {
-  "run_id": "e0db2158",
+  "run_id": "cdb2d207",
   "experiment_id": "medqa_0048_llama3.1:8b_G1_seed42",
-  "timestamp": "2026-09-02T17:33:12.490629Z",
+  "timestamp": "2026-09-02T17:37:02.319138Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0048",
@@ -16,7 +16,7 @@
   "dataset_source": "medqa",
   "correctness": false,
   "top3_correct": false,
-  "confidence": 0.77,
+  "confidence": 0.85,
   "consensus": true,
   "abstained": false,
   "suppressed": false,
@@ -30,11 +30,11 @@
   "output_tokens": 155,
   "total_tokens": 1741,
   "model_calls": 4,
-  "latency_ms": 2.3120000037597492,
-  "governance_latency_ms": 2.3120000037597492,
-  "diagnosis_latency_ms": 1.3872000022558495,
-  "governance_overhead_latency_ms": 0.9248000015038997,
-  "report_latency_ms": 0.00031200000375974923,
+  "latency_ms": 2.267600000370294,
+  "governance_latency_ms": 2.267600000370294,
+  "diagnosis_latency_ms": 1.3605600002221763,
+  "governance_overhead_latency_ms": 0.9070400001481176,
+  "report_latency_ms": 0.00026760000037029386,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -53,7 +53,7 @@
       "input_tokens": 241,
       "output_tokens": 41,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.77, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.77}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.85, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.85}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist",
@@ -66,14 +66,14 @@
       "agent": "report_writer",
       "input_tokens": 405,
       "output_tokens": 39,
-      "latency": 0.00011700000322889537,
-      "text": "{\"top_diagnosis\": \"Inhibits viral entry\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Inhibits viral entry\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "latency": 0.00012620000052265823,
+      "text": "{\"top_diagnosis\": \"Inhibits viral assembly\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Inhibits viral assembly\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
       "input_tokens": 718,
       "output_tokens": 39,
-      "latency": 0.00019500000053085387,
+      "latency": 0.00014139999984763563,
       "text": "{\"top_diagnosis\": \"Inhibits viral assembly\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Inhibits viral assembly\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     }
   ],

@@ -1,7 +1,7 @@
 {
-  "run_id": "1303319a",
+  "run_id": "c00ee110",
   "experiment_id": "medqa_0074_llama3.1:8b_G1_seed42",
-  "timestamp": "2026-09-02T17:33:12.809785Z",
+  "timestamp": "2026-09-02T17:37:02.614748Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0074",
@@ -16,7 +16,7 @@
   "dataset_source": "medqa",
   "correctness": false,
   "top3_correct": false,
-  "confidence": 0.85,
+  "confidence": 0.87,
   "consensus": true,
   "abstained": false,
   "suppressed": false,
@@ -26,15 +26,15 @@
   "contradicted_claims": 0,
   "unverifiable_claims": 0,
   "revision_count": 0,
-  "input_tokens": 1581,
-  "output_tokens": 142,
-  "total_tokens": 1723,
+  "input_tokens": 1579,
+  "output_tokens": 139,
+  "total_tokens": 1718,
   "model_calls": 4,
-  "latency_ms": 2.2469000028213486,
-  "governance_latency_ms": 2.2469000028213486,
-  "diagnosis_latency_ms": 1.3481400016928091,
-  "governance_overhead_latency_ms": 0.8987600011285395,
-  "report_latency_ms": 0.0002469000028213486,
+  "latency_ms": 2.2660999962245114,
+  "governance_latency_ms": 2.2660999962245114,
+  "diagnosis_latency_ms": 1.3596599977347068,
+  "governance_overhead_latency_ms": 0.9064399984898046,
+  "report_latency_ms": 0.0002660999962245114,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -53,7 +53,7 @@
       "input_tokens": 252,
       "output_tokens": 37,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Migraine\", \"confidence\": 0.85, \"reasoning\": \"Clinical presentation suggests Migraine.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Migraine\", \"confidence\": 0.85}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Migraine\", \"confidence\": 0.87, \"reasoning\": \"Clinical presentation suggests Migraine.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Migraine\", \"confidence\": 0.87}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist",
@@ -65,16 +65,16 @@
     {
       "agent": "report_writer",
       "input_tokens": 392,
-      "output_tokens": 36,
-      "latency": 0.00010610000026645139,
-      "text": "{\"top_diagnosis\": \"Amphotericin B\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Amphotericin B\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "output_tokens": 33,
+      "latency": 0.00011519999679876491,
+      "text": "{\"top_diagnosis\": \"Trimethoprim-sulfamethoxazole\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Trimethoprim-sulfamethoxazole\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
-      "input_tokens": 705,
+      "input_tokens": 703,
       "output_tokens": 33,
-      "latency": 0.00014080000255489722,
-      "text": "{\"top_diagnosis\": \"Heparin\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Heparin\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "latency": 0.0001508999994257465,
+      "text": "{\"top_diagnosis\": \"Eplerenone\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Eplerenone\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     }
   ],
   "verification_trace": null,

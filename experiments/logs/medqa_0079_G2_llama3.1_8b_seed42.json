@@ -1,7 +1,7 @@
 {
-  "run_id": "9975891f",
+  "run_id": "82331ae6",
   "experiment_id": "medqa_0079_llama3.1:8b_G2_seed42",
-  "timestamp": "2026-09-02T17:33:12.880599Z",
+  "timestamp": "2026-09-02T17:37:02.675879Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0079",
@@ -30,11 +30,11 @@
   "output_tokens": 153,
   "total_tokens": 2596,
   "model_calls": 5,
-  "latency_ms": 3.8864999981597066,
-  "governance_latency_ms": 3.8864999981597066,
-  "diagnosis_latency_ms": 2.3318999988958238,
-  "governance_overhead_latency_ms": 1.5545999992638826,
-  "report_latency_ms": 0.0008864999981597066,
+  "latency_ms": 3.3150000047753565,
+  "governance_latency_ms": 3.3150000047753565,
+  "diagnosis_latency_ms": 1.989000002865214,
+  "governance_overhead_latency_ms": 1.3260000019101426,
+  "report_latency_ms": 0.0003150000047753565,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -53,7 +53,7 @@
       "input_tokens": 361,
       "output_tokens": 41,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.79, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.79}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.83, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.83}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist",
@@ -73,15 +73,15 @@
       "agent": "report_writer",
       "input_tokens": 512,
       "output_tokens": 33,
-      "latency": 0.00042019999818876386,
-      "text": "{\"top_diagnosis\": \"Levodopa\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Levodopa\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "latency": 0.00013300000136950985,
+      "text": "{\"top_diagnosis\": \"Glycopyrrolate\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Glycopyrrolate\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
       "input_tokens": 820,
       "output_tokens": 33,
-      "latency": 0.00046629999997094274,
-      "text": "{\"top_diagnosis\": \"Benztropine\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Benztropine\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "latency": 0.00018200000340584666,
+      "text": "{\"top_diagnosis\": \"Glycopyrrolate\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Glycopyrrolate\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     }
   ],
   "verification_trace": {

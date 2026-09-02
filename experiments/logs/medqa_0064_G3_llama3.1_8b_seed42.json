@@ -1,7 +1,7 @@
 {
-  "run_id": "de7e5655",
+  "run_id": "c195afbc",
   "experiment_id": "medqa_0064_llama3.1:8b_G3_seed42",
-  "timestamp": "2026-09-02T17:33:12.676514Z",
+  "timestamp": "2026-09-02T17:37:02.499492Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0064",
@@ -26,15 +26,15 @@
   "contradicted_claims": 0,
   "unverifiable_claims": 0,
   "revision_count": 0,
-  "input_tokens": 2847,
-  "output_tokens": 194,
-  "total_tokens": 3041,
+  "input_tokens": 2844,
+  "output_tokens": 191,
+  "total_tokens": 3035,
   "model_calls": 6,
-  "latency_ms": 4.436499998613726,
-  "governance_latency_ms": 4.436499998613726,
-  "diagnosis_latency_ms": 2.6618999991682357,
-  "governance_overhead_latency_ms": 1.7745999994454906,
-  "report_latency_ms": 0.00043649999861372635,
+  "latency_ms": 4.417599992942996,
+  "governance_latency_ms": 4.417599992942996,
+  "diagnosis_latency_ms": 2.6505599957657977,
+  "governance_overhead_latency_ms": 1.7670399971771986,
+  "report_latency_ms": 0.0004175999929429963,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -53,7 +53,7 @@
       "input_tokens": 423,
       "output_tokens": 41,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.89, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.89}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.8, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.8}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist_a",
@@ -79,16 +79,16 @@
     {
       "agent": "report_writer",
       "input_tokens": 556,
-      "output_tokens": 36,
-      "latency": 0.00020599999697878957,
-      "text": "{\"top_diagnosis\": \"Epstein-Barr virus\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Epstein-Barr virus\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "output_tokens": 33,
+      "latency": 0.00018109999655280262,
+      "text": "{\"top_diagnosis\": \"Chikungunya\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Chikungunya\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
-      "input_tokens": 867,
+      "input_tokens": 864,
       "output_tokens": 36,
-      "latency": 0.00023050000163493678,
-      "text": "{\"top_diagnosis\": \"Epstein-Barr virus\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Epstein-Barr virus\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "latency": 0.0002364999963901937,
+      "text": "{\"top_diagnosis\": \"Hepatitis A\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Hepatitis A\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     }
   ],
   "verification_trace": null,

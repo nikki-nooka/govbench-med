@@ -1,7 +1,7 @@
 {
-  "run_id": "5cd7b249",
+  "run_id": "5ba16fb8",
   "experiment_id": "medqa_0086_llama3.1:8b_G0_seed42",
-  "timestamp": "2026-09-02T17:33:12.959725Z",
+  "timestamp": "2026-09-02T17:37:02.740257Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0086",
@@ -16,7 +16,7 @@
   "dataset_source": "medqa",
   "correctness": false,
   "top3_correct": false,
-  "confidence": 0.89,
+  "confidence": 0.85,
   "consensus": true,
   "abstained": false,
   "suppressed": false,
@@ -30,11 +30,11 @@
   "output_tokens": 170,
   "total_tokens": 1837,
   "model_calls": 4,
-  "latency_ms": 2.3643000018200837,
-  "governance_latency_ms": 2.3643000018200837,
-  "diagnosis_latency_ms": 1.4185800010920502,
-  "governance_overhead_latency_ms": 0.9457200007280335,
-  "report_latency_ms": 0.0003643000018200837,
+  "latency_ms": 2.448999991931487,
+  "governance_latency_ms": 2.448999991931487,
+  "diagnosis_latency_ms": 1.469399995158892,
+  "governance_overhead_latency_ms": 0.9795999967725948,
+  "report_latency_ms": 0.0004489999919314869,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -53,27 +53,27 @@
       "input_tokens": 252,
       "output_tokens": 45,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.89, \"reasoning\": \"Clinical presentation suggests Acute Coronary Syndrome.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.89}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.85, \"reasoning\": \"Clinical presentation suggests Acute Coronary Syndrome.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.85}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "diagnostician_b",
       "input_tokens": 252,
       "output_tokens": 45,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.89, \"reasoning\": \"Clinical presentation suggests Acute Coronary Syndrome.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.89}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.85, \"reasoning\": \"Clinical presentation suggests Acute Coronary Syndrome.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.85}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_writer",
       "input_tokens": 429,
       "output_tokens": 39,
-      "latency": 0.0001548000000184402,
+      "latency": 0.000192299994523637,
       "text": "{\"top_diagnosis\": \"Mitral valve regurgitation\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Mitral valve regurgitation\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
       "input_tokens": 734,
       "output_tokens": 41,
-      "latency": 0.00020950000180164352,
+      "latency": 0.0002566999974078499,
       "text": "{\"top_diagnosis\": \"Impaired left ventricular contractility\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Impaired left ventricular contractility\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     }
   ],

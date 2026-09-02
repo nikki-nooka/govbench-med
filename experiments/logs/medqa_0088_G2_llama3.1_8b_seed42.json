@@ -1,7 +1,7 @@
 {
-  "run_id": "3c498583",
+  "run_id": "83c12bb8",
   "experiment_id": "medqa_0088_llama3.1:8b_G2_seed42",
-  "timestamp": "2026-09-02T17:33:12.984439Z",
+  "timestamp": "2026-09-02T17:37:02.777828Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0088",
@@ -30,11 +30,11 @@
   "output_tokens": 157,
   "total_tokens": 1939,
   "model_calls": 5,
-  "latency_ms": 3.2461999974912032,
-  "governance_latency_ms": 3.2461999974912032,
-  "diagnosis_latency_ms": 1.947719998494722,
-  "governance_overhead_latency_ms": 1.2984799989964813,
-  "report_latency_ms": 0.00024619999749120325,
+  "latency_ms": 3.6135000003268942,
+  "governance_latency_ms": 3.6135000003268942,
+  "diagnosis_latency_ms": 2.1681000001961364,
+  "governance_overhead_latency_ms": 1.4454000001307576,
+  "report_latency_ms": 0.0006135000003268942,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -53,7 +53,7 @@
       "input_tokens": 228,
       "output_tokens": 45,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Clinical Evaluation Required\", \"confidence\": 0.86, \"reasoning\": \"Clinical presentation suggests Clinical Evaluation Required.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Clinical Evaluation Required\", \"confidence\": 0.86}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Clinical Evaluation Required\", \"confidence\": 0.79, \"reasoning\": \"Clinical presentation suggests Clinical Evaluation Required.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Clinical Evaluation Required\", \"confidence\": 0.79}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist",
@@ -73,15 +73,15 @@
       "agent": "report_writer",
       "input_tokens": 382,
       "output_tokens": 33,
-      "latency": 0.00010270000348100439,
-      "text": "{\"top_diagnosis\": \"4\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"4\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "latency": 0.0002440999960526824,
+      "text": "{\"top_diagnosis\": \"16\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"16\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
       "input_tokens": 687,
       "output_tokens": 33,
-      "latency": 0.00014349999401019886,
-      "text": "{\"top_diagnosis\": \"64\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"64\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "latency": 0.0003694000042742118,
+      "text": "{\"top_diagnosis\": \"4\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"4\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     }
   ],
   "verification_trace": {

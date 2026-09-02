@@ -1,7 +1,7 @@
 {
-  "run_id": "dc05255b",
+  "run_id": "825615fd",
   "experiment_id": "medqa_0015_llama3.1:8b_G3_seed42",
-  "timestamp": "2026-09-02T17:33:12.046180Z",
+  "timestamp": "2026-09-02T17:37:02.029900Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0015",
@@ -30,11 +30,11 @@
   "output_tokens": 191,
   "total_tokens": 2490,
   "model_calls": 6,
-  "latency_ms": 4.533499995071907,
-  "governance_latency_ms": 4.533499995071907,
-  "diagnosis_latency_ms": 2.720099997043144,
-  "governance_overhead_latency_ms": 1.8133999980287627,
-  "report_latency_ms": 0.0005334999950719066,
+  "latency_ms": 4.453399996331427,
+  "governance_latency_ms": 4.453399996331427,
+  "diagnosis_latency_ms": 2.6720399977988563,
+  "governance_overhead_latency_ms": 1.781359998532571,
+  "report_latency_ms": 0.00045339999633142725,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -53,7 +53,7 @@
       "input_tokens": 312,
       "output_tokens": 41,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.89, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.89}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.76, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.76}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist_a",
@@ -80,15 +80,15 @@
       "agent": "report_writer",
       "input_tokens": 451,
       "output_tokens": 33,
-      "latency": 0.00019099999917671084,
+      "latency": 0.00020460000087041408,
       "text": "{\"top_diagnosis\": \"Desmopressin\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Desmopressin\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
       "input_tokens": 759,
       "output_tokens": 36,
-      "latency": 0.00034249999589519575,
-      "text": "{\"top_diagnosis\": \"Head elevation\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Head elevation\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "latency": 0.00024879999546101317,
+      "text": "{\"top_diagnosis\": \"Fluid restriction\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Fluid restriction\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     }
   ],
   "verification_trace": null,

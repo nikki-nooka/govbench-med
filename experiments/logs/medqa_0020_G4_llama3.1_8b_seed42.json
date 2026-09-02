@@ -1,7 +1,7 @@
 {
-  "run_id": "8105b3fe",
+  "run_id": "4baa1661",
   "experiment_id": "medqa_0020_llama3.1:8b_G4_seed42",
-  "timestamp": "2026-09-02T17:33:12.102791Z",
+  "timestamp": "2026-09-02T17:37:02.074365Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0020",
@@ -26,15 +26,15 @@
   "contradicted_claims": 0,
   "unverifiable_claims": 0,
   "revision_count": 0,
-  "input_tokens": 3288,
-  "output_tokens": 211,
-  "total_tokens": 3499,
+  "input_tokens": 3283,
+  "output_tokens": 204,
+  "total_tokens": 3487,
   "model_calls": 7,
-  "latency_ms": 5.422900004195981,
-  "governance_latency_ms": 5.422900004195981,
-  "diagnosis_latency_ms": 3.2537400025175884,
-  "governance_overhead_latency_ms": 2.1691600016783923,
-  "report_latency_ms": 0.00042290000419598073,
+  "latency_ms": 5.296499994874466,
+  "governance_latency_ms": 5.296499994874466,
+  "diagnosis_latency_ms": 3.1778999969246797,
+  "governance_overhead_latency_ms": 2.1185999979497865,
+  "report_latency_ms": 0.0002964999948744662,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -53,7 +53,7 @@
       "input_tokens": 405,
       "output_tokens": 41,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.89, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.89}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.83, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.83}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist_a",
@@ -79,16 +79,16 @@
     {
       "agent": "report_writer",
       "input_tokens": 562,
-      "output_tokens": 41,
-      "latency": 0.00019540000357665122,
-      "text": "{\"top_diagnosis\": \"Increase the respiratory rate\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Increase the respiratory rate\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "output_tokens": 36,
+      "latency": 0.00013529999705497175,
+      "text": "{\"top_diagnosis\": \"Increase PEEP\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Increase PEEP\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
-      "input_tokens": 878,
-      "output_tokens": 41,
-      "latency": 0.0002275000006193295,
-      "text": "{\"top_diagnosis\": \"Increase the tidal volume\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Increase the tidal volume\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "input_tokens": 873,
+      "output_tokens": 39,
+      "latency": 0.00016119999781949446,
+      "text": "{\"top_diagnosis\": \"Increase the FiO2\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Increase the FiO2\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "ethics_critic",

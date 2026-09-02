@@ -1,7 +1,7 @@
 {
-  "run_id": "3b2dfeba",
+  "run_id": "e8af6da6",
   "experiment_id": "medqa_0038_llama3.1:8b_G1_seed42",
-  "timestamp": "2026-09-02T17:33:12.392936Z",
+  "timestamp": "2026-09-02T17:37:02.231697Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0038",
@@ -16,7 +16,7 @@
   "dataset_source": "medqa",
   "correctness": false,
   "top3_correct": false,
-  "confidence": 0.78,
+  "confidence": 0.75,
   "consensus": true,
   "abstained": false,
   "suppressed": false,
@@ -26,15 +26,15 @@
   "contradicted_claims": 0,
   "unverifiable_claims": 0,
   "revision_count": 0,
-  "input_tokens": 1584,
+  "input_tokens": 1581,
   "output_tokens": 152,
-  "total_tokens": 1736,
+  "total_tokens": 1733,
   "model_calls": 4,
-  "latency_ms": 2.260200002230704,
-  "governance_latency_ms": 2.260200002230704,
-  "diagnosis_latency_ms": 1.3561200013384223,
-  "governance_overhead_latency_ms": 0.9040800008922816,
-  "report_latency_ms": 0.00026020000223070383,
+  "latency_ms": 2.2909999966504984,
+  "governance_latency_ms": 2.2909999966504984,
+  "diagnosis_latency_ms": 1.374599997990299,
+  "governance_overhead_latency_ms": 0.9163999986601994,
+  "report_latency_ms": 0.00029099999665049836,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -53,7 +53,7 @@
       "input_tokens": 239,
       "output_tokens": 41,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.78, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.78}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist",
@@ -65,16 +65,16 @@
     {
       "agent": "report_writer",
       "input_tokens": 406,
-      "output_tokens": 39,
-      "latency": 0.00011480000102892518,
-      "text": "{\"top_diagnosis\": \"Myosin head cocking\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Myosin head cocking\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "output_tokens": 36,
+      "latency": 0.00014820000069448724,
+      "text": "{\"top_diagnosis\": \"Power stroke\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Power stroke\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
-      "input_tokens": 720,
-      "output_tokens": 36,
-      "latency": 0.00014540000120177865,
-      "text": "{\"top_diagnosis\": \"Power stroke\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Power stroke\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "input_tokens": 717,
+      "output_tokens": 39,
+      "latency": 0.00014279999595601112,
+      "text": "{\"top_diagnosis\": \"Myosin head cocking\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Myosin head cocking\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     }
   ],
   "verification_trace": null,

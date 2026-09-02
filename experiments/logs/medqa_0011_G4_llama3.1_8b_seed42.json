@@ -1,7 +1,7 @@
 {
-  "run_id": "0ad32690",
+  "run_id": "442e512c",
   "experiment_id": "medqa_0011_llama3.1:8b_G4_seed42",
-  "timestamp": "2026-09-02T17:33:12.011174Z",
+  "timestamp": "2026-09-02T17:37:01.997828Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0011",
@@ -30,11 +30,11 @@
   "output_tokens": 201,
   "total_tokens": 2522,
   "model_calls": 7,
-  "latency_ms": 5.279200001386926,
-  "governance_latency_ms": 5.279200001386926,
-  "diagnosis_latency_ms": 3.1675200008321553,
-  "governance_overhead_latency_ms": 2.1116800005547702,
-  "report_latency_ms": 0.0002792000013869256,
+  "latency_ms": 5.260799999523442,
+  "governance_latency_ms": 5.260799999523442,
+  "diagnosis_latency_ms": 3.1564799997140653,
+  "governance_overhead_latency_ms": 2.104319999809377,
+  "report_latency_ms": 0.00026079999952344224,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -80,15 +80,15 @@
       "agent": "report_writer",
       "input_tokens": 401,
       "output_tokens": 36,
-      "latency": 0.00013719999697059393,
-      "text": "{\"top_diagnosis\": \"Endometrial carcinoma\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Endometrial carcinoma\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "latency": 0.00011079999967478216,
+      "text": "{\"top_diagnosis\": \"Addison disease\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Addison disease\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
       "input_tokens": 712,
       "output_tokens": 36,
-      "latency": 0.00014200000441633165,
-      "text": "{\"top_diagnosis\": \"Endometrial carcinoma\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Endometrial carcinoma\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "latency": 0.00014999999984866008,
+      "text": "{\"top_diagnosis\": \"Addison disease\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Addison disease\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "ethics_critic",

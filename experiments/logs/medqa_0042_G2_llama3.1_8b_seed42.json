@@ -1,7 +1,7 @@
 {
-  "run_id": "f3d16a95",
+  "run_id": "686d07e4",
   "experiment_id": "medqa_0042_llama3.1:8b_G2_seed42",
-  "timestamp": "2026-09-02T17:33:12.436546Z",
+  "timestamp": "2026-09-02T17:37:02.271203Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0042",
@@ -30,11 +30,11 @@
   "output_tokens": 164,
   "total_tokens": 2762,
   "model_calls": 5,
-  "latency_ms": 3.2874000056181103,
-  "governance_latency_ms": 3.2874000056181103,
-  "diagnosis_latency_ms": 1.9724400033708662,
-  "governance_overhead_latency_ms": 1.314960002247244,
-  "report_latency_ms": 0.0002874000056181103,
+  "latency_ms": 3.341300001309719,
+  "governance_latency_ms": 3.341300001309719,
+  "diagnosis_latency_ms": 2.004780000785831,
+  "governance_overhead_latency_ms": 1.3365200005238875,
+  "report_latency_ms": 0.00034130000130971894,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -53,7 +53,7 @@
       "input_tokens": 390,
       "output_tokens": 41,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.83, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.83}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.89, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.89}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist",
@@ -73,15 +73,15 @@
       "agent": "report_writer",
       "input_tokens": 542,
       "output_tokens": 41,
-      "latency": 0.0001281000004382804,
+      "latency": 0.00017949999892152846,
       "text": "{\"top_diagnosis\": \"Granulocyte colony stimulating factor\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Granulocyte colony stimulating factor\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
       "input_tokens": 858,
       "output_tokens": 36,
-      "latency": 0.0001593000051798299,
-      "text": "{\"top_diagnosis\": \"Interleukin 8\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Interleukin 8\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "latency": 0.00016180000238819048,
+      "text": "{\"top_diagnosis\": \"Interleukin 11\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Interleukin 11\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     }
   ],
   "verification_trace": {

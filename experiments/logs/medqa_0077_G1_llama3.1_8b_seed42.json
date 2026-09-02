@@ -1,7 +1,7 @@
 {
-  "run_id": "bc5fbafd",
+  "run_id": "6348f14e",
   "experiment_id": "medqa_0077_llama3.1:8b_G1_seed42",
-  "timestamp": "2026-09-02T17:33:12.845215Z",
+  "timestamp": "2026-09-02T17:37:02.652633Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0077",
@@ -16,7 +16,7 @@
   "dataset_source": "medqa",
   "correctness": false,
   "top3_correct": false,
-  "confidence": 0.76,
+  "confidence": 0.83,
   "consensus": true,
   "abstained": false,
   "suppressed": false,
@@ -30,11 +30,11 @@
   "output_tokens": 143,
   "total_tokens": 1829,
   "model_calls": 4,
-  "latency_ms": 2.2807999990181997,
-  "governance_latency_ms": 2.2807999990181997,
-  "diagnosis_latency_ms": 1.3684799994109198,
-  "governance_overhead_latency_ms": 0.9123199996072799,
-  "report_latency_ms": 0.00028079999901819974,
+  "latency_ms": 2.823800000944175,
+  "governance_latency_ms": 2.823800000944175,
+  "diagnosis_latency_ms": 1.6942800005665049,
+  "governance_overhead_latency_ms": 1.12952000037767,
+  "report_latency_ms": 0.0008238000009441748,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -53,7 +53,7 @@
       "input_tokens": 274,
       "output_tokens": 41,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.76, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.76}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.83, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.83}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist",
@@ -66,15 +66,15 @@
       "agent": "report_writer",
       "input_tokens": 425,
       "output_tokens": 33,
-      "latency": 0.00011850000009872019,
-      "text": "{\"top_diagnosis\": \"Haloperidol\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Haloperidol\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "latency": 0.0003494000047794543,
+      "text": "{\"top_diagnosis\": \"Bromocriptine\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Bromocriptine\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
       "input_tokens": 733,
       "output_tokens": 33,
-      "latency": 0.00016229999891947955,
-      "text": "{\"top_diagnosis\": \"Fluphenazine\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Fluphenazine\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "latency": 0.0004743999961647205,
+      "text": "{\"top_diagnosis\": \"Bromocriptine\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Bromocriptine\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     }
   ],
   "verification_trace": null,

@@ -1,7 +1,7 @@
 {
-  "run_id": "5c2983fb",
+  "run_id": "79d634bc",
   "experiment_id": "medqa_0081_llama3.1:8b_G4_seed42",
-  "timestamp": "2026-09-02T17:33:12.915174Z",
+  "timestamp": "2026-09-02T17:37:02.698206Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0081",
@@ -30,11 +30,11 @@
   "output_tokens": 211,
   "total_tokens": 2427,
   "model_calls": 7,
-  "latency_ms": 5.562400004127994,
-  "governance_latency_ms": 5.562400004127994,
-  "diagnosis_latency_ms": 3.3374400024767965,
-  "governance_overhead_latency_ms": 2.2249600016511977,
-  "report_latency_ms": 0.0005624000041279942,
+  "latency_ms": 5.352399998519104,
+  "governance_latency_ms": 5.352399998519104,
+  "diagnosis_latency_ms": 3.2114399991114624,
+  "governance_overhead_latency_ms": 2.1409599994076416,
+  "report_latency_ms": 0.000352399998519104,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -53,7 +53,7 @@
       "input_tokens": 223,
       "output_tokens": 45,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Clinical Evaluation Required\", \"confidence\": 0.79, \"reasoning\": \"Clinical presentation suggests Clinical Evaluation Required.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Clinical Evaluation Required\", \"confidence\": 0.79}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Clinical Evaluation Required\", \"confidence\": 0.8, \"reasoning\": \"Clinical presentation suggests Clinical Evaluation Required.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Clinical Evaluation Required\", \"confidence\": 0.8}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist_a",
@@ -80,15 +80,15 @@
       "agent": "report_writer",
       "input_tokens": 391,
       "output_tokens": 39,
-      "latency": 0.00023370000417344272,
-      "text": "{\"top_diagnosis\": \"Corpus luteum cysts\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Corpus luteum cysts\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "latency": 0.00014899999951012433,
+      "text": "{\"top_diagnosis\": \"Yolk sac tumor\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Yolk sac tumor\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
       "input_tokens": 699,
       "output_tokens": 39,
-      "latency": 0.00032869999995455146,
-      "text": "{\"top_diagnosis\": \"Corpus luteum cysts\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Corpus luteum cysts\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "latency": 0.00020339999900897965,
+      "text": "{\"top_diagnosis\": \"Yolk sac tumor\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Yolk sac tumor\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "ethics_critic",

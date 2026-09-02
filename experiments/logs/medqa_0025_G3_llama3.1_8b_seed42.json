@@ -1,7 +1,7 @@
 {
-  "run_id": "51e06563",
+  "run_id": "d8845e52",
   "experiment_id": "medqa_0025_llama3.1:8b_G3_seed42",
-  "timestamp": "2026-09-02T17:33:12.155008Z",
+  "timestamp": "2026-09-02T17:37:02.121393Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0025",
@@ -30,11 +30,11 @@
   "output_tokens": 194,
   "total_tokens": 2522,
   "model_calls": 6,
-  "latency_ms": 4.4162000041105784,
-  "governance_latency_ms": 4.4162000041105784,
-  "diagnosis_latency_ms": 2.649720002466347,
-  "governance_overhead_latency_ms": 1.7664800016442315,
-  "report_latency_ms": 0.00041620000411057845,
+  "latency_ms": 4.410799999372102,
+  "governance_latency_ms": 4.410799999372102,
+  "diagnosis_latency_ms": 2.6464799996232613,
+  "governance_overhead_latency_ms": 1.764319999748841,
+  "report_latency_ms": 0.0004107999993721023,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -53,7 +53,7 @@
       "input_tokens": 310,
       "output_tokens": 41,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.79, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.79}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.84, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.84}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist_a",
@@ -80,15 +80,15 @@
       "agent": "report_writer",
       "input_tokens": 466,
       "output_tokens": 36,
-      "latency": 0.0001962000023922883,
-      "text": "{\"top_diagnosis\": \"Aortoiliac atherosclerosis\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Aortoiliac atherosclerosis\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "latency": 0.0001756999990902841,
+      "text": "{\"top_diagnosis\": \"Spinal stenosis\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Spinal stenosis\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
       "input_tokens": 777,
       "output_tokens": 36,
-      "latency": 0.00022000000171829015,
-      "text": "{\"top_diagnosis\": \"Aortoiliac atherosclerosis\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Aortoiliac atherosclerosis\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "latency": 0.0002351000002818182,
+      "text": "{\"top_diagnosis\": \"Vascular claudication\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Vascular claudication\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     }
   ],
   "verification_trace": null,

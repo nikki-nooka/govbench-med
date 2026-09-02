@@ -1,7 +1,7 @@
 {
-  "run_id": "5fd6d3ac",
+  "run_id": "abf970c2",
   "experiment_id": "medqa_0031_llama3.1:8b_G2_seed42",
-  "timestamp": "2026-09-02T17:33:12.313703Z",
+  "timestamp": "2026-09-02T17:37:02.172982Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0031",
@@ -32,15 +32,15 @@
   "contradicted_claims": 0,
   "unverifiable_claims": 1,
   "revision_count": 0,
-  "input_tokens": 2337,
-  "output_tokens": 165,
-  "total_tokens": 2502,
+  "input_tokens": 2342,
+  "output_tokens": 176,
+  "total_tokens": 2518,
   "model_calls": 5,
-  "latency_ms": 3.814799997897353,
-  "governance_latency_ms": 3.814799997897353,
-  "diagnosis_latency_ms": 2.2888799987384116,
-  "governance_overhead_latency_ms": 1.5259199991589412,
-  "report_latency_ms": 0.000814799997897353,
+  "latency_ms": 3.2700999975786544,
+  "governance_latency_ms": 3.2700999975786544,
+  "diagnosis_latency_ms": 1.9620599985471927,
+  "governance_overhead_latency_ms": 1.3080399990314617,
+  "report_latency_ms": 0.00027009999757865444,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -78,16 +78,16 @@
     {
       "agent": "report_writer",
       "input_tokens": 492,
-      "output_tokens": 36,
-      "latency": 0.0002590000003692694,
-      "text": "{\"top_diagnosis\": \"Mixing study\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Mixing study\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "output_tokens": 41,
+      "latency": 0.00011559999984456226,
+      "text": "{\"top_diagnosis\": \"Ristocetin-induced platelet aggregation test\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Ristocetin-induced platelet aggregation test\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
-      "input_tokens": 803,
-      "output_tokens": 33,
-      "latency": 0.0005557999975280836,
-      "text": "{\"top_diagnosis\": \"INR\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"INR\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "input_tokens": 808,
+      "output_tokens": 39,
+      "latency": 0.00015449999773409218,
+      "text": "{\"top_diagnosis\": \"Clot retraction study\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Clot retraction study\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     }
   ],
   "verification_trace": {

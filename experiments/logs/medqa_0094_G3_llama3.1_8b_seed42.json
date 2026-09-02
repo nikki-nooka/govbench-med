@@ -1,7 +1,7 @@
 {
-  "run_id": "5acab5c4",
+  "run_id": "1fdfbd0c",
   "experiment_id": "medqa_0094_llama3.1:8b_G3_seed42",
-  "timestamp": "2026-09-02T17:33:13.047392Z",
+  "timestamp": "2026-09-02T17:37:02.858120Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0094",
@@ -10,15 +10,15 @@
   "model_version": "llama3.1:8b",
   "governance_level": "G3",
   "seed": 42,
-  "final_answer": "Pulmonary Embolism",
+  "final_answer": "",
   "ground_truth": "Aldosterone excess",
   "ground_truth_key": "A",
   "dataset_source": "medqa",
   "correctness": false,
   "top3_correct": false,
-  "confidence": 0.78,
-  "consensus": true,
-  "abstained": false,
+  "confidence": 0.0,
+  "consensus": false,
+  "abstained": true,
   "suppressed": false,
   "verification_status": "NOT_CHECKED",
   "claims_checked": 0,
@@ -26,17 +26,17 @@
   "contradicted_claims": 0,
   "unverifiable_claims": 0,
   "revision_count": 0,
-  "input_tokens": 2260,
-  "output_tokens": 194,
-  "total_tokens": 2454,
-  "model_calls": 6,
-  "latency_ms": 4.899200000276323,
-  "governance_latency_ms": 4.899200000276323,
-  "diagnosis_latency_ms": 2.939520000165794,
-  "governance_overhead_latency_ms": 1.9596800001105295,
-  "report_latency_ms": 0.0008992000002763234,
+  "input_tokens": 1053,
+  "output_tokens": 119,
+  "total_tokens": 1172,
+  "model_calls": 4,
+  "latency_ms": 4.0,
+  "governance_latency_ms": 4.0,
+  "diagnosis_latency_ms": 2.4,
+  "governance_overhead_latency_ms": 1.6,
+  "report_latency_ms": 0.0,
   "cost": 0.0,
-  "human_review_required": false,
+  "human_review_required": true,
   "human_review_time": 0.0,
   "css": 0.0,
   "cmr": 0.0,
@@ -53,7 +53,7 @@
       "input_tokens": 300,
       "output_tokens": 41,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.78, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.78}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.79, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.79}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist_a",
@@ -72,30 +72,15 @@
     {
       "agent": "moderator",
       "input_tokens": 193,
-      "output_tokens": 9,
+      "output_tokens": 6,
       "latency": 1.0,
-      "text": "{\"recommendation\": \"REPORT\", \"agreed_diagnosis\": \"Pulmonary Embolism\", \"average_confidence\": 0.78}"
-    },
-    {
-      "agent": "report_writer",
-      "input_tokens": 448,
-      "output_tokens": 36,
-      "latency": 0.00044799999886890873,
-      "text": "{\"top_diagnosis\": \"Aldosterone excess\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Aldosterone excess\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
-    },
-    {
-      "agent": "report_judge",
-      "input_tokens": 759,
-      "output_tokens": 36,
-      "latency": 0.0004512000014074147,
-      "text": "{\"top_diagnosis\": \"Catecholamine-secreting mass\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Catecholamine-secreting mass\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"recommendation\": \"ABSTAIN\", \"reasoning\": \"Insufficient consensus.\"}"
     }
   ],
   "verification_trace": null,
   "consensus_trace": {
-    "recommendation": "REPORT",
-    "agreed_diagnosis": "Pulmonary Embolism",
-    "average_confidence": 0.78
+    "recommendation": "ABSTAIN",
+    "reasoning": "Insufficient consensus."
   },
   "ethics_trace": null,
   "report_trace": null

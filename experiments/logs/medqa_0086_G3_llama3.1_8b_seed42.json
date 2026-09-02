@@ -1,7 +1,7 @@
 {
-  "run_id": "d8ab0a6b",
+  "run_id": "e9cf1bde",
   "experiment_id": "medqa_0086_llama3.1:8b_G3_seed42",
-  "timestamp": "2026-09-02T17:33:12.967347Z",
+  "timestamp": "2026-09-02T17:37:02.747874Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0086",
@@ -26,15 +26,15 @@
   "contradicted_claims": 0,
   "unverifiable_claims": 0,
   "revision_count": 0,
-  "input_tokens": 2074,
-  "output_tokens": 214,
-  "total_tokens": 2288,
+  "input_tokens": 2071,
+  "output_tokens": 212,
+  "total_tokens": 2283,
   "model_calls": 6,
-  "latency_ms": 4.640399994153995,
-  "governance_latency_ms": 4.640399994153995,
-  "diagnosis_latency_ms": 2.784239996492397,
-  "governance_overhead_latency_ms": 1.8561599976615981,
-  "report_latency_ms": 0.0006403999941539951,
+  "latency_ms": 4.520899993716739,
+  "governance_latency_ms": 4.520899993716739,
+  "diagnosis_latency_ms": 2.7125399962300434,
+  "governance_overhead_latency_ms": 1.8083599974866957,
+  "report_latency_ms": 0.0005208999937167391,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -53,7 +53,7 @@
       "input_tokens": 252,
       "output_tokens": 45,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.89, \"reasoning\": \"Clinical presentation suggests Acute Coronary Syndrome.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.89}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.85, \"reasoning\": \"Clinical presentation suggests Acute Coronary Syndrome.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.85}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist_a",
@@ -79,16 +79,16 @@
     {
       "agent": "report_writer",
       "input_tokens": 426,
-      "output_tokens": 41,
-      "latency": 0.00035009999555768445,
-      "text": "{\"top_diagnosis\": \"Increased systemic vascular resistance\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Increased systemic vascular resistance\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "output_tokens": 39,
+      "latency": 0.00022659999376628548,
+      "text": "{\"top_diagnosis\": \"Mitral valve regurgitation\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Mitral valve regurgitation\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
-      "input_tokens": 737,
+      "input_tokens": 734,
       "output_tokens": 41,
-      "latency": 0.0002902999985963106,
-      "text": "{\"top_diagnosis\": \"Increased systemic vascular resistance\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Increased systemic vascular resistance\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "latency": 0.00029429999995045364,
+      "text": "{\"top_diagnosis\": \"Impaired left ventricular contractility\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Impaired left ventricular contractility\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     }
   ],
   "verification_trace": null,

@@ -1,7 +1,7 @@
 {
-  "run_id": "60e13edb",
+  "run_id": "7c47bba8",
   "experiment_id": "medqa_0095_llama3.1:8b_G4_seed42",
-  "timestamp": "2026-09-02T17:33:13.063177Z",
+  "timestamp": "2026-09-02T17:37:02.869790Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0095",
@@ -30,11 +30,11 @@
   "output_tokens": 219,
   "total_tokens": 3063,
   "model_calls": 7,
-  "latency_ms": 5.420499993197154,
-  "governance_latency_ms": 5.420499993197154,
-  "diagnosis_latency_ms": 3.2522999959182926,
-  "governance_overhead_latency_ms": 2.1681999972788617,
-  "report_latency_ms": 0.00042049999319715425,
+  "latency_ms": 5.2718000032473356,
+  "governance_latency_ms": 5.2718000032473356,
+  "diagnosis_latency_ms": 3.1630800019484013,
+  "governance_overhead_latency_ms": 2.108720001298934,
+  "report_latency_ms": 0.00027180000324733555,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -53,7 +53,7 @@
       "input_tokens": 323,
       "output_tokens": 41,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.85, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.85}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.86, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.86}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist_a",
@@ -80,14 +80,14 @@
       "agent": "report_writer",
       "input_tokens": 504,
       "output_tokens": 41,
-      "latency": 0.00013989999570185319,
+      "latency": 0.0001171000039903447,
       "text": "{\"top_diagnosis\": \"Treatment with oral oxybutynin\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Treatment with oral oxybutynin\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
       "input_tokens": 820,
       "output_tokens": 49,
-      "latency": 0.00028059999749530107,
+      "latency": 0.00015469999925699085,
       "text": "{\"top_diagnosis\": \"Magnetic resonance imaging (MRI) of the spine\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Magnetic resonance imaging (MRI) of the spine\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {

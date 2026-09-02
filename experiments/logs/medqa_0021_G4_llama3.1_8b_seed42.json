@@ -1,7 +1,7 @@
 {
-  "run_id": "555e3e3e",
+  "run_id": "419cc1ee",
   "experiment_id": "medqa_0021_llama3.1:8b_G4_seed42",
-  "timestamp": "2026-09-02T17:33:12.111212Z",
+  "timestamp": "2026-09-02T17:37:02.082471Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0021",
@@ -27,14 +27,14 @@
   "unverifiable_claims": 0,
   "revision_count": 0,
   "input_tokens": 2389,
-  "output_tokens": 209,
-  "total_tokens": 2598,
+  "output_tokens": 207,
+  "total_tokens": 2596,
   "model_calls": 7,
-  "latency_ms": 5.580899999476969,
-  "governance_latency_ms": 5.580899999476969,
-  "diagnosis_latency_ms": 3.3485399996861815,
-  "governance_overhead_latency_ms": 2.2323599997907877,
-  "report_latency_ms": 0.0005808999994769692,
+  "latency_ms": 5.252999998338055,
+  "governance_latency_ms": 5.252999998338055,
+  "diagnosis_latency_ms": 3.151799999002833,
+  "governance_overhead_latency_ms": 2.101199999335222,
+  "report_latency_ms": 0.00025299999833805487,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -53,7 +53,7 @@
       "input_tokens": 253,
       "output_tokens": 41,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.84, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.84}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.76, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.76}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist_a",
@@ -80,15 +80,15 @@
       "agent": "report_writer",
       "input_tokens": 418,
       "output_tokens": 39,
-      "latency": 0.00018989999807672575,
-      "text": "{\"top_diagnosis\": \"Cross-linking of DNA\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Cross-linking of DNA\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "latency": 0.00010399999882793054,
+      "text": "{\"top_diagnosis\": \"Hyperstabilization of microtubules\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Hyperstabilization of microtubules\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
       "input_tokens": 731,
-      "output_tokens": 41,
-      "latency": 0.0003910000014002435,
-      "text": "{\"top_diagnosis\": \"Generation of free radicals\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Generation of free radicals\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "output_tokens": 39,
+      "latency": 0.00014899999951012433,
+      "text": "{\"top_diagnosis\": \"Inhibition of proteasome\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Inhibition of proteasome\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "ethics_critic",

@@ -1,7 +1,7 @@
 {
-  "run_id": "59ba6486",
+  "run_id": "d7951c6a",
   "experiment_id": "medqa_0080_llama3.1:8b_G4_seed42",
-  "timestamp": "2026-09-02T17:33:12.902252Z",
+  "timestamp": "2026-09-02T17:37:02.688957Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0080",
@@ -26,15 +26,15 @@
   "contradicted_claims": 0,
   "unverifiable_claims": 0,
   "revision_count": 0,
-  "input_tokens": 3050,
+  "input_tokens": 3040,
   "output_tokens": 227,
-  "total_tokens": 3277,
+  "total_tokens": 3267,
   "model_calls": 7,
-  "latency_ms": 5.666899999487214,
-  "governance_latency_ms": 5.666899999487214,
-  "diagnosis_latency_ms": 3.4001399996923283,
-  "governance_overhead_latency_ms": 2.2667599997948855,
-  "report_latency_ms": 0.0006668999994872138,
+  "latency_ms": 5.277899998764042,
+  "governance_latency_ms": 5.277899998764042,
+  "diagnosis_latency_ms": 3.166739999258425,
+  "governance_overhead_latency_ms": 2.1111599995056167,
+  "report_latency_ms": 0.0002778999987640418,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -53,7 +53,7 @@
       "input_tokens": 358,
       "output_tokens": 45,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.83, \"reasoning\": \"Clinical presentation suggests Acute Coronary Syndrome.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.83}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.78, \"reasoning\": \"Clinical presentation suggests Acute Coronary Syndrome.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.78}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist_a",
@@ -79,16 +79,16 @@
     {
       "agent": "report_writer",
       "input_tokens": 533,
-      "output_tokens": 49,
-      "latency": 0.0002856999999494292,
-      "text": "{\"top_diagnosis\": \"Anion gap metabolic acidosis with respiratory alkalosis\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Anion gap metabolic acidosis with respiratory alkalosis\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "output_tokens": 39,
+      "latency": 0.00012060000153724104,
+      "text": "{\"top_diagnosis\": \"Compensatory respiratory acidosis\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Compensatory respiratory acidosis\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
-      "input_tokens": 851,
-      "output_tokens": 39,
-      "latency": 0.0003811999995377846,
-      "text": "{\"top_diagnosis\": \"Primary respiratory alkalosis\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Primary respiratory alkalosis\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "input_tokens": 841,
+      "output_tokens": 49,
+      "latency": 0.00015729999722680077,
+      "text": "{\"top_diagnosis\": \"Anion gap metabolic acidosis with respiratory alkalosis\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Anion gap metabolic acidosis with respiratory alkalosis\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "ethics_critic",

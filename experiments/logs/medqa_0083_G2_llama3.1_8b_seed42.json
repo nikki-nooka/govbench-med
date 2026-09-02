@@ -1,7 +1,7 @@
 {
-  "run_id": "1a811433",
+  "run_id": "5bb7a880",
   "experiment_id": "medqa_0083_llama3.1:8b_G2_seed42",
-  "timestamp": "2026-09-02T17:33:12.933243Z",
+  "timestamp": "2026-09-02T17:37:02.715083Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0083",
@@ -16,25 +16,31 @@
   "dataset_source": "medqa",
   "correctness": false,
   "top3_correct": false,
-  "confidence": 0.75,
+  "confidence": 0.81,
   "consensus": true,
   "abstained": false,
   "suppressed": false,
-  "verification_status": "VERIFIED",
-  "claims_checked": [],
+  "verification_status": "FLAGGED",
+  "claims_checked": [
+    {
+      "claim": "unsupported",
+      "status": "FABRICATED",
+      "case_evidence": null
+    }
+  ],
   "supported_claims": 0,
   "contradicted_claims": 0,
-  "unverifiable_claims": 0,
+  "unverifiable_claims": 1,
   "revision_count": 0,
-  "input_tokens": 2340,
-  "output_tokens": 179,
-  "total_tokens": 2519,
+  "input_tokens": 2353,
+  "output_tokens": 209,
+  "total_tokens": 2562,
   "model_calls": 5,
-  "latency_ms": 3.453900000138674,
-  "governance_latency_ms": 3.453900000138674,
-  "diagnosis_latency_ms": 2.072340000083204,
-  "governance_overhead_latency_ms": 1.3815600000554695,
-  "report_latency_ms": 0.00045390000013867393,
+  "latency_ms": 3.3448999996180646,
+  "governance_latency_ms": 3.3448999996180646,
+  "diagnosis_latency_ms": 2.0069399997708386,
+  "governance_overhead_latency_ms": 1.3379599998472258,
+  "report_latency_ms": 0.0003448999996180646,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -45,7 +51,7 @@
   "ccs": 0.0,
   "ge": 0.0,
   "hallucination_impactful": false,
-  "hallucination_detected": false,
+  "hallucination_detected": true,
   "unsafe_reassurance": false,
   "agent_traces": [
     {
@@ -53,7 +59,7 @@
       "input_tokens": 325,
       "output_tokens": 45,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.89, \"reasoning\": \"Clinical presentation suggests Acute Coronary Syndrome.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.89}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.81, \"reasoning\": \"Clinical presentation suggests Acute Coronary Syndrome.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.81}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist",
@@ -65,30 +71,36 @@
     {
       "agent": "verifier",
       "input_tokens": 373,
-      "output_tokens": 10,
+      "output_tokens": 19,
       "latency": 1.0,
-      "text": "{\"verdict\": \"VERIFIED\", \"claims\": [], \"fabricated_count\": 0, \"summary\": \"Verified.\"}"
+      "text": "{\"verdict\": \"FLAGGED\", \"claims\": [{\"claim\": \"unsupported\", \"status\": \"FABRICATED\", \"case_evidence\": null}], \"fabricated_count\": 1, \"summary\": \"Unsupported claim detected.\"}"
     },
     {
       "agent": "report_writer",
       "input_tokens": 512,
-      "output_tokens": 41,
-      "latency": 0.00021189999824855477,
-      "text": "{\"top_diagnosis\": \"Glucagon-like peptide-1 receptor agonist\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Glucagon-like peptide-1 receptor agonist\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "output_tokens": 54,
+      "latency": 0.00014579999697161838,
+      "text": "{\"top_diagnosis\": \"Binding to the alpha subunit of the insulin receptor\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Binding to the alpha subunit of the insulin receptor\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
-      "input_tokens": 825,
-      "output_tokens": 44,
-      "latency": 0.00024200000189011917,
-      "text": "{\"top_diagnosis\": \"Increased gene expression of GLUT-4\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Increased gene expression of GLUT-4\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "input_tokens": 838,
+      "output_tokens": 52,
+      "latency": 0.00019910000264644623,
+      "text": "{\"top_diagnosis\": \"Closure of ATP-sensitive K-channels in the pancreatic beta-cell\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Closure of ATP-sensitive K-channels in the pancreatic beta-cell\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     }
   ],
   "verification_trace": {
-    "verdict": "VERIFIED",
-    "claims": [],
-    "fabricated_count": 0,
-    "summary": "Verified."
+    "verdict": "FLAGGED",
+    "claims": [
+      {
+        "claim": "unsupported",
+        "status": "FABRICATED",
+        "case_evidence": null
+      }
+    ],
+    "fabricated_count": 1,
+    "summary": "Unsupported claim detected."
   },
   "consensus_trace": null,
   "ethics_trace": null,

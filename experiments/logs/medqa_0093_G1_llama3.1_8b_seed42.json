@@ -1,7 +1,7 @@
 {
-  "run_id": "82313e5e",
+  "run_id": "c5351ed9",
   "experiment_id": "medqa_0093_llama3.1:8b_G1_seed42",
-  "timestamp": "2026-09-02T17:33:13.032155Z",
+  "timestamp": "2026-09-02T17:37:02.841771Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0093",
@@ -16,7 +16,7 @@
   "dataset_source": "medqa",
   "correctness": false,
   "top3_correct": false,
-  "confidence": 0.77,
+  "confidence": 0.76,
   "consensus": true,
   "abstained": false,
   "suppressed": false,
@@ -26,15 +26,15 @@
   "contradicted_claims": 0,
   "unverifiable_claims": 0,
   "revision_count": 0,
-  "input_tokens": 1985,
-  "output_tokens": 162,
-  "total_tokens": 2147,
+  "input_tokens": 1987,
+  "output_tokens": 152,
+  "total_tokens": 2139,
   "model_calls": 4,
-  "latency_ms": 2.734699991880916,
-  "governance_latency_ms": 2.734699991880916,
-  "diagnosis_latency_ms": 1.6408199951285496,
-  "governance_overhead_latency_ms": 1.0938799967523665,
-  "report_latency_ms": 0.0007346999918809161,
+  "latency_ms": 2.3081999966525473,
+  "governance_latency_ms": 2.3081999966525473,
+  "diagnosis_latency_ms": 1.3849199979915283,
+  "governance_overhead_latency_ms": 0.923279998661019,
+  "report_latency_ms": 0.00030819999665254727,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -53,7 +53,7 @@
       "input_tokens": 338,
       "output_tokens": 41,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.77, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.77}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.76, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.76}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist",
@@ -65,16 +65,16 @@
     {
       "agent": "report_writer",
       "input_tokens": 509,
-      "output_tokens": 36,
-      "latency": 0.0003003999954671599,
-      "text": "{\"top_diagnosis\": \"Annular calcification\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Annular calcification\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "output_tokens": 39,
+      "latency": 0.000137999995786231,
+      "text": "{\"top_diagnosis\": \"Papillary muscle rupture\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Papillary muscle rupture\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
-      "input_tokens": 820,
-      "output_tokens": 49,
-      "latency": 0.00043429999641375616,
-      "text": "{\"top_diagnosis\": \"Friable irregular masses attached to the valve\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Friable irregular masses attached to the valve\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "input_tokens": 822,
+      "output_tokens": 36,
+      "latency": 0.00017020000086631626,
+      "text": "{\"top_diagnosis\": \"Bicuspid valve\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Bicuspid valve\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     }
   ],
   "verification_trace": null,

@@ -1,7 +1,7 @@
 {
-  "run_id": "afb68ae6",
+  "run_id": "2a5f22b0",
   "experiment_id": "medqa_0060_llama3.1:8b_G1_seed42",
-  "timestamp": "2026-09-02T17:33:12.622601Z",
+  "timestamp": "2026-09-02T17:37:02.441604Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0060",
@@ -16,7 +16,7 @@
   "dataset_source": "medqa",
   "correctness": false,
   "top3_correct": false,
-  "confidence": 0.87,
+  "confidence": 0.84,
   "consensus": true,
   "abstained": false,
   "suppressed": false,
@@ -26,15 +26,15 @@
   "contradicted_claims": 0,
   "unverifiable_claims": 0,
   "revision_count": 0,
-  "input_tokens": 1888,
-  "output_tokens": 151,
-  "total_tokens": 2039,
+  "input_tokens": 1886,
+  "output_tokens": 157,
+  "total_tokens": 2043,
   "model_calls": 4,
-  "latency_ms": 2.28559999918798,
-  "governance_latency_ms": 2.28559999918798,
-  "diagnosis_latency_ms": 1.3713599995127879,
-  "governance_overhead_latency_ms": 0.914239999675192,
-  "report_latency_ms": 0.00028559999918797985,
+  "latency_ms": 2.3198999984306283,
+  "governance_latency_ms": 2.3198999984306283,
+  "diagnosis_latency_ms": 1.391939999058377,
+  "governance_overhead_latency_ms": 0.9279599993722514,
+  "report_latency_ms": 0.00031989999843062833,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -53,7 +53,7 @@
       "input_tokens": 317,
       "output_tokens": 41,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.87, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.87}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.84, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.84}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist",
@@ -65,16 +65,16 @@
     {
       "agent": "report_writer",
       "input_tokens": 479,
-      "output_tokens": 41,
-      "latency": 0.0001218999968841672,
-      "text": "{\"top_diagnosis\": \"Endoscopic retrograde cholangiopancreatography (ERCP)\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Endoscopic retrograde cholangiopancreatography (ERCP)\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "output_tokens": 39,
+      "latency": 0.00012789999891538173,
+      "text": "{\"top_diagnosis\": \"Antibiotics and drainage\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Antibiotics and drainage\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
-      "input_tokens": 795,
-      "output_tokens": 33,
-      "latency": 0.00016370000230381265,
-      "text": "{\"top_diagnosis\": \"Cholecystectomy\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Cholecystectomy\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "input_tokens": 793,
+      "output_tokens": 41,
+      "latency": 0.0001919999995152466,
+      "text": "{\"top_diagnosis\": \"Endoscopic retrograde cholangiopancreatography (ERCP)\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Endoscopic retrograde cholangiopancreatography (ERCP)\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     }
   ],
   "verification_trace": null,

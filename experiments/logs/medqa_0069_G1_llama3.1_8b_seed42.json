@@ -1,7 +1,7 @@
 {
-  "run_id": "20ad990b",
+  "run_id": "6164c8f6",
   "experiment_id": "medqa_0069_llama3.1:8b_G1_seed42",
-  "timestamp": "2026-09-02T17:33:12.736282Z",
+  "timestamp": "2026-09-02T17:37:02.550599Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0069",
@@ -16,7 +16,7 @@
   "dataset_source": "medqa",
   "correctness": false,
   "top3_correct": false,
-  "confidence": 0.81,
+  "confidence": 0.88,
   "consensus": true,
   "abstained": false,
   "suppressed": false,
@@ -26,15 +26,15 @@
   "contradicted_claims": 0,
   "unverifiable_claims": 0,
   "revision_count": 0,
-  "input_tokens": 1759,
-  "output_tokens": 153,
-  "total_tokens": 1912,
+  "input_tokens": 1756,
+  "output_tokens": 155,
+  "total_tokens": 1911,
   "model_calls": 4,
-  "latency_ms": 2.44260000140639,
-  "governance_latency_ms": 2.44260000140639,
-  "diagnosis_latency_ms": 1.465560000843834,
-  "governance_overhead_latency_ms": 0.9770400005625561,
-  "report_latency_ms": 0.0004426000014063902,
+  "latency_ms": 2.3609999985201284,
+  "governance_latency_ms": 2.3609999985201284,
+  "diagnosis_latency_ms": 1.416599999112077,
+  "governance_overhead_latency_ms": 0.9443999994080514,
+  "report_latency_ms": 0.00036099999852012843,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -53,7 +53,7 @@
       "input_tokens": 267,
       "output_tokens": 45,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Clinical Evaluation Required\", \"confidence\": 0.81, \"reasoning\": \"Clinical presentation suggests Clinical Evaluation Required.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Clinical Evaluation Required\", \"confidence\": 0.81}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Clinical Evaluation Required\", \"confidence\": 0.88, \"reasoning\": \"Clinical presentation suggests Clinical Evaluation Required.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Clinical Evaluation Required\", \"confidence\": 0.88}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist",
@@ -65,16 +65,16 @@
     {
       "agent": "report_writer",
       "input_tokens": 468,
-      "output_tokens": 36,
-      "latency": 0.00017880000086734071,
-      "text": "{\"top_diagnosis\": \"Cryotherapy ablation\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Cryotherapy ablation\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "output_tokens": 33,
+      "latency": 0.00015179999900283292,
+      "text": "{\"top_diagnosis\": \"Hysterectomy\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Hysterectomy\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
-      "input_tokens": 776,
-      "output_tokens": 36,
-      "latency": 0.0002638000005390495,
-      "text": "{\"top_diagnosis\": \"Cryotherapy ablation\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Cryotherapy ablation\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "input_tokens": 773,
+      "output_tokens": 41,
+      "latency": 0.0002091999995172955,
+      "text": "{\"top_diagnosis\": \"Loop electrosurgical excision (LEEP)\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Loop electrosurgical excision (LEEP)\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     }
   ],
   "verification_trace": null,

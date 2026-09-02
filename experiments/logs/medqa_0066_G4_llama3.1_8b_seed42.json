@@ -1,7 +1,7 @@
 {
-  "run_id": "e62365d5",
+  "run_id": "e323802f",
   "experiment_id": "medqa_0066_llama3.1:8b_G4_seed42",
-  "timestamp": "2026-09-02T17:33:12.707426Z",
+  "timestamp": "2026-09-02T17:37:02.526142Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0066",
@@ -30,11 +30,11 @@
   "output_tokens": 207,
   "total_tokens": 2650,
   "model_calls": 7,
-  "latency_ms": 5.281700005871244,
-  "governance_latency_ms": 5.281700005871244,
-  "diagnosis_latency_ms": 3.1690200035227463,
-  "governance_overhead_latency_ms": 2.1126800023484975,
-  "report_latency_ms": 0.0002817000058712438,
+  "latency_ms": 5.349399997503497,
+  "governance_latency_ms": 5.349399997503497,
+  "diagnosis_latency_ms": 3.209639998502098,
+  "governance_overhead_latency_ms": 2.1397599990013987,
+  "report_latency_ms": 0.0003493999975034967,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -53,7 +53,7 @@
       "input_tokens": 263,
       "output_tokens": 41,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.8, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.8}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.8200000000000001, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.8200000000000001}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist_a",
@@ -80,14 +80,14 @@
       "agent": "report_writer",
       "input_tokens": 425,
       "output_tokens": 39,
-      "latency": 0.0001250000059371814,
-      "text": "{\"top_diagnosis\": \"Nucleotide excision repair\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Nucleotide excision repair\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "latency": 0.00015020000137155876,
+      "text": "{\"top_diagnosis\": \"Non-homologous end joining\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Non-homologous end joining\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
       "input_tokens": 738,
       "output_tokens": 39,
-      "latency": 0.00015669999993406236,
+      "latency": 0.00019919999613193795,
       "text": "{\"top_diagnosis\": \"Non-homologous end joining\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Non-homologous end joining\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {

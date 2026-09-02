@@ -1,7 +1,7 @@
 {
-  "run_id": "6176ac36",
+  "run_id": "548f4e84",
   "experiment_id": "medqa_0040_llama3.1:8b_G4_seed42",
-  "timestamp": "2026-09-02T17:33:12.420037Z",
+  "timestamp": "2026-09-02T17:37:02.254504Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0040",
@@ -26,15 +26,15 @@
   "contradicted_claims": 0,
   "unverifiable_claims": 0,
   "revision_count": 0,
-  "input_tokens": 3039,
-  "output_tokens": 217,
-  "total_tokens": 3256,
+  "input_tokens": 3034,
+  "output_tokens": 207,
+  "total_tokens": 3241,
   "model_calls": 7,
-  "latency_ms": 5.330299997585826,
-  "governance_latency_ms": 5.330299997585826,
-  "diagnosis_latency_ms": 3.1981799985514954,
-  "governance_overhead_latency_ms": 2.1321199990343302,
-  "report_latency_ms": 0.0003302999975858256,
+  "latency_ms": 5.284299996565096,
+  "governance_latency_ms": 5.284299996565096,
+  "diagnosis_latency_ms": 3.1705799979390576,
+  "governance_overhead_latency_ms": 2.1137199986260384,
+  "report_latency_ms": 0.0002842999965650961,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -53,7 +53,7 @@
       "input_tokens": 353,
       "output_tokens": 41,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.79, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.79}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.88, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.88}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist_a",
@@ -79,16 +79,16 @@
     {
       "agent": "report_writer",
       "input_tokens": 540,
-      "output_tokens": 44,
-      "latency": 0.00014699999883305281,
-      "text": "{\"top_diagnosis\": \"Dilation of the pampiniform plexus\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Dilation of the pampiniform plexus\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "output_tokens": 39,
+      "latency": 0.0001255999959539622,
+      "text": "{\"top_diagnosis\": \"Patent processus vaginalis\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Patent processus vaginalis\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
-      "input_tokens": 859,
-      "output_tokens": 44,
-      "latency": 0.0001832999987527728,
-      "text": "{\"top_diagnosis\": \"Dilation of the pampiniform plexus\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Dilation of the pampiniform plexus\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "input_tokens": 854,
+      "output_tokens": 39,
+      "latency": 0.00015870000061113387,
+      "text": "{\"top_diagnosis\": \"Patent processus vaginalis\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Patent processus vaginalis\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "ethics_critic",

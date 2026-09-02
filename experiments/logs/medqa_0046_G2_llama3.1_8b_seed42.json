@@ -1,7 +1,7 @@
 {
-  "run_id": "ee345ea1",
+  "run_id": "173d96cf",
   "experiment_id": "medqa_0046_llama3.1:8b_G2_seed42",
-  "timestamp": "2026-09-02T17:33:12.472377Z",
+  "timestamp": "2026-09-02T17:37:02.305291Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0046",
@@ -16,25 +16,31 @@
   "dataset_source": "medqa",
   "correctness": false,
   "top3_correct": false,
-  "confidence": 0.75,
+  "confidence": 0.89,
   "consensus": true,
   "abstained": false,
   "suppressed": false,
-  "verification_status": "VERIFIED",
-  "claims_checked": [],
+  "verification_status": "FLAGGED",
+  "claims_checked": [
+    {
+      "claim": "unsupported",
+      "status": "FABRICATED",
+      "case_evidence": null
+    }
+  ],
   "supported_claims": 0,
   "contradicted_claims": 0,
-  "unverifiable_claims": 0,
+  "unverifiable_claims": 1,
   "revision_count": 0,
   "input_tokens": 2075,
-  "output_tokens": 159,
-  "total_tokens": 2234,
+  "output_tokens": 168,
+  "total_tokens": 2243,
   "model_calls": 5,
-  "latency_ms": 3.2472999985911883,
-  "governance_latency_ms": 3.2472999985911883,
-  "diagnosis_latency_ms": 1.948379999154713,
-  "governance_overhead_latency_ms": 1.2989199994364753,
-  "report_latency_ms": 0.00024729999859118834,
+  "latency_ms": 3.3710000091814436,
+  "governance_latency_ms": 3.3710000091814436,
+  "diagnosis_latency_ms": 2.022600005508866,
+  "governance_overhead_latency_ms": 1.3484000036725774,
+  "report_latency_ms": 0.0003710000091814436,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -45,7 +51,7 @@
   "ccs": 0.0,
   "ge": 0.0,
   "hallucination_impactful": false,
-  "hallucination_detected": false,
+  "hallucination_detected": true,
   "unsafe_reassurance": false,
   "agent_traces": [
     {
@@ -53,7 +59,7 @@
       "input_tokens": 284,
       "output_tokens": 41,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Abdominal Pain\", \"confidence\": 0.79, \"reasoning\": \"Clinical presentation suggests Abdominal Pain.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Abdominal Pain\", \"confidence\": 0.79}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Abdominal Pain\", \"confidence\": 0.89, \"reasoning\": \"Clinical presentation suggests Abdominal Pain.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Abdominal Pain\", \"confidence\": 0.89}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist",
@@ -65,30 +71,36 @@
     {
       "agent": "verifier",
       "input_tokens": 332,
-      "output_tokens": 10,
+      "output_tokens": 19,
       "latency": 1.0,
-      "text": "{\"verdict\": \"VERIFIED\", \"claims\": [], \"fabricated_count\": 0, \"summary\": \"Verified.\"}"
+      "text": "{\"verdict\": \"FLAGGED\", \"claims\": [{\"claim\": \"unsupported\", \"status\": \"FABRICATED\", \"case_evidence\": null}], \"fabricated_count\": 1, \"summary\": \"Unsupported claim detected.\"}"
     },
     {
       "agent": "report_writer",
       "input_tokens": 442,
       "output_tokens": 36,
-      "latency": 0.0001021999996737577,
-      "text": "{\"top_diagnosis\": \"Salmonella enteritidis\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Salmonella enteritidis\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "latency": 0.00015090000670170411,
+      "text": "{\"top_diagnosis\": \"Listeria monocytogenes\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Listeria monocytogenes\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
       "input_tokens": 752,
       "output_tokens": 36,
-      "latency": 0.00014509999891743064,
-      "text": "{\"top_diagnosis\": \"Vibrio cholerae\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Vibrio cholerae\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "latency": 0.0002201000024797395,
+      "text": "{\"top_diagnosis\": \"Salmonella enteritidis\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Salmonella enteritidis\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     }
   ],
   "verification_trace": {
-    "verdict": "VERIFIED",
-    "claims": [],
-    "fabricated_count": 0,
-    "summary": "Verified."
+    "verdict": "FLAGGED",
+    "claims": [
+      {
+        "claim": "unsupported",
+        "status": "FABRICATED",
+        "case_evidence": null
+      }
+    ],
+    "fabricated_count": 1,
+    "summary": "Unsupported claim detected."
   },
   "consensus_trace": null,
   "ethics_trace": null,

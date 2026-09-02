@@ -1,7 +1,7 @@
 {
-  "run_id": "641d6e39",
+  "run_id": "ff4a1868",
   "experiment_id": "medqa_0008_llama3.1:8b_G2_seed42",
-  "timestamp": "2026-09-02T17:33:11.977613Z",
+  "timestamp": "2026-09-02T17:37:01.967586Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0008",
@@ -30,11 +30,11 @@
   "output_tokens": 159,
   "total_tokens": 2264,
   "model_calls": 5,
-  "latency_ms": 3.2548999909777194,
-  "governance_latency_ms": 3.2548999909777194,
-  "diagnosis_latency_ms": 1.9529399945866317,
-  "governance_overhead_latency_ms": 1.3019599963910877,
-  "report_latency_ms": 0.0002548999909777194,
+  "latency_ms": 3.2518999972380698,
+  "governance_latency_ms": 3.2518999972380698,
+  "diagnosis_latency_ms": 1.951139998342842,
+  "governance_overhead_latency_ms": 1.3007599988952279,
+  "report_latency_ms": 0.00025189999723806977,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -53,7 +53,7 @@
       "input_tokens": 291,
       "output_tokens": 41,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.79, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.79}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.8, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.8}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist",
@@ -73,15 +73,15 @@
       "agent": "report_writer",
       "input_tokens": 447,
       "output_tokens": 36,
-      "latency": 0.00011209999502170831,
-      "text": "{\"top_diagnosis\": \"Ethanol intoxication\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Ethanol intoxication\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "latency": 0.00011039999662898481,
+      "text": "{\"top_diagnosis\": \"Cannabis intoxication\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Cannabis intoxication\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
       "input_tokens": 757,
       "output_tokens": 36,
-      "latency": 0.00014279999595601112,
-      "text": "{\"top_diagnosis\": \"Ethanol intoxication\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Ethanol intoxication\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "latency": 0.00014150000060908496,
+      "text": "{\"top_diagnosis\": \"Benzodiazepine intoxication\\\\n\\\\\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Benzodiazepine intoxication\\\\n\\\\\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     }
   ],
   "verification_trace": {

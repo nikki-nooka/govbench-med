@@ -1,7 +1,7 @@
 {
-  "run_id": "ea8f251d",
+  "run_id": "725af6d2",
   "experiment_id": "medqa_0066_llama3.1:8b_G1_seed42",
-  "timestamp": "2026-09-02T17:33:12.698048Z",
+  "timestamp": "2026-09-02T17:37:02.516281Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0066",
@@ -16,7 +16,7 @@
   "dataset_source": "medqa",
   "correctness": false,
   "top3_correct": false,
-  "confidence": 0.8,
+  "confidence": 0.8200000000000001,
   "consensus": true,
   "abstained": false,
   "suppressed": false,
@@ -26,15 +26,15 @@
   "contradicted_claims": 0,
   "unverifiable_claims": 0,
   "revision_count": 0,
-  "input_tokens": 1670,
-  "output_tokens": 155,
-  "total_tokens": 1825,
+  "input_tokens": 1667,
+  "output_tokens": 149,
+  "total_tokens": 1816,
   "model_calls": 4,
-  "latency_ms": 2.5708999960916117,
-  "governance_latency_ms": 2.5708999960916117,
-  "diagnosis_latency_ms": 1.542539997654967,
-  "governance_overhead_latency_ms": 1.0283599984366447,
-  "report_latency_ms": 0.0005708999960916117,
+  "latency_ms": 2.3939000016544014,
+  "governance_latency_ms": 2.3939000016544014,
+  "diagnosis_latency_ms": 1.4363400009926408,
+  "governance_overhead_latency_ms": 0.9575600006617606,
+  "report_latency_ms": 0.0003939000016544014,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -53,7 +53,7 @@
       "input_tokens": 263,
       "output_tokens": 41,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.8, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.8}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.8200000000000001, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.8200000000000001}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist",
@@ -65,16 +65,16 @@
     {
       "agent": "report_writer",
       "input_tokens": 425,
-      "output_tokens": 39,
-      "latency": 0.00025520000053802505,
-      "text": "{\"top_diagnosis\": \"Nucleotide excision repair\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Nucleotide excision repair\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "output_tokens": 36,
+      "latency": 0.000152900000102818,
+      "text": "{\"top_diagnosis\": \"Mismatch repair\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Mismatch repair\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
-      "input_tokens": 738,
-      "output_tokens": 39,
-      "latency": 0.00031569999555358663,
-      "text": "{\"top_diagnosis\": \"Non-homologous end joining\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Non-homologous end joining\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "input_tokens": 735,
+      "output_tokens": 36,
+      "latency": 0.0002410000015515834,
+      "text": "{\"top_diagnosis\": \"Mismatch repair\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Mismatch repair\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     }
   ],
   "verification_trace": null,

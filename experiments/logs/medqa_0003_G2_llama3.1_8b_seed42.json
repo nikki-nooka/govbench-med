@@ -1,7 +1,7 @@
 {
-  "run_id": "6ac43ff6",
+  "run_id": "296ca668",
   "experiment_id": "medqa_0003_llama3.1:8b_G2_seed42",
-  "timestamp": "2026-09-02T17:33:11.932919Z",
+  "timestamp": "2026-09-02T17:37:01.922223Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0003",
@@ -16,25 +16,31 @@
   "dataset_source": "medqa",
   "correctness": false,
   "top3_correct": false,
-  "confidence": 0.75,
+  "confidence": 0.81,
   "consensus": true,
   "abstained": false,
   "suppressed": false,
-  "verification_status": "VERIFIED",
-  "claims_checked": [],
+  "verification_status": "FLAGGED",
+  "claims_checked": [
+    {
+      "claim": "unsupported",
+      "status": "FABRICATED",
+      "case_evidence": null
+    }
+  ],
   "supported_claims": 0,
   "contradicted_claims": 0,
-  "unverifiable_claims": 0,
+  "unverifiable_claims": 1,
   "revision_count": 0,
-  "input_tokens": 2364,
-  "output_tokens": 156,
-  "total_tokens": 2520,
+  "input_tokens": 2361,
+  "output_tokens": 162,
+  "total_tokens": 2523,
   "model_calls": 5,
-  "latency_ms": 3.3900000010617077,
-  "governance_latency_ms": 3.3900000010617077,
-  "diagnosis_latency_ms": 2.0340000006370245,
-  "governance_overhead_latency_ms": 1.356000000424683,
-  "report_latency_ms": 0.00039000000106170774,
+  "latency_ms": 3.2733000001171604,
+  "governance_latency_ms": 3.2733000001171604,
+  "diagnosis_latency_ms": 1.9639800000702963,
+  "governance_overhead_latency_ms": 1.309320000046864,
+  "report_latency_ms": 0.0002733000001171604,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -45,7 +51,7 @@
   "ccs": 0.0,
   "ge": 0.0,
   "hallucination_impactful": false,
-  "hallucination_detected": false,
+  "hallucination_detected": true,
   "unsafe_reassurance": false,
   "agent_traces": [
     {
@@ -53,7 +59,7 @@
       "input_tokens": 344,
       "output_tokens": 41,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.89, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.89}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.81, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.81}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist",
@@ -65,30 +71,36 @@
     {
       "agent": "verifier",
       "input_tokens": 392,
-      "output_tokens": 10,
+      "output_tokens": 19,
       "latency": 1.0,
-      "text": "{\"verdict\": \"VERIFIED\", \"claims\": [], \"fabricated_count\": 0, \"summary\": \"Verified.\"}"
+      "text": "{\"verdict\": \"FLAGGED\", \"claims\": [{\"claim\": \"unsupported\", \"status\": \"FABRICATED\", \"case_evidence\": null}], \"fabricated_count\": 1, \"summary\": \"Unsupported claim detected.\"}"
     },
     {
       "agent": "report_writer",
       "input_tokens": 496,
-      "output_tokens": 36,
-      "latency": 0.00017080000543501228,
-      "text": "{\"top_diagnosis\": \"Radioiodine therapy\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Radioiodine therapy\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "output_tokens": 33,
+      "latency": 0.00011649999942164868,
+      "text": "{\"top_diagnosis\": \"Methimazole\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Methimazole\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
-      "input_tokens": 807,
+      "input_tokens": 804,
       "output_tokens": 33,
-      "latency": 0.00021919999562669545,
-      "text": "{\"top_diagnosis\": \"Propylthiouracil\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Propylthiouracil\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "latency": 0.0001568000006955117,
+      "text": "{\"top_diagnosis\": \"Methimazole\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Methimazole\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     }
   ],
   "verification_trace": {
-    "verdict": "VERIFIED",
-    "claims": [],
-    "fabricated_count": 0,
-    "summary": "Verified."
+    "verdict": "FLAGGED",
+    "claims": [
+      {
+        "claim": "unsupported",
+        "status": "FABRICATED",
+        "case_evidence": null
+      }
+    ],
+    "fabricated_count": 1,
+    "summary": "Unsupported claim detected."
   },
   "consensus_trace": null,
   "ethics_trace": null,

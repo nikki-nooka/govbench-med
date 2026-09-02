@@ -1,7 +1,7 @@
 {
-  "run_id": "c160af2a",
+  "run_id": "3edb7ec9",
   "experiment_id": "medqa_0058_llama3.1:8b_G4_seed42",
-  "timestamp": "2026-09-02T17:33:12.609795Z",
+  "timestamp": "2026-09-02T17:37:02.428115Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0058",
@@ -26,15 +26,15 @@
   "contradicted_claims": 0,
   "unverifiable_claims": 0,
   "revision_count": 0,
-  "input_tokens": 3187,
-  "output_tokens": 217,
-  "total_tokens": 3404,
+  "input_tokens": 3184,
+  "output_tokens": 214,
+  "total_tokens": 3398,
   "model_calls": 7,
-  "latency_ms": 5.278099993010983,
-  "governance_latency_ms": 5.278099993010983,
-  "diagnosis_latency_ms": 3.1668599958065897,
-  "governance_overhead_latency_ms": 2.111239997204393,
-  "report_latency_ms": 0.00027809999301098287,
+  "latency_ms": 5.652399998216424,
+  "governance_latency_ms": 5.652399998216424,
+  "diagnosis_latency_ms": 3.3914399989298545,
+  "governance_overhead_latency_ms": 2.2609599992865697,
+  "report_latency_ms": 0.0006523999982164241,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -79,16 +79,16 @@
     {
       "agent": "report_writer",
       "input_tokens": 557,
-      "output_tokens": 44,
-      "latency": 0.00011639999866019934,
-      "text": "{\"top_diagnosis\": \"Preferential dilatation of capacitance vessels\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Preferential dilatation of capacitance vessels\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "output_tokens": 41,
+      "latency": 0.0003171999996993691,
+      "text": "{\"top_diagnosis\": \"Reduction in myocardial contractility\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Reduction in myocardial contractility\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
-      "input_tokens": 876,
+      "input_tokens": 873,
       "output_tokens": 44,
-      "latency": 0.00016169999435078353,
-      "text": "{\"top_diagnosis\": \"Decrease in transmembrane sodium gradient\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Decrease in transmembrane sodium gradient\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "latency": 0.00033519999851705506,
+      "text": "{\"top_diagnosis\": \"Inhibition of aldosterone-mediated sodium reabsorption\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Inhibition of aldosterone-mediated sodium reabsorption\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "ethics_critic",

@@ -1,7 +1,7 @@
 {
-  "run_id": "1efad7e9",
+  "run_id": "49fc4ff7",
   "experiment_id": "medqa_0011_llama3.1:8b_G1_seed42",
-  "timestamp": "2026-09-02T17:33:12.005967Z",
+  "timestamp": "2026-09-02T17:37:01.991883Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0011",
@@ -30,11 +30,11 @@
   "output_tokens": 149,
   "total_tokens": 1733,
   "model_calls": 4,
-  "latency_ms": 2.402000005124137,
-  "governance_latency_ms": 2.402000005124137,
-  "diagnosis_latency_ms": 1.441200003074482,
-  "governance_overhead_latency_ms": 0.9608000020496548,
-  "report_latency_ms": 0.0004020000051241368,
+  "latency_ms": 2.2560000066296197,
+  "governance_latency_ms": 2.2560000066296197,
+  "diagnosis_latency_ms": 1.3536000039777718,
+  "governance_overhead_latency_ms": 0.9024000026518479,
+  "report_latency_ms": 0.00025600000662961975,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -66,15 +66,15 @@
       "agent": "report_writer",
       "input_tokens": 401,
       "output_tokens": 36,
-      "latency": 0.00014970000484026968,
-      "text": "{\"top_diagnosis\": \"Wegener granulomatosus\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Wegener granulomatosus\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "latency": 0.00011310000263620168,
+      "text": "{\"top_diagnosis\": \"Addison disease\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Addison disease\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
       "input_tokens": 712,
       "output_tokens": 36,
-      "latency": 0.0002523000002838671,
-      "text": "{\"top_diagnosis\": \"Wegener granulomatosus\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Wegener granulomatosus\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "latency": 0.00014290000399341807,
+      "text": "{\"top_diagnosis\": \"Addison disease\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Addison disease\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     }
   ],
   "verification_trace": null,

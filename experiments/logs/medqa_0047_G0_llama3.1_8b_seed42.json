@@ -1,7 +1,7 @@
 {
-  "run_id": "714b770c",
+  "run_id": "3c1735eb",
   "experiment_id": "medqa_0047_llama3.1:8b_G0_seed42",
-  "timestamp": "2026-09-02T17:33:12.476426Z",
+  "timestamp": "2026-09-02T17:37:02.308660Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0047",
@@ -30,11 +30,11 @@
   "output_tokens": 151,
   "total_tokens": 2436,
   "model_calls": 4,
-  "latency_ms": 2.304399996821303,
-  "governance_latency_ms": 2.304399996821303,
-  "diagnosis_latency_ms": 1.3826399980927817,
-  "governance_overhead_latency_ms": 0.9217599987285212,
-  "report_latency_ms": 0.0003043999968213029,
+  "latency_ms": 2.2949000045191497,
+  "governance_latency_ms": 2.2949000045191497,
+  "diagnosis_latency_ms": 1.3769400027114898,
+  "governance_overhead_latency_ms": 0.9179600018076599,
+  "report_latency_ms": 0.00029490000451914966,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -66,14 +66,14 @@
       "agent": "report_writer",
       "input_tokens": 570,
       "output_tokens": 36,
-      "latency": 0.0001373999984934926,
+      "latency": 0.00013010000111535192,
       "text": "{\"top_diagnosis\": \"Bartter's syndrome\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Bartter's syndrome\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
       "input_tokens": 877,
       "output_tokens": 33,
-      "latency": 0.00016699999832781032,
+      "latency": 0.00016480000340379775,
       "text": "{\"top_diagnosis\": \"Pheochromocytoma\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pheochromocytoma\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     }
   ],

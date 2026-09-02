@@ -1,7 +1,7 @@
 {
-  "run_id": "14b2a82e",
+  "run_id": "896a7a01",
   "experiment_id": "medqa_0063_llama3.1:8b_G3_seed42",
-  "timestamp": "2026-09-02T17:33:12.662556Z",
+  "timestamp": "2026-09-02T17:37:02.485414Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0063",
@@ -10,15 +10,15 @@
   "model_version": "llama3.1:8b",
   "governance_level": "G3",
   "seed": 42,
-  "final_answer": "",
+  "final_answer": "Pulmonary Embolism",
   "ground_truth": "Actinic keratosis",
   "ground_truth_key": "C",
   "dataset_source": "medqa",
   "correctness": false,
   "top3_correct": false,
-  "confidence": 0.0,
-  "consensus": false,
-  "abstained": true,
+  "confidence": 0.78,
+  "consensus": true,
+  "abstained": false,
   "suppressed": false,
   "verification_status": "NOT_CHECKED",
   "claims_checked": 0,
@@ -26,17 +26,17 @@
   "contradicted_claims": 0,
   "unverifiable_claims": 0,
   "revision_count": 0,
-  "input_tokens": 1002,
-  "output_tokens": 119,
-  "total_tokens": 1121,
-  "model_calls": 4,
-  "latency_ms": 4.0,
-  "governance_latency_ms": 4.0,
-  "diagnosis_latency_ms": 2.4,
-  "governance_overhead_latency_ms": 1.6,
-  "report_latency_ms": 0.0,
+  "input_tokens": 2190,
+  "output_tokens": 191,
+  "total_tokens": 2381,
+  "model_calls": 6,
+  "latency_ms": 4.555999999050982,
+  "governance_latency_ms": 4.555999999050982,
+  "diagnosis_latency_ms": 2.7335999994305893,
+  "governance_overhead_latency_ms": 1.822399999620393,
+  "report_latency_ms": 0.0005559999990509823,
   "cost": 0.0,
-  "human_review_required": true,
+  "human_review_required": false,
   "human_review_time": 0.0,
   "css": 0.0,
   "cmr": 0.0,
@@ -53,7 +53,7 @@
       "input_tokens": 283,
       "output_tokens": 41,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.8200000000000001, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.8200000000000001}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.78, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.78}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist_a",
@@ -72,15 +72,30 @@
     {
       "agent": "moderator",
       "input_tokens": 193,
-      "output_tokens": 6,
+      "output_tokens": 9,
       "latency": 1.0,
-      "text": "{\"recommendation\": \"ABSTAIN\", \"reasoning\": \"Insufficient consensus.\"}"
+      "text": "{\"recommendation\": \"REPORT\", \"agreed_diagnosis\": \"Pulmonary Embolism\", \"average_confidence\": 0.78}"
+    },
+    {
+      "agent": "report_writer",
+      "input_tokens": 440,
+      "output_tokens": 33,
+      "latency": 0.0002505000011296943,
+      "text": "{\"top_diagnosis\": \"Psoriasis\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Psoriasis\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+    },
+    {
+      "agent": "report_judge",
+      "input_tokens": 748,
+      "output_tokens": 36,
+      "latency": 0.000305499997921288,
+      "text": "{\"top_diagnosis\": \"Seborrheic keratosis\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Seborrheic keratosis\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     }
   ],
   "verification_trace": null,
   "consensus_trace": {
-    "recommendation": "ABSTAIN",
-    "reasoning": "Insufficient consensus."
+    "recommendation": "REPORT",
+    "agreed_diagnosis": "Pulmonary Embolism",
+    "average_confidence": 0.78
   },
   "ethics_trace": null,
   "report_trace": null

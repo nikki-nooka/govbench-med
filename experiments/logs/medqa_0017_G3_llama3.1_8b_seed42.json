@@ -1,7 +1,7 @@
 {
-  "run_id": "dacca3ff",
+  "run_id": "70555dda",
   "experiment_id": "medqa_0017_llama3.1:8b_G3_seed42",
-  "timestamp": "2026-09-02T17:33:12.062492Z",
+  "timestamp": "2026-09-02T17:37:02.046471Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0017",
@@ -30,11 +30,11 @@
   "output_tokens": 188,
   "total_tokens": 2905,
   "model_calls": 6,
-  "latency_ms": 4.334299998939969,
-  "governance_latency_ms": 4.334299998939969,
-  "diagnosis_latency_ms": 2.600579999363981,
-  "governance_overhead_latency_ms": 1.7337199995759875,
-  "report_latency_ms": 0.00033429999893996865,
+  "latency_ms": 4.307900001644157,
+  "governance_latency_ms": 4.307900001644157,
+  "diagnosis_latency_ms": 2.584740000986494,
+  "governance_overhead_latency_ms": 1.7231600006576628,
+  "report_latency_ms": 0.0003079000016441569,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -53,7 +53,7 @@
       "input_tokens": 396,
       "output_tokens": 41,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.86, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.86}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.89, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.89}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist_a",
@@ -80,15 +80,15 @@
       "agent": "report_writer",
       "input_tokens": 533,
       "output_tokens": 33,
-      "latency": 0.00014509999891743064,
-      "text": "{\"top_diagnosis\": \"2.67\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"2.67\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "latency": 0.00013300000136950985,
+      "text": "{\"top_diagnosis\": \"0.375\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"0.375\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
       "input_tokens": 841,
       "output_tokens": 33,
-      "latency": 0.000189200000022538,
-      "text": "{\"top_diagnosis\": \"0.5\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"0.5\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "latency": 0.00017490000027464703,
+      "text": "{\"top_diagnosis\": \"2.5\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"2.5\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     }
   ],
   "verification_trace": null,

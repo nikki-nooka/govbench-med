@@ -1,7 +1,7 @@
 {
-  "run_id": "e20ced68",
+  "run_id": "274a7f7f",
   "experiment_id": "medqa_0018_llama3.1:8b_G2_seed42",
-  "timestamp": "2026-09-02T17:33:12.073165Z",
+  "timestamp": "2026-09-02T17:37:02.053011Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0018",
@@ -26,15 +26,15 @@
   "contradicted_claims": 0,
   "unverifiable_claims": 0,
   "revision_count": 0,
-  "input_tokens": 2952,
+  "input_tokens": 2950,
   "output_tokens": 167,
-  "total_tokens": 3119,
+  "total_tokens": 3117,
   "model_calls": 5,
-  "latency_ms": 3.4694000017479993,
-  "governance_latency_ms": 3.4694000017479993,
-  "diagnosis_latency_ms": 2.0816400010487994,
-  "governance_overhead_latency_ms": 1.3877600006991997,
-  "report_latency_ms": 0.00046940000174799934,
+  "latency_ms": 3.303099994198419,
+  "governance_latency_ms": 3.303099994198419,
+  "diagnosis_latency_ms": 1.9818599965190515,
+  "governance_overhead_latency_ms": 1.3212399976793676,
+  "report_latency_ms": 0.00030309999419841915,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -53,7 +53,7 @@
       "input_tokens": 462,
       "output_tokens": 41,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.76, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.76}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.81, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.81}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist",
@@ -72,16 +72,16 @@
     {
       "agent": "report_writer",
       "input_tokens": 611,
-      "output_tokens": 41,
-      "latency": 0.00024839999969117343,
-      "text": "{\"top_diagnosis\": \"Supplementation with vitamin D\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Supplementation with vitamin D\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "output_tokens": 39,
+      "latency": 0.0001331999956164509,
+      "text": "{\"top_diagnosis\": \"Begin rehydration therapy\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Begin rehydration therapy\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
-      "input_tokens": 926,
-      "output_tokens": 39,
-      "latency": 0.0002210000020568259,
-      "text": "{\"top_diagnosis\": \"Administer calcium gluconate\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Administer calcium gluconate\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "input_tokens": 924,
+      "output_tokens": 41,
+      "latency": 0.00016989999858196825,
+      "text": "{\"top_diagnosis\": \"Supplementation with vitamin D\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Supplementation with vitamin D\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     }
   ],
   "verification_trace": {

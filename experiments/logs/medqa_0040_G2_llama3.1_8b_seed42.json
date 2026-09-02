@@ -1,7 +1,7 @@
 {
-  "run_id": "7d2d7887",
+  "run_id": "0345abef",
   "experiment_id": "medqa_0040_llama3.1:8b_G2_seed42",
-  "timestamp": "2026-09-02T17:33:12.415645Z",
+  "timestamp": "2026-09-02T17:37:02.250341Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0040",
@@ -16,31 +16,25 @@
   "dataset_source": "medqa",
   "correctness": false,
   "top3_correct": false,
-  "confidence": 0.79,
+  "confidence": 0.75,
   "consensus": true,
   "abstained": false,
   "suppressed": false,
-  "verification_status": "FLAGGED",
-  "claims_checked": [
-    {
-      "claim": "unsupported",
-      "status": "FABRICATED",
-      "case_evidence": null
-    }
-  ],
+  "verification_status": "VERIFIED",
+  "claims_checked": [],
   "supported_claims": 0,
   "contradicted_claims": 0,
-  "unverifiable_claims": 1,
+  "unverifiable_claims": 0,
   "revision_count": 0,
   "input_tokens": 2487,
-  "output_tokens": 179,
-  "total_tokens": 2666,
+  "output_tokens": 175,
+  "total_tokens": 2662,
   "model_calls": 5,
-  "latency_ms": 3.5903000055695884,
-  "governance_latency_ms": 3.5903000055695884,
-  "diagnosis_latency_ms": 2.154180003341753,
-  "governance_overhead_latency_ms": 1.4361200022278353,
-  "report_latency_ms": 0.0005903000055695884,
+  "latency_ms": 3.4014999940409325,
+  "governance_latency_ms": 3.4014999940409325,
+  "diagnosis_latency_ms": 2.0408999964245593,
+  "governance_overhead_latency_ms": 1.360599997616373,
+  "report_latency_ms": 0.0004014999940409325,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -51,7 +45,7 @@
   "ccs": 0.0,
   "ge": 0.0,
   "hallucination_impactful": false,
-  "hallucination_detected": true,
+  "hallucination_detected": false,
   "unsafe_reassurance": false,
   "agent_traces": [
     {
@@ -59,7 +53,7 @@
       "input_tokens": 353,
       "output_tokens": 41,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.79, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.79}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.88, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.88}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist",
@@ -71,36 +65,30 @@
     {
       "agent": "verifier",
       "input_tokens": 401,
-      "output_tokens": 19,
+      "output_tokens": 10,
       "latency": 1.0,
-      "text": "{\"verdict\": \"FLAGGED\", \"claims\": [{\"claim\": \"unsupported\", \"status\": \"FABRICATED\", \"case_evidence\": null}], \"fabricated_count\": 1, \"summary\": \"Unsupported claim detected.\"}"
+      "text": "{\"verdict\": \"VERIFIED\", \"claims\": [], \"fabricated_count\": 0, \"summary\": \"Verified.\"}"
     },
     {
       "agent": "report_writer",
       "input_tokens": 540,
       "output_tokens": 44,
-      "latency": 0.0003102000046055764,
-      "text": "{\"top_diagnosis\": \"Twisting of the spermatic cord\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Twisting of the spermatic cord\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "latency": 0.00018429999909130856,
+      "text": "{\"top_diagnosis\": \"Dilation of the pampiniform plexus\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Dilation of the pampiniform plexus\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
       "input_tokens": 859,
-      "output_tokens": 39,
-      "latency": 0.000280100000964012,
-      "text": "{\"top_diagnosis\": \"Patent processus vaginalis\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Patent processus vaginalis\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "output_tokens": 44,
+      "latency": 0.00021719999494962394,
+      "text": "{\"top_diagnosis\": \"Dilation of the pampiniform plexus\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Dilation of the pampiniform plexus\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     }
   ],
   "verification_trace": {
-    "verdict": "FLAGGED",
-    "claims": [
-      {
-        "claim": "unsupported",
-        "status": "FABRICATED",
-        "case_evidence": null
-      }
-    ],
-    "fabricated_count": 1,
-    "summary": "Unsupported claim detected."
+    "verdict": "VERIFIED",
+    "claims": [],
+    "fabricated_count": 0,
+    "summary": "Verified."
   },
   "consensus_trace": null,
   "ethics_trace": null,

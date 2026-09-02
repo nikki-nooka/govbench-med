@@ -1,7 +1,7 @@
 {
-  "run_id": "fe9b6a09",
+  "run_id": "40b23eff",
   "experiment_id": "medqa_0062_llama3.1:8b_G1_seed42",
-  "timestamp": "2026-09-02T17:33:12.649504Z",
+  "timestamp": "2026-09-02T17:37:02.467369Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0062",
@@ -30,11 +30,11 @@
   "output_tokens": 143,
   "total_tokens": 1892,
   "model_calls": 4,
-  "latency_ms": 2.4204999931971543,
-  "governance_latency_ms": 2.4204999931971543,
-  "diagnosis_latency_ms": 1.4522999959182925,
-  "governance_overhead_latency_ms": 0.9681999972788617,
-  "report_latency_ms": 0.00042049999319715425,
+  "latency_ms": 2.503099996421952,
+  "governance_latency_ms": 2.503099996421952,
+  "diagnosis_latency_ms": 1.501859997853171,
+  "governance_overhead_latency_ms": 1.0012399985687808,
+  "report_latency_ms": 0.0005030999964219518,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -66,15 +66,15 @@
       "agent": "report_writer",
       "input_tokens": 438,
       "output_tokens": 33,
-      "latency": 0.00020039999799337238,
-      "text": "{\"top_diagnosis\": \"16\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"16\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "latency": 0.0002303000001120381,
+      "text": "{\"top_diagnosis\": \"50\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"50\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
       "input_tokens": 746,
       "output_tokens": 33,
-      "latency": 0.00022009999520378187,
-      "text": "{\"top_diagnosis\": \"50\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"50\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "latency": 0.0002727999963099137,
+      "text": "{\"top_diagnosis\": \"16\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"16\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     }
   ],
   "verification_trace": null,

@@ -1,7 +1,7 @@
 {
-  "run_id": "e1530ecd",
+  "run_id": "db985477",
   "experiment_id": "medqa_0062_llama3.1:8b_G0_seed42",
-  "timestamp": "2026-09-02T17:33:12.646385Z",
+  "timestamp": "2026-09-02T17:37:02.465240Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0062",
@@ -30,11 +30,11 @@
   "output_tokens": 148,
   "total_tokens": 1920,
   "model_calls": 4,
-  "latency_ms": 2.4986000058124773,
-  "governance_latency_ms": 2.4986000058124773,
-  "diagnosis_latency_ms": 1.4991600034874863,
-  "governance_overhead_latency_ms": 0.999440002324991,
-  "report_latency_ms": 0.0004986000058124773,
+  "latency_ms": 2.6120000034570694,
+  "governance_latency_ms": 2.6120000034570694,
+  "diagnosis_latency_ms": 1.5672000020742416,
+  "governance_overhead_latency_ms": 1.0448000013828278,
+  "report_latency_ms": 0.0006120000034570694,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -66,15 +66,15 @@
       "agent": "report_writer",
       "input_tokens": 442,
       "output_tokens": 33,
-      "latency": 0.00020980000408599153,
+      "latency": 0.00028140000358689576,
       "text": "{\"top_diagnosis\": \"5\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"5\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
       "input_tokens": 746,
       "output_tokens": 33,
-      "latency": 0.0002888000017264858,
-      "text": "{\"top_diagnosis\": \"20\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"20\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "latency": 0.00033059999987017363,
+      "text": "{\"top_diagnosis\": \"16\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"16\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     }
   ],
   "verification_trace": null,

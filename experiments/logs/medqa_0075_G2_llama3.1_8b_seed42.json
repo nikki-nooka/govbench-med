@@ -1,7 +1,7 @@
 {
-  "run_id": "8313e2ae",
+  "run_id": "1723c63d",
   "experiment_id": "medqa_0075_llama3.1:8b_G2_seed42",
-  "timestamp": "2026-09-02T17:33:12.822916Z",
+  "timestamp": "2026-09-02T17:37:02.622944Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0075",
@@ -26,15 +26,15 @@
   "contradicted_claims": 0,
   "unverifiable_claims": 0,
   "revision_count": 0,
-  "input_tokens": 1852,
-  "output_tokens": 175,
-  "total_tokens": 2027,
+  "input_tokens": 1860,
+  "output_tokens": 183,
+  "total_tokens": 2043,
   "model_calls": 5,
-  "latency_ms": 3.2582000015536323,
-  "governance_latency_ms": 3.2582000015536323,
-  "diagnosis_latency_ms": 1.9549200009321794,
-  "governance_overhead_latency_ms": 1.3032800006214529,
-  "report_latency_ms": 0.0002582000015536323,
+  "latency_ms": 3.2718000032473356,
+  "governance_latency_ms": 3.2718000032473356,
+  "diagnosis_latency_ms": 1.9630800019484014,
+  "governance_overhead_latency_ms": 1.3087200012989342,
+  "report_latency_ms": 0.00027180000324733555,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -53,7 +53,7 @@
       "input_tokens": 228,
       "output_tokens": 41,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.79, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.79}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.76, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.76}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist",
@@ -72,15 +72,15 @@
     {
       "agent": "report_writer",
       "input_tokens": 410,
-      "output_tokens": 44,
-      "latency": 0.00010500000644242391,
-      "text": "{\"top_diagnosis\": \"Erosions of the dental enamel\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Erosions of the dental enamel\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "output_tokens": 52,
+      "latency": 0.000112900001113303,
+      "text": "{\"top_diagnosis\": \"Holosystolic murmur at the left lower sternal border\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Holosystolic murmur at the left lower sternal border\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
-      "input_tokens": 729,
+      "input_tokens": 737,
       "output_tokens": 44,
-      "latency": 0.0001531999951112084,
+      "latency": 0.00015890000213403255,
       "text": "{\"top_diagnosis\": \"Erosions of the dental enamel\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Erosions of the dental enamel\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     }
   ],

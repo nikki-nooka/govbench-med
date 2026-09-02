@@ -1,7 +1,7 @@
 {
-  "run_id": "dccba646",
+  "run_id": "7a22e0bc",
   "experiment_id": "medqa_0037_llama3.1:8b_G2_seed42",
-  "timestamp": "2026-09-02T17:33:12.386491Z",
+  "timestamp": "2026-09-02T17:37:02.224616Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0037",
@@ -26,15 +26,15 @@
   "contradicted_claims": 0,
   "unverifiable_claims": 0,
   "revision_count": 0,
-  "input_tokens": 2028,
-  "output_tokens": 153,
-  "total_tokens": 2181,
+  "input_tokens": 2031,
+  "output_tokens": 156,
+  "total_tokens": 2187,
   "model_calls": 5,
-  "latency_ms": 3.3426999974180944,
-  "governance_latency_ms": 3.3426999974180944,
-  "diagnosis_latency_ms": 2.0056199984508565,
-  "governance_overhead_latency_ms": 1.3370799989672377,
-  "report_latency_ms": 0.0003426999974180944,
+  "latency_ms": 3.2564000023994595,
+  "governance_latency_ms": 3.2564000023994595,
+  "diagnosis_latency_ms": 1.9538400014396757,
+  "governance_overhead_latency_ms": 1.3025600009597837,
+  "report_latency_ms": 0.0002564000023994595,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -53,7 +53,7 @@
       "input_tokens": 276,
       "output_tokens": 41,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.8200000000000001, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.8200000000000001}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.84, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.84}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist",
@@ -72,16 +72,16 @@
     {
       "agent": "report_writer",
       "input_tokens": 431,
-      "output_tokens": 33,
-      "latency": 0.0001252999936696142,
-      "text": "{\"top_diagnosis\": \"Spermatozoon\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Spermatozoon\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "output_tokens": 36,
+      "latency": 0.00010900000052060932,
+      "text": "{\"top_diagnosis\": \"Secondary spermatocyte\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Secondary spermatocyte\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
-      "input_tokens": 739,
+      "input_tokens": 742,
       "output_tokens": 33,
-      "latency": 0.00021740000374848023,
-      "text": "{\"top_diagnosis\": \"Spermatozoon\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Spermatozoon\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "latency": 0.00014740000187885016,
+      "text": "{\"top_diagnosis\": \"Spermatid\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Spermatid\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     }
   ],
   "verification_trace": {

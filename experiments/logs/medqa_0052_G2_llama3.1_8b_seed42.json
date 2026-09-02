@@ -1,7 +1,7 @@
 {
-  "run_id": "c2507d46",
+  "run_id": "1e8ed24b",
   "experiment_id": "medqa_0052_llama3.1:8b_G2_seed42",
-  "timestamp": "2026-09-02T17:33:12.535141Z",
+  "timestamp": "2026-09-02T17:37:02.355834Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0052",
@@ -30,11 +30,11 @@
   "output_tokens": 170,
   "total_tokens": 2327,
   "model_calls": 5,
-  "latency_ms": 3.4083999956492335,
-  "governance_latency_ms": 3.4083999956492335,
-  "diagnosis_latency_ms": 2.04503999738954,
-  "governance_overhead_latency_ms": 1.3633599982596933,
-  "report_latency_ms": 0.00040839999564923346,
+  "latency_ms": 3.369900000805501,
+  "governance_latency_ms": 3.369900000805501,
+  "diagnosis_latency_ms": 2.0219400004833004,
+  "governance_overhead_latency_ms": 1.3479600003222003,
+  "report_latency_ms": 0.0003699000008055009,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -53,7 +53,7 @@
       "input_tokens": 296,
       "output_tokens": 41,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.79, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.79}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.86, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.86}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist",
@@ -73,14 +73,14 @@
       "agent": "report_writer",
       "input_tokens": 464,
       "output_tokens": 39,
-      "latency": 0.0001829999964684248,
+      "latency": 0.00015780000103404745,
       "text": "{\"top_diagnosis\": \"Increased interstitial markings\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Increased interstitial markings\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
       "input_tokens": 777,
       "output_tokens": 44,
-      "latency": 0.00022539999918080866,
+      "latency": 0.00021209999977145344,
       "text": "{\"top_diagnosis\": \"Lobar consolidation in the lingual\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Lobar consolidation in the lingual\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     }
   ],

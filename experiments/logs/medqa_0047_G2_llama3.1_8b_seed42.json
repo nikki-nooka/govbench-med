@@ -1,7 +1,7 @@
 {
-  "run_id": "4c21be1f",
+  "run_id": "5dcb576b",
   "experiment_id": "medqa_0047_llama3.1:8b_G2_seed42",
-  "timestamp": "2026-09-02T17:33:12.481077Z",
+  "timestamp": "2026-09-02T17:37:02.313119Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0047",
@@ -26,15 +26,15 @@
   "contradicted_claims": 0,
   "unverifiable_claims": 0,
   "revision_count": 0,
-  "input_tokens": 2733,
-  "output_tokens": 162,
-  "total_tokens": 2895,
+  "input_tokens": 2730,
+  "output_tokens": 156,
+  "total_tokens": 2886,
   "model_calls": 5,
-  "latency_ms": 3.387200001568999,
-  "governance_latency_ms": 3.387200001568999,
-  "diagnosis_latency_ms": 2.0323200009413993,
-  "governance_overhead_latency_ms": 1.3548800006275996,
-  "report_latency_ms": 0.00038720000156899914,
+  "latency_ms": 3.3190000061294995,
+  "governance_latency_ms": 3.3190000061294995,
+  "diagnosis_latency_ms": 1.9914000036776998,
+  "governance_overhead_latency_ms": 1.3276000024517998,
+  "report_latency_ms": 0.0003190000061294995,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -72,16 +72,16 @@
     {
       "agent": "report_writer",
       "input_tokens": 566,
-      "output_tokens": 39,
-      "latency": 0.00017120000120485201,
-      "text": "{\"top_diagnosis\": \"Renal artery stenosis\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Renal artery stenosis\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "output_tokens": 36,
+      "latency": 0.00013800000306218863,
+      "text": "{\"top_diagnosis\": \"Bartter's syndrome\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Bartter's syndrome\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
-      "input_tokens": 880,
-      "output_tokens": 36,
-      "latency": 0.00021600000036414713,
-      "text": "{\"top_diagnosis\": \"Gitelman's syndrome\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Gitelman's syndrome\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "input_tokens": 877,
+      "output_tokens": 33,
+      "latency": 0.0001810000030673109,
+      "text": "{\"top_diagnosis\": \"Pheochromocytoma\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pheochromocytoma\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     }
   ],
   "verification_trace": {

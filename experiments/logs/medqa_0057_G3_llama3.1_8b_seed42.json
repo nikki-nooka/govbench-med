@@ -1,7 +1,7 @@
 {
-  "run_id": "331c52d9",
+  "run_id": "eacc997c",
   "experiment_id": "medqa_0057_llama3.1:8b_G3_seed42",
-  "timestamp": "2026-09-02T17:33:12.596986Z",
+  "timestamp": "2026-09-02T17:37:02.412353Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0057",
@@ -30,11 +30,11 @@
   "output_tokens": 200,
   "total_tokens": 2631,
   "model_calls": 6,
-  "latency_ms": 4.390900000638794,
-  "governance_latency_ms": 4.390900000638794,
-  "diagnosis_latency_ms": 2.6345400003832764,
-  "governance_overhead_latency_ms": 1.7563600002555178,
-  "report_latency_ms": 0.00039090000063879415,
+  "latency_ms": 4.404599995817989,
+  "governance_latency_ms": 4.404599995817989,
+  "diagnosis_latency_ms": 2.6427599974907934,
+  "governance_overhead_latency_ms": 1.7618399983271957,
+  "report_latency_ms": 0.0004045999958179891,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -80,14 +80,14 @@
       "agent": "report_writer",
       "input_tokens": 491,
       "output_tokens": 39,
-      "latency": 0.00017210000078193843,
-      "text": "{\"top_diagnosis\": \"Dependent personality disorder\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Dependent personality disorder\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "latency": 0.0001790999958757311,
+      "text": "{\"top_diagnosis\": \"Borderline personality disorder\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Borderline personality disorder\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
       "input_tokens": 804,
       "output_tokens": 39,
-      "latency": 0.00021879999985685572,
+      "latency": 0.000225499999942258,
       "text": "{\"top_diagnosis\": \"Borderline personality disorder\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Borderline personality disorder\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     }
   ],

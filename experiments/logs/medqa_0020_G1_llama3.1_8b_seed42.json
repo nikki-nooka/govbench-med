@@ -1,7 +1,7 @@
 {
-  "run_id": "c586f184",
+  "run_id": "93a11252",
   "experiment_id": "medqa_0020_llama3.1:8b_G1_seed42",
-  "timestamp": "2026-09-02T17:33:12.094917Z",
+  "timestamp": "2026-09-02T17:37:02.069139Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0020",
@@ -16,7 +16,7 @@
   "dataset_source": "medqa",
   "correctness": false,
   "top3_correct": false,
-  "confidence": 0.89,
+  "confidence": 0.83,
   "consensus": true,
   "abstained": false,
   "suppressed": false,
@@ -26,15 +26,15 @@
   "contradicted_claims": 0,
   "unverifiable_claims": 0,
   "revision_count": 0,
-  "input_tokens": 2231,
-  "output_tokens": 159,
-  "total_tokens": 2390,
+  "input_tokens": 2226,
+  "output_tokens": 152,
+  "total_tokens": 2378,
   "model_calls": 4,
-  "latency_ms": 2.332600000547245,
-  "governance_latency_ms": 2.332600000547245,
-  "diagnosis_latency_ms": 1.399560000328347,
-  "governance_overhead_latency_ms": 0.9330400002188981,
-  "report_latency_ms": 0.00033260000054724514,
+  "latency_ms": 2.28520000341814,
+  "governance_latency_ms": 2.28520000341814,
+  "diagnosis_latency_ms": 1.371120002050884,
+  "governance_overhead_latency_ms": 0.9140800013672561,
+  "report_latency_ms": 0.0002852000034181401,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -53,7 +53,7 @@
       "input_tokens": 405,
       "output_tokens": 41,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.89, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.89}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.83, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.83}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist",
@@ -65,16 +65,16 @@
     {
       "agent": "report_writer",
       "input_tokens": 562,
-      "output_tokens": 41,
-      "latency": 0.00014460000238614157,
-      "text": "{\"top_diagnosis\": \"Increase the tidal volume\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Increase the tidal volume\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "output_tokens": 36,
+      "latency": 0.00012540000170702115,
+      "text": "{\"top_diagnosis\": \"Increase PEEP\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Increase PEEP\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
-      "input_tokens": 878,
-      "output_tokens": 41,
-      "latency": 0.00018799999816110358,
-      "text": "{\"top_diagnosis\": \"Increase the respiratory rate\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Increase the respiratory rate\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "input_tokens": 873,
+      "output_tokens": 39,
+      "latency": 0.00015980000171111897,
+      "text": "{\"top_diagnosis\": \"Increase the FiO2\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Increase the FiO2\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     }
   ],
   "verification_trace": null,

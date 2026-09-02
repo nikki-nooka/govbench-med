@@ -1,7 +1,7 @@
 {
-  "run_id": "351c8a8e",
+  "run_id": "9ead9fd8",
   "experiment_id": "medqa_0089_llama3.1:8b_G2_seed42",
-  "timestamp": "2026-09-02T17:33:12.992800Z",
+  "timestamp": "2026-09-02T17:37:02.791514Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0089",
@@ -26,15 +26,15 @@
   "contradicted_claims": 0,
   "unverifiable_claims": 0,
   "revision_count": 0,
-  "input_tokens": 2254,
-  "output_tokens": 172,
+  "input_tokens": 2251,
+  "output_tokens": 175,
   "total_tokens": 2426,
   "model_calls": 5,
-  "latency_ms": 3.26889999571722,
-  "governance_latency_ms": 3.26889999571722,
-  "diagnosis_latency_ms": 1.961339997430332,
-  "governance_overhead_latency_ms": 1.307559998286888,
-  "report_latency_ms": 0.00026889999571722,
+  "latency_ms": 3.4877000028500333,
+  "governance_latency_ms": 3.4877000028500333,
+  "diagnosis_latency_ms": 2.09262000171002,
+  "governance_overhead_latency_ms": 1.3950800011400133,
+  "report_latency_ms": 0.00048770000285003334,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -72,16 +72,16 @@
     {
       "agent": "report_writer",
       "input_tokens": 484,
-      "output_tokens": 46,
-      "latency": 0.00011419999646022916,
-      "text": "{\"top_diagnosis\": \"Get consent from the patient's brother\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Get consent from the patient's brother\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "output_tokens": 44,
+      "latency": 0.0002117000040016137,
+      "text": "{\"top_diagnosis\": \"Delay surgery until parental consent\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Delay surgery until parental consent\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
-      "input_tokens": 806,
-      "output_tokens": 39,
-      "latency": 0.00015469999925699085,
-      "text": "{\"top_diagnosis\": \"Perform emergency laparotomy\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Perform emergency laparotomy\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "input_tokens": 803,
+      "output_tokens": 44,
+      "latency": 0.00027599999884841964,
+      "text": "{\"top_diagnosis\": \"Get consent from the patient\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Get consent from the patient\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     }
   ],
   "verification_trace": {

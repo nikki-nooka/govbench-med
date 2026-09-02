@@ -1,7 +1,7 @@
 {
-  "run_id": "cbff4dab",
+  "run_id": "a3de3ec0",
   "experiment_id": "medqa_0042_llama3.1:8b_G4_seed42",
-  "timestamp": "2026-09-02T17:33:12.440219Z",
+  "timestamp": "2026-09-02T17:37:02.275023Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0042",
@@ -30,11 +30,11 @@
   "output_tokens": 201,
   "total_tokens": 3380,
   "model_calls": 7,
-  "latency_ms": 5.312700001813937,
-  "governance_latency_ms": 5.312700001813937,
-  "diagnosis_latency_ms": 3.187620001088362,
-  "governance_overhead_latency_ms": 2.125080000725575,
-  "report_latency_ms": 0.000312700001813937,
+  "latency_ms": 5.317500001983717,
+  "governance_latency_ms": 5.317500001983717,
+  "diagnosis_latency_ms": 3.1905000011902303,
+  "governance_overhead_latency_ms": 2.127000000793487,
+  "report_latency_ms": 0.0003175000019837171,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -53,7 +53,7 @@
       "input_tokens": 390,
       "output_tokens": 41,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.83, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.83}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.89, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.89}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist_a",
@@ -80,15 +80,15 @@
       "agent": "report_writer",
       "input_tokens": 542,
       "output_tokens": 36,
-      "latency": 0.00011970000196015462,
-      "text": "{\"top_diagnosis\": \"Interleukin 11\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Interleukin 11\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "latency": 0.00014070000179344788,
+      "text": "{\"top_diagnosis\": \"Interleukin 8\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Interleukin 8\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
       "input_tokens": 852,
       "output_tokens": 36,
-      "latency": 0.00019299999985378236,
-      "text": "{\"top_diagnosis\": \"Interleukin 11\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Interleukin 11\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "latency": 0.0001768000001902692,
+      "text": "{\"top_diagnosis\": \"Interleukin 8\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Interleukin 8\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "ethics_critic",

@@ -1,7 +1,7 @@
 {
-  "run_id": "2c643de5",
+  "run_id": "fdb25c1f",
   "experiment_id": "medqa_0013_llama3.1:8b_G4_seed42",
-  "timestamp": "2026-09-02T17:33:12.033254Z",
+  "timestamp": "2026-09-02T17:37:02.015873Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0013",
@@ -27,14 +27,14 @@
   "unverifiable_claims": 0,
   "revision_count": 0,
   "input_tokens": 3023,
-  "output_tokens": 225,
-  "total_tokens": 3248,
+  "output_tokens": 214,
+  "total_tokens": 3237,
   "model_calls": 7,
-  "latency_ms": 5.533200007339474,
-  "governance_latency_ms": 5.533200007339474,
-  "diagnosis_latency_ms": 3.3199200044036843,
-  "governance_overhead_latency_ms": 2.2132800029357895,
-  "report_latency_ms": 0.0005332000073394738,
+  "latency_ms": 5.3330000035930425,
+  "governance_latency_ms": 5.3330000035930425,
+  "diagnosis_latency_ms": 3.1998000021558255,
+  "governance_overhead_latency_ms": 2.133200001437217,
+  "report_latency_ms": 0.0003330000035930425,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -53,7 +53,7 @@
       "input_tokens": 351,
       "output_tokens": 41,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.8, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.8}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.76, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.76}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist_a",
@@ -80,15 +80,15 @@
       "agent": "report_writer",
       "input_tokens": 538,
       "output_tokens": 44,
-      "latency": 0.00022030000400263816,
+      "latency": 0.0001604999997653067,
       "text": "{\"top_diagnosis\": \"Decreased FEV1 and normal FVC\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Decreased FEV1 and normal FVC\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
       "input_tokens": 856,
-      "output_tokens": 52,
-      "latency": 0.00031290000333683565,
-      "text": "{\"top_diagnosis\": \"Decreased FEV1 and FVC with decreased FEV1/FVC ratio\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Decreased FEV1 and FVC with decreased FEV1/FVC ratio\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "output_tokens": 41,
+      "latency": 0.00017250000382773578,
+      "text": "{\"top_diagnosis\": \"Increased FEV1 and FVC\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Increased FEV1 and FVC\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "ethics_critic",

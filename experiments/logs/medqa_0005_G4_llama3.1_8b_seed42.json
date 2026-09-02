@@ -1,7 +1,7 @@
 {
-  "run_id": "7ed11e73",
+  "run_id": "d6608dc2",
   "experiment_id": "medqa_0005_llama3.1:8b_G4_seed42",
-  "timestamp": "2026-09-02T17:33:11.957005Z",
+  "timestamp": "2026-09-02T17:37:01.944653Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0005",
@@ -26,15 +26,15 @@
   "contradicted_claims": 0,
   "unverifiable_claims": 0,
   "revision_count": 0,
-  "input_tokens": 2906,
-  "output_tokens": 217,
+  "input_tokens": 2911,
+  "output_tokens": 212,
   "total_tokens": 3123,
   "model_calls": 7,
-  "latency_ms": 5.288399998680688,
-  "governance_latency_ms": 5.288399998680688,
-  "diagnosis_latency_ms": 3.173039999208413,
-  "governance_overhead_latency_ms": 2.1153599994722754,
-  "report_latency_ms": 0.00028839999868068844,
+  "latency_ms": 5.383099999453407,
+  "governance_latency_ms": 5.383099999453407,
+  "diagnosis_latency_ms": 3.229859999672044,
+  "governance_overhead_latency_ms": 2.1532399997813627,
+  "report_latency_ms": 0.0003830999994534068,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -53,7 +53,7 @@
       "input_tokens": 336,
       "output_tokens": 41,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.78, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.78}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.84, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.84}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist_a",
@@ -79,16 +79,16 @@
     {
       "agent": "report_writer",
       "input_tokens": 510,
-      "output_tokens": 39,
-      "latency": 0.00011190000077476725,
-      "text": "{\"top_diagnosis\": \"Electroconvulsive therapy (ECT)\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Electroconvulsive therapy (ECT)\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "output_tokens": 44,
+      "latency": 0.0001951000012923032,
+      "text": "{\"top_diagnosis\": \"Refer to outpatient group therapy\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Refer to outpatient group therapy\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
-      "input_tokens": 824,
-      "output_tokens": 49,
-      "latency": 0.0001764999979059212,
-      "text": "{\"top_diagnosis\": \"The patient does not require any intervention\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"The patient does not require any intervention\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "input_tokens": 829,
+      "output_tokens": 39,
+      "latency": 0.00018799999816110358,
+      "text": "{\"top_diagnosis\": \"Electroconvulsive therapy (ECT)\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Electroconvulsive therapy (ECT)\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "ethics_critic",

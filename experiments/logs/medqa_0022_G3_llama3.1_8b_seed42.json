@@ -1,7 +1,7 @@
 {
-  "run_id": "b92f8ca2",
+  "run_id": "f982aaa0",
   "experiment_id": "medqa_0022_llama3.1:8b_G3_seed42",
-  "timestamp": "2026-09-02T17:33:12.121901Z",
+  "timestamp": "2026-09-02T17:37:02.088521Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0022",
@@ -26,15 +26,15 @@
   "contradicted_claims": 0,
   "unverifiable_claims": 0,
   "revision_count": 0,
-  "input_tokens": 2148,
-  "output_tokens": 214,
-  "total_tokens": 2362,
+  "input_tokens": 2145,
+  "output_tokens": 210,
+  "total_tokens": 2355,
   "model_calls": 6,
-  "latency_ms": 4.29260000155773,
-  "governance_latency_ms": 4.29260000155773,
-  "diagnosis_latency_ms": 2.575560000934638,
-  "governance_overhead_latency_ms": 1.7170400006230921,
-  "report_latency_ms": 0.00029260000155773014,
+  "latency_ms": 4.27149999368703,
+  "governance_latency_ms": 4.27149999368703,
+  "diagnosis_latency_ms": 2.562899996212218,
+  "governance_overhead_latency_ms": 1.708599997474812,
+  "report_latency_ms": 0.00027149999368702993,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -53,7 +53,7 @@
       "input_tokens": 261,
       "output_tokens": 41,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.84, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.84}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.81, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.81}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist_a",
@@ -79,16 +79,16 @@
     {
       "agent": "report_writer",
       "input_tokens": 445,
-      "output_tokens": 46,
-      "latency": 0.00012409999908413738,
-      "text": "{\"top_diagnosis\": \"Retrograde migration up peripheral nerve axons\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Retrograde migration up peripheral nerve axons\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "output_tokens": 44,
+      "latency": 0.0001142999972216785,
+      "text": "{\"top_diagnosis\": \"Hematogenous dissemination to the meninges\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Hematogenous dissemination to the meninges\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
-      "input_tokens": 767,
-      "output_tokens": 46,
-      "latency": 0.00016850000247359276,
-      "text": "{\"top_diagnosis\": \"Retrograde migration up peripheral nerve axons\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Retrograde migration up peripheral nerve axons\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "input_tokens": 764,
+      "output_tokens": 44,
+      "latency": 0.00015719999646535143,
+      "text": "{\"top_diagnosis\": \"Hematogenous dissemination to the meninges\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Hematogenous dissemination to the meninges\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     }
   ],
   "verification_trace": null,

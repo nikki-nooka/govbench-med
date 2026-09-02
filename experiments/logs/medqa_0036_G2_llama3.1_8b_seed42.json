@@ -1,7 +1,7 @@
 {
-  "run_id": "097e911e",
+  "run_id": "4b4497ba",
   "experiment_id": "medqa_0036_llama3.1:8b_G2_seed42",
-  "timestamp": "2026-09-02T17:33:12.375870Z",
+  "timestamp": "2026-09-02T17:37:02.216584Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0036",
@@ -26,15 +26,15 @@
   "contradicted_claims": 0,
   "unverifiable_claims": 0,
   "revision_count": 0,
-  "input_tokens": 2566,
-  "output_tokens": 163,
-  "total_tokens": 2729,
+  "input_tokens": 2564,
+  "output_tokens": 157,
+  "total_tokens": 2721,
   "model_calls": 5,
-  "latency_ms": 3.298599996312987,
-  "governance_latency_ms": 3.298599996312987,
-  "diagnosis_latency_ms": 1.9791599977877923,
-  "governance_overhead_latency_ms": 1.3194399985251948,
-  "report_latency_ms": 0.00029859999631298706,
+  "latency_ms": 3.3243999963160604,
+  "governance_latency_ms": 3.3243999963160604,
+  "diagnosis_latency_ms": 1.9946399977896363,
+  "governance_overhead_latency_ms": 1.3297599985264241,
+  "report_latency_ms": 0.0003243999963160604,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -53,7 +53,7 @@
       "input_tokens": 383,
       "output_tokens": 45,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Clinical Evaluation Required\", \"confidence\": 0.77, \"reasoning\": \"Clinical presentation suggests Clinical Evaluation Required.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Clinical Evaluation Required\", \"confidence\": 0.77}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Clinical Evaluation Required\", \"confidence\": 0.85, \"reasoning\": \"Clinical presentation suggests Clinical Evaluation Required.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Clinical Evaluation Required\", \"confidence\": 0.85}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist",
@@ -72,16 +72,16 @@
     {
       "agent": "report_writer",
       "input_tokens": 540,
-      "output_tokens": 36,
-      "latency": 0.00013780000153928995,
-      "text": "{\"top_diagnosis\": \"Sodium oxybate\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Sodium oxybate\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "output_tokens": 33,
+      "latency": 0.00016199999663513154,
+      "text": "{\"top_diagnosis\": \"Methylphenidate\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Methylphenidate\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
-      "input_tokens": 848,
-      "output_tokens": 36,
-      "latency": 0.0001607999947736971,
-      "text": "{\"top_diagnosis\": \"Sodium oxybate\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Sodium oxybate\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "input_tokens": 846,
+      "output_tokens": 33,
+      "latency": 0.00016239999968092889,
+      "text": "{\"top_diagnosis\": \"Methylphenidate\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Methylphenidate\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     }
   ],
   "verification_trace": {

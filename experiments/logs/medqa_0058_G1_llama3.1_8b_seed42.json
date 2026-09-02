@@ -1,7 +1,7 @@
 {
-  "run_id": "8f20c5b6",
+  "run_id": "9a1d88d4",
   "experiment_id": "medqa_0058_llama3.1:8b_G1_seed42",
-  "timestamp": "2026-09-02T17:33:12.604208Z",
+  "timestamp": "2026-09-02T17:37:02.420872Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0058",
@@ -26,15 +26,15 @@
   "contradicted_claims": 0,
   "unverifiable_claims": 0,
   "revision_count": 0,
-  "input_tokens": 2177,
-  "output_tokens": 165,
-  "total_tokens": 2342,
+  "input_tokens": 2174,
+  "output_tokens": 162,
+  "total_tokens": 2336,
   "model_calls": 4,
-  "latency_ms": 2.3275999988545664,
-  "governance_latency_ms": 2.3275999988545664,
-  "diagnosis_latency_ms": 1.3965599993127398,
-  "governance_overhead_latency_ms": 0.9310399995418266,
-  "report_latency_ms": 0.00032759999885456637,
+  "latency_ms": 2.3996999948867597,
+  "governance_latency_ms": 2.3996999948867597,
+  "diagnosis_latency_ms": 1.4398199969320558,
+  "governance_overhead_latency_ms": 0.9598799979547039,
+  "report_latency_ms": 0.00039969999488675967,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -65,16 +65,16 @@
     {
       "agent": "report_writer",
       "input_tokens": 557,
-      "output_tokens": 44,
-      "latency": 0.00013860000035492703,
-      "text": "{\"top_diagnosis\": \"Inhibition of aldosterone-mediated sodium reabsorption\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Inhibition of aldosterone-mediated sodium reabsorption\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "output_tokens": 41,
+      "latency": 0.00016879999748198316,
+      "text": "{\"top_diagnosis\": \"Reduction in myocardial contractility\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Reduction in myocardial contractility\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
-      "input_tokens": 876,
+      "input_tokens": 873,
       "output_tokens": 44,
-      "latency": 0.00018899999849963933,
-      "text": "{\"top_diagnosis\": \"Preferential dilatation of capacitance vessels\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Preferential dilatation of capacitance vessels\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "latency": 0.00023089999740477651,
+      "text": "{\"top_diagnosis\": \"Inhibition of aldosterone-mediated sodium reabsorption\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Inhibition of aldosterone-mediated sodium reabsorption\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     }
   ],
   "verification_trace": null,

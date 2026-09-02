@@ -1,7 +1,7 @@
 {
-  "run_id": "f4c73570",
+  "run_id": "0ffd1fe1",
   "experiment_id": "medqa_0041_llama3.1:8b_G2_seed42",
-  "timestamp": "2026-09-02T17:33:12.425483Z",
+  "timestamp": "2026-09-02T17:37:02.259844Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0041",
@@ -16,31 +16,25 @@
   "dataset_source": "medqa",
   "correctness": false,
   "top3_correct": false,
-  "confidence": 0.85,
+  "confidence": 0.75,
   "consensus": true,
   "abstained": false,
   "suppressed": false,
-  "verification_status": "FLAGGED",
-  "claims_checked": [
-    {
-      "claim": "unsupported",
-      "status": "FABRICATED",
-      "case_evidence": null
-    }
-  ],
+  "verification_status": "VERIFIED",
+  "claims_checked": [],
   "supported_claims": 0,
   "contradicted_claims": 0,
-  "unverifiable_claims": 1,
+  "unverifiable_claims": 0,
   "revision_count": 0,
-  "input_tokens": 2668,
-  "output_tokens": 186,
-  "total_tokens": 2854,
+  "input_tokens": 2665,
+  "output_tokens": 169,
+  "total_tokens": 2834,
   "model_calls": 5,
-  "latency_ms": 3.3439000065554865,
-  "governance_latency_ms": 3.3439000065554865,
-  "diagnosis_latency_ms": 2.0063400039332917,
-  "governance_overhead_latency_ms": 1.3375600026221945,
-  "report_latency_ms": 0.00034390000655548647,
+  "latency_ms": 3.503399991430342,
+  "governance_latency_ms": 3.503399991430342,
+  "diagnosis_latency_ms": 2.102039994858205,
+  "governance_overhead_latency_ms": 1.4013599965721368,
+  "report_latency_ms": 0.0005033999914303422,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -51,7 +45,7 @@
   "ccs": 0.0,
   "ge": 0.0,
   "hallucination_impactful": false,
-  "hallucination_detected": true,
+  "hallucination_detected": false,
   "unsafe_reassurance": false,
   "agent_traces": [
     {
@@ -59,7 +53,7 @@
       "input_tokens": 393,
       "output_tokens": 41,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.85, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.85}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.76, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.76}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist",
@@ -71,36 +65,30 @@
     {
       "agent": "verifier",
       "input_tokens": 442,
-      "output_tokens": 19,
+      "output_tokens": 10,
       "latency": 1.0,
-      "text": "{\"verdict\": \"FLAGGED\", \"claims\": [{\"claim\": \"unsupported\", \"status\": \"FABRICATED\", \"case_evidence\": null}], \"fabricated_count\": 1, \"summary\": \"Unsupported claim detected.\"}"
+      "text": "{\"verdict\": \"VERIFIED\", \"claims\": [], \"fabricated_count\": 0, \"summary\": \"Verified.\"}"
     },
     {
       "agent": "report_writer",
       "input_tokens": 570,
-      "output_tokens": 44,
-      "latency": 0.00017490000027464703,
-      "text": "{\"top_diagnosis\": \"Elevated serum alkaline phosphatase level\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Elevated serum alkaline phosphatase level\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "output_tokens": 41,
+      "latency": 0.00020259999291738495,
+      "text": "{\"top_diagnosis\": \"Elevated serum TSH level\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Elevated serum TSH level\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
-      "input_tokens": 889,
-      "output_tokens": 46,
-      "latency": 0.00016900000628083944,
-      "text": "{\"top_diagnosis\": \"Absent Barr bodies on buccal smear\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Absent Barr bodies on buccal smear\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "input_tokens": 886,
+      "output_tokens": 41,
+      "latency": 0.00030079999851295725,
+      "text": "{\"top_diagnosis\": \"Elevated serum TSH level\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Elevated serum TSH level\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     }
   ],
   "verification_trace": {
-    "verdict": "FLAGGED",
-    "claims": [
-      {
-        "claim": "unsupported",
-        "status": "FABRICATED",
-        "case_evidence": null
-      }
-    ],
-    "fabricated_count": 1,
-    "summary": "Unsupported claim detected."
+    "verdict": "VERIFIED",
+    "claims": [],
+    "fabricated_count": 0,
+    "summary": "Verified."
   },
   "consensus_trace": null,
   "ethics_trace": null,

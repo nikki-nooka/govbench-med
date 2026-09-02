@@ -1,7 +1,7 @@
 {
-  "run_id": "3ba8260e",
+  "run_id": "38bfb398",
   "experiment_id": "medqa_0039_llama3.1:8b_G2_seed42",
-  "timestamp": "2026-09-02T17:33:12.405776Z",
+  "timestamp": "2026-09-02T17:37:02.239822Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0039",
@@ -27,14 +27,14 @@
   "unverifiable_claims": 0,
   "revision_count": 0,
   "input_tokens": 2220,
-  "output_tokens": 179,
-  "total_tokens": 2399,
+  "output_tokens": 181,
+  "total_tokens": 2401,
   "model_calls": 5,
-  "latency_ms": 3.2835000123013742,
-  "governance_latency_ms": 3.2835000123013742,
-  "diagnosis_latency_ms": 1.9701000073808246,
-  "governance_overhead_latency_ms": 1.3134000049205496,
-  "report_latency_ms": 0.0002835000123013742,
+  "latency_ms": 3.261799999861978,
+  "governance_latency_ms": 3.261799999861978,
+  "diagnosis_latency_ms": 1.9570799999171868,
+  "governance_overhead_latency_ms": 1.3047199999447912,
+  "report_latency_ms": 0.000261799999861978,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -53,7 +53,7 @@
       "input_tokens": 302,
       "output_tokens": 45,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Clinical Evaluation Required\", \"confidence\": 0.86, \"reasoning\": \"Clinical presentation suggests Clinical Evaluation Required.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Clinical Evaluation Required\", \"confidence\": 0.86}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Clinical Evaluation Required\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation suggests Clinical Evaluation Required.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Clinical Evaluation Required\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist",
@@ -73,15 +73,15 @@
       "agent": "report_writer",
       "input_tokens": 484,
       "output_tokens": 44,
-      "latency": 0.00012120000610593706,
-      "text": "{\"top_diagnosis\": \"Recommend autopsy of the infant\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Recommend autopsy of the infant\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "latency": 0.00010869999823626131,
+      "text": "{\"top_diagnosis\": \"Perform karyotyping of amniotic fluid\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Perform karyotyping of amniotic fluid\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
       "input_tokens": 800,
-      "output_tokens": 44,
-      "latency": 0.00016230000619543716,
-      "text": "{\"top_diagnosis\": \"Recommend autopsy of the infant\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Recommend autopsy of the infant\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "output_tokens": 46,
+      "latency": 0.00015310000162571669,
+      "text": "{\"top_diagnosis\": \"Obtain consent for parental genetic testing\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Obtain consent for parental genetic testing\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     }
   ],
   "verification_trace": {

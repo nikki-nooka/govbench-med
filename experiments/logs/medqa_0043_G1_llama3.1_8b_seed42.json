@@ -1,7 +1,7 @@
 {
-  "run_id": "15033d36",
+  "run_id": "c491524e",
   "experiment_id": "medqa_0043_llama3.1:8b_G1_seed42",
-  "timestamp": "2026-09-02T17:33:12.443149Z",
+  "timestamp": "2026-09-02T17:37:02.279257Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0043",
@@ -16,7 +16,7 @@
   "dataset_source": "medqa",
   "correctness": false,
   "top3_correct": false,
-  "confidence": 0.77,
+  "confidence": 0.83,
   "consensus": true,
   "abstained": false,
   "suppressed": false,
@@ -26,15 +26,15 @@
   "contradicted_claims": 0,
   "unverifiable_claims": 0,
   "revision_count": 0,
-  "input_tokens": 1852,
-  "output_tokens": 146,
-  "total_tokens": 1998,
+  "input_tokens": 1849,
+  "output_tokens": 143,
+  "total_tokens": 1992,
   "model_calls": 4,
-  "latency_ms": 2.2631000024848618,
-  "governance_latency_ms": 2.2631000024848618,
-  "diagnosis_latency_ms": 1.357860001490917,
-  "governance_overhead_latency_ms": 0.9052400009939447,
-  "report_latency_ms": 0.00026310000248486176,
+  "latency_ms": 2.290899995889049,
+  "governance_latency_ms": 2.290899995889049,
+  "diagnosis_latency_ms": 1.3745399975334294,
+  "governance_overhead_latency_ms": 0.9163599983556197,
+  "report_latency_ms": 0.000290899995889049,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -53,7 +53,7 @@
       "input_tokens": 314,
       "output_tokens": 41,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.77, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.77}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.83, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.83}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist",
@@ -65,16 +65,16 @@
     {
       "agent": "report_writer",
       "input_tokens": 466,
-      "output_tokens": 36,
-      "latency": 0.00011069999891333282,
-      "text": "{\"top_diagnosis\": \"Radioiodine therapy\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Radioiodine therapy\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "output_tokens": 33,
+      "latency": 0.0001263999947695993,
+      "text": "{\"top_diagnosis\": \"Glucocorticoids\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Glucocorticoids\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
-      "input_tokens": 777,
+      "input_tokens": 774,
       "output_tokens": 33,
-      "latency": 0.00015240000357152894,
-      "text": "{\"top_diagnosis\": \"Glucocorticoids\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Glucocorticoids\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "latency": 0.00016450000111944973,
+      "text": "{\"top_diagnosis\": \"Propranolol\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Propranolol\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     }
   ],
   "verification_trace": null,

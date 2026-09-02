@@ -1,7 +1,7 @@
 {
-  "run_id": "a2ea06ec",
+  "run_id": "ee29d6e3",
   "experiment_id": "medqa_0096_llama3.1:8b_G3_seed42",
-  "timestamp": "2026-09-02T17:33:13.072935Z",
+  "timestamp": "2026-09-02T17:37:02.876844Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0096",
@@ -26,15 +26,15 @@
   "contradicted_claims": 0,
   "unverifiable_claims": 0,
   "revision_count": 0,
-  "input_tokens": 2227,
-  "output_tokens": 272,
-  "total_tokens": 2499,
+  "input_tokens": 2222,
+  "output_tokens": 249,
+  "total_tokens": 2471,
   "model_calls": 6,
-  "latency_ms": 4.28300000121817,
-  "governance_latency_ms": 4.28300000121817,
-  "diagnosis_latency_ms": 2.569800000730902,
-  "governance_overhead_latency_ms": 1.713200000487268,
-  "report_latency_ms": 0.00028300000121816993,
+  "latency_ms": 4.318500002322253,
+  "governance_latency_ms": 4.318500002322253,
+  "diagnosis_latency_ms": 2.5911000013933516,
+  "governance_overhead_latency_ms": 1.7274000009289012,
+  "report_latency_ms": 0.00031850000232225284,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -53,7 +53,7 @@
       "input_tokens": 252,
       "output_tokens": 41,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.78, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.78}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.8200000000000001, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.8200000000000001}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist_a",
@@ -79,16 +79,16 @@
     {
       "agent": "report_writer",
       "input_tokens": 484,
-      "output_tokens": 75,
-      "latency": 0.00012100000458303839,
-      "text": "{\"top_diagnosis\": \"The tricuspid valve is the most common valve affected by bacterial endocarditis in uncorrected tetralogy of Fallot.\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"The tricuspid valve is the most common valve affected by bacterial endocarditis in uncorrected tetralogy of Fallot.\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "output_tokens": 70,
+      "latency": 0.0001371000034851022,
+      "text": "{\"top_diagnosis\": \"Normal hemoglobin in patients with tetralogy of Fallot does not rule out iron deficiency anemia.\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Normal hemoglobin in patients with tetralogy of Fallot does not rule out iron deficiency anemia.\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
-      "input_tokens": 834,
-      "output_tokens": 75,
-      "latency": 0.00016199999663513154,
-      "text": "{\"top_diagnosis\": \"The tricuspid valve is the most common valve affected by bacterial endocarditis in uncorrected tetralogy of Fallot.\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"The tricuspid valve is the most common valve affected by bacterial endocarditis in uncorrected tetralogy of Fallot.\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "input_tokens": 829,
+      "output_tokens": 57,
+      "latency": 0.00018139999883715063,
+      "text": "{\"top_diagnosis\": \"Cerebral arterial thrombosis is more common than cerebral venous thrombosis.\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Cerebral arterial thrombosis is more common than cerebral venous thrombosis.\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     }
   ],
   "verification_trace": null,

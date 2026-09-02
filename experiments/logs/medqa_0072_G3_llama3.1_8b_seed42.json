@@ -1,7 +1,7 @@
 {
-  "run_id": "904e31ac",
+  "run_id": "38a964c1",
   "experiment_id": "medqa_0072_llama3.1:8b_G3_seed42",
-  "timestamp": "2026-09-02T17:33:12.788700Z",
+  "timestamp": "2026-09-02T17:37:02.598212Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0072",
@@ -30,11 +30,11 @@
   "output_tokens": 207,
   "total_tokens": 2430,
   "model_calls": 6,
-  "latency_ms": 4.286000002233777,
-  "governance_latency_ms": 4.286000002233777,
-  "diagnosis_latency_ms": 2.5716000013402662,
-  "governance_overhead_latency_ms": 1.714400000893511,
-  "report_latency_ms": 0.0002860000022337772,
+  "latency_ms": 4.340899998263922,
+  "governance_latency_ms": 4.340899998263922,
+  "diagnosis_latency_ms": 2.604539998958353,
+  "governance_overhead_latency_ms": 1.7363599993055687,
+  "report_latency_ms": 0.0003408999982639216,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -53,7 +53,7 @@
       "input_tokens": 280,
       "output_tokens": 41,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.77, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.77}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist_a",
@@ -80,14 +80,14 @@
       "agent": "report_writer",
       "input_tokens": 455,
       "output_tokens": 44,
-      "latency": 0.00012460000289138407,
-      "text": "{\"top_diagnosis\": \"Decreased glucose with neutrophilic predominance\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Decreased glucose with neutrophilic predominance\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "latency": 0.0001436000020476058,
+      "text": "{\"top_diagnosis\": \"Oligoclonal IgG bands on electrophoresis\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Oligoclonal IgG bands on electrophoresis\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
       "input_tokens": 773,
       "output_tokens": 41,
-      "latency": 0.00016139999934239313,
+      "latency": 0.00019729999621631578,
       "text": "{\"top_diagnosis\": \"Decreased IgG CSF concentration\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Decreased IgG CSF concentration\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     }
   ],

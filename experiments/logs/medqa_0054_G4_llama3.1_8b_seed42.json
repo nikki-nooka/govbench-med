@@ -1,7 +1,7 @@
 {
-  "run_id": "f63e0580",
+  "run_id": "09eec828",
   "experiment_id": "medqa_0054_llama3.1:8b_G4_seed42",
-  "timestamp": "2026-09-02T17:33:12.568562Z",
+  "timestamp": "2026-09-02T17:37:02.379629Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0054",
@@ -30,11 +30,11 @@
   "output_tokens": 205,
   "total_tokens": 2825,
   "model_calls": 7,
-  "latency_ms": 5.298499995551538,
-  "governance_latency_ms": 5.298499995551538,
-  "diagnosis_latency_ms": 3.1790999973309226,
-  "governance_overhead_latency_ms": 2.119399998220615,
-  "report_latency_ms": 0.0002984999955515377,
+  "latency_ms": 5.310000003082678,
+  "governance_latency_ms": 5.310000003082678,
+  "diagnosis_latency_ms": 3.1860000018496066,
+  "governance_overhead_latency_ms": 2.124000001233071,
+  "report_latency_ms": 0.0003100000030826777,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -53,7 +53,7 @@
       "input_tokens": 299,
       "output_tokens": 45,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.89, \"reasoning\": \"Clinical presentation suggests Acute Coronary Syndrome.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.89}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.84, \"reasoning\": \"Clinical presentation suggests Acute Coronary Syndrome.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.84}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist_a",
@@ -80,15 +80,15 @@
       "agent": "report_writer",
       "input_tokens": 445,
       "output_tokens": 33,
-      "latency": 0.00012929999502375722,
-      "text": "{\"top_diagnosis\": \"IP3\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"IP3\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "latency": 0.00013640000543091446,
+      "text": "{\"top_diagnosis\": \"JAK/STAT\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"JAK/STAT\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
       "input_tokens": 748,
       "output_tokens": 33,
-      "latency": 0.0001692000005277805,
-      "text": "{\"top_diagnosis\": \"PI3K/Akt/mTOR\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"PI3K/Akt/mTOR\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "latency": 0.00017359999765176326,
+      "text": "{\"top_diagnosis\": \"JAK/STAT\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"JAK/STAT\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "ethics_critic",

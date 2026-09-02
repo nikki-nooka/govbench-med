@@ -1,7 +1,7 @@
 {
-  "run_id": "83798802",
+  "run_id": "9be15595",
   "experiment_id": "medqa_0050_llama3.1:8b_G1_seed42",
-  "timestamp": "2026-09-02T17:33:12.510379Z",
+  "timestamp": "2026-09-02T17:37:02.335520Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0050",
@@ -16,7 +16,7 @@
   "dataset_source": "medqa",
   "correctness": false,
   "top3_correct": false,
-  "confidence": 0.87,
+  "confidence": 0.8200000000000001,
   "consensus": true,
   "abstained": false,
   "suppressed": false,
@@ -30,11 +30,11 @@
   "output_tokens": 152,
   "total_tokens": 1760,
   "model_calls": 4,
-  "latency_ms": 2.3429999997024424,
-  "governance_latency_ms": 2.3429999997024424,
-  "diagnosis_latency_ms": 1.4057999998214654,
-  "governance_overhead_latency_ms": 0.937199999880977,
-  "report_latency_ms": 0.00034299999970244244,
+  "latency_ms": 2.2791000006254762,
+  "governance_latency_ms": 2.2791000006254762,
+  "diagnosis_latency_ms": 1.3674600003752857,
+  "governance_overhead_latency_ms": 0.9116400002501905,
+  "report_latency_ms": 0.00027910000062547624,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -53,7 +53,7 @@
       "input_tokens": 247,
       "output_tokens": 41,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.87, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.87}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.8200000000000001, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.8200000000000001}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist",
@@ -66,14 +66,14 @@
       "agent": "report_writer",
       "input_tokens": 412,
       "output_tokens": 36,
-      "latency": 0.00014730000111740083,
+      "latency": 0.00011890000314451754,
       "text": "{\"top_diagnosis\": \"Urethral stricture\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Urethral stricture\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
       "input_tokens": 722,
       "output_tokens": 39,
-      "latency": 0.0001956999985850416,
+      "latency": 0.0001601999974809587,
       "text": "{\"top_diagnosis\": \"Benign prostatic hyperplasia\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Benign prostatic hyperplasia\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     }
   ],

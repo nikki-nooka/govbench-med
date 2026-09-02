@@ -1,7 +1,7 @@
 {
-  "run_id": "c67d0cae",
+  "run_id": "f6ddeb54",
   "experiment_id": "medqa_0028_llama3.1:8b_G4_seed42",
-  "timestamp": "2026-09-02T17:33:12.193501Z",
+  "timestamp": "2026-09-02T17:37:02.149059Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0028",
@@ -26,15 +26,15 @@
   "contradicted_claims": 0,
   "unverifiable_claims": 0,
   "revision_count": 0,
-  "input_tokens": 2722,
-  "output_tokens": 203,
-  "total_tokens": 2925,
+  "input_tokens": 2729,
+  "output_tokens": 211,
+  "total_tokens": 2940,
   "model_calls": 7,
-  "latency_ms": 5.4563999973470345,
-  "governance_latency_ms": 5.4563999973470345,
-  "diagnosis_latency_ms": 3.2738399984082207,
-  "governance_overhead_latency_ms": 2.182559998938814,
-  "report_latency_ms": 0.0004563999973470345,
+  "latency_ms": 5.267599993094336,
+  "governance_latency_ms": 5.267599993094336,
+  "diagnosis_latency_ms": 3.1605599958566017,
+  "governance_overhead_latency_ms": 2.1070399972377345,
+  "report_latency_ms": 0.00026759999309433624,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -53,7 +53,7 @@
       "input_tokens": 313,
       "output_tokens": 41,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.84, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.84}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.77, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.77}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist_a",
@@ -79,15 +79,15 @@
     {
       "agent": "report_writer",
       "input_tokens": 468,
-      "output_tokens": 33,
-      "latency": 0.00012479999713832512,
-      "text": "{\"top_diagnosis\": \"Hysteroscopy\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Hysteroscopy\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "output_tokens": 41,
+      "latency": 0.00010799999290611595,
+      "text": "{\"top_diagnosis\": \"Measurement of CA-125 levels\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Measurement of CA-125 levels\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
-      "input_tokens": 776,
+      "input_tokens": 783,
       "output_tokens": 41,
-      "latency": 0.0003316000002087094,
+      "latency": 0.0001596000001882203,
       "text": "{\"top_diagnosis\": \"Measurement of CA-125 levels\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Measurement of CA-125 levels\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {

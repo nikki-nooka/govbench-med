@@ -1,7 +1,7 @@
 {
-  "run_id": "1ad7ab80",
+  "run_id": "f29846ff",
   "experiment_id": "medqa_0094_llama3.1:8b_G2_seed42",
-  "timestamp": "2026-09-02T17:33:13.044178Z",
+  "timestamp": "2026-09-02T17:37:02.856453Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0094",
@@ -27,14 +27,14 @@
   "unverifiable_claims": 0,
   "revision_count": 0,
   "input_tokens": 2135,
-  "output_tokens": 159,
-  "total_tokens": 2294,
+  "output_tokens": 162,
+  "total_tokens": 2297,
   "model_calls": 5,
-  "latency_ms": 3.2883999986806884,
-  "governance_latency_ms": 3.2883999986806884,
-  "diagnosis_latency_ms": 1.973039999208413,
-  "governance_overhead_latency_ms": 1.3153599994722753,
-  "report_latency_ms": 0.00028839999868068844,
+  "latency_ms": 3.3821999998763204,
+  "governance_latency_ms": 3.3821999998763204,
+  "diagnosis_latency_ms": 2.029319999925792,
+  "governance_overhead_latency_ms": 1.352879999950528,
+  "report_latency_ms": 0.00038219999987632036,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -53,7 +53,7 @@
       "input_tokens": 300,
       "output_tokens": 41,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.78, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.78}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.79, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.79}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist",
@@ -73,15 +73,15 @@
       "agent": "report_writer",
       "input_tokens": 448,
       "output_tokens": 36,
-      "latency": 0.00012649999553104863,
-      "text": "{\"top_diagnosis\": \"Cortisol excess\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Cortisol excess\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "latency": 0.00016200000391108915,
+      "text": "{\"top_diagnosis\": \"Aldosterone excess\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Aldosterone excess\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
       "input_tokens": 759,
-      "output_tokens": 36,
-      "latency": 0.00016190000314963982,
-      "text": "{\"top_diagnosis\": \"Aldosterone excess\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Aldosterone excess\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "output_tokens": 39,
+      "latency": 0.0002201999959652312,
+      "text": "{\"top_diagnosis\": \"Impaired kidney perfusion\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Impaired kidney perfusion\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     }
   ],
   "verification_trace": {

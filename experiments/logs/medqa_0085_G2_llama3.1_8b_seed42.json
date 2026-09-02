@@ -1,7 +1,7 @@
 {
-  "run_id": "69d22d51",
+  "run_id": "cd991d1d",
   "experiment_id": "medqa_0085_llama3.1:8b_G2_seed42",
-  "timestamp": "2026-09-02T17:33:12.954185Z",
+  "timestamp": "2026-09-02T17:37:02.733882Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0085",
@@ -27,14 +27,14 @@
   "unverifiable_claims": 0,
   "revision_count": 0,
   "input_tokens": 2086,
-  "output_tokens": 167,
-  "total_tokens": 2253,
+  "output_tokens": 165,
+  "total_tokens": 2251,
   "model_calls": 5,
-  "latency_ms": 3.2639999947859906,
-  "governance_latency_ms": 3.2639999947859906,
-  "diagnosis_latency_ms": 1.9583999968715944,
-  "governance_overhead_latency_ms": 1.3055999979143962,
-  "report_latency_ms": 0.00026399999478599057,
+  "latency_ms": 3.3666000047815032,
+  "governance_latency_ms": 3.3666000047815032,
+  "diagnosis_latency_ms": 2.0199600028689018,
+  "governance_overhead_latency_ms": 1.3466400019126012,
+  "report_latency_ms": 0.00036660000478150323,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -53,7 +53,7 @@
       "input_tokens": 282,
       "output_tokens": 41,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.77, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.77}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.81, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.81}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist",
@@ -73,15 +73,15 @@
       "agent": "report_writer",
       "input_tokens": 449,
       "output_tokens": 39,
-      "latency": 0.00011129999620607123,
+      "latency": 0.0001630000042496249,
       "text": "{\"top_diagnosis\": \"Prophase I arrest\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Prophase I arrest\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
       "input_tokens": 763,
-      "output_tokens": 41,
-      "latency": 0.00015269999857991934,
-      "text": "{\"top_diagnosis\": \"Initiation of S phase\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Initiation of S phase\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "output_tokens": 39,
+      "latency": 0.00020360000053187832,
+      "text": "{\"top_diagnosis\": \"Prophase I arrest\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Prophase I arrest\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     }
   ],
   "verification_trace": {

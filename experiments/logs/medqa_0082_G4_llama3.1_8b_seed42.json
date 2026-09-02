@@ -1,7 +1,7 @@
 {
-  "run_id": "9bc26ce1",
+  "run_id": "173a97f4",
   "experiment_id": "medqa_0082_llama3.1:8b_G4_seed42",
-  "timestamp": "2026-09-02T17:33:12.926072Z",
+  "timestamp": "2026-09-02T17:37:02.708592Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0082",
@@ -30,11 +30,11 @@
   "output_tokens": 201,
   "total_tokens": 2548,
   "model_calls": 7,
-  "latency_ms": 5.272500001301523,
-  "governance_latency_ms": 5.272500001301523,
-  "diagnosis_latency_ms": 3.163500000780914,
-  "governance_overhead_latency_ms": 2.1090000005206093,
-  "report_latency_ms": 0.0002725000013015233,
+  "latency_ms": 5.349699992511887,
+  "governance_latency_ms": 5.349699992511887,
+  "diagnosis_latency_ms": 3.2098199955071323,
+  "governance_overhead_latency_ms": 2.139879997004755,
+  "report_latency_ms": 0.0003496999925118871,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -53,7 +53,7 @@
       "input_tokens": 249,
       "output_tokens": 41,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.89, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.89}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.86, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.86}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist_a",
@@ -80,14 +80,14 @@
       "agent": "report_writer",
       "input_tokens": 406,
       "output_tokens": 36,
-      "latency": 0.00011410000297473744,
-      "text": "{\"top_diagnosis\": \"Acute pancreatitis\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Acute pancreatitis\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "latency": 0.00014549999468727037,
+      "text": "{\"top_diagnosis\": \"Cerebrovascular accident\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Cerebrovascular accident\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
       "input_tokens": 717,
       "output_tokens": 36,
-      "latency": 0.00015839999832678586,
+      "latency": 0.00020419999782461673,
       "text": "{\"top_diagnosis\": \"Cerebrovascular accident\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Cerebrovascular accident\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {

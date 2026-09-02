@@ -1,7 +1,7 @@
 {
-  "run_id": "8b4e292e",
+  "run_id": "b96b6ace",
   "experiment_id": "medqa_0057_llama3.1:8b_G1_seed42",
-  "timestamp": "2026-09-02T17:33:12.592622Z",
+  "timestamp": "2026-09-02T17:37:02.404984Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0057",
@@ -30,11 +30,11 @@
   "output_tokens": 155,
   "total_tokens": 2085,
   "model_calls": 4,
-  "latency_ms": 2.2725000013015233,
-  "governance_latency_ms": 2.2725000013015233,
-  "diagnosis_latency_ms": 1.363500000780914,
-  "governance_overhead_latency_ms": 0.9090000005206094,
-  "report_latency_ms": 0.0002725000013015233,
+  "latency_ms": 2.401399993279483,
+  "governance_latency_ms": 2.401399993279483,
+  "diagnosis_latency_ms": 1.4408399959676899,
+  "governance_overhead_latency_ms": 0.9605599973117933,
+  "report_latency_ms": 0.00040139999327948317,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -66,14 +66,14 @@
       "agent": "report_writer",
       "input_tokens": 491,
       "output_tokens": 39,
-      "latency": 0.00012070000229869038,
+      "latency": 0.00017939999816007912,
       "text": "{\"top_diagnosis\": \"Histrionic personality disorder\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Histrionic personality disorder\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
       "input_tokens": 804,
       "output_tokens": 39,
-      "latency": 0.00015179999900283292,
+      "latency": 0.00022199999511940405,
       "text": "{\"top_diagnosis\": \"Dependent personality disorder\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Dependent personality disorder\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     }
   ],

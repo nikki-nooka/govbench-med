@@ -1,7 +1,7 @@
 {
-  "run_id": "ed49a444",
+  "run_id": "adc03ac0",
   "experiment_id": "medqa_0010_llama3.1:8b_G1_seed42",
-  "timestamp": "2026-09-02T17:33:11.994696Z",
+  "timestamp": "2026-09-02T17:37:01.982719Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0010",
@@ -16,7 +16,7 @@
   "dataset_source": "medqa",
   "correctness": false,
   "top3_correct": false,
-  "confidence": 0.83,
+  "confidence": 0.8,
   "consensus": true,
   "abstained": false,
   "suppressed": false,
@@ -27,14 +27,14 @@
   "unverifiable_claims": 0,
   "revision_count": 0,
   "input_tokens": 2179,
-  "output_tokens": 164,
-  "total_tokens": 2343,
+  "output_tokens": 172,
+  "total_tokens": 2351,
   "model_calls": 4,
-  "latency_ms": 2.326099994708784,
-  "governance_latency_ms": 2.326099994708784,
-  "diagnosis_latency_ms": 1.3956599968252703,
-  "governance_overhead_latency_ms": 0.9304399978835136,
-  "report_latency_ms": 0.0003260999947087839,
+  "latency_ms": 2.4369999951450154,
+  "governance_latency_ms": 2.4369999951450154,
+  "diagnosis_latency_ms": 1.4621999970870092,
+  "governance_overhead_latency_ms": 0.9747999980580062,
+  "report_latency_ms": 0.0004369999951450154,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -53,7 +53,7 @@
       "input_tokens": 384,
       "output_tokens": 45,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.83, \"reasoning\": \"Clinical presentation suggests Acute Coronary Syndrome.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.83}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.8, \"reasoning\": \"Clinical presentation suggests Acute Coronary Syndrome.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.8}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist",
@@ -66,15 +66,15 @@
       "agent": "report_writer",
       "input_tokens": 561,
       "output_tokens": 36,
-      "latency": 0.00014699999883305281,
+      "latency": 0.0001973999969777651,
       "text": "{\"top_diagnosis\": \"Perform bronchoscopy\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Perform bronchoscopy\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
       "input_tokens": 869,
-      "output_tokens": 44,
-      "latency": 0.0001790999958757311,
-      "text": "{\"top_diagnosis\": \"Provide additional dose of methylprednisolone\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Provide additional dose of methylprednisolone\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "output_tokens": 52,
+      "latency": 0.0002395999981672503,
+      "text": "{\"top_diagnosis\": \"Perform needle thoracostomy at the 2nd intercostal space\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Perform needle thoracostomy at the 2nd intercostal space\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     }
   ],
   "verification_trace": null,

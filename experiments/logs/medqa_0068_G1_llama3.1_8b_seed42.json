@@ -1,7 +1,7 @@
 {
-  "run_id": "76a64949",
+  "run_id": "1d08e499",
   "experiment_id": "medqa_0068_llama3.1:8b_G1_seed42",
-  "timestamp": "2026-09-02T17:33:12.723092Z",
+  "timestamp": "2026-09-02T17:37:02.538937Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0068",
@@ -16,7 +16,7 @@
   "dataset_source": "medqa",
   "correctness": false,
   "top3_correct": false,
-  "confidence": 0.89,
+  "confidence": 0.75,
   "consensus": true,
   "abstained": false,
   "suppressed": false,
@@ -26,15 +26,15 @@
   "contradicted_claims": 0,
   "unverifiable_claims": 0,
   "revision_count": 0,
-  "input_tokens": 1837,
+  "input_tokens": 1839,
   "output_tokens": 172,
-  "total_tokens": 2009,
+  "total_tokens": 2011,
   "model_calls": 4,
-  "latency_ms": 2.2920000042649917,
-  "governance_latency_ms": 2.2920000042649917,
-  "diagnosis_latency_ms": 1.375200002558995,
-  "governance_overhead_latency_ms": 0.9168000017059967,
-  "report_latency_ms": 0.00029200000426499173,
+  "latency_ms": 2.2859999949578196,
+  "governance_latency_ms": 2.2859999949578196,
+  "diagnosis_latency_ms": 1.3715999969746917,
+  "governance_overhead_latency_ms": 0.9143999979831279,
+  "report_latency_ms": 0.0002859999949578196,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -53,7 +53,7 @@
       "input_tokens": 291,
       "output_tokens": 41,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.89, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.89}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist",
@@ -65,16 +65,16 @@
     {
       "agent": "report_writer",
       "input_tokens": 477,
-      "output_tokens": 46,
-      "latency": 0.0001258000047528185,
-      "text": "{\"top_diagnosis\": \"Narrowing of the lumbar disc space\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Narrowing of the lumbar disc space\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "output_tokens": 49,
+      "latency": 0.00012119999882997945,
+      "text": "{\"top_diagnosis\": \"Sacroilitis and fusion of the lumbar spine\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Sacroilitis and fusion of the lumbar spine\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
-      "input_tokens": 798,
-      "output_tokens": 49,
-      "latency": 0.00016619999951217324,
-      "text": "{\"top_diagnosis\": \"Sacroilitis and fusion of the lumbar spine\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Sacroilitis and fusion of the lumbar spine\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "input_tokens": 800,
+      "output_tokens": 46,
+      "latency": 0.00016479999612784013,
+      "text": "{\"top_diagnosis\": \"Lytic lesions of the lumbar spine\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Lytic lesions of the lumbar spine\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     }
   ],
   "verification_trace": null,

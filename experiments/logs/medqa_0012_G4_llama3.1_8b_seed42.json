@@ -1,7 +1,7 @@
 {
-  "run_id": "0aa800f4",
+  "run_id": "89a64ee7",
   "experiment_id": "medqa_0012_llama3.1:8b_G4_seed42",
-  "timestamp": "2026-09-02T17:33:12.022367Z",
+  "timestamp": "2026-09-02T17:37:02.006349Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0012",
@@ -30,11 +30,11 @@
   "output_tokens": 201,
   "total_tokens": 2987,
   "model_calls": 7,
-  "latency_ms": 5.37039999733679,
-  "governance_latency_ms": 5.37039999733679,
-  "diagnosis_latency_ms": 3.222239998402074,
-  "governance_overhead_latency_ms": 2.148159998934716,
-  "report_latency_ms": 0.00037039999733678997,
+  "latency_ms": 5.2748999977484345,
+  "governance_latency_ms": 5.2748999977484345,
+  "diagnosis_latency_ms": 3.1649399986490607,
+  "governance_overhead_latency_ms": 2.109959999099374,
+  "report_latency_ms": 0.00027489999774843454,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -53,7 +53,7 @@
       "input_tokens": 326,
       "output_tokens": 41,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.76, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.76}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.88, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.88}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist_a",
@@ -80,15 +80,15 @@
       "agent": "report_writer",
       "input_tokens": 473,
       "output_tokens": 36,
-      "latency": 0.00021869999909540638,
-      "text": "{\"top_diagnosis\": \"Septic shock\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Septic shock\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "latency": 0.00011559999984456226,
+      "text": "{\"top_diagnosis\": \"Pheochromocytoma crisis\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pheochromocytoma crisis\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
       "input_tokens": 783,
       "output_tokens": 36,
-      "latency": 0.00015169999824138358,
-      "text": "{\"top_diagnosis\": \"Myxedema coma\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Myxedema coma\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "latency": 0.00015929999790387228,
+      "text": "{\"top_diagnosis\": \"Pheochromocytoma crisis\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pheochromocytoma crisis\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "ethics_critic",

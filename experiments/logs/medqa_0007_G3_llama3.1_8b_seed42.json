@@ -1,7 +1,7 @@
 {
-  "run_id": "dd1fadea",
+  "run_id": "21169c87",
   "experiment_id": "medqa_0007_llama3.1:8b_G3_seed42",
-  "timestamp": "2026-09-02T17:33:11.972086Z",
+  "timestamp": "2026-09-02T17:37:01.961587Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0007",
@@ -30,11 +30,11 @@
   "output_tokens": 197,
   "total_tokens": 2646,
   "model_calls": 6,
-  "latency_ms": 4.268300005700439,
-  "governance_latency_ms": 4.268300005700439,
-  "diagnosis_latency_ms": 2.5609800034202634,
-  "governance_overhead_latency_ms": 1.7073200022801758,
-  "report_latency_ms": 0.0002683000057004392,
+  "latency_ms": 4.329099995724391,
+  "governance_latency_ms": 4.329099995724391,
+  "diagnosis_latency_ms": 2.5974599974346346,
+  "governance_overhead_latency_ms": 1.7316399982897566,
+  "report_latency_ms": 0.0003290999957243912,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -53,7 +53,7 @@
       "input_tokens": 332,
       "output_tokens": 41,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.89, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.89}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.81, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.81}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist_a",
@@ -80,15 +80,15 @@
       "agent": "report_writer",
       "input_tokens": 492,
       "output_tokens": 39,
-      "latency": 0.00011310000263620168,
+      "latency": 0.00016649999452056363,
       "text": "{\"top_diagnosis\": \"Superior vesical artery\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Superior vesical artery\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
       "input_tokens": 806,
       "output_tokens": 36,
-      "latency": 0.00015520000306423753,
-      "text": "{\"top_diagnosis\": \"Uterine artery\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Uterine artery\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "latency": 0.00016260000120382756,
+      "text": "{\"top_diagnosis\": \"Ovarian artery\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Ovarian artery\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     }
   ],
   "verification_trace": null,

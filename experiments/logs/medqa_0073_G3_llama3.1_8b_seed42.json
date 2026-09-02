@@ -1,7 +1,7 @@
 {
-  "run_id": "c9601c8c",
+  "run_id": "6cf49eb1",
   "experiment_id": "medqa_0073_llama3.1:8b_G3_seed42",
-  "timestamp": "2026-09-02T17:33:12.801585Z",
+  "timestamp": "2026-09-02T17:37:02.608546Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0073",
@@ -26,15 +26,15 @@
   "contradicted_claims": 0,
   "unverifiable_claims": 0,
   "revision_count": 0,
-  "input_tokens": 2690,
+  "input_tokens": 2692,
   "output_tokens": 202,
-  "total_tokens": 2892,
+  "total_tokens": 2894,
   "model_calls": 6,
-  "latency_ms": 4.771299994084984,
-  "governance_latency_ms": 4.771299994084984,
-  "diagnosis_latency_ms": 2.8627799964509903,
-  "governance_overhead_latency_ms": 1.9085199976339937,
-  "report_latency_ms": 0.0007712999940849841,
+  "latency_ms": 4.8484999925713055,
+  "governance_latency_ms": 4.8484999925713055,
+  "diagnosis_latency_ms": 2.909099995542783,
+  "governance_overhead_latency_ms": 1.9393999970285223,
+  "report_latency_ms": 0.0008484999925713055,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -53,7 +53,7 @@
       "input_tokens": 383,
       "output_tokens": 41,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.89, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.89}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.86, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.86}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist_a",
@@ -79,16 +79,16 @@
     {
       "agent": "report_writer",
       "input_tokens": 536,
-      "output_tokens": 39,
-      "latency": 0.00033549999352544546,
-      "text": "{\"top_diagnosis\": \"No tests required\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"No tests required\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "output_tokens": 41,
+      "latency": 0.0003654999964055605,
+      "text": "{\"top_diagnosis\": \"Oral glucose tolerance test\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Oral glucose tolerance test\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
-      "input_tokens": 850,
-      "output_tokens": 41,
-      "latency": 0.0004358000005595386,
-      "text": "{\"top_diagnosis\": \"Oral glucose tolerance test\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Oral glucose tolerance test\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "input_tokens": 852,
+      "output_tokens": 39,
+      "latency": 0.00048299999616574496,
+      "text": "{\"top_diagnosis\": \"No tests required\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"No tests required\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     }
   ],
   "verification_trace": null,

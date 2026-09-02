@@ -1,7 +1,7 @@
 {
-  "run_id": "e4adaaca",
+  "run_id": "f89eaafd",
   "experiment_id": "medqa_0024_llama3.1:8b_G3_seed42",
-  "timestamp": "2026-09-02T17:33:12.140908Z",
+  "timestamp": "2026-09-02T17:37:02.108901Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0024",
@@ -26,15 +26,15 @@
   "contradicted_claims": 0,
   "unverifiable_claims": 0,
   "revision_count": 0,
-  "input_tokens": 2333,
+  "input_tokens": 2339,
   "output_tokens": 199,
-  "total_tokens": 2532,
+  "total_tokens": 2538,
   "model_calls": 6,
-  "latency_ms": 4.294200006464962,
-  "governance_latency_ms": 4.294200006464962,
-  "diagnosis_latency_ms": 2.576520003878977,
-  "governance_overhead_latency_ms": 1.7176800025859849,
-  "report_latency_ms": 0.0002942000064649619,
+  "latency_ms": 4.610600000072736,
+  "governance_latency_ms": 4.610600000072736,
+  "diagnosis_latency_ms": 2.7663600000436417,
+  "governance_overhead_latency_ms": 1.8442400000290946,
+  "report_latency_ms": 0.0006106000000727363,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -53,7 +53,7 @@
       "input_tokens": 308,
       "output_tokens": 41,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.85, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.85}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist_a",
@@ -79,16 +79,16 @@
     {
       "agent": "report_writer",
       "input_tokens": 473,
-      "output_tokens": 36,
-      "latency": 0.0001230000052601099,
-      "text": "{\"top_diagnosis\": \"Pelvic ultrasound\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pelvic ultrasound\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "output_tokens": 41,
+      "latency": 0.0003006000042660162,
+      "text": "{\"top_diagnosis\": \"Measure serum dehydroepiandrosterone levels\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Measure serum dehydroepiandrosterone levels\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
-      "input_tokens": 783,
-      "output_tokens": 41,
-      "latency": 0.00017120000120485201,
-      "text": "{\"top_diagnosis\": \"MRI of the brain\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"MRI of the brain\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "input_tokens": 789,
+      "output_tokens": 36,
+      "latency": 0.0003099999958067201,
+      "text": "{\"top_diagnosis\": \"Pelvic ultrasound\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pelvic ultrasound\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     }
   ],
   "verification_trace": null,

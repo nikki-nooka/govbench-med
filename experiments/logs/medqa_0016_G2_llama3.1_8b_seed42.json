@@ -1,7 +1,7 @@
 {
-  "run_id": "886012fc",
+  "run_id": "9c403765",
   "experiment_id": "medqa_0016_llama3.1:8b_G2_seed42",
-  "timestamp": "2026-09-02T17:33:12.053543Z",
+  "timestamp": "2026-09-02T17:37:02.036644Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0016",
@@ -30,11 +30,11 @@
   "output_tokens": 157,
   "total_tokens": 2434,
   "model_calls": 5,
-  "latency_ms": 3.3683000031742267,
-  "governance_latency_ms": 3.3683000031742267,
-  "diagnosis_latency_ms": 2.020980001904536,
-  "governance_overhead_latency_ms": 1.3473200012696906,
-  "report_latency_ms": 0.00036830000317422673,
+  "latency_ms": 3.2702999918255955,
+  "governance_latency_ms": 3.2702999918255955,
+  "diagnosis_latency_ms": 1.9621799950953573,
+  "governance_overhead_latency_ms": 1.3081199967302382,
+  "report_latency_ms": 0.0002702999918255955,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -53,7 +53,7 @@
       "input_tokens": 327,
       "output_tokens": 45,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Clinical Evaluation Required\", \"confidence\": 0.78, \"reasoning\": \"Clinical presentation suggests Clinical Evaluation Required.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Clinical Evaluation Required\", \"confidence\": 0.78}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Clinical Evaluation Required\", \"confidence\": 0.77, \"reasoning\": \"Clinical presentation suggests Clinical Evaluation Required.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Clinical Evaluation Required\", \"confidence\": 0.77}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist",
@@ -73,15 +73,15 @@
       "agent": "report_writer",
       "input_tokens": 481,
       "output_tokens": 33,
-      "latency": 0.00016650000179652125,
+      "latency": 0.00011709999671438709,
       "text": "{\"top_diagnosis\": \"Anti-ribonucleoprotein\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Anti-ribonucleoprotein\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
       "input_tokens": 786,
       "output_tokens": 33,
-      "latency": 0.00020180000137770548,
-      "text": "{\"top_diagnosis\": \"Anti-centromere\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Anti-centromere\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "latency": 0.0001531999951112084,
+      "text": "{\"top_diagnosis\": \"Anti-cardiolipin\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Anti-cardiolipin\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     }
   ],
   "verification_trace": {

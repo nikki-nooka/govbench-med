@@ -1,7 +1,7 @@
 {
-  "run_id": "c701d4a3",
+  "run_id": "ea0982d1",
   "experiment_id": "medqa_0060_llama3.1:8b_G4_seed42",
-  "timestamp": "2026-09-02T17:33:12.628385Z",
+  "timestamp": "2026-09-02T17:37:02.450924Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0060",
@@ -27,14 +27,14 @@
   "unverifiable_claims": 0,
   "revision_count": 0,
   "input_tokens": 2768,
-  "output_tokens": 203,
-  "total_tokens": 2971,
+  "output_tokens": 211,
+  "total_tokens": 2979,
   "model_calls": 7,
-  "latency_ms": 5.26889999571722,
-  "governance_latency_ms": 5.26889999571722,
-  "diagnosis_latency_ms": 3.161339997430332,
-  "governance_overhead_latency_ms": 2.107559998286888,
-  "report_latency_ms": 0.00026889999571722,
+  "latency_ms": 5.300300001981668,
+  "governance_latency_ms": 5.300300001981668,
+  "diagnosis_latency_ms": 3.180180001189001,
+  "governance_overhead_latency_ms": 2.1201200007926673,
+  "report_latency_ms": 0.0003003000019816682,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -53,7 +53,7 @@
       "input_tokens": 317,
       "output_tokens": 41,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.87, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.87}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.84, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.84}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist_a",
@@ -80,15 +80,15 @@
       "agent": "report_writer",
       "input_tokens": 479,
       "output_tokens": 41,
-      "latency": 0.00011490000179037452,
+      "latency": 0.00013040000339969993,
       "text": "{\"top_diagnosis\": \"Endoscopic retrograde cholangiopancreatography (ERCP)\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Endoscopic retrograde cholangiopancreatography (ERCP)\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
       "input_tokens": 795,
-      "output_tokens": 33,
-      "latency": 0.0001539999939268455,
-      "text": "{\"top_diagnosis\": \"Cholecystectomy\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Cholecystectomy\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "output_tokens": 41,
+      "latency": 0.00016989999858196825,
+      "text": "{\"top_diagnosis\": \"Endoscopic retrograde cholangiopancreatography (ERCP)\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Endoscopic retrograde cholangiopancreatography (ERCP)\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "ethics_critic",

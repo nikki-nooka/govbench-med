@@ -1,7 +1,7 @@
 {
-  "run_id": "dc837885",
+  "run_id": "52470a87",
   "experiment_id": "medqa_0010_llama3.1:8b_G3_seed42",
-  "timestamp": "2026-09-02T17:33:12.000319Z",
+  "timestamp": "2026-09-02T17:37:01.987108Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0010",
@@ -26,15 +26,15 @@
   "contradicted_claims": 0,
   "unverifiable_claims": 0,
   "revision_count": 0,
-  "input_tokens": 2747,
-  "output_tokens": 214,
-  "total_tokens": 2961,
+  "input_tokens": 2750,
+  "output_tokens": 220,
+  "total_tokens": 2970,
   "model_calls": 6,
-  "latency_ms": 4.313199998345226,
-  "governance_latency_ms": 4.313199998345226,
-  "diagnosis_latency_ms": 2.5879199990071355,
-  "governance_overhead_latency_ms": 1.7252799993380905,
-  "report_latency_ms": 0.00031319999834522605,
+  "latency_ms": 4.278999999864027,
+  "governance_latency_ms": 4.278999999864027,
+  "diagnosis_latency_ms": 2.567399999918416,
+  "governance_overhead_latency_ms": 1.7115999999456109,
+  "report_latency_ms": 0.0002789999998640269,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -53,7 +53,7 @@
       "input_tokens": 384,
       "output_tokens": 45,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.83, \"reasoning\": \"Clinical presentation suggests Acute Coronary Syndrome.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.83}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.8, \"reasoning\": \"Clinical presentation suggests Acute Coronary Syndrome.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.8}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist_a",
@@ -79,16 +79,16 @@
     {
       "agent": "report_writer",
       "input_tokens": 564,
-      "output_tokens": 41,
-      "latency": 0.00013870000111637637,
-      "text": "{\"top_diagnosis\": \"Intubate with mechanical ventilation\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Intubate with mechanical ventilation\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "output_tokens": 44,
+      "latency": 0.00012309999874560162,
+      "text": "{\"top_diagnosis\": \"Provide additional dose of methylprednisolone\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Provide additional dose of methylprednisolone\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
-      "input_tokens": 874,
-      "output_tokens": 41,
-      "latency": 0.00017449999722884968,
-      "text": "{\"top_diagnosis\": \"Intubate with mechanical ventilation\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Intubate with mechanical ventilation\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "input_tokens": 877,
+      "output_tokens": 44,
+      "latency": 0.00015590000111842528,
+      "text": "{\"top_diagnosis\": \"Provide additional dose of methylprednisolone\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Provide additional dose of methylprednisolone\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     }
   ],
   "verification_trace": null,

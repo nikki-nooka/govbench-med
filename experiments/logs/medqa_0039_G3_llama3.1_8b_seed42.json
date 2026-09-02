@@ -1,7 +1,7 @@
 {
-  "run_id": "da129d36",
+  "run_id": "a8529b0e",
   "experiment_id": "medqa_0039_llama3.1:8b_G3_seed42",
-  "timestamp": "2026-09-02T17:33:12.407382Z",
+  "timestamp": "2026-09-02T17:37:02.240809Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0039",
@@ -10,15 +10,15 @@
   "model_version": "llama3.1:8b",
   "governance_level": "G3",
   "seed": 42,
-  "final_answer": "Pulmonary Embolism",
+  "final_answer": "",
   "ground_truth": "Recommend autopsy of the infant",
   "ground_truth_key": "B",
   "dataset_source": "medqa",
   "correctness": false,
   "top3_correct": false,
-  "confidence": 0.78,
-  "consensus": true,
-  "abstained": false,
+  "confidence": 0.0,
+  "consensus": false,
+  "abstained": true,
   "suppressed": false,
   "verification_status": "NOT_CHECKED",
   "claims_checked": 0,
@@ -26,17 +26,17 @@
   "contradicted_claims": 0,
   "unverifiable_claims": 0,
   "revision_count": 0,
-  "input_tokens": 2350,
-  "output_tokens": 214,
-  "total_tokens": 2564,
-  "model_calls": 6,
-  "latency_ms": 4.269500000285916,
-  "governance_latency_ms": 4.269500000285916,
-  "diagnosis_latency_ms": 2.5617000001715495,
-  "governance_overhead_latency_ms": 1.7078000001143665,
-  "report_latency_ms": 0.00026950000028591603,
+  "input_tokens": 1063,
+  "output_tokens": 123,
+  "total_tokens": 1186,
+  "model_calls": 4,
+  "latency_ms": 4.0,
+  "governance_latency_ms": 4.0,
+  "diagnosis_latency_ms": 2.4,
+  "governance_overhead_latency_ms": 1.6,
+  "report_latency_ms": 0.0,
   "cost": 0.0,
-  "human_review_required": false,
+  "human_review_required": true,
   "human_review_time": 0.0,
   "css": 0.0,
   "cmr": 0.0,
@@ -53,7 +53,7 @@
       "input_tokens": 302,
       "output_tokens": 45,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Clinical Evaluation Required\", \"confidence\": 0.86, \"reasoning\": \"Clinical presentation suggests Clinical Evaluation Required.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Clinical Evaluation Required\", \"confidence\": 0.86}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Clinical Evaluation Required\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation suggests Clinical Evaluation Required.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Clinical Evaluation Required\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist_a",
@@ -72,30 +72,15 @@
     {
       "agent": "moderator",
       "input_tokens": 195,
-      "output_tokens": 9,
+      "output_tokens": 6,
       "latency": 1.0,
-      "text": "{\"recommendation\": \"REPORT\", \"agreed_diagnosis\": \"Pulmonary Embolism\", \"average_confidence\": 0.78}"
-    },
-    {
-      "agent": "report_writer",
-      "input_tokens": 487,
-      "output_tokens": 44,
-      "latency": 0.00011639999866019934,
-      "text": "{\"top_diagnosis\": \"Perform karyotyping of amniotic fluid\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Perform karyotyping of amniotic fluid\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
-    },
-    {
-      "agent": "report_judge",
-      "input_tokens": 800,
-      "output_tokens": 44,
-      "latency": 0.00015310000162571669,
-      "text": "{\"top_diagnosis\": \"Perform karyotyping of amniotic fluid\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Perform karyotyping of amniotic fluid\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"recommendation\": \"ABSTAIN\", \"reasoning\": \"Insufficient consensus.\"}"
     }
   ],
   "verification_trace": null,
   "consensus_trace": {
-    "recommendation": "REPORT",
-    "agreed_diagnosis": "Pulmonary Embolism",
-    "average_confidence": 0.78
+    "recommendation": "ABSTAIN",
+    "reasoning": "Insufficient consensus."
   },
   "ethics_trace": null,
   "report_trace": null

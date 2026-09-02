@@ -1,7 +1,7 @@
 {
-  "run_id": "e84bb24a",
+  "run_id": "b4c2f183",
   "experiment_id": "medqa_0097_llama3.1:8b_G2_seed42",
-  "timestamp": "2026-09-02T17:33:13.084331Z",
+  "timestamp": "2026-09-02T17:37:02.889659Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0097",
@@ -26,15 +26,15 @@
   "contradicted_claims": 0,
   "unverifiable_claims": 0,
   "revision_count": 0,
-  "input_tokens": 2760,
+  "input_tokens": 2762,
   "output_tokens": 177,
-  "total_tokens": 2937,
+  "total_tokens": 2939,
   "model_calls": 5,
-  "latency_ms": 3.4492000080063008,
-  "governance_latency_ms": 3.4492000080063008,
-  "diagnosis_latency_ms": 2.0695200048037803,
-  "governance_overhead_latency_ms": 1.3796800032025203,
-  "report_latency_ms": 0.0004492000080063008,
+  "latency_ms": 3.3237000055378303,
+  "governance_latency_ms": 3.3237000055378303,
+  "diagnosis_latency_ms": 1.9942200033226982,
+  "governance_overhead_latency_ms": 1.329480002215132,
+  "report_latency_ms": 0.0003237000055378303,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -53,7 +53,7 @@
       "input_tokens": 410,
       "output_tokens": 41,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.76, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.76}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.88, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.88}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist",
@@ -72,16 +72,16 @@
     {
       "agent": "report_writer",
       "input_tokens": 591,
-      "output_tokens": 44,
-      "latency": 0.00020850000146310776,
-      "text": "{\"top_diagnosis\": \"Mucosal defect in the stomach\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Mucosal defect in the stomach\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "output_tokens": 46,
+      "latency": 0.000145800004247576,
+      "text": "{\"top_diagnosis\": \"Crypt abscesses in the large intestine\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Crypt abscesses in the large intestine\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
-      "input_tokens": 910,
-      "output_tokens": 46,
-      "latency": 0.000240700006543193,
-      "text": "{\"top_diagnosis\": \"PAS-positive material in the small intestine\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"PAS-positive material in the small intestine\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "input_tokens": 912,
+      "output_tokens": 44,
+      "latency": 0.0001779000012902543,
+      "text": "{\"top_diagnosis\": \"Mucosal defect in the stomach\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Mucosal defect in the stomach\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     }
   ],
   "verification_trace": {

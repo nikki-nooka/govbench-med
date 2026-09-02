@@ -1,7 +1,7 @@
 {
-  "run_id": "b9d1516c",
+  "run_id": "e9a8ab4a",
   "experiment_id": "medqa_0009_llama3.1:8b_G2_seed42",
-  "timestamp": "2026-09-02T17:33:11.987501Z",
+  "timestamp": "2026-09-02T17:37:01.974027Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0009",
@@ -27,14 +27,14 @@
   "unverifiable_claims": 0,
   "revision_count": 0,
   "input_tokens": 1701,
-  "output_tokens": 157,
-  "total_tokens": 1858,
+  "output_tokens": 160,
+  "total_tokens": 1861,
   "model_calls": 5,
-  "latency_ms": 3.361700003850274,
-  "governance_latency_ms": 3.361700003850274,
-  "diagnosis_latency_ms": 2.017020002310164,
-  "governance_overhead_latency_ms": 1.3446800015401095,
-  "report_latency_ms": 0.0003617000038502738,
+  "latency_ms": 3.2761000068858266,
+  "governance_latency_ms": 3.2761000068858266,
+  "diagnosis_latency_ms": 1.965660004131496,
+  "governance_overhead_latency_ms": 1.3104400027543306,
+  "report_latency_ms": 0.0002761000068858266,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -53,7 +53,7 @@
       "input_tokens": 211,
       "output_tokens": 45,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Clinical Evaluation Required\", \"confidence\": 0.8200000000000001, \"reasoning\": \"Clinical presentation suggests Clinical Evaluation Required.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Clinical Evaluation Required\", \"confidence\": 0.8200000000000001}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Clinical Evaluation Required\", \"confidence\": 0.83, \"reasoning\": \"Clinical presentation suggests Clinical Evaluation Required.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Clinical Evaluation Required\", \"confidence\": 0.83}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist",
@@ -73,15 +73,15 @@
       "agent": "report_writer",
       "input_tokens": 366,
       "output_tokens": 33,
-      "latency": 0.00014039999950909987,
-      "text": "{\"top_diagnosis\": \"Albinism\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Albinism\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "latency": 9.670000144978985e-05,
+      "text": "{\"top_diagnosis\": \"Vitiligo\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Vitiligo\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
       "input_tokens": 672,
-      "output_tokens": 33,
-      "latency": 0.00022130000434117392,
-      "text": "{\"top_diagnosis\": \"Melanoma\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Melanoma\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "output_tokens": 36,
+      "latency": 0.00017940000543603674,
+      "text": "{\"top_diagnosis\": \"Tinea versicolor\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Tinea versicolor\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     }
   ],
   "verification_trace": {

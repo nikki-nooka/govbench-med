@@ -1,7 +1,7 @@
 {
-  "run_id": "3373de6f",
+  "run_id": "fdbd5696",
   "experiment_id": "medqa_0083_llama3.1:8b_G4_seed42",
-  "timestamp": "2026-09-02T17:33:12.938025Z",
+  "timestamp": "2026-09-02T17:37:02.718608Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0083",
@@ -26,15 +26,15 @@
   "contradicted_claims": 0,
   "unverifiable_claims": 0,
   "revision_count": 0,
-  "input_tokens": 2870,
-  "output_tokens": 224,
-  "total_tokens": 3094,
+  "input_tokens": 2880,
+  "output_tokens": 235,
+  "total_tokens": 3115,
   "model_calls": 7,
-  "latency_ms": 5.371800007997081,
-  "governance_latency_ms": 5.371800007997081,
-  "diagnosis_latency_ms": 3.2230800047982484,
-  "governance_overhead_latency_ms": 2.1487200031988323,
-  "report_latency_ms": 0.0003718000079970807,
+  "latency_ms": 5.328800000716001,
+  "governance_latency_ms": 5.328800000716001,
+  "diagnosis_latency_ms": 3.1972800004296005,
+  "governance_overhead_latency_ms": 2.1315200002864003,
+  "report_latency_ms": 0.0003288000007160008,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -53,7 +53,7 @@
       "input_tokens": 325,
       "output_tokens": 45,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.89, \"reasoning\": \"Clinical presentation suggests Acute Coronary Syndrome.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.89}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.81, \"reasoning\": \"Clinical presentation suggests Acute Coronary Syndrome.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.81}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist_a",
@@ -79,15 +79,15 @@
     {
       "agent": "report_writer",
       "input_tokens": 514,
-      "output_tokens": 41,
-      "latency": 0.00016010000399546698,
-      "text": "{\"top_diagnosis\": \"Glucagon-like peptide-1 receptor agonist\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Glucagon-like peptide-1 receptor agonist\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "output_tokens": 52,
+      "latency": 0.00013939999917056412,
+      "text": "{\"top_diagnosis\": \"Closure of ATP-sensitive K-channels in the pancreatic beta-cell\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Closure of ATP-sensitive K-channels in the pancreatic beta-cell\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
-      "input_tokens": 825,
+      "input_tokens": 835,
       "output_tokens": 44,
-      "latency": 0.0002117000040016137,
+      "latency": 0.00018940000154543668,
       "text": "{\"top_diagnosis\": \"Increased gene expression of GLUT-4\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Increased gene expression of GLUT-4\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {

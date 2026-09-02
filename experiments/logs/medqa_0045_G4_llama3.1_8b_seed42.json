@@ -1,7 +1,7 @@
 {
-  "run_id": "cf9f64bf",
+  "run_id": "3f554b65",
   "experiment_id": "medqa_0045_llama3.1:8b_G4_seed42",
-  "timestamp": "2026-09-02T17:33:12.468462Z",
+  "timestamp": "2026-09-02T17:37:02.300530Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0045",
@@ -30,11 +30,11 @@
   "output_tokens": 205,
   "total_tokens": 3129,
   "model_calls": 7,
-  "latency_ms": 5.321999999869149,
-  "governance_latency_ms": 5.321999999869149,
-  "diagnosis_latency_ms": 3.1931999999214895,
-  "governance_overhead_latency_ms": 2.1287999999476597,
-  "report_latency_ms": 0.0003219999998691492,
+  "latency_ms": 5.280200001725461,
+  "governance_latency_ms": 5.280200001725461,
+  "diagnosis_latency_ms": 3.168120001035277,
+  "governance_overhead_latency_ms": 2.1120800006901845,
+  "report_latency_ms": 0.00028020000172546133,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -53,7 +53,7 @@
       "input_tokens": 348,
       "output_tokens": 45,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Clinical Evaluation Required\", \"confidence\": 0.81, \"reasoning\": \"Clinical presentation suggests Clinical Evaluation Required.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Clinical Evaluation Required\", \"confidence\": 0.81}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Clinical Evaluation Required\", \"confidence\": 0.8, \"reasoning\": \"Clinical presentation suggests Clinical Evaluation Required.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Clinical Evaluation Required\", \"confidence\": 0.8}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist_a",
@@ -80,15 +80,15 @@
       "agent": "report_writer",
       "input_tokens": 497,
       "output_tokens": 36,
-      "latency": 0.00012040000001434237,
+      "latency": 0.00011780000204453245,
       "text": "{\"top_diagnosis\": \"Anti-B antibodies\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Anti-B antibodies\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
       "input_tokens": 803,
       "output_tokens": 36,
-      "latency": 0.0002015999998548068,
-      "text": "{\"top_diagnosis\": \"Anti-B antibodies\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Anti-B antibodies\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "latency": 0.00016239999968092889,
+      "text": "{\"top_diagnosis\": \"RBC sickling\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"RBC sickling\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "ethics_critic",

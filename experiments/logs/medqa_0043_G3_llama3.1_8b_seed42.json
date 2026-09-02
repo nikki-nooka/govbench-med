@@ -1,7 +1,7 @@
 {
-  "run_id": "1260f1cc",
+  "run_id": "c18adcd2",
   "experiment_id": "medqa_0043_llama3.1:8b_G3_seed42",
-  "timestamp": "2026-09-02T17:33:12.446397Z",
+  "timestamp": "2026-09-02T17:37:02.281964Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0043",
@@ -30,11 +30,11 @@
   "output_tokens": 191,
   "total_tokens": 2531,
   "model_calls": 6,
-  "latency_ms": 4.4457999966689385,
-  "governance_latency_ms": 4.4457999966689385,
-  "diagnosis_latency_ms": 2.667479998001363,
-  "governance_overhead_latency_ms": 1.7783199986675755,
-  "report_latency_ms": 0.00044579999666893855,
+  "latency_ms": 4.277299994195346,
+  "governance_latency_ms": 4.277299994195346,
+  "diagnosis_latency_ms": 2.5663799965172074,
+  "governance_overhead_latency_ms": 1.7109199976781384,
+  "report_latency_ms": 0.0002772999941953458,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -53,7 +53,7 @@
       "input_tokens": 314,
       "output_tokens": 41,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.77, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.77}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.83, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.83}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist_a",
@@ -80,14 +80,14 @@
       "agent": "report_writer",
       "input_tokens": 466,
       "output_tokens": 36,
-      "latency": 0.00020519999816315249,
+      "latency": 0.00011539999832166359,
       "text": "{\"top_diagnosis\": \"Radioiodine therapy\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Radioiodine therapy\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
       "input_tokens": 777,
       "output_tokens": 33,
-      "latency": 0.00024059999850578606,
+      "latency": 0.0001618999958736822,
       "text": "{\"top_diagnosis\": \"Glucocorticoids\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Glucocorticoids\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     }
   ],

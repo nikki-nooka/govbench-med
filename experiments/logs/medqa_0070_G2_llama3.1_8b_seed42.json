@@ -1,7 +1,7 @@
 {
-  "run_id": "628802e7",
+  "run_id": "8c73ce2d",
   "experiment_id": "medqa_0070_llama3.1:8b_G2_seed42",
-  "timestamp": "2026-09-02T17:33:12.756751Z",
+  "timestamp": "2026-09-02T17:37:02.570218Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0070",
@@ -30,11 +30,11 @@
   "output_tokens": 159,
   "total_tokens": 2674,
   "model_calls": 5,
-  "latency_ms": 3.6732000038027763,
-  "governance_latency_ms": 3.6732000038027763,
-  "diagnosis_latency_ms": 2.2039200022816656,
-  "governance_overhead_latency_ms": 1.4692800015211105,
-  "report_latency_ms": 0.0006732000038027763,
+  "latency_ms": 3.6828000041423365,
+  "governance_latency_ms": 3.6828000041423365,
+  "diagnosis_latency_ms": 2.2096800024854018,
+  "governance_overhead_latency_ms": 1.4731200016569346,
+  "report_latency_ms": 0.0006828000041423365,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -53,7 +53,7 @@
       "input_tokens": 373,
       "output_tokens": 41,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.78, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.78}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist",
@@ -73,15 +73,15 @@
       "agent": "report_writer",
       "input_tokens": 529,
       "output_tokens": 36,
-      "latency": 0.00029070000164210796,
-      "text": "{\"top_diagnosis\": \"Necrotizing enterocolitis\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Necrotizing enterocolitis\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "latency": 0.00029630000062752515,
+      "text": "{\"top_diagnosis\": \"Pyloric stenosis\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pyloric stenosis\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
       "input_tokens": 839,
       "output_tokens": 36,
-      "latency": 0.0003825000021606684,
-      "text": "{\"top_diagnosis\": \"Pyloric stenosis\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pyloric stenosis\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "latency": 0.0003865000035148114,
+      "text": "{\"top_diagnosis\": \"Duodenal atresia\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Duodenal atresia\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     }
   ],
   "verification_trace": {

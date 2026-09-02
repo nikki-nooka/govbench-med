@@ -1,7 +1,7 @@
 {
-  "run_id": "2ae78dd7",
+  "run_id": "5c2ad56c",
   "experiment_id": "medqa_0030_llama3.1:8b_G3_seed42",
-  "timestamp": "2026-09-02T17:33:12.219902Z",
+  "timestamp": "2026-09-02T17:37:02.166409Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0030",
@@ -30,11 +30,11 @@
   "output_tokens": 204,
   "total_tokens": 2769,
   "model_calls": 6,
-  "latency_ms": 4.466199999209493,
-  "governance_latency_ms": 4.466199999209493,
-  "diagnosis_latency_ms": 2.679719999525696,
-  "governance_overhead_latency_ms": 1.7864799996837974,
-  "report_latency_ms": 0.0004661999992094934,
+  "latency_ms": 4.401000004785601,
+  "governance_latency_ms": 4.401000004785601,
+  "diagnosis_latency_ms": 2.6406000028713605,
+  "governance_overhead_latency_ms": 1.7604000019142405,
+  "report_latency_ms": 0.00040100000478560105,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -53,7 +53,7 @@
       "input_tokens": 356,
       "output_tokens": 45,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.83, \"reasoning\": \"Clinical presentation suggests Acute Coronary Syndrome.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.83}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.79, \"reasoning\": \"Clinical presentation suggests Acute Coronary Syndrome.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.79}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist_a",
@@ -80,14 +80,14 @@
       "agent": "report_writer",
       "input_tokens": 518,
       "output_tokens": 36,
-      "latency": 0.0002043999993475154,
-      "text": "{\"top_diagnosis\": \"Mycoplasma pneumoniae\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Mycoplasma pneumoniae\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "latency": 0.00017890000162879005,
+      "text": "{\"top_diagnosis\": \"Haemophilus influenzae\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Haemophilus influenzae\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
       "input_tokens": 824,
       "output_tokens": 36,
-      "latency": 0.000261799999861978,
+      "latency": 0.000222100003156811,
       "text": "{\"top_diagnosis\": \"Mycoplasma pneumoniae\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Mycoplasma pneumoniae\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     }
   ],

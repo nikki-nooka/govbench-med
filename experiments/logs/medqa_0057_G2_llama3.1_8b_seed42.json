@@ -1,7 +1,7 @@
 {
-  "run_id": "9766ff43",
+  "run_id": "09c5aa26",
   "experiment_id": "medqa_0057_llama3.1:8b_G2_seed42",
-  "timestamp": "2026-09-02T17:33:12.594662Z",
+  "timestamp": "2026-09-02T17:37:02.409066Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0057",
@@ -30,11 +30,11 @@
   "output_tokens": 165,
   "total_tokens": 2470,
   "model_calls": 5,
-  "latency_ms": 3.273699995887,
-  "governance_latency_ms": 3.273699995887,
-  "diagnosis_latency_ms": 1.9642199975322001,
-  "governance_overhead_latency_ms": 1.3094799983548,
-  "report_latency_ms": 0.0002736999958870001,
+  "latency_ms": 3.6036999984644353,
+  "governance_latency_ms": 3.6036999984644353,
+  "diagnosis_latency_ms": 2.162219999078661,
+  "governance_overhead_latency_ms": 1.441479999385774,
+  "report_latency_ms": 0.0006036999984644353,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -73,15 +73,15 @@
       "agent": "report_writer",
       "input_tokens": 491,
       "output_tokens": 39,
-      "latency": 0.00012179999612271786,
-      "text": "{\"top_diagnosis\": \"Histrionic personality disorder\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Histrionic personality disorder\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "latency": 0.00026529999740887433,
+      "text": "{\"top_diagnosis\": \"Borderline personality disorder\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Borderline personality disorder\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
       "input_tokens": 804,
       "output_tokens": 39,
-      "latency": 0.00015189999976428226,
-      "text": "{\"top_diagnosis\": \"Dependent personality disorder\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Dependent personality disorder\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "latency": 0.000338400001055561,
+      "text": "{\"top_diagnosis\": \"Borderline personality disorder\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Borderline personality disorder\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     }
   ],
   "verification_trace": {

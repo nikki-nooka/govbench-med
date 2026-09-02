@@ -1,7 +1,7 @@
 {
-  "run_id": "59832658",
+  "run_id": "f65fd1bc",
   "experiment_id": "medqa_0087_llama3.1:8b_G1_seed42",
-  "timestamp": "2026-09-02T17:33:12.973770Z",
+  "timestamp": "2026-09-02T17:37:02.757556Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0087",
@@ -16,7 +16,7 @@
   "dataset_source": "medqa",
   "correctness": false,
   "top3_correct": false,
-  "confidence": 0.8200000000000001,
+  "confidence": 0.79,
   "consensus": true,
   "abstained": false,
   "suppressed": false,
@@ -30,11 +30,11 @@
   "output_tokens": 175,
   "total_tokens": 1976,
   "model_calls": 4,
-  "latency_ms": 2.2722999997786246,
-  "governance_latency_ms": 2.2722999997786246,
-  "diagnosis_latency_ms": 1.3633799998671747,
-  "governance_overhead_latency_ms": 0.9089199999114499,
-  "report_latency_ms": 0.0002722999997786246,
+  "latency_ms": 2.7016000017756596,
+  "governance_latency_ms": 2.7016000017756596,
+  "diagnosis_latency_ms": 1.6209600010653957,
+  "governance_overhead_latency_ms": 1.080640000710264,
+  "report_latency_ms": 0.0007016000017756596,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -53,7 +53,7 @@
       "input_tokens": 279,
       "output_tokens": 41,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.8200000000000001, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.8200000000000001}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.79, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.79}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist",
@@ -66,14 +66,14 @@
       "agent": "report_writer",
       "input_tokens": 469,
       "output_tokens": 49,
-      "latency": 0.0001216000018757768,
-      "text": "{\"top_diagnosis\": \"Impaired CSF flow through the arachnoid granulations\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Impaired CSF flow through the arachnoid granulations\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "latency": 0.00031830000079935417,
+      "text": "{\"top_diagnosis\": \"Impaired CSF drainage into the subarachnoid space\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Impaired CSF drainage into the subarachnoid space\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
       "input_tokens": 793,
       "output_tokens": 49,
-      "latency": 0.00015069999790284783,
+      "latency": 0.00038330000097630545,
       "text": "{\"top_diagnosis\": \"Impaired CSF flow through the arachnoid granulations\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Impaired CSF flow through the arachnoid granulations\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     }
   ],

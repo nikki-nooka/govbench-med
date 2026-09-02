@@ -1,7 +1,7 @@
 {
-  "run_id": "0fb226fe",
+  "run_id": "2c19a85e",
   "experiment_id": "medqa_0032_llama3.1:8b_G4_seed42",
-  "timestamp": "2026-09-02T17:33:12.332934Z",
+  "timestamp": "2026-09-02T17:37:02.185162Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0032",
@@ -30,11 +30,11 @@
   "output_tokens": 205,
   "total_tokens": 3256,
   "model_calls": 7,
-  "latency_ms": 5.461499999801163,
-  "governance_latency_ms": 5.461499999801163,
-  "diagnosis_latency_ms": 3.2768999998806976,
-  "governance_overhead_latency_ms": 2.184599999920465,
-  "report_latency_ms": 0.00046149999980116263,
+  "latency_ms": 5.330900002154522,
+  "governance_latency_ms": 5.330900002154522,
+  "diagnosis_latency_ms": 3.198540001292713,
+  "governance_overhead_latency_ms": 2.1323600008618087,
+  "report_latency_ms": 0.00033090000215452164,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -53,7 +53,7 @@
       "input_tokens": 367,
       "output_tokens": 45,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.86, \"reasoning\": \"Clinical presentation suggests Acute Coronary Syndrome.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.86}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.79, \"reasoning\": \"Clinical presentation suggests Acute Coronary Syndrome.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.79}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist_a",
@@ -80,15 +80,15 @@
       "agent": "report_writer",
       "input_tokens": 523,
       "output_tokens": 33,
-      "latency": 0.0001857999959611334,
-      "text": "{\"top_diagnosis\": \"Propranolol\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Propranolol\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "latency": 0.0001269999993382953,
+      "text": "{\"top_diagnosis\": \"Citalopram\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Citalopram\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
       "input_tokens": 826,
       "output_tokens": 33,
-      "latency": 0.00027570000384002924,
-      "text": "{\"top_diagnosis\": \"Citalopram\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Citalopram\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "latency": 0.00020390000281622633,
+      "text": "{\"top_diagnosis\": \"Quetiapine\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Quetiapine\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "ethics_critic",

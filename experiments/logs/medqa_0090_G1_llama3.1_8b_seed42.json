@@ -1,7 +1,7 @@
 {
-  "run_id": "b507ff62",
+  "run_id": "4b8cb8e5",
   "experiment_id": "medqa_0090_llama3.1:8b_G1_seed42",
-  "timestamp": "2026-09-02T17:33:13.003054Z",
+  "timestamp": "2026-09-02T17:37:02.805426Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0090",
@@ -26,15 +26,15 @@
   "contradicted_claims": 0,
   "unverifiable_claims": 0,
   "revision_count": 0,
-  "input_tokens": 1891,
-  "output_tokens": 142,
-  "total_tokens": 2033,
+  "input_tokens": 1889,
+  "output_tokens": 139,
+  "total_tokens": 2028,
   "model_calls": 4,
-  "latency_ms": 2.3778000027523376,
-  "governance_latency_ms": 2.3778000027523376,
-  "diagnosis_latency_ms": 1.4266800016514025,
-  "governance_overhead_latency_ms": 0.9511200011009351,
-  "report_latency_ms": 0.0003778000027523376,
+  "latency_ms": 2.723899996955879,
+  "governance_latency_ms": 2.723899996955879,
+  "diagnosis_latency_ms": 1.6343399981735274,
+  "governance_overhead_latency_ms": 1.0895599987823517,
+  "report_latency_ms": 0.000723899996955879,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -65,16 +65,16 @@
     {
       "agent": "report_writer",
       "input_tokens": 474,
-      "output_tokens": 36,
-      "latency": 0.0001588000013725832,
-      "text": "{\"top_diagnosis\": \"Ankylosing spondylitis\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Ankylosing spondylitis\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "output_tokens": 33,
+      "latency": 0.0004343999971752055,
+      "text": "{\"top_diagnosis\": \"Fibromyalgia\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Fibromyalgia\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
-      "input_tokens": 787,
+      "input_tokens": 785,
       "output_tokens": 33,
-      "latency": 0.0002190000013797544,
-      "text": "{\"top_diagnosis\": \"Gout\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Gout\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "latency": 0.00028949999978067353,
+      "text": "{\"top_diagnosis\": \"Fibromyalgia\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Fibromyalgia\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     }
   ],
   "verification_trace": null,

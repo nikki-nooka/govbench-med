@@ -1,7 +1,7 @@
 {
-  "run_id": "38085c01",
+  "run_id": "385611cf",
   "experiment_id": "medqa_0046_llama3.1:8b_G4_seed42",
-  "timestamp": "2026-09-02T17:33:12.474960Z",
+  "timestamp": "2026-09-02T17:37:02.307250Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0046",
@@ -53,7 +53,7 @@
       "input_tokens": 284,
       "output_tokens": 41,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Abdominal Pain\", \"confidence\": 0.79, \"reasoning\": \"Clinical presentation suggests Abdominal Pain.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Abdominal Pain\", \"confidence\": 0.79}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Abdominal Pain\", \"confidence\": 0.89, \"reasoning\": \"Clinical presentation suggests Abdominal Pain.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Abdominal Pain\", \"confidence\": 0.89}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist_a",

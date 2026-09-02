@@ -1,7 +1,7 @@
 {
-  "run_id": "f2f54cd1",
+  "run_id": "57f94454",
   "experiment_id": "medqa_0002_llama3.1:8b_G3_seed42",
-  "timestamp": "2026-09-02T17:33:11.923831Z",
+  "timestamp": "2026-09-02T17:37:01.916556Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0002",
@@ -26,15 +26,15 @@
   "contradicted_claims": 0,
   "unverifiable_claims": 0,
   "revision_count": 0,
-  "input_tokens": 2027,
-  "output_tokens": 200,
-  "total_tokens": 2227,
+  "input_tokens": 2034,
+  "output_tokens": 209,
+  "total_tokens": 2243,
   "model_calls": 6,
-  "latency_ms": 4.270799995632842,
-  "governance_latency_ms": 4.270799995632842,
-  "diagnosis_latency_ms": 2.562479997379705,
-  "governance_overhead_latency_ms": 1.708319998253137,
-  "report_latency_ms": 0.0002707999956328422,
+  "latency_ms": 4.264900001639035,
+  "governance_latency_ms": 4.264900001639035,
+  "diagnosis_latency_ms": 2.5589400009834207,
+  "governance_overhead_latency_ms": 1.705960000655614,
+  "report_latency_ms": 0.0002649000016390346,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -53,7 +53,7 @@
       "input_tokens": 244,
       "output_tokens": 41,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.8, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.8}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.83, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.83}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist_a",
@@ -79,16 +79,16 @@
     {
       "agent": "report_writer",
       "input_tokens": 414,
-      "output_tokens": 39,
-      "latency": 0.0001157000006060116,
-      "text": "{\"top_diagnosis\": \"Defective isotype switching\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Defective isotype switching\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "output_tokens": 46,
+      "latency": 0.00011020000238204375,
+      "text": "{\"top_diagnosis\": \"Grossly reduced levels of B cells\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Grossly reduced levels of B cells\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
-      "input_tokens": 728,
-      "output_tokens": 39,
-      "latency": 0.00015509999502683058,
-      "text": "{\"top_diagnosis\": \"Selective IgA deficiency\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Selective IgA deficiency\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "input_tokens": 735,
+      "output_tokens": 41,
+      "latency": 0.00015469999925699085,
+      "text": "{\"top_diagnosis\": \"Defective T cell function\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Defective T cell function\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     }
   ],
   "verification_trace": null,

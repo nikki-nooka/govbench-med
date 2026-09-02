@@ -1,7 +1,7 @@
 {
-  "run_id": "8a4c037b",
+  "run_id": "ba53e6b7",
   "experiment_id": "medqa_0004_llama3.1:8b_G2_seed42",
-  "timestamp": "2026-09-02T17:33:11.942962Z",
+  "timestamp": "2026-09-02T17:37:01.933194Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0004",
@@ -30,11 +30,11 @@
   "output_tokens": 153,
   "total_tokens": 2356,
   "model_calls": 5,
-  "latency_ms": 3.408599997172132,
-  "governance_latency_ms": 3.408599997172132,
-  "diagnosis_latency_ms": 2.045159998303279,
-  "governance_overhead_latency_ms": 1.3634399988688528,
-  "report_latency_ms": 0.00040859999717213213,
+  "latency_ms": 3.3066999997827224,
+  "governance_latency_ms": 3.3066999997827224,
+  "diagnosis_latency_ms": 1.9840199998696335,
+  "governance_overhead_latency_ms": 1.322679999913089,
+  "report_latency_ms": 0.00030669999978272244,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -53,7 +53,7 @@
       "input_tokens": 313,
       "output_tokens": 41,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.78, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.78}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.79, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.79}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist",
@@ -73,14 +73,14 @@
       "agent": "report_writer",
       "input_tokens": 464,
       "output_tokens": 33,
-      "latency": 0.00017619999562157318,
-      "text": "{\"top_diagnosis\": \"Doxycycline\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Doxycycline\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "latency": 0.00015410000196425244,
+      "text": "{\"top_diagnosis\": \"Chloramphenicol\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Chloramphenicol\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
       "input_tokens": 772,
       "output_tokens": 33,
-      "latency": 0.00023240000155055895,
+      "latency": 0.00015259999781847,
       "text": "{\"top_diagnosis\": \"Doxycycline\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Doxycycline\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     }
   ],

@@ -1,7 +1,7 @@
 {
-  "run_id": "f9d90449",
+  "run_id": "b580ccd1",
   "experiment_id": "medqa_0092_llama3.1:8b_G4_seed42",
-  "timestamp": "2026-09-02T17:33:13.027379Z",
+  "timestamp": "2026-09-02T17:37:02.838078Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0092",
@@ -26,15 +26,15 @@
   "contradicted_claims": 0,
   "unverifiable_claims": 0,
   "revision_count": 0,
-  "input_tokens": 2464,
+  "input_tokens": 2461,
   "output_tokens": 204,
-  "total_tokens": 2668,
+  "total_tokens": 2665,
   "model_calls": 7,
-  "latency_ms": 5.263100002484862,
-  "governance_latency_ms": 5.263100002484862,
-  "diagnosis_latency_ms": 3.157860001490917,
-  "governance_overhead_latency_ms": 2.1052400009939447,
-  "report_latency_ms": 0.00026310000248486176,
+  "latency_ms": 5.324599997838959,
+  "governance_latency_ms": 5.324599997838959,
+  "diagnosis_latency_ms": 3.1947599987033755,
+  "governance_overhead_latency_ms": 2.1298399991355836,
+  "report_latency_ms": 0.0003245999978389591,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -53,7 +53,7 @@
       "input_tokens": 267,
       "output_tokens": 41,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.84, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.84}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.8, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.8}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist_a",
@@ -79,16 +79,16 @@
     {
       "agent": "report_writer",
       "input_tokens": 427,
-      "output_tokens": 39,
-      "latency": 0.00010900000052060932,
-      "text": "{\"top_diagnosis\": \"Squamous cell carcinoma\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Squamous cell carcinoma\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "output_tokens": 36,
+      "latency": 0.00015980000171111897,
+      "text": "{\"top_diagnosis\": \"Traumatic ulcer\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Traumatic ulcer\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
-      "input_tokens": 741,
-      "output_tokens": 36,
-      "latency": 0.00015410000196425244,
-      "text": "{\"top_diagnosis\": \"Traumatic ulcer\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Traumatic ulcer\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "input_tokens": 738,
+      "output_tokens": 39,
+      "latency": 0.00016479999612784013,
+      "text": "{\"top_diagnosis\": \"Squamous cell carcinoma\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Squamous cell carcinoma\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "ethics_critic",

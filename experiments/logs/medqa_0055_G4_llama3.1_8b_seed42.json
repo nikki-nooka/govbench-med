@@ -1,7 +1,7 @@
 {
-  "run_id": "60904a35",
+  "run_id": "7baf5342",
   "experiment_id": "medqa_0055_llama3.1:8b_G4_seed42",
-  "timestamp": "2026-09-02T17:33:12.577752Z",
+  "timestamp": "2026-09-02T17:37:02.389773Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0055",
@@ -26,15 +26,15 @@
   "contradicted_claims": 0,
   "unverifiable_claims": 0,
   "revision_count": 0,
-  "input_tokens": 2395,
-  "output_tokens": 228,
-  "total_tokens": 2623,
+  "input_tokens": 2397,
+  "output_tokens": 234,
+  "total_tokens": 2631,
   "model_calls": 7,
-  "latency_ms": 5.251199999183882,
-  "governance_latency_ms": 5.251199999183882,
-  "diagnosis_latency_ms": 3.150719999510329,
-  "governance_overhead_latency_ms": 2.100479999673553,
-  "report_latency_ms": 0.00025119999918388203,
+  "latency_ms": 5.343200001225341,
+  "governance_latency_ms": 5.343200001225341,
+  "diagnosis_latency_ms": 3.2059200007352047,
+  "governance_overhead_latency_ms": 2.1372800004901364,
+  "report_latency_ms": 0.0003432000012253411,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -53,7 +53,7 @@
       "input_tokens": 243,
       "output_tokens": 45,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Clinical Evaluation Required\", \"confidence\": 0.77, \"reasoning\": \"Clinical presentation suggests Clinical Evaluation Required.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Clinical Evaluation Required\", \"confidence\": 0.77}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Clinical Evaluation Required\", \"confidence\": 0.78, \"reasoning\": \"Clinical presentation suggests Clinical Evaluation Required.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Clinical Evaluation Required\", \"confidence\": 0.78}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist_a",
@@ -79,16 +79,16 @@
     {
       "agent": "report_writer",
       "input_tokens": 438,
-      "output_tokens": 46,
-      "latency": 0.00010489999840501696,
-      "text": "{\"top_diagnosis\": \"Decreased strength of the contralateral leg\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Decreased strength of the contralateral leg\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "output_tokens": 49,
+      "latency": 0.00014180000289343297,
+      "text": "{\"top_diagnosis\": \"Decreased vibratory sense in the ipsilateral arm\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Decreased vibratory sense in the ipsilateral arm\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
-      "input_tokens": 754,
-      "output_tokens": 49,
-      "latency": 0.00014630000077886507,
-      "text": "{\"top_diagnosis\": \"Decreased positional sense in the ipsilateral leg\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Decreased positional sense in the ipsilateral leg\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "input_tokens": 756,
+      "output_tokens": 52,
+      "latency": 0.00020139999833190814,
+      "text": "{\"top_diagnosis\": \"Decreased sense of temperature in the ipsilateral arm\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Decreased sense of temperature in the ipsilateral arm\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "ethics_critic",

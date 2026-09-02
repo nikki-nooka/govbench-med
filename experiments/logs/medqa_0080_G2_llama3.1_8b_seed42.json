@@ -1,7 +1,7 @@
 {
-  "run_id": "bd0517a2",
+  "run_id": "50d154c6",
   "experiment_id": "medqa_0080_llama3.1:8b_G2_seed42",
-  "timestamp": "2026-09-02T17:33:12.894565Z",
+  "timestamp": "2026-09-02T17:37:02.685193Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0080",
@@ -26,15 +26,15 @@
   "contradicted_claims": 0,
   "unverifiable_claims": 0,
   "revision_count": 0,
-  "input_tokens": 2484,
-  "output_tokens": 182,
-  "total_tokens": 2666,
+  "input_tokens": 2474,
+  "output_tokens": 172,
+  "total_tokens": 2646,
   "model_calls": 5,
-  "latency_ms": 3.434900000982452,
-  "governance_latency_ms": 3.434900000982452,
-  "diagnosis_latency_ms": 2.060940000589471,
-  "governance_overhead_latency_ms": 1.3739600003929808,
-  "report_latency_ms": 0.0004349000009824522,
+  "latency_ms": 3.3024999969056807,
+  "governance_latency_ms": 3.3024999969056807,
+  "diagnosis_latency_ms": 1.9814999981434085,
+  "governance_overhead_latency_ms": 1.3209999987622723,
+  "report_latency_ms": 0.00030249999690568075,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -53,7 +53,7 @@
       "input_tokens": 358,
       "output_tokens": 45,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.83, \"reasoning\": \"Clinical presentation suggests Acute Coronary Syndrome.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.83}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.78, \"reasoning\": \"Clinical presentation suggests Acute Coronary Syndrome.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.78}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist",
@@ -72,16 +72,16 @@
     {
       "agent": "report_writer",
       "input_tokens": 530,
-      "output_tokens": 49,
-      "latency": 0.00021700000070268288,
-      "text": "{\"top_diagnosis\": \"Anion gap metabolic acidosis with respiratory alkalosis\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Anion gap metabolic acidosis with respiratory alkalosis\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "output_tokens": 39,
+      "latency": 0.0001357000001007691,
+      "text": "{\"top_diagnosis\": \"Primary respiratory alkalosis\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Primary respiratory alkalosis\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
-      "input_tokens": 851,
+      "input_tokens": 841,
       "output_tokens": 39,
-      "latency": 0.0002179000002797693,
-      "text": "{\"top_diagnosis\": \"Primary respiratory alkalosis\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Primary respiratory alkalosis\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "latency": 0.00016679999680491164,
+      "text": "{\"top_diagnosis\": \"Primary respiratory acidosis\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Primary respiratory acidosis\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     }
   ],
   "verification_trace": {

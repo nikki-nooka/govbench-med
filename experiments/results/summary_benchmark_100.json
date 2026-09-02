@@ -9,8 +9,8 @@
       "hir": 0.0,
       "urr": 0.0,
       "abstention_rate": 0.0,
-      "mean_tokens": 2038.54,
-      "mean_latency_ms": 2.384682999938377,
+      "mean_tokens": 2039.14,
+      "mean_latency_ms": 2.375477000779938,
       "css": 1.0,
       "tc_norm": 1.0,
       "lat_norm": 1.0,
@@ -25,12 +25,12 @@
       "hir": 0.0,
       "urr": 0.0,
       "abstention_rate": 0.0,
-      "mean_tokens": 2009.61,
-      "mean_latency_ms": 2.3868400002102135,
+      "mean_tokens": 2009.94,
+      "mean_latency_ms": 2.383499999952619,
       "css": 1.0,
-      "tc_norm": 0.9858084707682949,
-      "lat_norm": 1.0009045228535165,
-      "ccs": 0.9918468916023836
+      "tc_norm": 0.9856802377472856,
+      "lat_norm": 1.0033774265842383,
+      "ccs": 0.9927591132820668
     },
     {
       "governance_level": "G2",
@@ -41,12 +41,12 @@
       "hir": 0.0,
       "urr": 0.0,
       "abstention_rate": 0.0,
-      "mean_tokens": 2376.22,
-      "mean_latency_ms": 3.401731000529253,
+      "mean_tokens": 2377.58,
+      "mean_latency_ms": 3.384709999707411,
       "css": 1.0,
-      "tc_norm": 1.1656479637387542,
-      "lat_norm": 1.4264919071495696,
-      "ccs": 1.2699855411030803
+      "tc_norm": 1.165971929342762,
+      "lat_norm": 1.4248548811864366,
+      "ccs": 1.2695251100802318
     },
     {
       "governance_level": "G3",
@@ -56,13 +56,13 @@
       "cmr": 0.0,
       "hir": 0.0,
       "urr": 0.0,
-      "abstention_rate": 0.1,
-      "mean_tokens": 2408.21,
-      "mean_latency_ms": 4.34349000066868,
+      "abstention_rate": 0.08,
+      "mean_tokens": 2431.18,
+      "mean_latency_ms": 4.358214999723714,
       "css": 1.0,
-      "tc_norm": 1.1813405672687316,
-      "lat_norm": 1.8214119028738498,
-      "ccs": 1.4373691015107788
+      "tc_norm": 1.1922575203271966,
+      "lat_norm": 1.8346694151502143,
+      "ccs": 1.4492222782564037
     },
     {
       "governance_level": "G4",
@@ -72,13 +72,13 @@
       "cmr": 0.0,
       "hir": 0.0,
       "urr": 0.0,
-      "abstention_rate": 0.1,
-      "mean_tokens": 2760.57,
-      "mean_latency_ms": 5.236005000135629,
+      "abstention_rate": 0.08,
+      "mean_tokens": 2789.93,
+      "mean_latency_ms": 5.270253999640699,
       "css": 1.0,
-      "tc_norm": 1.3541897632619424,
-      "lat_norm": 2.1956817741691173,
-      "ccs": 1.6907865676248124
+      "tc_norm": 1.3681895308806653,
+      "lat_norm": 2.218608724862553,
+      "ccs": 1.7083572084734202
     }
   ],
   "marginal": [
@@ -86,9 +86,9 @@
       "transition": "G0 -> G1",
       "delta_css": 0.0,
       "delta_accuracy": 0.0,
-      "delta_tokens": -28.9,
+      "delta_tokens": -29.2,
       "delta_latency_ms": 0.0,
-      "delta_ccs": -0.0082,
+      "delta_ccs": -0.0072,
       "ge": -0.0,
       "knee_of_curve": false
     },
@@ -96,9 +96,9 @@
       "transition": "G1 -> G2",
       "delta_css": 0.0,
       "delta_accuracy": 0.0,
-      "delta_tokens": 366.6,
+      "delta_tokens": 367.6,
       "delta_latency_ms": 1.0,
-      "delta_ccs": 0.2781,
+      "delta_ccs": 0.2768,
       "ge": 0.0,
       "knee_of_curve": false
     },
@@ -106,9 +106,9 @@
       "transition": "G2 -> G3",
       "delta_css": 0.0,
       "delta_accuracy": 0.0,
-      "delta_tokens": 32.0,
-      "delta_latency_ms": 0.9,
-      "delta_ccs": 0.1674,
+      "delta_tokens": 53.6,
+      "delta_latency_ms": 1.0,
+      "delta_ccs": 0.1797,
       "ge": 0.0,
       "knee_of_curve": false
     },
@@ -116,9 +116,9 @@
       "transition": "G3 -> G4",
       "delta_css": 0.0,
       "delta_accuracy": 0.0,
-      "delta_tokens": 352.4,
+      "delta_tokens": 358.8,
       "delta_latency_ms": 0.9,
-      "delta_ccs": 0.2534,
+      "delta_ccs": 0.2591,
       "ge": 0.0,
       "knee_of_curve": false
     }

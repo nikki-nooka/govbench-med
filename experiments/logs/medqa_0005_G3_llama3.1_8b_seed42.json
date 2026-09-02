@@ -1,7 +1,7 @@
 {
-  "run_id": "53b164fc",
+  "run_id": "155deeab",
   "experiment_id": "medqa_0005_llama3.1:8b_G3_seed42",
-  "timestamp": "2026-09-02T17:33:11.955246Z",
+  "timestamp": "2026-09-02T17:37:01.941911Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0005",
@@ -26,15 +26,15 @@
   "contradicted_claims": 0,
   "unverifiable_claims": 0,
   "revision_count": 0,
-  "input_tokens": 2497,
-  "output_tokens": 210,
+  "input_tokens": 2502,
+  "output_tokens": 205,
   "total_tokens": 2707,
   "model_calls": 6,
-  "latency_ms": 4.309800001559779,
-  "governance_latency_ms": 4.309800001559779,
-  "diagnosis_latency_ms": 2.5858800009358673,
-  "governance_overhead_latency_ms": 1.7239200006239117,
-  "report_latency_ms": 0.00030980000155977905,
+  "latency_ms": 4.4053000011481345,
+  "governance_latency_ms": 4.4053000011481345,
+  "diagnosis_latency_ms": 2.6431800006888806,
+  "governance_overhead_latency_ms": 1.7621200004592539,
+  "report_latency_ms": 0.00040530000114813447,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -53,7 +53,7 @@
       "input_tokens": 336,
       "output_tokens": 41,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.78, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.78}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.84, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.84}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist_a",
@@ -79,16 +79,16 @@
     {
       "agent": "report_writer",
       "input_tokens": 510,
-      "output_tokens": 39,
-      "latency": 0.00015160000475589186,
-      "text": "{\"top_diagnosis\": \"Electroconvulsive therapy (ECT)\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Electroconvulsive therapy (ECT)\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "output_tokens": 44,
+      "latency": 0.00017890000162879005,
+      "text": "{\"top_diagnosis\": \"Refer to outpatient group therapy\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Refer to outpatient group therapy\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
-      "input_tokens": 824,
-      "output_tokens": 49,
-      "latency": 0.0001581999968038872,
-      "text": "{\"top_diagnosis\": \"The patient does not require any intervention\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"The patient does not require any intervention\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "input_tokens": 829,
+      "output_tokens": 39,
+      "latency": 0.00022639999951934442,
+      "text": "{\"top_diagnosis\": \"Electroconvulsive therapy (ECT)\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Electroconvulsive therapy (ECT)\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     }
   ],
   "verification_trace": null,

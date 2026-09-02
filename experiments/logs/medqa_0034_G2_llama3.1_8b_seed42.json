@@ -1,7 +1,7 @@
 {
-  "run_id": "88c271a4",
+  "run_id": "568bef5a",
   "experiment_id": "medqa_0034_llama3.1:8b_G2_seed42",
-  "timestamp": "2026-09-02T17:33:12.355060Z",
+  "timestamp": "2026-09-02T17:37:02.199428Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0034",
@@ -16,31 +16,25 @@
   "dataset_source": "medqa",
   "correctness": false,
   "top3_correct": false,
-  "confidence": 0.89,
+  "confidence": 0.75,
   "consensus": true,
   "abstained": false,
   "suppressed": false,
-  "verification_status": "FLAGGED",
-  "claims_checked": [
-    {
-      "claim": "unsupported",
-      "status": "FABRICATED",
-      "case_evidence": null
-    }
-  ],
+  "verification_status": "VERIFIED",
+  "claims_checked": [],
   "supported_claims": 0,
   "contradicted_claims": 0,
-  "unverifiable_claims": 1,
+  "unverifiable_claims": 0,
   "revision_count": 0,
   "input_tokens": 2094,
-  "output_tokens": 168,
-  "total_tokens": 2262,
+  "output_tokens": 159,
+  "total_tokens": 2253,
   "model_calls": 5,
-  "latency_ms": 3.2794000029098243,
-  "governance_latency_ms": 3.2794000029098243,
-  "diagnosis_latency_ms": 1.9676400017458946,
-  "governance_overhead_latency_ms": 1.3117600011639297,
-  "report_latency_ms": 0.00027940000290982425,
+  "latency_ms": 3.301100008073263,
+  "governance_latency_ms": 3.301100008073263,
+  "diagnosis_latency_ms": 1.9806600048439578,
+  "governance_overhead_latency_ms": 1.320440003229305,
+  "report_latency_ms": 0.00030110000807326287,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -51,7 +45,7 @@
   "ccs": 0.0,
   "ge": 0.0,
   "hallucination_impactful": false,
-  "hallucination_detected": true,
+  "hallucination_detected": false,
   "unsafe_reassurance": false,
   "agent_traces": [
     {
@@ -59,7 +53,7 @@
       "input_tokens": 288,
       "output_tokens": 41,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.89, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.89}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.78, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.78}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist",
@@ -71,36 +65,30 @@
     {
       "agent": "verifier",
       "input_tokens": 336,
-      "output_tokens": 19,
+      "output_tokens": 10,
       "latency": 1.0,
-      "text": "{\"verdict\": \"FLAGGED\", \"claims\": [{\"claim\": \"unsupported\", \"status\": \"FABRICATED\", \"case_evidence\": null}], \"fabricated_count\": 1, \"summary\": \"Unsupported claim detected.\"}"
+      "text": "{\"verdict\": \"VERIFIED\", \"claims\": [], \"fabricated_count\": 0, \"summary\": \"Verified.\"}"
     },
     {
       "agent": "report_writer",
       "input_tokens": 445,
       "output_tokens": 36,
-      "latency": 0.0001249999986612238,
-      "text": "{\"top_diagnosis\": \"Staphylococcus aureus\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Staphylococcus aureus\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "latency": 0.00011900000390596688,
+      "text": "{\"top_diagnosis\": \"Escherichia coli\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Escherichia coli\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
       "input_tokens": 756,
       "output_tokens": 36,
-      "latency": 0.00015440000424860045,
-      "text": "{\"top_diagnosis\": \"Staphylococcus epidermidis\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Staphylococcus epidermidis\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "latency": 0.000182100004167296,
+      "text": "{\"top_diagnosis\": \"Escherichia coli\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Escherichia coli\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     }
   ],
   "verification_trace": {
-    "verdict": "FLAGGED",
-    "claims": [
-      {
-        "claim": "unsupported",
-        "status": "FABRICATED",
-        "case_evidence": null
-      }
-    ],
-    "fabricated_count": 1,
-    "summary": "Unsupported claim detected."
+    "verdict": "VERIFIED",
+    "claims": [],
+    "fabricated_count": 0,
+    "summary": "Verified."
   },
   "consensus_trace": null,
   "ethics_trace": null,

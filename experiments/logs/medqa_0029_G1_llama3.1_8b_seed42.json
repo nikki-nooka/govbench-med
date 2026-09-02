@@ -1,7 +1,7 @@
 {
-  "run_id": "7fe9aee7",
+  "run_id": "cb58763b",
   "experiment_id": "medqa_0029_llama3.1:8b_G1_seed42",
-  "timestamp": "2026-09-02T17:33:12.199336Z",
+  "timestamp": "2026-09-02T17:37:02.151860Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0029",
@@ -16,7 +16,7 @@
   "dataset_source": "medqa",
   "correctness": false,
   "top3_correct": false,
-  "confidence": 0.77,
+  "confidence": 0.78,
   "consensus": true,
   "abstained": false,
   "suppressed": false,
@@ -27,14 +27,14 @@
   "unverifiable_claims": 0,
   "revision_count": 0,
   "input_tokens": 1678,
-  "output_tokens": 158,
-  "total_tokens": 1836,
+  "output_tokens": 150,
+  "total_tokens": 1828,
   "model_calls": 4,
-  "latency_ms": 2.743800002965145,
-  "governance_latency_ms": 2.743800002965145,
-  "diagnosis_latency_ms": 1.6462800017790868,
-  "governance_overhead_latency_ms": 1.097520001186058,
-  "report_latency_ms": 0.0007438000029651448,
+  "latency_ms": 2.3125000002910383,
+  "governance_latency_ms": 2.3125000002910383,
+  "diagnosis_latency_ms": 1.387500000174623,
+  "governance_overhead_latency_ms": 0.9250000001164154,
+  "report_latency_ms": 0.0003125000002910383,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -53,7 +53,7 @@
       "input_tokens": 267,
       "output_tokens": 45,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.77, \"reasoning\": \"Clinical presentation suggests Acute Coronary Syndrome.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.77}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.78, \"reasoning\": \"Clinical presentation suggests Acute Coronary Syndrome.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.78}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist",
@@ -66,15 +66,15 @@
       "agent": "report_writer",
       "input_tokens": 429,
       "output_tokens": 33,
-      "latency": 0.0002849000011337921,
+      "latency": 0.00011059999815188348,
       "text": "{\"top_diagnosis\": \"Propranolol\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Propranolol\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
       "input_tokens": 734,
-      "output_tokens": 41,
-      "latency": 0.0004589000018313527,
-      "text": "{\"top_diagnosis\": \"Reassurance and continuous monitoring\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Reassurance and continuous monitoring\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "output_tokens": 33,
+      "latency": 0.00020190000213915482,
+      "text": "{\"top_diagnosis\": \"Labetalol\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Labetalol\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     }
   ],
   "verification_trace": null,

@@ -1,7 +1,7 @@
 {
-  "run_id": "5a86a042",
+  "run_id": "142dcb57",
   "experiment_id": "medqa_0047_llama3.1:8b_G4_seed42",
-  "timestamp": "2026-09-02T17:33:12.487193Z",
+  "timestamp": "2026-09-02T17:37:02.316680Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0047",
@@ -26,15 +26,15 @@
   "contradicted_claims": 0,
   "unverifiable_claims": 0,
   "revision_count": 0,
-  "input_tokens": 3350,
-  "output_tokens": 204,
-  "total_tokens": 3554,
+  "input_tokens": 3344,
+  "output_tokens": 201,
+  "total_tokens": 3545,
   "model_calls": 7,
-  "latency_ms": 5.479299989819992,
-  "governance_latency_ms": 5.479299989819992,
-  "diagnosis_latency_ms": 3.2875799938919954,
-  "governance_overhead_latency_ms": 2.191719995927997,
-  "report_latency_ms": 0.00047929998981999233,
+  "latency_ms": 5.294699995720293,
+  "governance_latency_ms": 5.294699995720293,
+  "diagnosis_latency_ms": 3.176819997432176,
+  "governance_overhead_latency_ms": 2.1178799982881173,
+  "report_latency_ms": 0.00029469999572029337,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -79,16 +79,16 @@
     {
       "agent": "report_writer",
       "input_tokens": 566,
-      "output_tokens": 39,
-      "latency": 0.0002066999950329773,
-      "text": "{\"top_diagnosis\": \"Renal artery stenosis\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Renal artery stenosis\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "output_tokens": 33,
+      "latency": 0.00012909999350085855,
+      "text": "{\"top_diagnosis\": \"Pheochromocytoma\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pheochromocytoma\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
-      "input_tokens": 880,
-      "output_tokens": 36,
-      "latency": 0.000272599994787015,
-      "text": "{\"top_diagnosis\": \"Gitelman's syndrome\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Gitelman's syndrome\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "input_tokens": 874,
+      "output_tokens": 39,
+      "latency": 0.00016560000221943483,
+      "text": "{\"top_diagnosis\": \"Renal artery stenosis\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Renal artery stenosis\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "ethics_critic",

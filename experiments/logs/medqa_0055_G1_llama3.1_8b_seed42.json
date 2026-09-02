@@ -1,7 +1,7 @@
 {
-  "run_id": "caa36128",
+  "run_id": "092d7ef1",
   "experiment_id": "medqa_0055_llama3.1:8b_G1_seed42",
-  "timestamp": "2026-09-02T17:33:12.572191Z",
+  "timestamp": "2026-09-02T17:37:02.382663Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0055",
@@ -16,7 +16,7 @@
   "dataset_source": "medqa",
   "correctness": false,
   "top3_correct": false,
-  "confidence": 0.77,
+  "confidence": 0.78,
   "consensus": true,
   "abstained": false,
   "suppressed": false,
@@ -26,15 +26,15 @@
   "contradicted_claims": 0,
   "unverifiable_claims": 0,
   "revision_count": 0,
-  "input_tokens": 1660,
+  "input_tokens": 1657,
   "output_tokens": 182,
-  "total_tokens": 1842,
+  "total_tokens": 1839,
   "model_calls": 4,
-  "latency_ms": 2.2729999978328124,
-  "governance_latency_ms": 2.2729999978328124,
-  "diagnosis_latency_ms": 1.3637999986996874,
-  "governance_overhead_latency_ms": 0.909199999133125,
-  "report_latency_ms": 0.00027299999783281237,
+  "latency_ms": 2.3196999969077297,
+  "governance_latency_ms": 2.3196999969077297,
+  "diagnosis_latency_ms": 1.3918199981446377,
+  "governance_overhead_latency_ms": 0.9278799987630919,
+  "report_latency_ms": 0.00031969999690772966,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -53,7 +53,7 @@
       "input_tokens": 243,
       "output_tokens": 45,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Clinical Evaluation Required\", \"confidence\": 0.77, \"reasoning\": \"Clinical presentation suggests Clinical Evaluation Required.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Clinical Evaluation Required\", \"confidence\": 0.77}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Clinical Evaluation Required\", \"confidence\": 0.78, \"reasoning\": \"Clinical presentation suggests Clinical Evaluation Required.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Clinical Evaluation Required\", \"confidence\": 0.78}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist",
@@ -65,16 +65,16 @@
     {
       "agent": "report_writer",
       "input_tokens": 435,
-      "output_tokens": 52,
-      "latency": 0.00011590000212891027,
-      "text": "{\"top_diagnosis\": \"Decreased sense of temperature in the ipsilateral arm\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Decreased sense of temperature in the ipsilateral arm\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "output_tokens": 49,
+      "latency": 0.0001221999991685152,
+      "text": "{\"top_diagnosis\": \"Decreased vibratory sense in the ipsilateral arm\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Decreased vibratory sense in the ipsilateral arm\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
-      "input_tokens": 759,
-      "output_tokens": 49,
-      "latency": 0.0001570999957039021,
-      "text": "{\"top_diagnosis\": \"Decreased positional sense in the ipsilateral leg\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Decreased positional sense in the ipsilateral leg\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "input_tokens": 756,
+      "output_tokens": 52,
+      "latency": 0.00019749999773921445,
+      "text": "{\"top_diagnosis\": \"Decreased sense of temperature in the ipsilateral arm\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Decreased sense of temperature in the ipsilateral arm\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     }
   ],
   "verification_trace": null,

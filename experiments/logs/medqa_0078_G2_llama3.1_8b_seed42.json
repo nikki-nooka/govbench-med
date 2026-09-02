@@ -1,7 +1,7 @@
 {
-  "run_id": "98a229b0",
+  "run_id": "5698c697",
   "experiment_id": "medqa_0078_llama3.1:8b_G2_seed42",
-  "timestamp": "2026-09-02T17:33:12.861611Z",
+  "timestamp": "2026-09-02T17:37:02.667312Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0078",
@@ -16,25 +16,31 @@
   "dataset_source": "medqa",
   "correctness": false,
   "top3_correct": false,
-  "confidence": 0.75,
+  "confidence": 0.8200000000000001,
   "consensus": true,
   "abstained": false,
   "suppressed": false,
-  "verification_status": "VERIFIED",
-  "claims_checked": [],
+  "verification_status": "FLAGGED",
+  "claims_checked": [
+    {
+      "claim": "unsupported",
+      "status": "FABRICATED",
+      "case_evidence": null
+    }
+  ],
   "supported_claims": 0,
   "contradicted_claims": 0,
-  "unverifiable_claims": 0,
+  "unverifiable_claims": 1,
   "revision_count": 0,
-  "input_tokens": 2244,
-  "output_tokens": 163,
-  "total_tokens": 2407,
+  "input_tokens": 2252,
+  "output_tokens": 180,
+  "total_tokens": 2432,
   "model_calls": 5,
-  "latency_ms": 3.4174999994575046,
-  "governance_latency_ms": 3.4174999994575046,
-  "diagnosis_latency_ms": 2.0504999996745026,
-  "governance_overhead_latency_ms": 1.3669999997830018,
-  "report_latency_ms": 0.0004174999994575046,
+  "latency_ms": 3.2740999989327975,
+  "governance_latency_ms": 3.2740999989327975,
+  "diagnosis_latency_ms": 1.9644599993596785,
+  "governance_overhead_latency_ms": 1.309639999573119,
+  "report_latency_ms": 0.00027409999893279746,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -45,7 +51,7 @@
   "ccs": 0.0,
   "ge": 0.0,
   "hallucination_impactful": false,
-  "hallucination_detected": false,
+  "hallucination_detected": true,
   "unsafe_reassurance": false,
   "agent_traces": [
     {
@@ -53,7 +59,7 @@
       "input_tokens": 318,
       "output_tokens": 45,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.86, \"reasoning\": \"Clinical presentation suggests Acute Coronary Syndrome.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.86}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.8200000000000001, \"reasoning\": \"Clinical presentation suggests Acute Coronary Syndrome.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Acute Coronary Syndrome\", \"confidence\": 0.8200000000000001}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist",
@@ -65,30 +71,36 @@
     {
       "agent": "verifier",
       "input_tokens": 366,
-      "output_tokens": 10,
+      "output_tokens": 19,
       "latency": 1.0,
-      "text": "{\"verdict\": \"VERIFIED\", \"claims\": [], \"fabricated_count\": 0, \"summary\": \"Verified.\"}"
+      "text": "{\"verdict\": \"FLAGGED\", \"claims\": [{\"claim\": \"unsupported\", \"status\": \"FABRICATED\", \"case_evidence\": null}], \"fabricated_count\": 1, \"summary\": \"Unsupported claim detected.\"}"
     },
     {
       "agent": "report_writer",
       "input_tokens": 478,
-      "output_tokens": 33,
-      "latency": 0.00017559999832883477,
-      "text": "{\"top_diagnosis\": \"Adenosine\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Adenosine\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "output_tokens": 41,
+      "latency": 0.00011629999789875001,
+      "text": "{\"top_diagnosis\": \"Transforming growth factor beta\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Transforming growth factor beta\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
-      "input_tokens": 783,
+      "input_tokens": 791,
       "output_tokens": 36,
-      "latency": 0.00024190000112866983,
+      "latency": 0.00015780000103404745,
       "text": "{\"top_diagnosis\": \"Inorganic phosphate\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Inorganic phosphate\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     }
   ],
   "verification_trace": {
-    "verdict": "VERIFIED",
-    "claims": [],
-    "fabricated_count": 0,
-    "summary": "Verified."
+    "verdict": "FLAGGED",
+    "claims": [
+      {
+        "claim": "unsupported",
+        "status": "FABRICATED",
+        "case_evidence": null
+      }
+    ],
+    "fabricated_count": 1,
+    "summary": "Unsupported claim detected."
   },
   "consensus_trace": null,
   "ethics_trace": null,

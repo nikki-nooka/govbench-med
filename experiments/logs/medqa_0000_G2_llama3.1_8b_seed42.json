@@ -1,7 +1,7 @@
 {
-  "run_id": "b02f5380",
+  "run_id": "a981e559",
   "experiment_id": "medqa_0000_llama3.1:8b_G2_seed42",
-  "timestamp": "2026-09-02T17:33:11.904085Z",
+  "timestamp": "2026-09-02T17:37:01.894501Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0000",
@@ -26,15 +26,15 @@
   "contradicted_claims": 0,
   "unverifiable_claims": 0,
   "revision_count": 0,
-  "input_tokens": 2421,
-  "output_tokens": 175,
-  "total_tokens": 2596,
+  "input_tokens": 2413,
+  "output_tokens": 177,
+  "total_tokens": 2590,
   "model_calls": 5,
-  "latency_ms": 3.453400003607385,
-  "governance_latency_ms": 3.453400003607385,
-  "diagnosis_latency_ms": 2.0720400021644307,
-  "governance_overhead_latency_ms": 1.381360001442954,
-  "report_latency_ms": 0.00045340000360738486,
+  "latency_ms": 3.467599995317869,
+  "governance_latency_ms": 3.467599995317869,
+  "diagnosis_latency_ms": 2.080559997190721,
+  "governance_overhead_latency_ms": 1.3870399981271475,
+  "report_latency_ms": 0.0004675999953178689,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -53,7 +53,7 @@
       "input_tokens": 341,
       "output_tokens": 41,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.81, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.81}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.76, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.76}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist",
@@ -72,16 +72,16 @@
     {
       "agent": "report_writer",
       "input_tokens": 522,
-      "output_tokens": 49,
-      "latency": 0.00020729999960167333,
-      "text": "{\"top_diagnosis\": \"CT chest without contrast in 24 months\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"CT chest without contrast in 24 months\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "output_tokens": 41,
+      "latency": 0.0002477000016369857,
+      "text": "{\"top_diagnosis\": \"Right middle lobectomy now\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Right middle lobectomy now\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
-      "input_tokens": 846,
-      "output_tokens": 39,
-      "latency": 0.0002461000040057115,
-      "text": "{\"top_diagnosis\": \"Bronchoscopy-guided biopsy now\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Bronchoscopy-guided biopsy now\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "input_tokens": 838,
+      "output_tokens": 49,
+      "latency": 0.0002198999936808832,
+      "text": "{\"top_diagnosis\": \"CT chest without contrast in 24 months\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"CT chest without contrast in 24 months\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     }
   ],
   "verification_trace": {

@@ -1,7 +1,7 @@
 {
-  "run_id": "43dfc395",
+  "run_id": "f31b7fbd",
   "experiment_id": "medqa_0099_llama3.1:8b_G3_seed42",
-  "timestamp": "2026-09-02T17:33:13.111046Z",
+  "timestamp": "2026-09-02T17:37:02.908577Z",
   "prompt_version": "v1.1",
   "code_version": "0.1.0",
   "case_id": "medqa_0099",
@@ -27,14 +27,14 @@
   "unverifiable_claims": 0,
   "revision_count": 0,
   "input_tokens": 2424,
-  "output_tokens": 194,
-  "total_tokens": 2618,
+  "output_tokens": 199,
+  "total_tokens": 2623,
   "model_calls": 6,
-  "latency_ms": 4.423999998020008,
-  "governance_latency_ms": 4.423999998020008,
-  "diagnosis_latency_ms": 2.654399998812005,
-  "governance_overhead_latency_ms": 1.7695999992080034,
-  "report_latency_ms": 0.0004239999980200082,
+  "latency_ms": 4.324300002830569,
+  "governance_latency_ms": 4.324300002830569,
+  "diagnosis_latency_ms": 2.594580001698341,
+  "governance_overhead_latency_ms": 1.7297200011322276,
+  "report_latency_ms": 0.0003243000028305687,
   "cost": 0.0,
   "human_review_required": false,
   "human_review_time": 0.0,
@@ -53,7 +53,7 @@
       "input_tokens": 326,
       "output_tokens": 41,
       "latency": 1.0,
-      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.84, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.84}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "text": "{\"top_diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.81, \"reasoning\": \"Clinical presentation suggests Pulmonary Embolism.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Pulmonary Embolism\", \"confidence\": 0.81}, {\"rank\": 2, \"diagnosis\": \"Alternative Diagnosis\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "specialist_a",
@@ -80,15 +80,15 @@
       "agent": "report_writer",
       "input_tokens": 491,
       "output_tokens": 36,
-      "latency": 0.00020529999892460182,
-      "text": "{\"top_diagnosis\": \"Non-Hodgkin lymphoma\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Non-Hodgkin lymphoma\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "latency": 0.00013169999874662608,
+      "text": "{\"top_diagnosis\": \"Gastric carcinoma\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Gastric carcinoma\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     },
     {
       "agent": "report_judge",
       "input_tokens": 802,
-      "output_tokens": 36,
-      "latency": 0.00021869999909540638,
-      "text": "{\"top_diagnosis\": \"Gastric carcinoma\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Gastric carcinoma\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
+      "output_tokens": 41,
+      "latency": 0.00019260000408394262,
+      "text": "{\"top_diagnosis\": \"Adenocarcinoma of the lung\", \"confidence\": 0.75, \"reasoning\": \"Clinical presentation.\", \"differential\": [{\"rank\": 1, \"diagnosis\": \"Adenocarcinoma of the lung\", \"confidence\": 0.75}, {\"rank\": 2, \"diagnosis\": \"Alternative\", \"confidence\": 0.15}, {\"rank\": 3, \"diagnosis\": \"Other\", \"confidence\": 0.05}]}"
     }
   ],
   "verification_trace": null,
