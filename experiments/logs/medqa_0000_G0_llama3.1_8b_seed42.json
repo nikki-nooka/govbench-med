@@ -1,0 +1,41 @@
+{
+  "case_id": "medqa_0000",
+  "governance_level": "G0",
+  "model": "llama3.1:8b",
+  "seed": 42,
+  "prompt_version": "v1.0",
+  "top_diagnosis": "Benign Calcified Nodule",
+  "top3_diagnoses": [
+    "Benign Calcified Nodule",
+    "Pulmonary Metastasis",
+    "Pulmonary Adenoma"
+  ],
+  "output_confidence": 0.85,
+  "abstained": false,
+  "suppressed": false,
+  "hallucination_detected": false,
+  "hallucination_impactful": false,
+  "total_input_tokens": 858,
+  "total_output_tokens": 396,
+  "total_tokens": 1254,
+  "total_latency": 131.14806260000114,
+  "agent_turns": 2,
+  "trace": [
+    {
+      "agent": "diagnostician_a",
+      "input_tokens": 429,
+      "output_tokens": 198,
+      "latency": 57.49578350000047,
+      "text": "{\n  \"top_diagnosis\": \"Benign Calcified Nodule\",\n  \"confidence\": 0.85,\n  \"reasoning\": \"The presence of a calcified nodule with regular margins on two consecutive chest CTs suggests a benign etiology.\",\n  \"differential\": [\n    {\"rank\": 1, \"diagnosis\": \"Benign Calcified Nodule\", \"confidence\": 0.85},\n    {\"rank\": 2, \"diagnosis\": \"Pulmonary Metastasis\", \"confidence\": 0.10},\n    {\"rank\": 3, \"diagnosis\": \"Pulmonary Adenoma\", \"confidence\": 0.05},\n    {\"rank\": 4, \"diagnosis\": \"Pulmonary Hamartoma\", \"conf"
+    },
+    {
+      "agent": "diagnostician_b",
+      "input_tokens": 429,
+      "output_tokens": 198,
+      "latency": 73.65227910000067,
+      "text": "{\n  \"top_diagnosis\": \"Benign Calcified Nodule\",\n  \"confidence\": 0.85,\n  \"reasoning\": \"The presence of a calcified nodule with regular margins on two consecutive chest CTs suggests a benign etiology.\",\n  \"differential\": [\n    {\"rank\": 1, \"diagnosis\": \"Benign Calcified Nodule\", \"confidence\": 0.85},\n    {\"rank\": 2, \"diagnosis\": \"Pulmonary Metastasis\", \"confidence\": 0.10},\n    {\"rank\": 3, \"diagnosis\": \"Pulmonary Adenoma\", \"confidence\": 0.05},\n    {\"rank\": 4, \"diagnosis\": \"Pulmonary Hamartoma\", \"conf"
+    }
+  ],
+  "ethics_verdict": null,
+  "ethics_score": null
+}
